@@ -13,10 +13,19 @@ public class Money implements Expression {
         return new Money(amount *multiplier, currency);
     }
     
+    @Override
     public boolean equals(Object object) {
         Money money = (Money) object;
         return amount == money.amount &&
                 this.currency().equals(money.currency());
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 17 * hash + this.amount;
+        hash = 17 * hash + (this.currency != null ? this.currency.hashCode() : 0);
+        return hash;
     }
     
     static Money dollar(int amount){
@@ -40,7 +49,8 @@ public class Money implements Expression {
     }
     
     @Override
-    public Money reduce(String to){
-        return this;
+    public Money reduce(Bank bank, String to){
+        int rate = bank.rate(currency, to);
+        return new Money(amount / rate, to);
     }
 }
