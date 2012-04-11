@@ -11,3 +11,6 @@ class TestResult:
 
    def summary(self):
       return "%d run, %d failed" % (self.runCount, self.errorCount)
+
+   def __str__(self):
+      return self.summary()
