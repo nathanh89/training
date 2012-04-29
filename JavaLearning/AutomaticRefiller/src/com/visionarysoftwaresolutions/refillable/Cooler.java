@@ -1,17 +1,20 @@
 package com.visionarysoftwaresolutions.refillable;
 
-class Cooler {
-    private boolean powerOn = false;
-
+class Cooler implements PoweredUnit{
+    boolean powerOn;
+    
+    @Override
     public boolean isPowerOn() {
         return powerOn;
     }
 
+    @Override
     public void setPowerOn(boolean powerOn) {
         this.powerOn = powerOn;
     }
 
-    void togglePower() {
+    @Override
+    public void togglePower() {
         setPowerOn(!powerOn);
     }
 }

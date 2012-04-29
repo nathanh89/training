@@ -15,4 +15,16 @@ public class CoolerTests {
         odwalla.togglePower();
         assertFalse(odwalla.isPowerOn());
     }
+    
+    @Test
+    public void testPoweredUnit(){
+        //Given: A powered unit of no particular association
+        PoweredUnit device = new Cooler();
+        //When: I want to toggle the power state
+        device.togglePower();
+        //The Powered Unit should be on
+        assertTrue(device.isPowerOn());
+        device.togglePower();
+        assertFalse(device.isPowerOn());
+    }
 }
