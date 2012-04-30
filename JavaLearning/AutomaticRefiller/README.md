@@ -49,6 +49,8 @@ Then: The bottles should be present
 
 Feature: We can take bottles out of the cooler
 
+FEATURE ADD (4/29/2012): We can tell how many bottles we have of each type of beverage
+-- For example: 10 Green Monsters, 5 Blue Machines
 Feature: We an calculate how full the cooler is
 
 EPIC WIN Feature: The cooler can automatically re-order when capacity falls below a threshold
