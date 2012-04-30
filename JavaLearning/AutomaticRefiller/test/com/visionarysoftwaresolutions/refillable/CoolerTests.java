@@ -24,5 +24,15 @@ public class CoolerTests {
         //Then the bottles should be present
         assertTrue(cooler.getBottles() == 5);
     }
+    
+    public void testRemoveBottlesFromCooler(){
+        //Given a cooler, by necessity containing some bottles
+        Cooler cooler = new Cooler();
+        cooler.currentBottles = 10;
+        //When I remove bottles from the cooler
+        cooler.removeBottles(5);
+        //Then the bottles should not be present
+        assertTrue(cooler.getBottles() == 5);
+    }
 
 }

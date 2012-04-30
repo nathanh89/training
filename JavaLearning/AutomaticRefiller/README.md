@@ -42,12 +42,17 @@ Then: The door should be closed
 
 -----------------------------------------DONE
 Feature: We can put bottles in the cooler
-Given :I have a cooler
+Given: I have a cooler
 And: I want to add bottles to it
 When: I add the bottles to the cooler
 Then: The bottles should be present
 
+-----------------------------------------
 Feature: We can take bottles out of the cooler
+Given: I have a cooler
+And: I want to remove bottles from it
+When: I remove the bottles from the cooler
+Then: The bottles should not be present
 
 Feature: We an calculate how full the cooler is
 

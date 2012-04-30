@@ -5,6 +5,7 @@ class Cooler implements PoweredDooredUnit {
     boolean doorOpen = false;
     int currentBottles = 0;
     
+    
     @Override
     public boolean isPowerOn() {
         return powerOn;
@@ -41,5 +42,9 @@ class Cooler implements PoweredDooredUnit {
     
     public int getBottles(){
         return currentBottles;
+    }
+    
+    public void removeBottles(int lessBottles){
+        currentBottles -= lessBottles;
     }
 }
