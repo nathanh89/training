@@ -125,6 +125,26 @@ public class CoolerTests {
         assertEquals(69.00, coolerStockValue, 0.000001);
     }
     
+    @Test
+    public void testGetStockValueByType(){
+        //Given a cooler with some stock
+        Cooler cooler = new Cooler();
+        List<Bottle> neurogasm = BottleManufacturer.order("Neurogasm", 69);
+        List<Bottle> gatorade = BottleManufacturer.order("Gatorade", 100);
+        cooler.addBottles(neurogasm);
+        cooler.addBottles(gatorade);
+        //And that stock has a set retail price
+        cooler.setBeveragePriceByType("Neurogasm", 6.90);
+        cooler.setBeveragePriceByType("Gatorade", 2.99);
+        //When I ask for the value of the stock, but for a specific beverage
+        double neurogasmicValue = cooler.getStockValueByType("Neurogasm");
+        double gatoradeValue = cooler.getStockValueByType("Gatorade");
+        //Then the correct value should be given
+        assertEquals(476.10, neurogasmicValue, .000001);
+        assertEquals(299.00, gatoradeValue, .000001);
+         
+    }
+    
     
 //    @Test
 //    public void testAutomaticReorder(){

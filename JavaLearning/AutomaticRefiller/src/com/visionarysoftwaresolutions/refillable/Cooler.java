@@ -116,6 +116,16 @@ class Cooler implements PoweredDooredUnit {
         }
         return totalStockValue;
     }
+
+    double getStockValueByType(String beverageName) {
+        double stockValueByType = 0.00;
+        for(int i=0; i<bottles.size(); i++){
+            if(beverageName == bottles.get(i).getBeverageName()){
+                stockValueByType += bottles.get(i).getBeverageValue();
+            }
+        }
+        return stockValueByType;
+    }
 }
     
 

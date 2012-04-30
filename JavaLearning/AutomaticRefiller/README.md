@@ -94,12 +94,16 @@ Given: One bottle of Monster is worth 3.95, and one bottle of rockstar is worth 
 When: Asked for the value of the bottles in the cooler
 Then: The correct value should be given
 
------------------------------------------
+-----------------------------------------DONE
 Feature: Know the value of the stock in the cooler, but by type
 Given: A cooler with some stock
 When: Asked for the stock value of a particular beverage type
 Then: The correct amount should be given
 
-
+-----------------------------------------
 EPIC WIN Feature: The cooler can automatically re-order when capacity falls below a threshold
+Given: A cooler with some stock
+When: The cooler falls below a set capacity threshold
+Then: A new order is placed to add bottles to the cooler
+
 SUPER EPIC WIN Feature: The cooler vetoes the door being open more than 10 degrees 
