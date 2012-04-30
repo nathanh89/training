@@ -1,9 +1,13 @@
 package com.visionarysoftwaresolutions.refillable;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class Cooler implements PoweredDooredUnit {
     boolean powerOn = false;
     boolean doorOpen = false;
     int currentBottles = 0;
+    List<Bottle> bottles = new ArrayList();
     
     
     @Override
@@ -47,4 +51,20 @@ class Cooler implements PoweredDooredUnit {
     public void removeBottles(int lessBottles){
         currentBottles -= lessBottles;
     }
+
+    void addBottles(List<Bottle> beverageType) {
+        bottles.addAll(beverageType);
+    }
+
+    int getBeverageCount(String beverageName) {
+        int beverageCount = 0;
+        for(int i=0; i<bottles.size(); i++){
+            Bottle target = bottles.get(i); 
+            if(target.getBeverageName().equalsIgnoreCase(beverageName)){
+                beverageCount++;
+            }
+        }
+        return beverageCount;
+    }
+    
 }

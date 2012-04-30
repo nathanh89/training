@@ -47,15 +47,22 @@ And: I want to add bottles to it
 When: I add the bottles to the cooler
 Then: The bottles should be present
 
------------------------------------------
+-----------------------------------------DONE
 Feature: We can take bottles out of the cooler
 Given: I have a cooler
 And: I want to remove bottles from it
 When: I remove the bottles from the cooler
 Then: The bottles should not be present
 
-FEATURE ADD (4/29/2012): We can tell how many bottles we have of each type of beverage
+-----------------------------------------
+Feature: We can tell how many bottles we have of each type of beverage
 -- For example: 10 Green Monsters, 5 Blue Machines
+Given: I have a cooler containing 15 bottles
+And: I know there are 10 Green Monsters and 5 Blue Machine
+When: I want to check the amount a given drink
+Then: The amount of that particular drink should be given
+
+
 Feature: We an calculate how full the cooler is
 
 EPIC WIN Feature: The cooler can automatically re-order when capacity falls below a threshold
