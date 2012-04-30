@@ -1,6 +1,7 @@
 package com.visionarysoftwaresolutions.refillable;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 class Cooler implements PoweredDooredUnit {
@@ -90,4 +91,13 @@ class Cooler implements PoweredDooredUnit {
         return (int) percent;
     }
     
+    public double getTotalStockValue() {
+        double totalStockValue = 0.00;
+        for(int i=0; i<bottles.size(); i++){
+            totalStockValue += bottles.get(i).getBeverageValue();
+        }
+        return totalStockValue;
+    }
 }
+    
+

@@ -80,7 +80,7 @@ Given: A cooler with a specified capacity and some stock
 When: I want to know how full the cooler is
 Then: I should be able to get the percentage of capacity used
 
------------------------------------------
+-----------------------------------------Test Passed, Refactoring
 Feature: Know the value of the stock inside of the cooler
 Given: One bottle of Monster is worth 3.95, and one bottle of rockstar is worth 2.95
 When: Asked for the value of the bottles in the cooler

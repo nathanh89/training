@@ -10,13 +10,19 @@ package com.visionarysoftwaresolutions.refillable;
  */
 public class Bottle {
     private final String beverageName;
+    public double beverageValue;
     
-    public Bottle(String beverageName){
+    public Bottle(String beverageName, double beverageValue){
         this.beverageName = beverageName;
+        this.beverageValue = beverageValue;
     }
     
     public String getBeverageName(){
         return beverageName;
+    }
+    
+    public double getBeverageValue(){
+        return beverageValue;
     }
     
 }
