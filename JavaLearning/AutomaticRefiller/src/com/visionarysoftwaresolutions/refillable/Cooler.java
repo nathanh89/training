@@ -62,11 +62,11 @@ class Cooler implements PoweredDooredUnit {
         return result;
     }
 
-    void addBottles(List<Bottle> beverageType) {
+    public void addBottles(List<Bottle> beverageType) {
         bottles.addAll(beverageType);
     }
 
-    int getBeverageCount(String beverageName) {
+    public int getBeverageCountByType(String beverageName) {
         int beverageCount = 0;
         for(Bottle target : bottles){
             beverageCount += (target.getBeverageName().equalsIgnoreCase(beverageName)) ? 1 : 0;
@@ -74,15 +74,15 @@ class Cooler implements PoweredDooredUnit {
         return beverageCount;
     }
 
-    void setCapacity(int capacity) {
+    public void setCapacity(int capacity) {
         this.capacity=capacity;
     }
     
-    int getCapacity(){
+    public int getCapacity(){
         return capacity;
     }
     
-    int getPercentFull(){
+    public int getPercentFull(){
         double percent;
         int bottlesInCooler = bottles.size();
         percent = (double) bottlesInCooler / (double) capacity;

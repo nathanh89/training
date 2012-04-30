@@ -47,8 +47,8 @@ public class CoolerTests {
         cooler.addBottles(greenMonsters);
         cooler.addBottles(blueMachines);
         //When I want to check the amount of a given drink
-        int currentMonsters = cooler.getBeverageCount("Green Monster");
-        int currentBlueMachines = cooler.getBeverageCount("Blue Machine");
+        int currentMonsters = cooler.getBeverageCountByType("Green Monster");
+        int currentBlueMachines = cooler.getBeverageCountByType("Blue Machine");
         //Then the amount of that particular drink should be given
         assertEquals(currentMonsters, 10);
         assertEquals(currentBlueMachines, 5);
@@ -78,7 +78,7 @@ public class CoolerTests {
     }
     
     @Test
-    public void testCheckHowFullIsCoolerPercent(){
+    public void testGetPercentFull(){
         //Given a cooler with a specified capacity, and by necessity some stock
         Cooler cooler = new Cooler();
         cooler.setCapacity(38);
@@ -89,8 +89,7 @@ public class CoolerTests {
         //When I ask how full the cooler is
         //Then it should return the percent of capacity being used
         assertEquals(47, cooler.getPercentFull());
-         
-    }
+     }
     
 //    @Test
 //    public void testAutomaticReorder(){

@@ -80,13 +80,11 @@ Given: A cooler with a specified capacity and some stock
 When: I want to know how full the cooler is
 Then: I should be able to get the percentage of capacity used
 
-
-NEW FEATURE: Know the value of the stock inside of the cooler
+-----------------------------------------
+Feature: Know the value of the stock inside of the cooler
 Given: One bottle of Monster is worth 3.95, and one bottle of rockstar is worth 2.95
 When: Asked for the value of the bottles in the cooler
 Then: The correct value should be given
-
-refactor to getbeveragecount*bytype*
 
 EPIC WIN Feature: The cooler can automatically re-order when capacity falls below a threshold
 SUPER EPIC WIN Feature: The cooler vetoes the door being open more than 10 degrees 
