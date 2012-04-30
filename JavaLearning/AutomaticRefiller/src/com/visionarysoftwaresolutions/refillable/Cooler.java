@@ -91,6 +91,24 @@ class Cooler implements PoweredDooredUnit {
         return (int) percent;
     }
     
+    public void setBeveragePriceByType(String beverageName, double newPrice){
+        for(int i=0; i<bottles.size(); i++){
+            if(beverageName == bottles.get(i).getBeverageName()){
+                bottles.get(i).beveragePrice = newPrice;
+            }
+        }
+    }
+    
+    public double getBeveragePriceByType(String beverageName){
+        for(int i=0; i<bottles.size(); i++){
+            if(beverageName == bottles.get(i).getBeverageName()){
+                double price = bottles.get(i).getBeverageValue();
+                return price;
+            }
+        }
+        return 0.00;
+    }
+    
     public double getTotalStockValue() {
         double totalStockValue = 0.00;
         for(int i=0; i<bottles.size(); i++){

@@ -80,11 +80,26 @@ Given: A cooler with a specified capacity and some stock
 When: I want to know how full the cooler is
 Then: I should be able to get the percentage of capacity used
 
------------------------------------------Test Passed, Refactoring
-Feature: Know the value of the stock inside of the cooler
+-----------------------------------------DONE
+Feature: We need the ability to set the retail price of a beverage in the cooler. It does not make
+sense to pass that into the order from the manufacturer, as they do not set the final sell price.
+The ability to set retail price needs to be independent of the ordering process.
+Given: A cooler with some stock
+When: I want to set the price of a particular beverage type
+Then: The price will be applied to all beverages of that type
+
+-----------------------------------------DONE
+Feature: Know the value of the total stock inside of the cooler
 Given: One bottle of Monster is worth 3.95, and one bottle of rockstar is worth 2.95
 When: Asked for the value of the bottles in the cooler
 Then: The correct value should be given
+
+-----------------------------------------
+Feature: Know the value of the stock in the cooler, but by type
+Given: A cooler with some stock
+When: Asked for the stock value of a particular beverage type
+Then: The correct amount should be given
+
 
 EPIC WIN Feature: The cooler can automatically re-order when capacity falls below a threshold
 SUPER EPIC WIN Feature: The cooler vetoes the door being open more than 10 degrees 

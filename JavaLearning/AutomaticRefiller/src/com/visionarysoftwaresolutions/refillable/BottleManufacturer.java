@@ -13,12 +13,10 @@ import java.util.List;
  */
 public class BottleManufacturer {
 
-    public static List<Bottle> order(String beverageName, 
-                                     double beverageValue, 
-                                     int beverageQuantity){
+    public static List<Bottle> order(String beverageName, int beverageQuantity){
         List<Bottle> bottles = new ArrayList<Bottle>();
         for(int i=0; i<beverageQuantity; i++){
-            bottles.add(new Bottle(beverageName, beverageValue));
+            bottles.add(new Bottle(beverageName));
         }
         return bottles;
     }
