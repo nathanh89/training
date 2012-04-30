@@ -40,7 +40,7 @@ And: The door is open
 When: I want to close the door
 Then: The door should be closed
 
------------------------------------------
+-----------------------------------------DONE
 Feature: We can put bottles in the cooler
 Given :I have a cooler
 And: I want to add bottles to it
