@@ -5,12 +5,9 @@ package com.visionarysoftwaresolutions.refillable;
  * and open the template in the editor.
  */
 
-import java.util.ArrayList;
 import java.util.List;
-import org.junit.AfterClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import org.junit.BeforeClass;
 
 /**
  *
@@ -22,20 +19,22 @@ public class CoolerTests {
         //Given a cooler
         Cooler cooler = new Cooler();
         //When I add bottles to the cooler
-        cooler.addBottles(5);
+        List<Bottle> toAdd = BottleManufacturer.order("Monster", 5);
+        cooler.addBottles(toAdd);
         //Then the bottles should be present
-        assertTrue(cooler.getBottles() == 5);
+        assertEquals(5, cooler.getBottles());
     }
     
     @Test
     public void testRemoveBottlesFromCooler(){
         //Given a cooler, by necessity containing some bottles
         Cooler cooler = new Cooler();
-        cooler.currentBottles = 10;
+        cooler.togglePower();
+        cooler.addBottle(new Bottle("Green Monster"));
         //When I remove bottles from the cooler
-        cooler.removeBottles(5);
+        Bottle result = cooler.removeBottle();
         //Then the bottles should not be present
-        assertTrue(cooler.getBottles() == 5);
+        assertEquals("Green Monster", result.getBeverageName());
     }
     
     @Test
@@ -43,8 +42,8 @@ public class CoolerTests {
         //Given I have a cooler containing 15 bottles
         Cooler cooler = new Cooler();
         //and there are 10 Green Monsters and 5 BlueMachines
-        List<Bottle> greenMonsters = makeGreenMonsters();
-        List<Bottle> blueMachines = makeBlueMachines();
+        List<Bottle> greenMonsters = BottleManufacturer.order("Green Monster", 10);
+        List<Bottle> blueMachines = BottleManufacturer.order("Blue Machine", 5);
         cooler.addBottles(greenMonsters);
         cooler.addBottles(blueMachines);
         //When I want to check the amount of a given drink
@@ -55,19 +54,24 @@ public class CoolerTests {
         assertEquals(currentBlueMachines, 5);
     }
     
-    private List<Bottle> makeGreenMonsters(){
-        List<Bottle> monsters = new ArrayList<Bottle>();
-        for(int i=0; i<10; i++){
-            monsters.add(new Bottle("Green Monster"));
+    @Test
+    public void testBottleManufacturing(){
+        //Given that I want to have 10 Green Monsters and 5 Rockstars
+        //BottleManufacturer vendor = new BottleManufacturer();
+        //When I ask a manufacturer to create bottles of a number and type
+        List<Bottle> ordered = BottleManufacturer.order("Green Monster", 10);
+        //Then the manufacturer should deliver the order
+        assertEquals(ordered.size(), 10);
+        for(Bottle aBottle : ordered){
+            assertEquals(aBottle.getBeverageName(), "Green Monster");
         }
-        return monsters;
     }
     
-    private List<Bottle> makeBlueMachines(){
-        List<Bottle> bluemachines = new ArrayList<Bottle>();
-        for(int i=0; i<5; i++){
-            bluemachines.add(new Bottle("Blue Machine"));
-        }
-        return bluemachines;    } 
+    @Test
+    public void testAutomaticReorder(){
+//        Cooler cooler = new Cooler();
+//        cooler.orderBottles("Green Monster", 10);
+//        cooler.orderBottles("Rockstar", 5);
+    }
 
 }

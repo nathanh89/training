@@ -6,8 +6,7 @@ import java.util.List;
 class Cooler implements PoweredDooredUnit {
     boolean powerOn = false;
     boolean doorOpen = false;
-    int currentBottles = 0;
-    List<Bottle> bottles = new ArrayList();
+    List<Bottle> bottles = new ArrayList<Bottle>();
     
     
     @Override
@@ -40,16 +39,26 @@ class Cooler implements PoweredDooredUnit {
         doorOpen = b;
     }
     
-    public void addBottles(int newBottles){
-        currentBottles += newBottles;
+    public void addBottle(Bottle toAdd){
+        bottles.add(toAdd);
     }
     
     public int getBottles(){
-        return currentBottles;
+        return bottles.size();
     }
     
-    public void removeBottles(int lessBottles){
-        currentBottles -= lessBottles;
+    public Bottle removeBottle(){
+        if(!isPowerOn()){
+            throw new RuntimeException("I'm not even on!");
+        }
+        if(!isDoorOpen()){
+            operateDoor();
+        };
+        Bottle result = this.bottles.remove(this.bottles.size()-1);
+        if(isDoorOpen()){
+            operateDoor();
+        };
+        return result;
     }
 
     void addBottles(List<Bottle> beverageType) {
@@ -58,11 +67,8 @@ class Cooler implements PoweredDooredUnit {
 
     int getBeverageCount(String beverageName) {
         int beverageCount = 0;
-        for(int i=0; i<bottles.size(); i++){
-            Bottle target = bottles.get(i); 
-            if(target.getBeverageName().equalsIgnoreCase(beverageName)){
-                beverageCount++;
-            }
+        for(Bottle target : bottles){
+            beverageCount += (target.getBeverageName().equalsIgnoreCase(beverageName)) ? 1 : 0;
         }
         return beverageCount;
     }

@@ -54,7 +54,7 @@ And: I want to remove bottles from it
 When: I remove the bottles from the cooler
 Then: The bottles should not be present
 
------------------------------------------
+-----------------------------------------DONE
 Feature: We can tell how many bottles we have of each type of beverage
 -- For example: 10 Green Monsters, 5 Blue Machines
 Given: I have a cooler containing 15 bottles
@@ -62,9 +62,17 @@ And: I know there are 10 Green Monsters and 5 Blue Machine
 When: I want to check the amount a given drink
 Then: The amount of that particular drink should be given
 
+-----------------------------------------DONE
+Feature: We want to have the ability to manufacture bottles of a given type
+Given: I want to have 10 Green Monsters and 5 Rockstars
+When: I ask a manufacturer to create bottles of a number and type
+Then: The manufacturer should give me my order
+
+NEW FEATURE: Know the value of the stock inside of the cooler
+Given: One bottle of Monster is worth 3.95, and one bottle of rockstar is worth 2.95
+When: Asked for the value of the bottles in the cooler
+Then: The correct value should be given
 
 Feature: We an calculate how full the cooler is
-
 EPIC WIN Feature: The cooler can automatically re-order when capacity falls below a threshold
-
 SUPER EPIC WIN Feature: The cooler vetoes the door being open more than 10 degrees 
