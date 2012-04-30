@@ -6,6 +6,7 @@ import java.util.List;
 class Cooler implements PoweredDooredUnit {
     boolean powerOn = false;
     boolean doorOpen = false;
+    int capacity;
     List<Bottle> bottles = new ArrayList<Bottle>();
     
     
@@ -71,6 +72,22 @@ class Cooler implements PoweredDooredUnit {
             beverageCount += (target.getBeverageName().equalsIgnoreCase(beverageName)) ? 1 : 0;
         }
         return beverageCount;
+    }
+
+    void setCapacity(int capacity) {
+        this.capacity=capacity;
+    }
+    
+    int getCapacity(){
+        return capacity;
+    }
+    
+    int getPercentFull(){
+        double percent;
+        int bottlesInCooler = bottles.size();
+        percent = (double) bottlesInCooler / (double) capacity;
+        percent *= 100;
+        return (int) percent;
     }
     
 }

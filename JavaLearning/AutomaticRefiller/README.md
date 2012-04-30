@@ -68,11 +68,25 @@ Given: I want to have 10 Green Monsters and 5 Rockstars
 When: I ask a manufacturer to create bottles of a number and type
 Then: The manufacturer should give me my order
 
+-----------------------------------------DONE
+Feature:We want to be able to set and get the capacity in bottles for a cooler
+Given: I have cooler
+When: I want to specify it's capacity
+Then: I should be able to do so, and confirm it is correct
+
+-----------------------------------------DONE
+Feature: We an calculate how full the cooler is
+Given: A cooler with a specified capacity and some stock
+When: I want to know how full the cooler is
+Then: I should be able to get the percentage of capacity used
+
+
 NEW FEATURE: Know the value of the stock inside of the cooler
 Given: One bottle of Monster is worth 3.95, and one bottle of rockstar is worth 2.95
 When: Asked for the value of the bottles in the cooler
 Then: The correct value should be given
 
-Feature: We an calculate how full the cooler is
+refactor to getbeveragecount*bytype*
+
 EPIC WIN Feature: The cooler can automatically re-order when capacity falls below a threshold
 SUPER EPIC WIN Feature: The cooler vetoes the door being open more than 10 degrees 

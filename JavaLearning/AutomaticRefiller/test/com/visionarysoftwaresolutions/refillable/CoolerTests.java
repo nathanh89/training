@@ -68,10 +68,37 @@ public class CoolerTests {
     }
     
     @Test
-    public void testAutomaticReorder(){
+    public void testCoolerCapacity(){
+        //Given a cooler
+        Cooler cooler = new Cooler();
+        //When I want to specify its capacity
+        cooler.setCapacity(100);
+        //Then the capacity should be set
+        assertEquals(cooler.getCapacity(), 100);
+    }
+    
+    @Test
+    public void testCheckHowFullIsCoolerPercent(){
+        //Given a cooler with a specified capacity, and by necessity some stock
+        Cooler cooler = new Cooler();
+        cooler.setCapacity(38);
+        List<Bottle> genericWater = BottleManufacturer.order("Generic Water", 13);
+        List<Bottle> dasani = BottleManufacturer.order("Dasani", 5);
+        cooler.addBottles(genericWater);
+        cooler.addBottles(dasani);
+        //When I ask how full the cooler is
+        //Then it should return the percent of capacity being used
+        assertEquals(47, cooler.getPercentFull());
+         
+    }
+    
+//    @Test
+//    public void testAutomaticReorder(){
 //        Cooler cooler = new Cooler();
 //        cooler.orderBottles("Green Monster", 10);
 //        cooler.orderBottles("Rockstar", 5);
+//        }
     }
+    
+    
 
-}
