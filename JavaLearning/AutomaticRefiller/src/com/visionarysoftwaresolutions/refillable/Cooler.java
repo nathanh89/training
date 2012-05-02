@@ -128,13 +128,13 @@ class Cooler implements PoweredDooredUnit {
         return stockValueByType;
     }
 
-    void orderBottlesFromManufacturer(String beverageType, int beverageQuantity) {
+    void orderBottlesFromManufacturerSingleType(String beverageType, int beverageQuantity) {
         int postOrderStock;
         int orderSize;
         int currentStock;
         orderSize = beverageQuantity;
         currentStock = bottles.size();
-        List<Bottle> newOrder = BottleManufacturer.order(beverageType, beverageQuantity);
+        List<Bottle> newOrder = BottleManufacturer.orderSingleType(beverageType, beverageQuantity);
         postOrderStock = currentStock + beverageQuantity;
         if(postOrderStock > capacity){
             throw new RuntimeException("That's more bottles than the cooler can hold!");
@@ -142,6 +142,10 @@ class Cooler implements PoweredDooredUnit {
         else
         bottles.addAll(newOrder);
      }
+
+    void orderBottlesFromManufacturerMultipleTypes(String water) {
+        
+    }
 }
     
 

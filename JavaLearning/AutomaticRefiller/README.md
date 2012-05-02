@@ -113,11 +113,16 @@ And: some stock
 When: Placing an order for more bottles that will cause the cooler to be over capacity
 Then: The order should be rejected
 
------------------------------------------
-Feature:The cooler should have the ability to order multiple beverage types in a single order
-Given: An empty cooler
-When: I order multiple beverages in one order
-Then: The order should be delivered.
+-----------------------------------------DONE
+Feature: We need to be able to create order objects for placing an order with the manufacturer
+Given:I need to place an order
+When:I specify what is needed on an order
+Then: The order contains what I needed
+
+-----------------------------------------DONE
+Feature: Orders should be able to contain multiple beverage requests
+When: I place an order for 5 mountain dews and 10 blue machines
+Then: The order should contain 5 mountain dews and 10 blue machines
 
 -----------------------------------------
 EPIC WIN Feature: The cooler can automatically re-order to given stock levels for each beverage type when capacity falls below a threshold

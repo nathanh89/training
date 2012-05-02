@@ -1,8 +1,6 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.visionarysoftwaresolutions.refillable;
+
+import java.util.Objects;
 
 /**
  *
@@ -28,4 +26,21 @@ public class Bottle {
         return beveragePrice;
     }
     
+    @Override
+    public boolean equals(Object another){
+        if (!(another instanceof Bottle)){
+            return false;
+        }
+        Bottle toCompare = (Bottle) another;
+        return getBeverageName().equalsIgnoreCase(toCompare.getBeverageName()) &&
+               getBeverageValue() == toCompare.getBeverageValue();
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 59 * hash + Objects.hashCode(this.beverageName);
+        hash = 59 * hash + (int) (Double.doubleToLongBits(this.beveragePrice) ^ (Double.doubleToLongBits(this.beveragePrice) >>> 32));
+        return hash;
+    }
 }
