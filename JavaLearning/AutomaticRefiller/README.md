@@ -140,6 +140,11 @@ Feature: Orders should be able to contain multiple beverage requests
 When: I place an order for 5 mountain dews and 10 blue machines
 Then: The order should contain 5 mountain dews and 10 blue machines
 
+-----------------------------------------DONE
+Feature: BottleManufacturers should be able to fulfill orders
+When: I give a Bottle Manufacturer an order for 5 mountain dews and 10 blue machines
+Then: It should give me back 15 bottles, 5 of which are mountain dew and 10 of which are blue machine
+
 -----------------------------------------
 EPIC WIN Feature: The cooler can automatically re-order to given stock levels for each beverage type when capacity falls below a threshold
 Given: A cooler with some stock

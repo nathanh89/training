@@ -6,18 +6,32 @@ import java.util.*;
  *
  * @author nathan
  */
-public class Order {
-    private HashMap<Bottle,Integer> items = new LinkedHashMap<Bottle, Integer>();
+public class Order implements Iterable<OrderContainer> {
+    private Collection<OrderContainer> items;
     
-    public void addBottles(Bottle beverage, int desired) {
-        int previousEntry = 0;
-        if(items.containsKey(beverage)){
-            previousEntry = items.get(beverage);
+    public Order(String desiredBeverage, int desiredQuantity){
+    	items = new ArrayList<OrderContainer>();
+    	addContainer(desiredBeverage, desiredQuantity);
+    }
+    
+    public void addContainer(String desiredBeverage, int desiredQuantity) {
+		items.add(new OrderContainer(desiredBeverage, desiredQuantity));
+	}
+
+	int getCountForName(String name) {
+        return countItems(name);
+	}
+	
+	private int countItems(String name){
+		int count = 0;
+        for(OrderContainer aContainer : items){
+        	count += (aContainer.getName().equalsIgnoreCase(name)) ? aContainer.getNumber() : 0;
         }
-        items.put(beverage, desired+previousEntry);
-    }       
-        
-   int getBeverageCountByType(String beverage) {
-        return items.get(new Bottle(beverage));
-    }   
+        return count;
+	}
+
+	@Override
+	public Iterator<OrderContainer> iterator() {
+		return items.iterator();
+	}
 }

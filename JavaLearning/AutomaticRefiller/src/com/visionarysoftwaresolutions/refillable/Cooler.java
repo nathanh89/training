@@ -48,14 +48,14 @@ class Cooler implements PoweredDooredUnit {
         return bottles.size();
     }
     
-    public Bottle removeBottle(){
+    public Orderable removeBottle(){
         if(!isPowerOn()){
             throw new RuntimeException("I'm not even on!");
         }
         if(!isDoorOpen()){
             operateDoor();
         };
-        Bottle result = this.bottles.remove(this.bottles.size()-1);
+        Orderable result = this.bottles.remove(this.bottles.size()-1);
         if(isDoorOpen()){
             operateDoor();
         };
@@ -68,8 +68,8 @@ class Cooler implements PoweredDooredUnit {
 
     public int getBeverageCountByType(String beverageName) {
         int beverageCount = 0;
-        for(Bottle target : bottles){
-            beverageCount += (target.getBeverageName().equalsIgnoreCase(beverageName)) ? 1 : 0;
+        for(Orderable target : bottles){
+            beverageCount += (target.getName().equalsIgnoreCase(beverageName)) ? 1 : 0;
         }
         return beverageCount;
     }
@@ -92,15 +92,15 @@ class Cooler implements PoweredDooredUnit {
     
     public void setBeveragePriceByType(String beverageName, double newPrice){
         for(int i=0; i<bottles.size(); i++){
-            if(beverageName == bottles.get(i).getBeverageName()){
-                bottles.get(i).beveragePrice = newPrice;
+            if(beverageName == bottles.get(i).getName()){
+                bottles.get(i).price = newPrice;
             }
         }
     }
     
     public double getBeveragePriceByType(String beverageName){
         for(int i=0; i<bottles.size(); i++){
-            if(beverageName == bottles.get(i).getBeverageName()){
+            if(beverageName == bottles.get(i).getName()){
                 double price = bottles.get(i).getBeverageValue();
                 return price;
             }
@@ -119,27 +119,28 @@ class Cooler implements PoweredDooredUnit {
     double getStockValueByType(String beverageName) {
         double stockValueByType = 0.00;
         for(int i=0; i<bottles.size(); i++){
-            if(beverageName == bottles.get(i).getBeverageName()){
+            if(beverageName == bottles.get(i).getName()){
                 stockValueByType += bottles.get(i).getBeverageValue();
             }
         }
         return stockValueByType;
     }
 
-    void orderBottlesFromManufacturerSingleType(String beverageType, int beverageQuantity) {
-        int postOrderStock;
-        int orderSize;
-        int currentStock;
-        orderSize = beverageQuantity;
-        currentStock = bottles.size();
-        List<Bottle> newOrder = BottleManufacturer.orderSingleType(beverageType, beverageQuantity);
-        postOrderStock = currentStock + beverageQuantity;
-        if(postOrderStock > capacity){
+    public void order(BottleManufacturer source, String beverageType, int beverageQuantity) {
+    	// when we try to order more, first check that we're not trying to order more than we can hold
+    	checkNotMoreThanCapacity(getCapacity() + beverageQuantity);
+    	// then we want to place the order
+    	Order newOrder = new Order(beverageType, beverageQuantity);
+    	List<Bottle> result = source.place(newOrder);
+    	// add the ordered bottles to our storage
+        bottles.addAll(result);
+     }
+
+	private void checkNotMoreThanCapacity(int desired) throws RuntimeException {
+		if(desired > capacity){
             throw new RuntimeException("That's more bottles than the cooler can hold!");
         }
-        else
-        bottles.addAll(newOrder);
-     }
+	}
 }
     
 

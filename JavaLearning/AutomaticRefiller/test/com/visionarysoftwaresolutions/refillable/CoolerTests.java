@@ -11,6 +11,7 @@ import static org.junit.Assert.*;
  */
 public class CoolerTests {
 	Cooler cooler = new Cooler();
+	BottleManufacturer collaborator = new BottleManufacturer("tester");
 	
 	@Before
 	public void setup(){
@@ -20,7 +21,7 @@ public class CoolerTests {
     @Test
     public void testAddBottlesToCooler(){
         // When I add bottles to the cooler
-        List<Bottle> toAdd = BottleManufacturer.orderSingleType("Monster", 5);
+        List<Bottle> toAdd = collaborator.place(new Order("Monster", 5));
         cooler.addBottles(toAdd);
         // Then the bottles should be present
         assertEquals(5, cooler.getBottles());
@@ -31,16 +32,16 @@ public class CoolerTests {
         // Given I have a cooler with a bottle in it
         cooler.addBottle(new Bottle("Green Monster"));
         // When I remove that bottle from the cooler
-        Bottle result = cooler.removeBottle();
+        Orderable result = cooler.removeBottle();
         // Then the bottle should not be present
-        assertEquals("Green Monster", result.getBeverageName());
+        assertEquals("Green Monster", result.getName());
     }
     
     @Test
     public void testCountBottlesByType(){
         // Given I want to order 10 Green Monsters and 5 Blue Machines
-        List<Bottle> greenMonsters = BottleManufacturer.orderSingleType("Green Monster", 10);
-        List<Bottle> blueMachines = BottleManufacturer.orderSingleType("Blue Machine", 5);
+        List<Bottle> greenMonsters = collaborator.place(new Order("Green Monster", 10));
+        List<Bottle> blueMachines = collaborator.place(new Order("Blue Machine", 5));
         // And I add them to the cooler
         cooler.addBottles(greenMonsters);
         cooler.addBottles(blueMachines);
@@ -55,11 +56,11 @@ public class CoolerTests {
     @Test
     public void testBottleManufacturing(){
         // When I ask a manufacturer to create bottles of a number and type
-        List<Bottle> ordered = BottleManufacturer.orderSingleType("Green Monster", 10);
+        List<Bottle> ordered = collaborator.place(new Order("Green Monster", 10));
         // Then the manufacturer should deliver the order
         assertEquals(ordered.size(), 10);
-        for(Bottle aBottle : ordered){
-            assertEquals(aBottle.getBeverageName(), "Green Monster");
+        for(Orderable aBottle : ordered){
+            assertEquals(aBottle.getName(), "Green Monster");
         }
     }
     
@@ -76,8 +77,8 @@ public class CoolerTests {
         // Given a cooler with a specified capacity
     	cooler.setCapacity(38);
         // And by necessity some stock
-        List<Bottle> genericWater = BottleManufacturer.orderSingleType("Generic Water", 13);
-        List<Bottle> dasani = BottleManufacturer.orderSingleType("Dasani", 5);
+        List<Bottle> genericWater = collaborator.place(new Order("Generic Water", 13));
+        List<Bottle> dasani = collaborator.place(new Order("Dasani", 5));
         cooler.addBottles(genericWater);
         cooler.addBottles(dasani);
         //When I ask how full the cooler is
@@ -89,8 +90,8 @@ public class CoolerTests {
     @Test
     public void testSetGetBeveragePriceByType(){
         //Given a cooler with some stock
-        List<Bottle> mountainDew = BottleManufacturer.orderSingleType("Mountain Dew", 20);
-        List<Bottle> melloYello = BottleManufacturer.orderSingleType("Mello Yello", 20);
+        List<Bottle> mountainDew = collaborator.place(new Order("Mountain Dew", 20));
+        List<Bottle> melloYello = collaborator.place(new Order("Mello Yello", 20));
         cooler.addBottles(mountainDew);
         cooler.addBottles(melloYello);
         //When I want to set the the price for the respective bottles
@@ -104,8 +105,8 @@ public class CoolerTests {
     @Test
     public void testGetTotalStockValue(){
         //And it has Monsters and Rockstars, worth 3.95 and 2.95, respectively
-        List<Bottle> monsters = BottleManufacturer.orderSingleType("Monster", 10);
-        List<Bottle> rockstars = BottleManufacturer.orderSingleType("Rockstar", 10);
+        List<Bottle> monsters = collaborator.place(new Order("Monster", 10));
+        List<Bottle> rockstars = collaborator.place(new Order("Rockstar", 10));
         cooler.addBottles(monsters);
         cooler.addBottles(rockstars);
         cooler.setBeveragePriceByType("Monster", 3.95);
@@ -119,8 +120,8 @@ public class CoolerTests {
     @Test
     public void testGetStockValueByType(){
         //Given a cooler with some stock
-        List<Bottle> neurogasm = BottleManufacturer.orderSingleType("Neurogasm", 69);
-        List<Bottle> gatorade = BottleManufacturer.orderSingleType("Gatorade", 100);
+        List<Bottle> neurogasm = collaborator.place(new Order("Neurogasm", 69));
+        List<Bottle> gatorade =  collaborator.place(new Order("Gatorade", 100));
         cooler.addBottles(neurogasm);
         cooler.addBottles(gatorade);
         //And that stock has a set retail price
@@ -139,8 +140,8 @@ public class CoolerTests {
     public void testOrderingFromCoolerSingleType(){
         cooler.setCapacity(50);
         //When placing an order directly from the cooler
-        cooler.orderBottlesFromManufacturerSingleType("Arizona Iced Tea", 20);
-        cooler.orderBottlesFromManufacturerSingleType("Brisk Lemonade", 20);
+        cooler.order(collaborator, "Arizona Iced Tea", 20);
+        cooler.order(collaborator, "Brisk Lemonade", 20);
         //Then the order should be delivered
         assertEquals(20, cooler.getBeverageCountByType("Arizona Iced Tea"));
         assertEquals(20, cooler.getBeverageCountByType("Brisk Lemonade"));
@@ -169,7 +170,7 @@ public class CoolerTests {
         //cooler.orderBottlesFromManufacturer("Rooster Booster", 20);
         //cooler.orderBottlesFromManufacturer("Cock Master", 20);
         //}
-    }
+}
     
     
 
