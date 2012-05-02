@@ -1,9 +1,7 @@
 package com.visionarysoftwaresolutions.refillable;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Locale;
 
 class Cooler implements PoweredDooredUnit {
     boolean powerOn = false;
@@ -142,10 +140,6 @@ class Cooler implements PoweredDooredUnit {
         else
         bottles.addAll(newOrder);
      }
-
-    void orderBottlesFromManufacturerMultipleTypes(String water) {
-        
-    }
 }
     
 
