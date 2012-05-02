@@ -3,6 +3,7 @@ package com.visionarysoftwaresolutions.refillable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Locale;
 
 class Cooler implements PoweredDooredUnit {
     boolean powerOn = false;
@@ -126,6 +127,11 @@ class Cooler implements PoweredDooredUnit {
         }
         return stockValueByType;
     }
+
+    void orderBottlesFromManufacturer(String beverageType, int beverageQuantity) {
+        List<Bottle> newOrder = BottleManufacturer.order(beverageType, beverageQuantity);
+        bottles.addAll(newOrder);
+     }
 }
     
 

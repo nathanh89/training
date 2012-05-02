@@ -100,10 +100,18 @@ Given: A cooler with some stock
 When: Asked for the stock value of a particular beverage type
 Then: The correct amount should be given
 
+-----------------------------------------DONE
+Feature: Simplify the ordering process by allowing the cooler to place orders to the manufacturer directly
+Given: An empty cooler
+When: Placing an order for bottles directly from the cooler
+Then: The bottles will be in the cooler
+
 -----------------------------------------
-EPIC WIN Feature: The cooler can automatically re-order when capacity falls below a threshold
+EPIC WIN Feature: The cooler can automatically re-order to given stock levels for each beverage type when capacity falls below a threshold
 Given: A cooler with some stock
-When: The cooler falls below a set capacity threshold
+When: The cooler falls below a set capacity threshold for any particular beverage type
 Then: A new order is placed to add bottles to the cooler
 
 SUPER EPIC WIN Feature: The cooler vetoes the door being open more than 10 degrees 
+
+Make it so when finding price by type, the loop stops when the first element meeting the condition of bevarage name is hit and returns price.

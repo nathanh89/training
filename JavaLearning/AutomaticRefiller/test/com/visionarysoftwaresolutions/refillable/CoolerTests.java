@@ -145,13 +145,22 @@ public class CoolerTests {
          
     }
     
+    @Test
+    public void testOrderingFromCooler(){
+        Cooler cooler = new Cooler();
+        cooler.orderBottlesFromManufacturer("Arizona Iced Tea", 20);
+        cooler.orderBottlesFromManufacturer("Brisk Lemonade", 20);
+        assertEquals(20, cooler.getBeverageCountByType("Arizona Iced Tea"));
+        assertEquals(20, cooler.getBeverageCountByType("Brisk Lemonade"));
+    }
     
-//    @Test
-//    public void testAutomaticReorder(){
-//        Cooler cooler = new Cooler();
-//        cooler.orderBottles("Green Monster", 10);
-//        cooler.orderBottles("Rockstar", 5);
-//        }
+        //@Test    
+        //public void testAutomaticReorder(){
+        //Cooler cooler = new Cooler();
+        //cooler.orderBottles("Rooster Booster", 10);
+        //cooler.orderBottles("Cock Master", 5);
+        //cooler.addBottles("")
+        //}
     }
     
     
