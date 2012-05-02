@@ -12,12 +12,28 @@ As a business owner who wants to keep my things cold, I require a cooler.
 Sometimes I would like to turn the cooler on, other times I would like to turn it off.
 
 To-Do List / BDD Record
-
------------------------------------------DONE
-Given: I have a cooler
-And: It is off
-When: I want toggle the power state
-Then: The cooler should be on
+<table>
+	<thead>
+		<tr>
+		  <th>Feature</th>
+		  <th>Story</th>
+		  <th>Status</th>
+		</tr>
+	</thead>
+	<tbody>
+		<td>Toggle Power</td>
+		<td>
+		  <ul>
+		     <li> Given: I have a cooler </li>
+		     <li> And: It is off </li>
+		     <li> When: I want toggle the power state </li>
+		     <li> Then: The cooler should be on </li>
+		</td>
+		<td>DONE</td>
+	</tbody>
+	<tfoot>
+	</tfoot>
+</table>
 
 -----------------------------------------DONE
 Feature: We can turn the cooler off
