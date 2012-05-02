@@ -147,19 +147,39 @@ public class CoolerTests {
     
     @Test
     public void testOrderingFromCooler(){
+        //Given an empty cooler
         Cooler cooler = new Cooler();
+        cooler.setCapacity(50);
+        //When placing an order directly from the cooler
         cooler.orderBottlesFromManufacturer("Arizona Iced Tea", 20);
         cooler.orderBottlesFromManufacturer("Brisk Lemonade", 20);
+        //Then the order should be delivered
         assertEquals(20, cooler.getBeverageCountByType("Arizona Iced Tea"));
         assertEquals(20, cooler.getBeverageCountByType("Brisk Lemonade"));
     }
     
+    /*@Test
+    public void testOverCapacityOrderVeto(){
+        //Given a cooler with a set capacity
+        Cooler cooler = new Cooler();
+        cooler.setCapacity(100);
+        //And some stock
+        cooler.orderBottlesFromManufacturer("Powerade", 30);
+        cooler.orderBottlesFromManufacturer("Life Water", 40);
+        //When placing an order that will cause the cooler to be over capacity
+        cooler.orderBottlesFromManufacturer("Powerade", 50);
+        cooler.orderBottlesFromManufacturer("Life Water", 50);
+        //Then the cooler should veto the order
+        assertEquals(30, cooler.getBeverageCountByType("Powerade"));
+        assertEquals(40, cooler.getBeverageCountByType("Life Water"));
+    }*/
+    
         //@Test    
         //public void testAutomaticReorder(){
         //Cooler cooler = new Cooler();
-        //cooler.orderBottles("Rooster Booster", 10);
-        //cooler.orderBottles("Cock Master", 5);
-        //cooler.addBottles("")
+        //cooler.setCapacity(50);
+        //cooler.orderBottlesFromManufacturer("Rooster Booster", 20);
+        //cooler.orderBottlesFromManufacturer("Cock Master", 20);
         //}
     }
     

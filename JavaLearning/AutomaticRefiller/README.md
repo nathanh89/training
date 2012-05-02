@@ -106,6 +106,19 @@ Given: An empty cooler
 When: Placing an order for bottles directly from the cooler
 Then: The bottles will be in the cooler
 
+-----------------------------------------Needs refacor, in a mintue
+Feature: The cooler should not be able to order enough bottles to have more stock than capacity
+Given: A cooler with a set capacity
+And: some stock
+When: Placing an order for more bottles that will cause the cooler to be over capacity
+Then: The order should be rejected
+
+-----------------------------------------
+Feature:The cooler should have the ability to order multiple beverage types in a single order
+Given: An empty cooler
+When: I order multiple beverages in one order
+Then: The order should be delivered.
+
 -----------------------------------------
 EPIC WIN Feature: The cooler can automatically re-order to given stock levels for each beverage type when capacity falls below a threshold
 Given: A cooler with some stock
