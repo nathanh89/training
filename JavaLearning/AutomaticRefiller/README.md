@@ -21,133 +21,137 @@ To-Do List / BDD Record
 		</tr>
 	</thead>
 	<tbody>
-		<td>Toggle Power</td>
-		<td>
-		  <ul>
-		     <li> Given: I have a cooler </li>
-		     <li> And: It is off </li>
-		     <li> When: I want toggle the power state </li>
-		     <li> Then: The cooler should be on </li>
-		</td>
-		<td>DONE</td>
+		<tr>
+		  <td>Toggle Power</td>
+		  <td>
+		    <ul>
+		       <li> Given: I have a cooler </li>
+		       <li> And: It is off </li>
+		       <li> When: I want toggle the power state </li>
+		       <li> Then: The cooler should be on </li>
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Operate Door</td>
+		  <td>
+		    <ul>
+		       <li> Given: I have a cooler </li>
+		       <li> And: The door is closed </li>
+		       <li> When: I want to open the door </li>
+		       <li> Then: The door should be open </li>
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Add Bottles</td>
+		  <td>
+		    <ul>
+		       <li> Given: I have a cooler </li>
+		       <li> And: I want to manually add bottles to it </li>
+		       <li> When: I add the bottles to the cooler </li>
+		       <li> Then: The bottles should be present </li>
+		       <li> Example: I have a cooler with 10 Monsters. When I add 10 more, there should be 20 Monsters total.
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Remove Bottles</td>
+		  <td>
+		    <ul>
+		       <li> Given: I have a cooler stocked with bottles</li>
+		       <li> And: I want to manually remove bottles from it </li>
+		       <li> When: I remove the bottles from the cooler </li>
+		       <li> Then: The removed bottles should not be present </li>
+		       <li> Example: I have a cooler with 10 Monsters and I remove 3, only 7 should still be present </li>
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Get Total Bottle Count</td>
+		  <td>
+		    <ul>
+		       <li> Given: I have a cooler stocked with bottles</li>
+		       <li> And: I want to know how many bottles are in the cooler </li>
+		       <li> When: I ask for the total number of bottles </li>
+		       <li> Then: The correct amount should be given </li>
+		       <li> Example: I have a cooler with 10 Monsters and 15 Rockstars, when I ask for the total bottle count, I should get 25 </li>
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Get Bottle Count by Beverage</td>
+		  <td>
+		    <ul>
+		       <li> Given: I have a cooler stocked with bottles</li>
+		       <li> And: I want to know how many bottles are in the cooler for a specific beverage</li>
+		       <li> When: I ask how many bottles there are of that particular beverage in the cooler</li>
+		       <li> Then: The correct amount should be given</li>
+		       <li> Example: I have a cooler with 10 Monsters and 15 Rockstars. If I ask how many Rockstars there are, I should get 15
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Order Bottles for Cooler Manually</td>
+		  <td>
+		    <ul>
+		       <li> Given: I have a cooler</li>
+		       <li> And: I want to order bottles to be added to the cooler's stock</li>
+		       <li> When: I place an order for bottles </li>
+		       <li> Then: The bottles should be added to the cooler's stock</li>
+		       <li> Example: I have a cooler with 10 Monsters and 15 Rockstars. After I order 10 more Monsters and 15 more Rockstars, I should have a total bottle count of 50, consisting of 20 Monsters and 30 Rockstars
+		  </td>
+		  <td>Implemented, test needs refactoring for clarity</td>
+		</tr>
+		<tr>
+		  <td>Get the Cooler's Capacity</td>
+		  <td>
+		    <ul>
+		       <li> Given: I have a new cooler</li>
+		       <li> And: I want to check what it's capacity for holding bottles is</li>
+		       <li> When: I ask how many bottles the cooler can hold</li>
+		       <li> Then: It should return the correct physical capacity of bottles it can hold</li>
+		       <li> Example: I have a new cooler that should hold 100 bottles. Upon asking it for capacity, I should confirm that it can indeed hold 100 bottles</li>
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Set the Cooler's Custom Capacity (Desired Maximum Stock)</td>
+		  <td>
+		    <ul>
+		       <li> Given: I have a cooler</li>
+		       <li> And: I don't want to use it's full physical capacity for stock</li>
+		       <li> When: I define a custom capacity for the cooler</li>
+		       <li> Then: I should be able to confirm the capacity is set correctly</li>
+		       <li> Example: I have a cooler with a maximum physical capacity of 100 bottles. However, I want to keep my stock level at or below 50. After I set the custom capacity to 50, when I ask the cooler how many bottles it is able to hold, rather than returning what it can physically hold, 100, it should tell me it can only hold 50. </li>
+		  </td>
+		  <td>Implemented, need to check for possible refactoring after implementing a cooler constructor for potentially improved clarity</td>
+		</tr>
+		<tr>
+		  <td>Veto Invalid Custom Capacity</td>
+		  <td>
+		    <ul>
+		       <li> Given: I have a cooler</li>
+		       <li> And: I don't want to use it's full physical capacity for stock</li>
+		       <li> When: I define a custom capacity for the cooler that is greater than what it can physically hold</li>
+		       <li> Then: I should be unable to the set the capacity to that level</li>
+		       <li> Example: I have a cooler that can physically hold 100 bottles. If I try to set the custom capacity to 150 bottles, the cooler should spit in my face. Figuratively. It should reject the capacity setting.
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Create a Cooler with Logical Predefined Characteristics</td>
+		  <td>
+		    <ul>
+		       <li> Given: I am a business owner, and I want to have a cooler</li>
+		       <li> When: I acquire the cooler</li>
+		       <li> Then: That cooler should come with certain predefined characteristics, specifically physical capacity, and the power state should be off initially, as well as the door closed. (Just like the state it would be in immediately after delivery from a potential cooler manufacturer)</li>
+		  </td>
+		  <td>Not Yet Implemented</td>
+		</tr>
 	</tbody>
-	<tbody>
-		<td>Operate Door</td>
-		<td>
-		  <ul>
-		     <li> Given: I have a cooler </li>
-		     <li> And: The door is closed </li>
-		     <li> When: I want to open the door </li>
-		     <li> Then: The door should be open </li>
-		</td>
-		<td>DONE</td>
-	</tbody>
-	<tbody>
-		<td>Add Bottles</td>
-		<td>
-		  <ul>
-		     <li> Given: I have a cooler </li>
-		     <li> And: I want to manually add bottles to it </li>
-		     <li> When: I add the bottles to the cooler </li>
-		     <li> Then: The bottles should be present </li>
-		     <li> Example: I have a cooler with 10 Monsters. When I add 10 more, there should be 20 Monsters total.
-		</td>
-		<td>DONE</td>
-	</tbody>
-	<tbody>
-		<td>Remove Bottles</td>
-		<td>
-		  <ul>
-		     <li> Given: I have a cooler stocked with bottles</li>
-		     <li> And: I want to manually remove bottles from it </li>
-		     <li> When: I remove the bottles from the cooler </li>
-		     <li> Then: The removed bottles should not be present </li>
-		     <li> Example: I have a cooler with 10 Monsters and I remove 3, only 7 should still be present </li>
-		</td>
-		<td>DONE</td>
-	</tbody>
-	<tbody>
-		<td>Get Total Bottle Count</td>
-		<td>
-		  <ul>
-		     <li> Given: I have a cooler stocked with bottles</li>
-		     <li> And: I want to know how many bottles are in the cooler </li>
-		     <li> When: I ask for the total number of bottles </li>
-		     <li> Then: The correct amount should be given </li>
-		     <li> Example: I have a cooler with 10 Monsters and 15 Rockstars, when I ask for the total bottle count, I should get 25 </li>
-		</td>
-		<td>DONE</td>
-	</tbody>
-	<tbody>
-		<td>Get Bottle Count by Beverage</td>
-		<td>
-		  <ul>
-		     <li> Given: I have a cooler stocked with bottles</li>
-		     <li> And: I want to know how many bottles are in the cooler for a specific beverage</li>
-		     <li> When: I ask how many bottles there are of that particular beverage in the cooler</li>
-		     <li> Then: The correct amount should be given</li>
-		     <li> Example: I have a cooler with 10 Monsters and 15 Rockstars. If I ask how many Rockstars there are, I should get 15
-		</td>
-		<td>DONE</td>
-	</tbody>
-	<tbody>
-		<td>Order Bottles for Cooler Manually</td>
-		<td>
-		  <ul>
-		     <li> Given: I have a cooler</li>
-		     <li> And: I want to order bottles to be added to the cooler's stock</li>
-		     <li> When: I place an order for bottles </li>
-		     <li> Then: The bottles should be added to the cooler's stock</li>
-		     <li> Example: I have a cooler with 10 Monsters and 15 Rockstars. After I order 10 more Monsters and 15 more Rockstars, I should have a total bottle count of 50, consisting of 20 Monsters and 30 Rockstars
-		</td>
-		<td>Implemented, test needs refactoring for clarity</td>
-	</tbody>
-	<tbody>
-		<td>Get the Cooler's Capacity</td>
-		<td>
-		  <ul>
-		     <li> Given: I have a new cooler</li>
-		     <li> And: I want to check what it's capacity for holding bottles is</li>
-		     <li> When: I ask how many bottles the cooler can hold</li>
-		     <li> Then: It should return the correct physical capacity of bottles it can hold</li>
-		     <li> Example: I have a new cooler that should hold 100 bottles. Upon asking it for capacity, I should confirm that it can indeed hold 100 bottles</li>
-		</td>
-		<td>DONE</td>
-	</tbody>
-	<tbody>
-		<td>Set the Cooler's Custom Capacity (Desired Maximum Stock)</td>
-		<td>
-		  <ul>
-		     <li> Given: I have a cooler</li>
-		     <li> And: I don't want to use it's full physical capacity for stock</li>
-		     <li> When: I define a custom capacity for the cooler</li>
-		     <li> Then: I should be able to confirm the capacity is set correctly</li>
-		     <li> Example: I have a cooler with a maximum physical capacity of 100 bottles. However, I want to keep my stock level at or below 50. After I set the custom capacity to 50, when I ask the cooler how many bottles it is able to hold, rather than returning what it can physically hold, 100, it should tell me it can only hold 50. </li>
-		</td>
-		<td>Implemented, need to check for possible refactoring after implementing a cooler constructor for potentially improved clarity</td>
-	</tbody>
-	<tbody>
-		<td>Veto Invalid Custom Capacity</td>
-		<td>
-		  <ul>
-		     <li> Given: I have a cooler</li>
-		     <li> And: I don't want to use it's full physical capacity for stock</li>
-		     <li> When: I define a custom capacity for the cooler that is greater than what it can physically hold</li>
-		     <li> Then: I should be unable to the set the capacity to that level</li>
-		     <li> Example: I have a cooler that can physically hold 100 bottles. If I try to set the custom capacity to 150 bottles, the cooler should spit in my face. Figuratively. It should reject the capacity setting.
-		</td>
-		<td>DONE</td>
-	</tbody>
-	<tbody>
-		<td>Create a Cooler with Logical Predefined Characteristics</td>
-		<td>
-		  <ul>
-		     <li> Given: I am a business owner, and I want to have a cooler</li>
-		     <li> When: I acquire the cooler</li>
-		     <li> Then: That cooler should come with certain predefined characteristics, specifically physical capacity, and the power state should be off initially, as well as the door closed. (Just like the state it would be in immediately after delivery from a potential cooler manufacturer)</li>
-		</td>
-		<td>Not Yet Implemented</td>
-	</tbody>
+	<tfoot>
+	</tfoot>
 </table>
 
 -----------------------------------------DONE
