@@ -97,11 +97,11 @@ To-Do List / BDD Record
 		    <ul>
 		       <li> Given: I have a cooler</li>
 		       <li> And: I want to order bottles to be added to the cooler's stock</li>
-		       <li> When: I place an order for bottles </li>
+		       <li> When: I place an order for those bottles</li>
 		       <li> Then: The bottles should be added to the cooler's stock</li>
 		       <li> Example: I have a cooler with 10 Monsters and 15 Rockstars. After I order 10 more Monsters and 15 more Rockstars, I should have a total bottle count of 50, consisting of 20 Monsters and 30 Rockstars
 		  </td>
-		  <td>Implemented, test needs refactoring for clarity</td>
+		  <td>Implemented, test needs refactoring for clarity. Entire method will need refactoring to placeOrder eventually, and will pass in an order object, rather than the parameters to create an order object</td>
 		</tr>
 		<tr>
 		  <td>Get the Cooler's Capacity</td>
@@ -116,7 +116,7 @@ To-Do List / BDD Record
 		  <td>DONE</td>
 		</tr>
 		<tr>
-		  <td>Set the Cooler's Custom Capacity (Desired Maximum Stock)</td>
+		  <td>Set the Cooler's Custom Upper Capacity (Desired Maximum Stock)</td>
 		  <td>
 		    <ul>
 		       <li> Given: I have a cooler</li>
@@ -125,7 +125,7 @@ To-Do List / BDD Record
 		       <li> Then: I should be able to confirm the capacity is set correctly</li>
 		       <li> Example: I have a cooler with a maximum physical capacity of 100 bottles. However, I want to keep my stock level at or below 50. After I set the custom capacity to 50, when I ask the cooler how many bottles it is able to hold, rather than returning what it can physically hold, 100, it should tell me it can only hold 50. </li>
 		  </td>
-		  <td>Implemented, need to check for possible refactoring after implementing a cooler constructor for potentially improved clarity</td>
+		  <td>Implemented, needs refactoring in the method name to distinguish it from the upcoming minimum capacity threshold, and to more accurately reflect what it does (Setting Maximum Desired Stock, which is different than capacity)</td>
 		</tr>
 		<tr>
 		  <td>Veto Invalid Custom Capacity</td>
@@ -149,88 +149,158 @@ To-Do List / BDD Record
 		  </td>
 		  <td>Not Yet Implemented</td>
 		</tr>
+		<tr>
+		  <td>Calculate how full the cooler is, %</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler with some stock</li>
+		       <li> When: I ask how full the cooler is</li>
+		       <li> Then: I should get the correct % of capacity being used by bottles</li>
+		       <li> Example: If I have a cooler with a physical capacity of 37 bottles, and I have 10 Monsters and 15 Rockstars in the cooler, when I ask how full the cooler is, I should get 68%</li>
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Set Beverage Price at Cooler</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler with some stock</li>
+		       <li> When: I want to set the price for a beverage</li>
+		       <li> Then: That price should be applied to all beverages of that type</li>
+		       <li> Example: If I have a cooler with 10 Monsters and 15 Rockstars, I should be able to set the prices at 3.95 and 2.95, respectively</li>
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Calculate Total Stock Value</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler with some stock</li>
+		       <li> And: The prices have been set for the beverages in the cooler</li>
+		       <li> When: I want to find the value of the current stock</li>
+		       <li> Then: I should get the correct amount, the sum of all the individual bottle's prices in the cooler</li>
+		       <li> Example: If I have a cooler with 10 Monsters and 15 Rockstars priced at $3.95 and $2.95, respectively, when I ask for the Total Stock Value, it should be 83.75</li>
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Calculate Stock Value For a Beverage</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler with some stock</li>
+		       <li> And: The prices have been set for the beverages in the cooler</li>
+		       <li> When: I want to find the value of a particular beverage's current stock</li>
+		       <li> Then: I should get the correct amount</li>
+		       <li> Example: If I have a cooler with 10 Monsters and 15 Rockstars priced at $3.95 and $2.95, respectively, when I ask for the value of the Monsters, it should be 39.50, and for the Rockstars it should be 44.25</li>
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Create a new Order from Cooler</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler with some stock</li>
+		       <li> When: I want to add more stock</li>
+		       <li> Then: I should be able to create an order containing the desired bottles I want for my cooler </li>
+		  </td>
+		  <td>Implemented, needs refactoring. Currently the cooler creates and places orders at the same time, that method "order" needs to be split so that it only does one thing. An order can already be added to, we just need to have Cooler use that ability to create orders (potentially multi-beverage) before actually placing them. As it stands now, the cooler can only create/place orders for a single beverage type at a time.</td>
+		</tr>
+		<tr>
+		  <td>Add items to an Order from the Cooler</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler with some stock</li>
+		       <li> When: I want to add more stock</li>
+		       <li> And: I create an order for that stock </li>
+		       <li> Then: I should be able to add multiple containers containing different beverages in each to the order</li>
+		  </td>
+		  <td>Not Yet Implemented - but Order already has this ability. Implementing this will simply be calling that method from order, resulting in duplication. I'll get the method working first, then look at pushing up to a potential Orderer Class</td>
+		</tr>
+		<tr>
+		  <td>Place Order from Cooler</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler with some stock</li>
+		       <li> When: I want to add more stock</li>
+		       <li> And: I create an order for that stock </li>
+		       <li> Then: I should be able to place that order and have the bottles added to the cooler's stock</li>
+		  </td>
+		  <td>Implemented, but currently mashed in with the Create Order from Cooler feature as method Cooler.order(). I need to refactor this to a seperate method</td>
+		</tr>
+		<tr>
+		  <td>Veto Over-Capacity Order</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler with some stock</li>
+		       <li> When: I place an order for more bottles</li>
+		       <li> And: The bottles ordered will put the cooler over capacity</li>
+		       <li> Then: The order should be rejected </li>
+		       <li> Example: If I have a cooler with 10 Monsters and 15 Rockstars that has a custom capacity defined at 50 bottles, if I try to order more than 25, so say 20 Monsters and 20 Rockstars, then the order will be rejected</li>
+		  </td>
+		  <td>Implemented, will need refactoring after separating Create Order from Place Order and adding an Add to Order method in Cooler (to allow for creating an order with multiple containers, and thus beverage types, before submitting the order) because the check will need to run at the Place Order step at that point</td>
+		</tr>
+		<tr>
+		  <td>Orders Composed of More Than 1 Beverage</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler with some stock</li>
+		       <li> When: I want to place an order for more than 1 beverage</li>
+		       <li> Then: The order should be able to be composed of multiple containers, each containing a desired beverage</li>
+		       <li> Example: If I have a cooler with 10 Monsters and 15 Rockstars and I want to double my stock, I should be able to compose an order containing both those items, rather than having two orders</li>
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>BottleManufacturer Fulfills Orders</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler with some stock</li>
+		       <li> When: I want to place an order for additional stock</li>
+		       <li> Then: The responsibility for fulfilling that order should lie with the BottleManufacturer</li>
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Track Removed Stock</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler with some stock</li>
+		       <li> When: A bottle or bottles are removed</li>
+		       <li> Then: The cooler should record that information in a Removed Stock list</li>
+		  </td>
+		  <td>Not Yet Implemented</td>
+		</tr>
+		<tr>
+		  <td>Set the Cooler's Custom Lower Capacity (Desired Minimum Stock)</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler</li>
+		       <li> And: It has a definable property representing the desired minimum stock </li>
+		       <li> When: I want to define a threshold for the least amount of stock I would like to have in the cooler in terms of % full</li>
+		       <li> Then: That threshold should be set correctly</li>
+		  </td>
+		  <td>Not Yet Implemented</td>
+		</tr>
+		<tr>
+		  <td>Automatic Reorder!</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler with some stock</li>
+		       <li> When: A bottle or bottles are removed</li>
+		       <li> And: The stock % full reaches a lower limit threshold
+		       <li> Then: The cooler should automatically place a new order to the BottleManufacturer, composed of the items in the removed stock list (meaning it doesn't have to compose the order at this point, just pass the list, so this method only does one thing!), ensuring it's stock levels will be restored to their original state</li>
+		  </td>
+		  <td>Not Yet Implemented</td>
+		</tr>
 	</tbody>
 	<tfoot>
 	</tfoot>
 </table>
+------------------------
+Coming up in the future: (Ideas for features and refactoring not fully fleshed out yet or just otherwise not added to the above feature list)
 
------------------------------------------DONE
-Feature: We an calculate how full the cooler is
-Given: A cooler with a specified capacity and some stock
-When: I want to know how full the cooler is
-Then: I should be able to get the percentage of capacity used
-
------------------------------------------DONE
-Feature: We need the ability to set the retail price of a beverage in the cooler. It does not make
-sense to pass that into the order from the manufacturer, as they do not set the final sell price.
-The ability to set retail price needs to be independent of the ordering process.
-Given: A cooler with some stock
-When: I want to set the price of a particular beverage type
-Then: The price will be applied to all beverages of that type
-
------------------------------------------DONE
-Feature: Know the value of the total stock inside of the cooler
-Given: One bottle of Monster is worth 3.95, and one bottle of rockstar is worth 2.95
-When: Asked for the value of the bottles in the cooler
-Then: The correct value should be given
-
------------------------------------------DONE
-Feature: Know the value of the stock in the cooler, but by type
-Given: A cooler with some stock
-When: Asked for the stock value of a particular beverage type
-Then: The correct amount should be given
-
------------------------------------------DONE
-Feature: Simplify the ordering process by allowing the cooler to place orders to the manufacturer directly
-Given: An empty cooler
-When: Placing an order for bottles directly from the cooler
-Then: The bottles will be in the cooler
-
------------------------------------------Needs refacor, in a mintue
-Feature: The cooler should not be able to order enough bottles to have more stock than capacity
-Given: A cooler with a set capacity
-And: some stock
-When: Placing an order for more bottles that will cause the cooler to be over capacity
-Then: The order should be rejected
-
------------------------------------------DONE
-Feature: We need to be able to create order objects for placing an order with the manufacturer
-Given:I need to place an order
-When:I specify what is needed on an order
-Then: The order contains what I needed
-
------------------------------------------DONE
-Feature: Orders should be able to contain multiple beverage requests
-When: I place an order for 5 mountain dews and 10 blue machines
-Then: The order should contain 5 mountain dews and 10 blue machines
-
------------------------------------------DONE
-Feature: BottleManufacturers should be able to fulfill orders
-When: I give a Bottle Manufacturer an order for 5 mountain dews and 10 blue machines
-Then: It should give me back 15 bottles, 5 of which are mountain dew and 10 of which are blue machine
-
------------------------------------------
-Feature: The cooler should have a constructor, because a cooler CANNOT exist with no capacity, so capacity should be defined at the set up of the cooler.
-Given:I want to have a cooler
-When: I create a cooler
-Then: It should have a defined capacity
-(but keep the feature where you can set capacity, just modify it so it cannot be set to be higher than the capacity defined at the cooler's creation)
-
-Feature: The cooler should store information for the bottles removed every time a bottle is removed
-Given: A cooler with some stock
-When:I remove a bottle
-Then: The cooler stores that bottle information in a list
-(So that when the cooler gets say, 10 percent capacity, it knows what to reorder. Not quite sure how to write this out yet, but, say you have a cooler with a capacity of 100. You order 40 OJs, 40 milks, and 20 gatorades. You want it to reorder when it reaches 50 percent capacity. Well, there are a lot of ways for it to reach 50 percent capacity. You could sell all the milk, and 10 each of OJ and gatorade, for example. Or...well, you get it, right? The other, messier way to do it would be set stock levels, and compare whats in the cooler to those stock levels, ugh, bloated. Eff that. By storing a list of what's been removed from the cooler will know exactly what to reorder when the capacity threshhold is reached)
-
-Ahead: allow the owner to adjust the levels the cooler fills too, somehow, without breaking the elegance of that above method.
-
-EPIC WIN Feature: The cooler can automatically re-order to given stock levels for each beverage type when capacity falls below a threshold
-Given: A cooler with some stock
-When: The cooler falls below a set capacity threshold for any particular beverage type
-Then: A new order is placed to add bottles to the cooler
-
-SUPER EPIC WIN Feature: The cooler vetoes the door being open more than 10 degrees 
-
-Make it so when finding price by type, the loop stops when the first element meeting the condition of bevarage name is hit and returns price.
-
-Explore the concept of backstock, and how that might affect the ordering/stocking process. LATER.
+<ul>
+<li>SUPER EPIC WIN Feature: The cooler vetoes the door being open more than 10 degrees </li>
+<li>Abstract the Manufacturer class...then the order process could be valid for more than just bottles</li>
+<li>Explore the concept of backstock, and how that might affect the ordering/stocking process</li>
+<li>Refactor the tests with more consistent stock levels so you can avoid the duplication of having to add bottles to the cooler every time before a test, if at all possible</li>
