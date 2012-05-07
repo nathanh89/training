@@ -17,7 +17,7 @@ public class MinimumStock {
 	}
 
 	public int getThreshold(String beverageName) {
-		return (desiredStockLevels.containsKey(beverageName)) ? desiredStockLevels.get(beverageName) : 0;
+		return desiredStockLevels.get(beverageName);
 	}
 	
 }

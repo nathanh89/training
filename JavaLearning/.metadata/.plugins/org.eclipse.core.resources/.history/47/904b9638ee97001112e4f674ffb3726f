@@ -67,23 +67,13 @@ class Cooler implements PoweredDooredUnit {
             operateDoor();
         };
         Orderable result = this.bottles.remove(this.bottles.size()-1);
-        reorderWhenBelowMinimumStock(result);
         if(isDoorOpen()){
             operateDoor();
         };
         return result;
     }
 
-    private void reorderWhenBelowMinimumStock(Orderable result) {
-		String name = result.getName();
-    	int onHand = this.getBeverageCountByType(name);
-		int threshold = desiredMinimumStock.getThreshold(name);
-		if(onHand < threshold){
-			createOrder(name, threshold - onHand);
-		}
-	}
-
-	public void addBottles(List<Bottle> beverageType) {
+    public void addBottles(List<Bottle> beverageType) {
         bottles.addAll(beverageType);
     }
 

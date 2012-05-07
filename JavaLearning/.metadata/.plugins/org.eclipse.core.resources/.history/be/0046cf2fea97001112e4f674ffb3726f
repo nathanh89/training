@@ -132,7 +132,7 @@ To-Do List
 		       <li> And: The stock % full reaches a lower limit threshold
 		       <li> Then: The cooler should automatically place a new order to the BottleManufacturer, composed of the items in the removed stock list (meaning it doesn't have to compose the order at this point, just pass the list, so this method only does one thing!), ensuring it's stock levels will be restored to their original state</li>
 		  </td>
-		  <td>Needs Refactoring after Orderer</td>
+		  <td>Not Yet Implemented</td>
 		</tr>
 	</tbody>
 	<tfoot>
@@ -142,9 +142,9 @@ To-Do List
 Coming up in the future: (Ideas for features and refactoring not fully fleshed out yet or just otherwise not added to the above feature list)
 
 
-- SUPER EPIC WIN Feature: The cooler vetoes the door being open more than 10 degrees
-- Abstract the Manufacturer class...then the order process could be valid for more than just bottles
-- Explore the concept of backstock, and how that might affect the ordering/stocking process
-- Refactor the tests with more consistent stock levels so you can avoid the duplication of having to add bottles to the cooler every time before a test, if at all possibl
+- SUPER EPIC WIN Feature: The cooler vetoes the door being open more than 10 degrees </li>
+- Abstract the Manufacturer class...then the order process could be valid for more than just bottles</li>
+- Explore the concept of backstock, and how that might affect the ordering/stocking process</li>
+- Refactor the tests with more consistent stock levels so you can avoid the duplication of having to add bottles to the cooler every time before a test, if at all possible</li>
 - Factor out the Beverage from the Bottle.
 - We should probably be able to use the cooler as something besides a Pez dispenser :D

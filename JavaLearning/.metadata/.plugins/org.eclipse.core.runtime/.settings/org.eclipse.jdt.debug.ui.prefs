@@ -1,4 +1,5 @@
-#Sun May 06 16:51:36 MST 2012
+#Sun May 06 19:47:01 MST 2012
+org.eclipse.debug.ui.VariableView.org.eclipse.jdt.debug.ui.show_null_entries=true
 eclipse.preferences.version=1
 org.eclipse.jdt.debug.ui.active_filters=java.lang.ClassLoader,groovy.lang.*,org.codehaus.groovy.*,java.lang.reflect.*,sun.misc.*,groovy.ui.*,sun.reflect.*
 org.eclipse.jdt.debug.ui.prompt_unable_to_install_breakpoint=false

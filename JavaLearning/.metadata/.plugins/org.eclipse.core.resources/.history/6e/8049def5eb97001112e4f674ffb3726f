@@ -200,7 +200,7 @@ public class CoolerTests {
     public void testAutomaticReorderCreation(){
 	    // Given some stock
     	int minimum = 20;
-    	List<Bottle> roosters = createStock("Rooster Booster", minimum);
+    	List<Bottle> rooster = createStock("Rooster Booster", minimum);
     	cooler.addBottles(roosters);
     	// And : A minimum threshold for that beverage
     	cooler.setDesiredMinimumStock("Rooster Booster", minimum);

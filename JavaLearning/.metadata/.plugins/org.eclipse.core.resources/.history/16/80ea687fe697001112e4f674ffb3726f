@@ -12,7 +12,7 @@ As a business owner who wants to keep my things cold, I require a cooler.
 Sometimes I would like to turn the cooler on, other times I would like to turn it off.
 
 To-Do List 
-<a href="/features/DONE.md">Done List</a>
+<a href="features/DONE.md">Done List</a>
 / BDD Record
 <table>
 	<thead>
@@ -23,6 +23,18 @@ To-Do List
 		</tr>
 	</thead>
 	<tbody>
+		<tr>
+		  <td>Order Bottles for Cooler Manually</td>
+		  <td>
+		    <ul>
+		       <li> Given: I have a cooler</li>
+		       <li> And: I want to order bottles to be added to the cooler's stock</li>
+		       <li> When: I place an order for those bottles</li>
+		       <li> Then: The bottles should be added to the cooler's stock</li>
+		       <li> Example: I have a cooler with 10 Monsters and 15 Rockstars. After I order 10 more Monsters and 15 more Rockstars, I should have a total bottle count of 50, consisting of 20 Monsters and 30 Rockstars
+		  </td>
+		  <td>Implemented, test needs refactoring for clarity. Entire method will need refactoring to placeOrder eventually, and will pass in an order object, rather than the parameters to create an order object</td>
+		</tr>
 		<tr>
 		  <td>Set the Cooler's Custom Upper Capacity (Desired Maximum Stock)</td>
 		  <td>
@@ -132,7 +144,7 @@ To-Do List
 		       <li> And: The stock % full reaches a lower limit threshold
 		       <li> Then: The cooler should automatically place a new order to the BottleManufacturer, composed of the items in the removed stock list (meaning it doesn't have to compose the order at this point, just pass the list, so this method only does one thing!), ensuring it's stock levels will be restored to their original state</li>
 		  </td>
-		  <td>Needs Refactoring after Orderer</td>
+		  <td>Not Yet Implemented</td>
 		</tr>
 	</tbody>
 	<tfoot>
@@ -141,10 +153,9 @@ To-Do List
 ------------------------
 Coming up in the future: (Ideas for features and refactoring not fully fleshed out yet or just otherwise not added to the above feature list)
 
-
-- SUPER EPIC WIN Feature: The cooler vetoes the door being open more than 10 degrees
-- Abstract the Manufacturer class...then the order process could be valid for more than just bottles
-- Explore the concept of backstock, and how that might affect the ordering/stocking process
-- Refactor the tests with more consistent stock levels so you can avoid the duplication of having to add bottles to the cooler every time before a test, if at all possibl
-- Factor out the Beverage from the Bottle.
-- We should probably be able to use the cooler as something besides a Pez dispenser :D
+<ul>
+<li>SUPER EPIC WIN Feature: The cooler vetoes the door being open more than 10 degrees </li>
+<li>Abstract the Manufacturer class...then the order process could be valid for more than just bottles</li>
+<li>Explore the concept of backstock, and how that might affect the ordering/stocking process</li>
+<li>Refactor the tests with more consistent stock levels so you can avoid the duplication of having to add bottles to the cooler every time before a test, if at all possible</li>
+<li>Factor out the Beverage from the Bottle.

@@ -7,3 +7,6 @@ Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/nathan/Document
 
 !ENTRY org.eclipse.ui 4 4 2012-05-06 16:37:21.446
 !MESSAGE Invalid preference page path: XML Syntax
+
+!ENTRY org.eclipse.ui 4 4 2012-05-06 19:46:03.440
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.

@@ -1,5 +1,4 @@
 package com.visionarysoftwaresolutions.refillable;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Before;
@@ -185,10 +184,8 @@ public class CoolerTests {
         Cooler cooler = new Cooler();
         cooler.setCapacity(100);
         //And some stock
-        List<Bottle> powerades = createStock("Powerade", 30);
-        cooler.addBottles(powerades);
-        List<Bottle> water = createStock("Life Water", 40);
-        cooler.addBottles(water);
+        createStock("Powerade", 30);
+        createStock("Life Water", 40);
         //When placing an order that will cause the cooler to be over capacity
         cooler.createOrder("Powerade", 50);
         //Then the cooler should veto the order
@@ -197,27 +194,23 @@ public class CoolerTests {
     }
     
     @Test    
-    public void testAutomaticReorderCreation(){
+    public void testAutomaticReorder(){
 	    // Given some stock
     	int minimum = 20;
-    	List<Bottle> roosters = createStock("Rooster Booster", minimum);
-    	cooler.addBottles(roosters);
+    	createStock("Rooster Booster", minimum);
     	// And : A minimum threshold for that beverage
     	cooler.setDesiredMinimumStock("Rooster Booster", minimum);
-    	// When a bottle is removed 
+    	// When a bottle is removed and beverage falls below the minimum threshold 
     	cooler.removeBottle();
-    	// And the beverage falls below the minimum threshold
     	assertTrue(cooler.getBeverageCountByType("Rooster Booster") < minimum);
-    	// Then a pending restock order for the beverage should be created 
-	    assertNotNull(cooler.getPendingOrder());
+    	// Then the cooler should create 
+	    cooler.orderBottlesFromManufacturer("Cock Master", 20);
     }
     
-    private List<Bottle> createStock(String bottle, int desired){
-    	List<Bottle> stock = new ArrayList<Bottle>();
+    private void createStock(String bottle, int desired){
     	for(int i = 0; i< desired; i++){
-        	stock.add(new Bottle(bottle));
+        	cooler.addBottle(new Bottle(bottle));
         }
-    	return stock;
     }
 }
     

@@ -81,6 +81,7 @@ class Cooler implements PoweredDooredUnit {
 		if(onHand < threshold){
 			createOrder(name, threshold - onHand);
 		}
+		
 	}
 
 	public void addBottles(List<Bottle> beverageType) {
