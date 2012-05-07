@@ -147,6 +147,15 @@ public class CoolerTests {
         assertEquals(20, cooler.getBeverageCountByType("Brisk Lemonade"));
     }
     
+    @Test
+    public void testSetDesiredMinimumStockForBeverage(){
+    	//Given: A Cooler
+    	//When: I want to set a lower threshold for stock capacity for a beverage
+    	cooler.setDesiredMinimumStock("Monster", 10);
+    	//Then: The threshold should be set correctly
+    	assertEquals(10, cooler.getDesiredMinimumStock("Monster"));
+    }
+    
     /*@Test
     public void testOverCapacityOrderVeto(){
         //Given a cooler with a set capacity

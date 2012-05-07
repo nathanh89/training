@@ -8,6 +8,7 @@ class Cooler implements PoweredDooredUnit {
     boolean doorOpen = false;
     int capacity;
     List<Bottle> bottles = new ArrayList<Bottle>();
+    MinimumStock desiredMinimumStock = new MinimumStock();
     
     
     @Override
@@ -140,6 +141,14 @@ class Cooler implements PoweredDooredUnit {
 		if(desired > capacity){
             throw new RuntimeException("That's more bottles than the cooler can hold!");
         }
+	}
+
+	public void setDesiredMinimumStock(String beverageName, int beverageQuantity) {
+		desiredMinimumStock.update(beverageName, beverageQuantity);
+	}
+
+	public int getDesiredMinimumStock(String beverageName) {
+		return desiredMinimumStock.getThreshold("Monster");
 	}
 }
     

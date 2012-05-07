@@ -261,25 +261,14 @@ To-Do List / BDD Record
 		  <td>DONE</td>
 		</tr>
 		<tr>
-		  <td>Track Removed Stock</td>
-		  <td>
-		    <ul>
-		       <li> Given: A cooler with some stock</li>
-		       <li> When: A bottle or bottles are removed</li>
-		       <li> Then: The cooler should record that information in a Removed Stock list</li>
-		  </td>
-		  <td>Not Yet Implemented</td>
-		</tr>
-		<tr>
-		  <td>Set the Cooler's Custom Lower Capacity (Desired Minimum Stock)</td>
+		  <td>Set Cooler's Desired Minimum Stock for a Beverage</td>
 		  <td>
 		    <ul>
 		       <li> Given: A cooler</li>
-		       <li> And: It has a definable property representing the desired minimum stock </li>
-		       <li> When: I want to define a threshold for the least amount of stock I would like to have in the cooler in terms of % full</li>
+		       <li> When: I would like to define a lower stock threshold for a beverage</li>
 		       <li> Then: That threshold should be set correctly</li>
 		  </td>
-		  <td>Not Yet Implemented</td>
+		  <td>DONE</td>
 		</tr>
 		<tr>
 		  <td>Automatic Reorder!</td>
@@ -304,3 +293,4 @@ Coming up in the future: (Ideas for features and refactoring not fully fleshed o
 <li>Abstract the Manufacturer class...then the order process could be valid for more than just bottles</li>
 <li>Explore the concept of backstock, and how that might affect the ordering/stocking process</li>
 <li>Refactor the tests with more consistent stock levels so you can avoid the duplication of having to add bottles to the cooler every time before a test, if at all possible</li>
+<li>Factor out the Beverage from the Bottle.
