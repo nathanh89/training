@@ -144,8 +144,7 @@ Coming up in the future: (Ideas for features and refactoring not fully fleshed o
 
 - SUPER EPIC WIN Feature: The cooler vetoes the door being open more than 10 degrees
 - Abstract the Manufacturer class...then the order process could be valid for more than just bottles
+- Explore the concept of backstock, and how that might affect the ordering/stocking process
 - Refactor the tests with more consistent stock levels so you can avoid the duplication of having to add bottles to the cooler every time before a test, if at all possibl
 - Factor out the Beverage from the Bottle.
 - We should probably be able to use the cooler as something besides a Pez dispenser :D
-- Remove Bottles by type
-- Read about abstract classes, think about using interfaces and abstract classes to push some functionality out of cooler.
