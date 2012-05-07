@@ -156,19 +156,6 @@ public class CoolerTests {
     	assertEquals(10, cooler.getDesiredMinimumStock("Monster"));
     }
     
-    @Test
-    public void testEditOrdersFromCooler(){
-    	//Given: I have a cooler in need of some stock
-    	//When: I order some more stock
-    	cooler.createOrder("Monster", 10);
-    	//And: I add to the order before I send it
-    	cooler.addToOrder("Rockstar", 20);
-    	//Then: The additions should be on the order
-    	Order result = cooler.getPendingOrder();
-    	assertEquals(10, result.getCountForName("Monster"));
-    	assertEquals(20, result.getCountForName("Rockstar"));
-    }
-    
     /*@Test
     public void testOverCapacityOrderVeto(){
         //Given a cooler with a set capacity

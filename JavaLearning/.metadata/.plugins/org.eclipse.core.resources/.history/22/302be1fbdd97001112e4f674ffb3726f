@@ -9,7 +9,6 @@ class Cooler implements PoweredDooredUnit {
     int capacity;
     List<Bottle> bottles = new ArrayList<Bottle>();
     MinimumStock desiredMinimumStock = new MinimumStock();
-    Order pending;
     
     
     @Override
@@ -150,23 +149,6 @@ class Cooler implements PoweredDooredUnit {
 
 	public int getDesiredMinimumStock(String beverageName) {
 		return desiredMinimumStock.getThreshold("Monster");
-	}
-
-	public void createOrder(String beverageName, int beverageQuantity) {
-		pending = new Order(beverageName, beverageQuantity);
-	}
-
-	public void addToOrder(String beverageName, int beverageQuantity) {
-		if(pending != null){
-		pending.addContainer(beverageName, beverageQuantity);
-		}
-		else{
-		createOrder(beverageName, beverageQuantity);
-		}
-	}
-
-	public Order getPendingOrder() {
-		return pending;
 	}
 }
     

@@ -166,7 +166,7 @@ public class CoolerTests {
     	//Then: The additions should be on the order
     	Order result = cooler.getPendingOrder();
     	assertEquals(10, result.getCountForName("Monster"));
-    	assertEquals(20, result.getCountForName("Rockstar"));
+    	assertEquals(20, result.getCountForName("Rockstar", 20));
     }
     
     /*@Test

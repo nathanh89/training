@@ -275,21 +275,11 @@ To-Do List / BDD Record
 		  <td>
 		    <ul>
 		       <li> Given: A cooler in need of some stock</li>
-		       <li> When: I create an order for additional stock</li>
-		       <li> And: I add to the order</li>
-		       <li> Then: The additions should be a part of the order</li>
+		       <li> When: I would like to create an order for additional stock</li>
+		       <li> And: I would like to be able add containers to the order before sending it</li>
+		       <li> Then: I can add additional containers to an order</li>
 		  </td>
-		  <td>Refactor after creating Orderer</td>
-		</tr>
-		<tr>
-		  <td>Orderer has the ability to create orders</td>
-		  <td>
-		    <ul>
-		       <li> Given: A cooler in need of some stock</li>
-		       <li> When: I want to create an order for additional stock</li>
-		       <li> Then: The responsibility of creating that order should be with the Orderer, Cooler just needs to let it know what it needs</li>
-		  </td>
-		  <td>Not Yet Implemented</td>
+		  <td>DONE</td>
 		</tr>
 		<tr>
 		  <td>Automatic Reorder!</td>
