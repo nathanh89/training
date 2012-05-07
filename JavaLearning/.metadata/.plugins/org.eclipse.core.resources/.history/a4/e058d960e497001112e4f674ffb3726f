@@ -46,7 +46,7 @@ class Cooler implements PoweredDooredUnit {
         bottles.add(toAdd);
     }
     
-    public int getBottleCount(){
+    public int getBottles(){
         return bottles.size();
     }
     
@@ -129,7 +129,7 @@ class Cooler implements PoweredDooredUnit {
     }
 
 	private void checkNotMoreThanCapacity(int desired) throws RuntimeException {
-		if(desired + getBottleCount() > capacity){
+		if(desired > capacity){
             throw new RuntimeException("That's more bottles than the cooler can hold!");
         }
 	}

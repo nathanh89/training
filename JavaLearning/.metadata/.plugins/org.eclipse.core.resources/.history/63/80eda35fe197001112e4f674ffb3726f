@@ -46,7 +46,7 @@ class Cooler implements PoweredDooredUnit {
         bottles.add(toAdd);
     }
     
-    public int getBottleCount(){
+    public int getBottles(){
         return bottles.size();
     }
     
@@ -128,8 +128,18 @@ class Cooler implements PoweredDooredUnit {
         return stockValueByType;
     }
 
+    public void order(BottleManufacturer source, String beverageType, int beverageQuantity) {
+    	// when we try to order more, first check that we're not trying to order more than we can hold
+    	checkNotMoreThanCapacity(getCapacity() + beverageQuantity);
+    	// then we want to place the order
+    	Order newOrder = new Order(beverageType, beverageQuantity);
+    	List<Bottle> result = source.fill(newOrder);
+    	// add the ordered bottles to our storage
+        bottles.addAll(result);
+     }
+
 	private void checkNotMoreThanCapacity(int desired) throws RuntimeException {
-		if(desired + getBottleCount() > capacity){
+		if(desired > capacity){
             throw new RuntimeException("That's more bottles than the cooler can hold!");
         }
 	}
@@ -143,17 +153,15 @@ class Cooler implements PoweredDooredUnit {
 	}
 
 	public void createOrder(String beverageName, int beverageQuantity) {
-		checkNotMoreThanCapacity(beverageQuantity);
 		pending = new Order(beverageName, beverageQuantity);
 	}
 
 	public void addToOrder(String beverageName, int beverageQuantity) {
-		checkNotMoreThanCapacity(beverageQuantity);
 		if(pending != null){
-			pending.addContainer(beverageName, beverageQuantity);
+		pending.addContainer(beverageName, beverageQuantity);
 		}
 		else{
-			createOrder(beverageName, beverageQuantity);
+		createOrder(beverageName, beverageQuantity);
 		}
 	}
 
@@ -163,7 +171,7 @@ class Cooler implements PoweredDooredUnit {
 
 	public void placeOrder(BottleManufacturer manufacturer) {
 		List<Bottle> received = manufacturer.fill(pending);
-		addBottles(received);
+		bottles.addAll(received);
 	}
 }
     

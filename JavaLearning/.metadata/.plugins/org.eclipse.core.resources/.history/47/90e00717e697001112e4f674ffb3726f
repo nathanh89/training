@@ -11,9 +11,7 @@ Scenario:
 As a business owner who wants to keep my things cold, I require a cooler.
 Sometimes I would like to turn the cooler on, other times I would like to turn it off.
 
-To-Do List 
-<a href="features/DONE.md">Done List</a>
-/ BDD Record
+To-Do List / BDD Record
 <table>
 	<thead>
 		<tr>

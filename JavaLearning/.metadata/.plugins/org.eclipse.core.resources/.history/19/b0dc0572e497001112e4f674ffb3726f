@@ -25,7 +25,7 @@ public class CoolerTests {
         List<Bottle> toAdd = collaborator.fill(new Order("Monster", 5));
         cooler.addBottles(toAdd);
         // Then the bottles should be present
-        assertEquals(5, cooler.getBottleCount());
+        assertEquals(5, cooler.getBottles());
     }
     
     @Test
