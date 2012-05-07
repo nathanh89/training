@@ -289,7 +289,7 @@ To-Do List / BDD Record
 		       <li> When: I create an order for additional stock</li>
 		       <li> Then: The order can be sent to BottleManufacturer</li>
 		  </td>
-		  <td>DONE</td>
+		  <td>Not Yet Implemented</td>
 		</tr>
 		<tr>
 		  <td>Orderer has the ability to create orders</td>

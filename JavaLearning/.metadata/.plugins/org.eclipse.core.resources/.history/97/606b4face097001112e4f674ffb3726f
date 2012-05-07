@@ -22,7 +22,7 @@ public class BottleManufacturer {
 		this.name = name;
 	}
 	
-	public List<Bottle> fill(Order newOrder) {
+	public List<Bottle> place(Order newOrder) {
 		List<Bottle> result = new ArrayList<Bottle>();
 		for(OrderContainer container : newOrder){
 			List<Orderable> items = container.make();

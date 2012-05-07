@@ -287,9 +287,10 @@ To-Do List / BDD Record
 		    <ul>
 		       <li> Given: A cooler in need of some stock</li>
 		       <li> When: I create an order for additional stock</li>
+		       <li> And: I finish adding to the order</li>
 		       <li> Then: The order can be sent to BottleManufacturer</li>
 		  </td>
-		  <td>DONE</td>
+		  <td>Not Yet Implemented</td>
 		</tr>
 		<tr>
 		  <td>Orderer has the ability to create orders</td>

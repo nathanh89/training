@@ -133,7 +133,7 @@ class Cooler implements PoweredDooredUnit {
     	checkNotMoreThanCapacity(getCapacity() + beverageQuantity);
     	// then we want to place the order
     	Order newOrder = new Order(beverageType, beverageQuantity);
-    	List<Bottle> result = source.fill(newOrder);
+    	List<Bottle> result = source.place(newOrder);
     	// add the ordered bottles to our storage
         bottles.addAll(result);
      }
@@ -167,11 +167,6 @@ class Cooler implements PoweredDooredUnit {
 
 	public Order getPendingOrder() {
 		return pending;
-	}
-
-	public void placeOrder(BottleManufacturer manufacturer) {
-		List<Bottle> received = manufacturer.fill(pending);
-		bottles.addAll(received);
 	}
 }
     
