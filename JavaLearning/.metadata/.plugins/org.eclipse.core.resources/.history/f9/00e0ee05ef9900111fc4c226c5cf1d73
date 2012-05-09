@@ -208,7 +208,7 @@ public class CoolerTests {
     	// And the beverage falls below the minimum threshold
     	assertTrue(cooler.getBeverageCountByType("Rooster Booster") < minimum);
     	// Then a pending restock order for the beverage should be created 
-	    assertNotNull(cooler.orderer.checkOrder());
+	    assertNotNull(cooler.getPendingOrder());
     }
     
     private List<Bottle> createStock(String bottle, int desired){

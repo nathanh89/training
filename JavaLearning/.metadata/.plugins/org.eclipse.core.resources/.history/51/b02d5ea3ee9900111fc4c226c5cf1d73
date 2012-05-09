@@ -80,7 +80,7 @@ class Cooler implements PoweredDooredUnit {
     	int onHand = this.getBeverageCountByType(name);
 		int threshold = desiredMinimumStock.getThreshold(name);
 		if(onHand < threshold){
-			orderer.createOrder(name, threshold - onHand, this);
+			orderer.createOrder(name, threshold - onHand);
 		}
 	}
 
@@ -163,6 +163,29 @@ class Cooler implements PoweredDooredUnit {
         }
 	}
 
+	/*public void createOrder(String beverageName, int beverageQuantity) {
+		checkNotMoreThanCapacity(beverageQuantity);
+		pending = new Order(beverageName, beverageQuantity);
+	}
+
+	public void addToOrder(String beverageName, int beverageQuantity) {
+		checkNotMoreThanCapacity(beverageQuantity);
+		if(pending != null){
+			pending.addContainer(beverageName, beverageQuantity);
+		}
+		else{
+			createOrder(beverageName, beverageQuantity);
+		}
+	}
+
+	public Order getPendingOrder() {
+		return pending;
+	}
+
+	public void placeOrder(BottleManufacturer manufacturer) {
+		List<Bottle> received = manufacturer.fill(pending);
+		addBottles(received);
+	}*/
 }
     
 

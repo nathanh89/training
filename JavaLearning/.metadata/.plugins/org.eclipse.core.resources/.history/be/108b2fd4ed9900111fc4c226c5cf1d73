@@ -17,7 +17,7 @@ public class Orderer {
 		return pending.getCountForName(productName);
 	}
 
-	public void addToOrder(String productName, int productQuantity, Cooler deliverTo) {
+	public void addToOrder(String productName, int productQuantity) {
 		pending.addContainer(productName, productQuantity);
 	}
 

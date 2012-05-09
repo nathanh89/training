@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="CoolerTests" project="AutomaticRefiller" tests="15" started="15" failures="0" errors="2" ignored="0">
+  <testsuite name="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.013">
+    <testcase name="testSetupCoolerInitialState" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testAddBottlesToCooler" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.002"/>
+    <testcase name="testRemoveBottlesFromCooler" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.006">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The method createOrder(String, int, Cooler) in the type Orderer is not applicable for the arguments (String, int)
+
+	at com.visionarysoftwaresolutions.refillable.Cooler.reorderWhenBelowMinimumStock(Cooler.java:83)
+	at com.visionarysoftwaresolutions.refillable.Cooler.removeBottle(Cooler.java:71)
+	at com.visionarysoftwaresolutions.refillable.CoolerTests.testRemoveBottlesFromCooler(CoolerTests.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</error>
+    </testcase>
+    <testcase name="testCountBottlesByType" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testBottleManufacturing" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.001"/>
+    <testcase name="testCoolerCapacity" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testGetPercentFull" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testSetGetBeveragePriceByType" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testGetTotalStockValue" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.001"/>
+    <testcase name="testGetStockValueByType" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testSetDesiredMinimumStockForBeverage" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.001"/>
+    <testcase name="testCreateEditOrdersFromCooler" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testSendOrdersFromCooler" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testOverCapacityOrderVeto" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testAutomaticReorderCreation" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.001">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The method getPendingOrder() is undefined for the type Cooler
+
+	at com.visionarysoftwaresolutions.refillable.CoolerTests.testAutomaticReorderCreation(CoolerTests.java:211)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

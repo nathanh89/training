@@ -158,9 +158,9 @@ public class CoolerTests {
     public void testCreateEditOrdersFromCooler(){
     	//Given: I have a cooler in need of some stock
     	//When: I order some more stock
-    	cooler.orderer.createOrder("Monster", 10, cooler);
+    	cooler.orderer.createOrder("Monster", 10);
     	//And: I add to the order before I send it
-    	cooler.orderer.addToOrder("Rockstar", 20, cooler);
+    	cooler.orderer.addToOrder("Rockstar", 20);
     	//Then: The additions should be on the order
     	Order result = cooler.orderer.checkOrder();
     	assertEquals(10, result.getCountForName("Monster"));
@@ -171,7 +171,7 @@ public class CoolerTests {
     public void testSendOrdersFromCooler(){
     	//Given: I have a cooler in need of some stock
     	//When: I create an order for more stock
-    	cooler.orderer.createOrder("Monster", 10, cooler);
+    	cooler.orderer.createOrder("Monster", 10);
     	//And: I send the order to a BottleManufacturer
     	cooler.orderer.placeOrder("Monster, Inc", cooler);
     	//Then: The cooler's stock should be updated by the order
@@ -181,15 +181,15 @@ public class CoolerTests {
    @Test(expected=RuntimeException.class)
     public void testOverCapacityOrderVeto(){
         //Given a cooler with a set capacity
-        Cooler cooler = new Cooler(100);
+        Cooler cooler = new Cooler();
+        cooler.setCapacity(100);
         //And some stock
         List<Bottle> powerades = createStock("Powerade", 30);
         cooler.addBottles(powerades);
         List<Bottle> water = createStock("Life Water", 40);
         cooler.addBottles(water);
         //When placing an order that will cause the cooler to be over capacity
-        cooler.orderer.createOrder("Powerade", 50, cooler);
-        cooler.orderer.placeOrder("Coca Cola", cooler);
+        cooler.createOrder("Powerade", 50);
         //Then the cooler should veto the order
         assertEquals(30, cooler.getBeverageCountByType("Powerade"));
         assertEquals(40, cooler.getBeverageCountByType("Life Water"));
@@ -208,7 +208,7 @@ public class CoolerTests {
     	// And the beverage falls below the minimum threshold
     	assertTrue(cooler.getBeverageCountByType("Rooster Booster") < minimum);
     	// Then a pending restock order for the beverage should be created 
-	    assertNotNull(cooler.orderer.checkOrder());
+	    assertNotNull(cooler.getPendingOrder());
     }
     
     private List<Bottle> createStock(String bottle, int desired){

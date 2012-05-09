@@ -171,7 +171,7 @@ public class CoolerTests {
     public void testSendOrdersFromCooler(){
     	//Given: I have a cooler in need of some stock
     	//When: I create an order for more stock
-    	cooler.orderer.createOrder("Monster", 10, cooler);
+    	cooler.orderer.createOrder("Monster", 10);
     	//And: I send the order to a BottleManufacturer
     	cooler.orderer.placeOrder("Monster, Inc", cooler);
     	//Then: The cooler's stock should be updated by the order
@@ -208,7 +208,7 @@ public class CoolerTests {
     	// And the beverage falls below the minimum threshold
     	assertTrue(cooler.getBeverageCountByType("Rooster Booster") < minimum);
     	// Then a pending restock order for the beverage should be created 
-	    assertNotNull(cooler.orderer.checkOrder());
+	    assertNotNull(cooler.getPendingOrder());
     }
     
     private List<Bottle> createStock(String bottle, int desired){

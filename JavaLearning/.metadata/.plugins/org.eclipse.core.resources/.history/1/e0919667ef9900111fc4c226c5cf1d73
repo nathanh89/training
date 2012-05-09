@@ -9,7 +9,7 @@ public class OrdererTests {
 	@Test
 	public void testCreateOrder() {
 		Orderer orderer = new Orderer();
-		Cooler cooler = new Cooler(100);
+		Cooler cooler = new Cooler();
 		//Given I want to create a new order
 		orderer.createOrder("Monster", 10, cooler);
 		//Then the order should be created
@@ -20,7 +20,7 @@ public class OrdererTests {
 	public void testAddToOrder(){
 		//Given I have an order
 		Orderer orderer = new Orderer();
-		Cooler cooler = new Cooler(100);
+		Cooler cooler = new Cooler();
 		orderer.createOrder("Monster", 10, cooler);
 		//And I want to add to that order
 		orderer.addToOrder("Rockstar", 15, cooler);
