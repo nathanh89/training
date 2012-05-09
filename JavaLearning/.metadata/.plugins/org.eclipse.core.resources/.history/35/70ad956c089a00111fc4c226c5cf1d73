@@ -15,7 +15,7 @@
 		       <li> When: I acquire the cooler</li>
 		       <li> Then: That cooler should come with certain predefined characteristics, specifically physical capacity, and the power state should be off initially. (Just like the state it would be in immediately after delivery from a potential cooler manufacturer)</li>
 		  </td>
-		  <td>DONE</td>
+		  <td>Not Yet Implemented</td>
 		</tr>
 		<tr>
 		  <td>Toggle Power</td>

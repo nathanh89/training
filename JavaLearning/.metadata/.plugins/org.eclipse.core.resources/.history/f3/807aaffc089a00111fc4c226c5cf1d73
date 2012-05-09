@@ -19,28 +19,15 @@ To-Do List
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
 		  <td>Automatic Reorder!</td>
 		  <td>
 		    <ul>
 		       <li> Given: A cooler with some stock</li>
 		       <li> When: A bottle or bottles are removed</li>
 		       <li> And: The stock % full reaches a lower limit threshold
-		       <li> Then: The cooler should automatically place a new order to the BottleManufacturer</li>
+		       <li> Then: The cooler should automatically place a new order to the BottleManufacturer, composed of the items in the removed stock list (meaning it doesn't have to compose the order at this point, just pass the list, so this method only does one thing!), ensuring it's stock levels will be restored to their original state</li>
 		  </td>
 		  <td>Needs Refactoring</td>
-		</tr>
-		<tr>
-		  <td>Remove Bottles from Cooler by Beverage</td>
-		  <td>
-		    <ul>
-		       <li> Given: A cooler with some stock</li>
-		       <li> When: I want to remove a specific beverage and quantity</li>
-		       <li> And: I remove the bottles</li>
-		       <li> Then: The cooler should  not have the removed bottles present anymore</li>
-		       <li> Example: I have a cooler containing 10 Monsters and 15 Rockstars, if I remove 5 Rockstars, there should only be 10 present</li>
-		  </td>
-		  <td>Not Yet Implemented</td>
 		</tr>
 	</tbody>
 	<tfoot>

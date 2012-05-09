@@ -26,7 +26,7 @@ To-Do List
 		       <li> Given: A cooler with some stock</li>
 		       <li> When: A bottle or bottles are removed</li>
 		       <li> And: The stock % full reaches a lower limit threshold
-		       <li> Then: The cooler should automatically place a new order to the BottleManufacturer</li>
+		       <li> Then: The cooler should automatically place a new order to the BottleManufacturer, composed of the items in the removed stock list (meaning it doesn't have to compose the order at this point, just pass the list, so this method only does one thing!), ensuring it's stock levels will be restored to their original state</li>
 		  </td>
 		  <td>Needs Refactoring</td>
 		</tr>
