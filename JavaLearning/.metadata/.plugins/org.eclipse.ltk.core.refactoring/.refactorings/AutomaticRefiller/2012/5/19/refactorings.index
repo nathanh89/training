@@ -1,3 +1,5 @@
 1336348665610	Rename type 'MinimunStock'
 1336352702163	Rename method 'place'
 1336354322122	Rename method 'getBottles'
+1336579792497	Rename method 'addBottles'
+1336580170366	Rename method 'addBottlesFromManufacturer'

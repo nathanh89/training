@@ -83,20 +83,8 @@ class Cooler implements PoweredDooredUnit {
 			orderer.createOrder(name, threshold - onHand, this);
 		}
 	}
-    
-    private List<Bottle> localStock (String beverageName, int beverageQuantity){
-    	List<Bottle> toAdd = new ArrayList<Bottle>();
-    	for(int i = 0; i< beverageQuantity; i++){
-        	toAdd.add(new Bottle(beverageName));
-        }
-    	return toAdd;
-    }
-    
-    public void addLocalStock(String beverageName, int beverageQuantity){
-    	addBottles(localStock(beverageName, beverageQuantity));
-    }
-    
-	public void addBottles(List<Bottle> beverageType) {
+
+	public void addBottlesFromManufacturer(List<Bottle> beverageType) {
         bottles.addAll(beverageType);
     }
 

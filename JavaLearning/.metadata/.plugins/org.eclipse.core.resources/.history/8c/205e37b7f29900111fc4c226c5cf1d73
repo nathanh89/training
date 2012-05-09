@@ -30,9 +30,10 @@ public class CoolerTests {
     @Test
     public void testAddBottlesToCooler(){
         // When I add bottles to the cooler
-        cooler.addLocalStock("Monster", 10);
+        List<Bottle> toAdd = collaborator.fill(new Order("Monster", 5));
+        cooler.addBottles(toAdd);
         // Then the bottles should be present
-        assertEquals(10, cooler.getBottleCount());
+        assertEquals(5, cooler.getBottleCount());
     }
     
     @Test
