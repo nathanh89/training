@@ -47,24 +47,13 @@ public class CoolerTests {
     }
     
     @Test
-    public void testRemoveBottleFromCoolerByBeverage(){
+    public void testRemoveBottleFromCooler(){
         // Given I have a cooler with some bottles
         cooler.addLocalStock("Monster", 10);
         // When I remove that bottle from the cooler
-        cooler.removeBottle("Monster");
+        cooler.removeBottle();
         // Then the bottle should not be present
         assertEquals(9, cooler.getBottleCountByBeverage("Monster"));
-    }
-    
-    @Test
-    public void testRemoveBottlesFromCoolerByBeverage(){
-    	//Given I have a cooler with some bottles
-    	cooler.addLocalStock("Monster", 10);
-    	cooler.addLocalStock("Rockstar", 15);
-    	//When I remove a specified beverage and quantity
-    	cooler.removeBottles("Rockstar", 5);
-    	//Then the bottles should be removed
-    	assertEquals(10, cooler.getBottleCountByBeverage("Rockstar"));
     }
     
     @Test 
@@ -224,7 +213,7 @@ public class CoolerTests {
     	assertEquals(15, cooler.getDesiredMinimumStock("Rockstar"));
     }
 
-    /* @Test    
+     @Test    
     public void testAutomaticReorderCreation(){
 	    // Given some stock
     	int minimum = 10;
@@ -237,7 +226,7 @@ public class CoolerTests {
     	assertTrue(cooler.getBottleCountByBeverage("Monster") < minimum);
     	// Then a pending restock order for the beverage should be created 
 	    assertNotNull(cooler.orderer.checkOrder());
-    }*/
+    }
     
 }
     

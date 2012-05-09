@@ -82,27 +82,15 @@
 		  <td>DONE</td>
 		</tr>
 		<tr>
-		  <td>Remove Bottle by Beverage</td>
+		  <td>Remove Bottle</td>
 		  <td>
 		    <ul>
 		       <li> Given: I have a cooler stocked with bottles</li>
-		       <li> And: I want to manually a bottle containing a specific beverage from it</li>
+		       <li> And: I want to manually a bottle from it</li>
 		       <li> When: I remove the bottle from the cooler </li>
 		       <li> Then: The removed bottle should not be present </li>
 		       <li> Example: I have a cooler with 10 Monsters and I remove a bottle, only 9 should be present</li>
 		    </ul>
-		  </td>
-		  <td>DONE</td>
-		</tr>
-		<tr>
-		  <td>Remove Bottles from Cooler by Beverage</td>
-		  <td>
-		    <ul>
-		       <li> Given: A cooler with some stock</li>
-		       <li> When: I want to remove a specific beverage and quantity</li>
-		       <li> And: I remove the bottles</li>
-		       <li> Then: The cooler should  not have the removed bottles present anymore</li>
-		       <li> Example: I have a cooler containing 10 Monsters and 15 Rockstars, if I remove 5 Rockstars, there should only be 10 present</li>
 		  </td>
 		  <td>DONE</td>
 		</tr>
@@ -259,6 +247,17 @@
 		       <li> Example: I have a cooler, and I want to have at least 10 Monsters and 15 Rockstars in it. When I set the desired minimum stock for each, and I ask what that threshold is, the amounts should be given 10 and 15, for Monster and Rockstar respectively</li>
 		  </td>
 		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Cooler generates an order when a Beverage falls below its Desired Minimum Stock</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler</li>
+		       <li> When: A beverage falls below its Desired Minimum Stock</li>
+		       <li> Then: A pending order should be created by the cooler to replace the stock</li>
+		  </td>
+		  <td>DONE</td>
+		</tr>
 	</tbody>
 </table>
 

@@ -479,3 +479,18 @@ org.eclipse.swt.SWTException: Widget is disposed
 
 !ENTRY org.eclipse.jdt.core 4 969 2012-05-09 11:09:58.128
 !MESSAGE testGetStockValueBy() [in CoolerTests [in [Working copy] CoolerTests.java [in com.visionarysoftwaresolutions.refillable [in test [in AutomaticRefiller]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2012-05-09 12:02:39.184
+!MESSAGE test [in CoolerTests [in [Working copy] CoolerTests.java [in com.visionarysoftwaresolutions.refillable [in test [in AutomaticRefiller]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2012-05-09 12:02:39.184
+!MESSAGE testRemoveBottles [in CoolerTests [in [Working copy] CoolerTests.java [in com.visionarysoftwaresolutions.refillable [in test [in AutomaticRefiller]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2012-05-09 12:02:39.184
+!MESSAGE testRemoveB [in CoolerTests [in [Working copy] CoolerTests.java [in com.visionarysoftwaresolutions.refillable [in test [in AutomaticRefiller]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2012-05-09 12:03:12.769
+!MESSAGE testRemoveBottlesFromCoolerByBeverage [in CoolerTests [in [Working copy] CoolerTests.java [in com.visionarysoftwaresolutions.refillable [in test [in AutomaticRefiller]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2012-05-09 12:12:07.319
+!MESSAGE testRemoveBottleFromCoolerBy() [in CoolerTests [in [Working copy] CoolerTests.java [in com.visionarysoftwaresolutions.refillable [in test [in AutomaticRefiller]]]]] does not exist

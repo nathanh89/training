@@ -71,15 +71,19 @@ class Cooler implements PoweredDooredUnit {
     	return toAdd;
     }
     
-    public void removeBottle(String beverageName){
-    	int initial = this.getBottleCountByBeverage(beverageName);
-        for(int i = 0; i<bottles.size(); i++){
-        	if(initial == this.getBottleCountByBeverage(beverageName)){
-        		if(bottles.get(i).getName() == beverageName){
-        			bottles.remove(i);
-        		}
-        	}
+    public Orderable removeBottle(){
+        if(!isPowerOn()){
+            throw new RuntimeException("I'm not even on!");
         }
+        if(!isDoorOpen()){
+            operateDoor();
+        };
+        Orderable result = this.bottles.remove(this.bottles.size()-1);
+        reorderWhenBelowMinimumStock(result);
+        if(isDoorOpen()){
+            operateDoor();
+        };
+        return result;
     }
     
     public void removeBottles(String beverageName, int beverageQuantity){
@@ -87,9 +91,7 @@ class Cooler implements PoweredDooredUnit {
     	for(int i = 0; i< beverageQuantity; i++){
         	toRemove.add(new Bottle(beverageName));
         }
-    	for(int i = 0; i<toRemove.size(); i++){
-    		removeBottle(toRemove.get(i).getName());
-    	}
+    	bottles.removeAll(toRemove);
     }
     
     public int getTotalBottleCount(){
@@ -178,14 +180,14 @@ class Cooler implements PoweredDooredUnit {
 	}
 	
 	    
-    /*private void reorderWhenBelowMinimumStock(Orderable result) {
+    private void reorderWhenBelowMinimumStock(Orderable result) {
 		String name = result.getName();
     	int onHand = this.getBottleCountByBeverage(name);
 		int threshold = desiredMinimumStock.getThreshold(name);
 		if(onHand < threshold){
 			orderer.createOrder(name, threshold - onHand, this);
 		}
-	}*/
+	}
 
 }
     

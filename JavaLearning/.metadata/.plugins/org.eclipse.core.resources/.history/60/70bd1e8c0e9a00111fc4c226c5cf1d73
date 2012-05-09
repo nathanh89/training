@@ -87,9 +87,7 @@ class Cooler implements PoweredDooredUnit {
     	for(int i = 0; i< beverageQuantity; i++){
         	toRemove.add(new Bottle(beverageName));
         }
-    	for(int i = 0; i<toRemove.size(); i++){
-    		removeBottle(toRemove.get(i).getName());
-    	}
+    	bottles.removeAll(toRemove);
     }
     
     public int getTotalBottleCount(){

@@ -224,7 +224,7 @@ public class CoolerTests {
     	assertEquals(15, cooler.getDesiredMinimumStock("Rockstar"));
     }
 
-    /* @Test    
+     @Test    
     public void testAutomaticReorderCreation(){
 	    // Given some stock
     	int minimum = 10;
@@ -237,7 +237,7 @@ public class CoolerTests {
     	assertTrue(cooler.getBottleCountByBeverage("Monster") < minimum);
     	// Then a pending restock order for the beverage should be created 
 	    assertNotNull(cooler.orderer.checkOrder());
-    }*/
+    }
     
 }
     

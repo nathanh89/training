@@ -259,6 +259,17 @@
 		       <li> Example: I have a cooler, and I want to have at least 10 Monsters and 15 Rockstars in it. When I set the desired minimum stock for each, and I ask what that threshold is, the amounts should be given 10 and 15, for Monster and Rockstar respectively</li>
 		  </td>
 		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Cooler generates an order when a Beverage falls below its Desired Minimum Stock</td>
+		  <td>
+		    <ul>
+		       <li> Given: A cooler</li>
+		       <li> When: A beverage falls below its Desired Minimum Stock</li>
+		       <li> Then: A pending order should be created by the cooler to replace the stock</li>
+		  </td>
+		  <td>DONE</td>
+		</tr>
 	</tbody>
 </table>
 
