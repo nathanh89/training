@@ -259,18 +259,6 @@
 		       <li> Example: I have a cooler, and I want to have at least 10 Monsters and 15 Rockstars in it. When I set the desired minimum stock for each, and I ask what that threshold is, the amounts should be given 10 and 15, for Monster and Rockstar respectively</li>
 		  </td>
 		  <td>DONE</td>
-		  </tr>
-		  <tr>
-		  <td>Automatic Reorder!</td>
-		  <td>
-		    <ul>
-		       <li> Given: A cooler with some stock</li>
-		       <li> When: A bottle or bottles are removed</li>
-		       <li> And: The stock % full reaches a lower limit threshold
-		       <li> Then: The cooler should automatically place a new order to the BottleManufacturer</li>
-		  </td>
-		  <td>Never Stop Refactoring!</td>
-		</tr>
 	</tbody>
 </table>
 

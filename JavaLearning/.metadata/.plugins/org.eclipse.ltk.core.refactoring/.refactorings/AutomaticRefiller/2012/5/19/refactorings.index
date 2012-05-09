@@ -10,3 +10,4 @@
 1336587148041	Rename method 'getBeveragePriceByType'
 1336599566096	Rename method 'ordererPendingNullCheck'
 1336601825682	Rename method 'isThereAnOrderPending'
+1336602810046	Rename method 'reorderCheck'

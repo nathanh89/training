@@ -28,18 +28,7 @@ To-Do List
 		       <li> And: The stock % full reaches a lower limit threshold
 		       <li> Then: The cooler should automatically place a new order to the BottleManufacturer</li>
 		  </td>
-		  <td>Never Stop Refactoring</td>
-		</tr>
-		<tr>
-		  <td>Inventory Management</td>
-		  <td>
-		    <ul>
-		       <li> Given: A cooler with some stock</li>
-		       <li> When: A bottle or bottles are removed</li>
-		       <li> And: The stock % full reaches a lower limit threshold
-		       <li> Then: The cooler should automatically place a new order to the BottleManufacturer, via an inventory manager</li>
-		  </td>
-		  <td>Not Yet Implemented</td>
+		  <td>Needs Refactoring, broken after messing with RemoveBottle/RemoveBottles</td>
 		</tr>
 		</tbody>
 	<tfoot>

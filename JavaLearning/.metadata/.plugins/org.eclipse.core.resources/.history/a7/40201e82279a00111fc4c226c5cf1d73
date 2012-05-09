@@ -233,6 +233,12 @@ public class CoolerTests {
     	assertEquals(20, cooler.reorderQuantityCheck("Monster"));
     }
     
+/*    @Test public void testIsThereAnOrderPending(){
+    	Cooler cooler = new Cooler(100);
+    	assertFalse(cooler.thereIsAnOrderPending());
+    	cooler.orderer.createOrder("Monster", 10, cooler);
+    	assertTrue(cooler.thereIsAnOrderPending());
+    }*/
   
    @Test    
     public void testAutomaticReorderCreation(){
@@ -251,7 +257,6 @@ public class CoolerTests {
     	assertEquals(40, cooler.getDesiredMinimumStock("Rockstar"));
     	assertEquals(12, cooler.orderer.checkOrderByProductName("Monster"));
     	assertEquals(18, cooler.orderer.checkOrderByProductName("Rockstar"));
-    	//And updated when another bottle is removed
     	cooler.removeBottle("Monster");
     	assertEquals(13, cooler.orderer.checkOrderByProductName("Monster"));
     }
