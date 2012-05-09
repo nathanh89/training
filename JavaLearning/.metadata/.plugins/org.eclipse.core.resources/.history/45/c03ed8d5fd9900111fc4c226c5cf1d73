@@ -38,12 +38,11 @@ public class CoolerTests {
 	}
 	
     @Test
-    public void testAddMultipleBottlesToCooler(){
-    	//Given an empty cooler with capacity 100
+    public void testAddBottlesToCooler(){
         // When I add bottles to the cooler
         cooler.addLocalStock("Monster", 10);
-        // Then the bottles should be present
-        assertEquals(10, cooler.getBeverageCountByType("Monster"));
+        // Then the bottlest should be present
+        assertEquals(10, cooler.getBottleCount());
     }
     
     @Test

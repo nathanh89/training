@@ -21,6 +21,7 @@ class Cooler implements PoweredDooredUnit {
 	}
 
 	@Override
+   
     public boolean isPowerOn() {
         return powerOn;
     }
@@ -50,25 +51,12 @@ class Cooler implements PoweredDooredUnit {
         doorOpen = b;
     }
     
-    public void addBottle(String beverageName){
-        Bottle newBottle = new Bottle(beverageName);
-        bottles.add(newBottle);
+    public void addBottle(Bottle toAdd){
+        bottles.add(toAdd);
     }
     
-    public void addBottles(List<Bottle> beverageType) {
-        bottles.addAll(beverageType);
-    }
-    
-    public void addLocalStock(String beverageName, int beverageQuantity){
-    	addBottles(localStock(beverageName, beverageQuantity));
-    }
-        
-    private List<Bottle> localStock (String beverageName, int beverageQuantity){
-    	List<Bottle> toAdd = new ArrayList<Bottle>();
-    	for(int i = 0; i< beverageQuantity; i++){
-        	toAdd.add(new Bottle(beverageName));
-        }
-    	return toAdd;
+    public int getBottleCount(){
+        return bottles.size();
     }
     
     public Orderable removeBottle(){
@@ -85,11 +73,7 @@ class Cooler implements PoweredDooredUnit {
         };
         return result;
     }
-    
-    public int getBottleCount(){
-        return bottles.size();
-    }
-    
+
     private void reorderWhenBelowMinimumStock(Orderable result) {
 		String name = result.getName();
     	int onHand = this.getBeverageCountByType(name);
@@ -99,6 +83,22 @@ class Cooler implements PoweredDooredUnit {
 		}
 	}
     
+    private List<Bottle> localStock (String beverageName, int beverageQuantity){
+    	List<Bottle> toAdd = new ArrayList<Bottle>();
+    	for(int i = 0; i< beverageQuantity; i++){
+        	toAdd.add(new Bottle(beverageName));
+        }
+    	return toAdd;
+    }
+    
+    public void addLocalStock(String beverageName, int beverageQuantity){
+    	addBottles(localStock(beverageName, beverageQuantity));
+    }
+    
+	public void addBottles(List<Bottle> beverageType) {
+        bottles.addAll(beverageType);
+    }
+
     public int getBeverageCountByType(String beverageName) {
         int beverageCount = 0;
         for(Orderable target : bottles){

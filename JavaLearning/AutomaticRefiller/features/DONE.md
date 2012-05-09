@@ -32,6 +32,19 @@
 		  <td>DONE</td>
 		</tr>
 		<tr>
+		  <td>Add Bottle</td>
+		  <td>
+		    <ul>
+		       <li> Given: I have a cooler </li>
+		       <li> And: I want to manually add a bottle to it </li>
+		       <li> When: I add the bottle to the cooler </li>
+		       <li> Then: The bottle should be present </li>
+		       <li> Example: I have an empty cooler. When I add 1 Monster, I should be able to confirm there is 1 Monster present in the cooler.</li>
+		    </ul>
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
 		  <td>Add Bottles</td>
 		  <td>
 		    <ul>
@@ -45,14 +58,14 @@
 		  <td>DONE</td>
 		</tr>
 		<tr>
-		  <td>Remove Bottles</td>
+		  <td>Remove Bottle</td>
 		  <td>
 		    <ul>
 		       <li> Given: I have a cooler stocked with bottles</li>
-		       <li> And: I want to manually remove bottles from it </li>
-		       <li> When: I remove the bottles from the cooler </li>
-		       <li> Then: The removed bottles should not be present </li>
-		       <li> Example: I have a cooler with 10 Monsters and I remove 3, only 7 should still be present </li>
+		       <li> And: I want to manually a bottle from it</li>
+		       <li> When: I remove the bottle from the cooler </li>
+		       <li> Then: The removed bottle should not be present </li>
+		       <li> Example: I have a cooler with 10 Monsters and I remove a bottle, only 9 should be present</li>
 		    </ul>
 		  </td>
 		  <td>DONE</td>
@@ -90,6 +103,18 @@
 		       <li> When: I ask how many bottles the cooler can hold</li>
 		       <li> Then: It should return the correct physical capacity of bottles it can hold</li>
 		       <li> Example: I have a new cooler that should hold 100 bottles. Upon asking it for capacity, I should confirm that it can indeed hold 100 bottles</li>
+		  </td>
+		  <td>DONE</td>
+		</tr>
+		<tr>
+		  <td>Set the Cooler's Custom Capacity</td>
+		  <td>
+		    <ul>
+		       <li> Given: I have a new cooler</li>
+		       <li> And: I set a custom capacity less than it's physical capacity</li>
+		       <li> When: I ask how many bottles the cooler can hold</li>
+		       <li> Then: It should return the correct custom capacity of bottles it can hold</li>
+		       <li> Example: I have a new cooler that should hold 100 bottles. However, I do not want it to have more than 80 bottles at any time, so I set that as its capacity. Upon asking it for capacity, I should confirm that it can indeed hold 80 bottles</li>
 		  </td>
 		  <td>DONE</td>
 		</tr>

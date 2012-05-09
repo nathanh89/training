@@ -11,43 +11,32 @@ import static org.junit.Assert.*;
  * @author nathan
  */
 public class CoolerTests {
-	Cooler cooler = new Cooler(100);
+	Cooler cooler = new Cooler();
 	BottleManufacturer collaborator = new BottleManufacturer("tester");
 	
 	@Before
 	public void setup(){
 		cooler.setPowerOn(true);
+		cooler.setCapacity(100);
 	}
 	
 	@Test
 	public void testSetupCoolerInitialState(){
-		//When I create a new cooler
 		Cooler cooler = new Cooler(50);
-		//It's default state should be correct, capacity to what was passed in, and power off
 		assertEquals(50, cooler.getCapacity());
 		assertFalse(cooler.isPowerOn());
 	}
 	
-	@Test
-	public void testAddSingleBottle(){
-		//Given I have an empty cooler with capacity 100
-		//And I add a bottle of Monster
-		cooler.addBottle("Monster");
-		//Then that bottle should be in the cooler
-		assertEquals(1, cooler.getBeverageCountByType("Monster"));
-	}
-	
     @Test
-    public void testAddMultipleBottlesToCooler(){
-    	//Given an empty cooler with capacity 100
+    public void testAddBottlesToCooler(){
         // When I add bottles to the cooler
         cooler.addLocalStock("Monster", 10);
-        // Then the bottles should be present
-        assertEquals(10, cooler.getBeverageCountByType("Monster"));
+        // Then the bottlest should be present
+        assertEquals(10, cooler.getBottleCount());
     }
     
     @Test
-    public void testRemoveBottleFromCooler(){
+    public void testRemoveBottlesFromCooler(){
         // Given I have a cooler with some bottles
         cooler.addLocalStock("Monster", 10);
         // When I remove that bottle from the cooler
@@ -76,16 +65,6 @@ public class CoolerTests {
         // Then the capacity should be set
         assertEquals(cooler.getCapacity(), 80);
     }
-    
-    @Test(expected=RuntimeException.class)
-    public void testInvalidCapacityVeto(){
-    	//Given a cooler with a physical capacity of 100
-    	//When I want to set the cooler's capacity to a custom level
-    	//And the capacity I try to set is higher that it's physical capacity
-    	cooler.setCapacity(120);
-    	//That setting should be rejected
-    	assertEquals(100, cooler.getCapacity());
-    	}
     
     @Test
     public void testGetPercentFull(){
@@ -180,7 +159,8 @@ public class CoolerTests {
     
    @Test(expected=RuntimeException.class)
     public void testOverCapacityOrderVeto(){
-        //Given a cooler with a physical capacity of 100
+        //Given a cooler with a set capacity
+        Cooler cooler = new Cooler(100);
         //And some stock
         List<Bottle> powerades = createStock("Powerade", 30);
         cooler.addBottles(powerades);
@@ -197,14 +177,15 @@ public class CoolerTests {
     @Test    
     public void testAutomaticReorderCreation(){
 	    // Given some stock
-    	int minimum = 10;
-    	cooler.addLocalStock("Monster", 10);
+    	int minimum = 20;
+    	List<Bottle> roosters = createStock("Rooster Booster", minimum);
+    	cooler.addBottles(roosters);
     	// And : A minimum threshold for that beverage
-    	cooler.setDesiredMinimumStock("Monster", minimum);
+    	cooler.setDesiredMinimumStock("Rooster Booster", minimum);
     	// When a bottle is removed 
     	cooler.removeBottle();
     	// And the beverage falls below the minimum threshold
-    	assertTrue(cooler.getBeverageCountByType("Monster") < minimum);
+    	assertTrue(cooler.getBeverageCountByType("Rooster Booster") < minimum);
     	// Then a pending restock order for the beverage should be created 
 	    assertNotNull(cooler.orderer.checkOrder());
     }

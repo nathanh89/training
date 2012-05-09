@@ -28,26 +28,16 @@ public class CoolerTests {
 		assertFalse(cooler.isPowerOn());
 	}
 	
-	@Test
-	public void testAddSingleBottle(){
-		//Given I have an empty cooler with capacity 100
-		//And I add a bottle of Monster
-		cooler.addBottle("Monster");
-		//Then that bottle should be in the cooler
-		assertEquals(1, cooler.getBeverageCountByType("Monster"));
-	}
-	
     @Test
-    public void testAddMultipleBottlesToCooler(){
-    	//Given an empty cooler with capacity 100
+    public void testAddBottlesToCooler(){
         // When I add bottles to the cooler
         cooler.addLocalStock("Monster", 10);
-        // Then the bottles should be present
-        assertEquals(10, cooler.getBeverageCountByType("Monster"));
+        // Then the bottlest should be present
+        assertEquals(10, cooler.getBottleCount());
     }
     
     @Test
-    public void testRemoveBottleFromCooler(){
+    public void testRemoveBottlesFromCooler(){
         // Given I have a cooler with some bottles
         cooler.addLocalStock("Monster", 10);
         // When I remove that bottle from the cooler

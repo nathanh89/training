@@ -21,33 +21,21 @@ public class CoolerTests {
 	
 	@Test
 	public void testSetupCoolerInitialState(){
-		//When I create a new cooler
 		Cooler cooler = new Cooler(50);
-		//It's default state should be correct, capacity to what was passed in, and power off
 		assertEquals(50, cooler.getCapacity());
 		assertFalse(cooler.isPowerOn());
 	}
 	
-	@Test
-	public void testAddSingleBottle(){
-		//Given I have an empty cooler with capacity 100
-		//And I add a bottle of Monster
-		cooler.addBottle("Monster");
-		//Then that bottle should be in the cooler
-		assertEquals(1, cooler.getBeverageCountByType("Monster"));
-	}
-	
     @Test
-    public void testAddMultipleBottlesToCooler(){
-    	//Given an empty cooler with capacity 100
+    public void testAddBottlesToCooler(){
         // When I add bottles to the cooler
         cooler.addLocalStock("Monster", 10);
-        // Then the bottles should be present
-        assertEquals(10, cooler.getBeverageCountByType("Monster"));
+        // Then the bottlest should be present
+        assertEquals(10, cooler.getBottleCount());
     }
     
     @Test
-    public void testRemoveBottleFromCooler(){
+    public void testRemoveBottlesFromCooler(){
         // Given I have a cooler with some bottles
         cooler.addLocalStock("Monster", 10);
         // When I remove that bottle from the cooler
@@ -180,7 +168,8 @@ public class CoolerTests {
     
    @Test(expected=RuntimeException.class)
     public void testOverCapacityOrderVeto(){
-        //Given a cooler with a physical capacity of 100
+        //Given a cooler with a set capacity
+        Cooler cooler = new Cooler(100);
         //And some stock
         List<Bottle> powerades = createStock("Powerade", 30);
         cooler.addBottles(powerades);
