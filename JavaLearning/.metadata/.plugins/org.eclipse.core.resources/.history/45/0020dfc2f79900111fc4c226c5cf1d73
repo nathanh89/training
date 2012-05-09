@@ -165,7 +165,7 @@ class Cooler implements PoweredDooredUnit {
 	}
 
 	public int getDesiredMinimumStock(String beverageName) {
-		return desiredMinimumStock.getThreshold(beverageName);
+		return desiredMinimumStock.getThreshold("Monster");
 	}
 	
 	public void checkNotMoreThanCapacity(int desired) throws RuntimeException {

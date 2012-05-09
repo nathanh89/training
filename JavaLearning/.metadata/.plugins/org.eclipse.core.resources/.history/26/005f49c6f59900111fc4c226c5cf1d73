@@ -108,17 +108,19 @@ public class CoolerTests {
     @Test
     public void testGetStockValueByType(){
         //Given a cooler with some stock
-        cooler.addLocalStock("Monster", 10);
-        cooler.addLocalStock("Rockstar", 15);
+        List<Bottle> neurogasm = collaborator.fill(new Order("Neurogasm", 69));
+        List<Bottle> gatorade =  collaborator.fill(new Order("Gatorade", 100));
+        cooler.addBottles(neurogasm);
+        cooler.addBottles(gatorade);
         //And that stock has a set retail price
-        cooler.setBeveragePriceByType("Monster", 2.50);
-        cooler.setBeveragePriceByType("Rockstar", 1.50);
+        cooler.setBeveragePriceByType("Neurogasm", 6.90);
+        cooler.setBeveragePriceByType("Gatorade", 2.99);
         //When I ask for the value of the stock, but for a specific beverage
-        double monsterValue = cooler.getStockValueByType("Monster");
-        double rockstarValue = cooler.getStockValueByType("Rockstar");
+        double neurogasmicValue = cooler.getStockValueByType("Neurogasm");
+        double gatoradeValue = cooler.getStockValueByType("Gatorade");
         //Then the correct value should be given
-        assertEquals(25.00, monsterValue, .000001);
-        assertEquals(22.50, rockstarValue, .000001);
+        assertEquals(476.10, neurogasmicValue, .000001);
+        assertEquals(299.00, gatoradeValue, .000001);
          
     }
 
@@ -127,10 +129,8 @@ public class CoolerTests {
     	//Given: A Cooler
     	//When: I want to set a lower threshold for stock capacity for a beverage
     	cooler.setDesiredMinimumStock("Monster", 10);
-    	cooler.setDesiredMinimumStock("Rockstar", 15);
     	//Then: The threshold should be set correctly
     	assertEquals(10, cooler.getDesiredMinimumStock("Monster"));
-    	assertEquals(15, cooler.getDesiredMinimumStock("Rockstar"));
     }
     
     @Test

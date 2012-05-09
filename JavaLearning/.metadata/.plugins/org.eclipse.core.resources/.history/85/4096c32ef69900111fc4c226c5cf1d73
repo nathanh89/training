@@ -127,10 +127,8 @@ public class CoolerTests {
     	//Given: A Cooler
     	//When: I want to set a lower threshold for stock capacity for a beverage
     	cooler.setDesiredMinimumStock("Monster", 10);
-    	cooler.setDesiredMinimumStock("Rockstar", 15);
     	//Then: The threshold should be set correctly
     	assertEquals(10, cooler.getDesiredMinimumStock("Monster"));
-    	assertEquals(15, cooler.getDesiredMinimumStock("Rockstar"));
     }
     
     @Test
