@@ -223,21 +223,34 @@ public class CoolerTests {
     	assertEquals(10, cooler.getDesiredMinimumStock("Monster"));
     	assertEquals(15, cooler.getDesiredMinimumStock("Rockstar"));
     }
-
-    /* @Test    
+    
+    @Test
+    public void testReorderCheck(){
+    	Cooler cooler = new Cooler(100);
+    	cooler.addLocalStock("Monster", 20);
+    	cooler.setDesiredMinimumStock("Monster", 40);
+    	assertEquals(40, cooler.getDesiredMinimumStock("Monster"));
+    	assertEquals(20, cooler.reorderCheck("Monster"));
+    }
+  
+   @Test    
     public void testAutomaticReorderCreation(){
-	    // Given some stock
-    	int minimum = 10;
-    	cooler.addLocalStock("Monster", 10);
-    	// And : A minimum threshold for that beverage
-    	cooler.setDesiredMinimumStock("Monster", minimum);
-    	// When a bottle is removed 
-    	cooler.removeBottle();
-    	// And the beverage falls below the minimum threshold
-    	assertTrue(cooler.getBottleCountByBeverage("Monster") < minimum);
-    	// Then a pending restock order for the beverage should be created 
-	    assertNotNull(cooler.orderer.checkOrder());
-    }*/
+	    // Given a cooler with some stock
+    	Cooler cooler = new Cooler(100);
+    	cooler.addLocalStock("Monster", 20);
+    	cooler.addLocalStock("Rockstar", 40);
+    	// And: A minimum threshold for that beverage
+    	cooler.setDesiredMinimumStock("Monster", 20);
+    	cooler.setDesiredMinimumStock("Rockstar", 40);
+    	// When stock falls below capacity 
+    	cooler.removeBottles("Monster", 12);
+    	//cooler.removeBottles("Rockstar", 18);
+    	// Then a new order is created for the missing stock
+    	assertEquals(20, cooler.getDesiredMinimumStock("Monster"));
+    	assertEquals(40, cooler.getDesiredMinimumStock("Rockstar"));
+    	assertEquals(12, cooler.orderer.checkOrder().getCountForName("Monster"));
+    	//assertEquals(18, cooler.orderer.checkOrder().getCountForName("Rockstar"));
+    }
     
 }
     

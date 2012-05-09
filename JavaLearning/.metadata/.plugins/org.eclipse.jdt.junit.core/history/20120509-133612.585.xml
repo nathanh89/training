@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="CoolerTests" project="AutomaticRefiller" tests="20" started="20" failures="0" errors="0" ignored="0">
+  <testsuite name="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.008">
+    <testcase name="testAddSingleBottle" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testAddMultipleBottlesToCooler" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testRemoveBottleFromCoolerByBeverage" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testRemoveBottlesFromCoolerByBeverage" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testGetTotalBottleCount" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testGetBottlesCountByBeverage" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testGetCapacity" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testSetCustomCapacity" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testInvalidCapacityVeto" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testGetPercentFull" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testSetGetBeveragePriceByType" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testGetTotalStockValue" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testGetStockValueByBeverage" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testCreateEditOrdersFromCooler" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.001"/>
+    <testcase name="testPlaceOrdersFromCooler" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testOverCapacityOrderVeto" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.002"/>
+    <testcase name="testSetGetDesiredMinimumStockForBeverage" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.001"/>
+    <testcase name="testReorderCheck" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.0"/>
+    <testcase name="testSetupCoolerInitialState" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.001"/>
+    <testcase name="testAutomaticReorderCreation" classname="com.visionarysoftwaresolutions.refillable.CoolerTests" time="0.002"/>
+  </testsuite>
+</testrun>

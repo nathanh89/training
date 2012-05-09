@@ -17,10 +17,7 @@ public class Bottle implements Orderable {
     public void setBeveragePrice(double beveragePrice){
         this.price = beveragePrice;
     }
-    
-    /* (non-Javadoc)
-	 * @see com.visionarysoftwaresolutions.refillable.Orderable#getName()
-	 */
+
     @Override
 	public String getName(){
         return name;

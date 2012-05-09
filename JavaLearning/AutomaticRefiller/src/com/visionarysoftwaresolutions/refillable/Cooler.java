@@ -8,7 +8,7 @@ class Cooler implements PoweredDooredUnit {
     private boolean doorOpen = false;
     private int capacity;
     private List<Bottle> bottles = new ArrayList<Bottle>();
-    private MinimumStock desiredMinimumStock = new MinimumStock();
+    public MinimumStock desiredMinimumStock = new MinimumStock();
     Orderer orderer = new Orderer();
     
     
@@ -79,6 +79,10 @@ class Cooler implements PoweredDooredUnit {
         			bottles.remove(i);
         		}
         	}
+        }
+        int toOrder = reorderCheck(beverageName);
+        if(toOrder > 0){
+        	automaticReorder(beverageName, toOrder, this);
         }
     }
     
@@ -175,18 +179,20 @@ class Cooler implements PoweredDooredUnit {
 
 	public int getDesiredMinimumStock(String beverageName) {
 		return desiredMinimumStock.getThreshold(beverageName);
-	}
-	
-	    
-    /*private void reorderWhenBelowMinimumStock(Orderable result) {
-		String name = result.getName();
-    	int onHand = this.getBottleCountByBeverage(name);
-		int threshold = desiredMinimumStock.getThreshold(name);
-		if(onHand < threshold){
-			orderer.createOrder(name, threshold - onHand, this);
 		}
-	}*/
-
+	
+	public int reorderCheck(String beverageName) {
+    	int onHand = this.getBottleCountByBeverage(beverageName);
+		int threshold = this.getDesiredMinimumStock(beverageName);
+		int toOrder = threshold - onHand;
+		return toOrder;
+		}
+	
+	private void automaticReorder(String beverageName, int toOrder, Cooler toDeliver){
+		orderer.createOrder(beverageName, toOrder, this);
+		}
+		
 }
+
     
 
