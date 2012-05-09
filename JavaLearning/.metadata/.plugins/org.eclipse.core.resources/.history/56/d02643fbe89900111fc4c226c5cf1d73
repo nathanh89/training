@@ -10,7 +10,7 @@ class Cooler implements PoweredDooredUnit {
     List<Bottle> bottles = new ArrayList<Bottle>();
     MinimumStock desiredMinimumStock = new MinimumStock();
     Order pending;
-    Orderer orderer = new Orderer();
+    Orderer orderer;
     
     
     public Cooler(int capacity) {

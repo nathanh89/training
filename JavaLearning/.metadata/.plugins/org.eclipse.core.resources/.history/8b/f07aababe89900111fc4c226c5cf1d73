@@ -12,7 +12,7 @@ public class OrdererTests {
 		//Given I want to create a new order
 		orderer.createOrder("Monster", 10);
 		//Then the order should be created
-		assertEquals(10, orderer.checkOrderByProductName("Monster"));
+		assertEquals(10, orderer.checkOrder("Monster"));
 	}
 	
 	@Test 

@@ -8,11 +8,7 @@ public class Orderer {
 		pending = new Order(productName, productQuantity);		
 	}
 	
-	public Order checkOrder(){
-		return pending;
-	}
-	
-	public int checkOrderByProductName(String productName){
+	public int checkOrder(String productName){
 		return pending.getCountForName(productName);
 	}
 

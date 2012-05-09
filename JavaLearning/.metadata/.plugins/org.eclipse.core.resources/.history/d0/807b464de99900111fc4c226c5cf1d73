@@ -171,9 +171,10 @@ public class CoolerTests {
     public void testSendOrdersFromCooler(){
     	//Given: I have a cooler in need of some stock
     	//When: I create an order for more stock
-    	cooler.orderer.createOrder("Monster", 10);
+    	cooler.createOrder("Monster", 10);
     	//And: I send the order to a BottleManufacturer
-    	cooler.orderer.placeOrder("Monster, Inc", cooler);
+    	BottleManufacturer monsterInc = new BottleManufacturer("Monster Inc");
+    	cooler.placeOrder(monsterInc);
     	//Then: The cooler's stock should be updated by the order
     	assertEquals(10, cooler.getBeverageCountByType("Monster"));
     }

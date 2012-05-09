@@ -155,14 +155,14 @@ public class CoolerTests {
     }
     
     @Test
-    public void testCreateEditOrdersFromCooler(){
+    public void testEditOrdersFromCooler(){
     	//Given: I have a cooler in need of some stock
     	//When: I order some more stock
-    	cooler.orderer.createOrder("Monster", 10);
+    	cooler.createOrder("Monster", 10);
     	//And: I add to the order before I send it
-    	cooler.orderer.addToOrder("Rockstar", 20);
+    	cooler.addToOrder("Rockstar", 20);
     	//Then: The additions should be on the order
-    	Order result = cooler.orderer.checkOrder();
+    	Order result = cooler.getPendingOrder();
     	assertEquals(10, result.getCountForName("Monster"));
     	assertEquals(20, result.getCountForName("Rockstar"));
     }
@@ -171,9 +171,10 @@ public class CoolerTests {
     public void testSendOrdersFromCooler(){
     	//Given: I have a cooler in need of some stock
     	//When: I create an order for more stock
-    	cooler.orderer.createOrder("Monster", 10);
+    	cooler.createOrder("Monster", 10);
     	//And: I send the order to a BottleManufacturer
-    	cooler.orderer.placeOrder("Monster, Inc", cooler);
+    	BottleManufacturer monsterInc = new BottleManufacturer("Monster Inc");
+    	cooler.placeOrder(monsterInc);
     	//Then: The cooler's stock should be updated by the order
     	assertEquals(10, cooler.getBeverageCountByType("Monster"));
     }
