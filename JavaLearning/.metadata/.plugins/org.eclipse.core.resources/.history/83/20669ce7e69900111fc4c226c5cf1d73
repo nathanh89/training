@@ -16,9 +16,4 @@ public class Orderer {
 		pending.addContainer(productName, productQuantity);
 	}
 
-	public void placeOrder(String manufacturer, Cooler deliverTo) {
-		BottleManufacturer orderFiller = new BottleManufacturer(manufacturer);
-		deliverTo.addBottles(orderFiller.fill(pending));
-	}
-
 }

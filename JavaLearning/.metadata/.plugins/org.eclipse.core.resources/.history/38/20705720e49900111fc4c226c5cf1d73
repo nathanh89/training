@@ -12,13 +12,4 @@ public class Orderer {
 		return pending.getCountForName(productName);
 	}
 
-	public void addToOrder(String productName, int productQuantity) {
-		pending.addContainer(productName, productQuantity);
-	}
-
-	public void placeOrder(String manufacturer, Cooler deliverTo) {
-		BottleManufacturer orderFiller = new BottleManufacturer(manufacturer);
-		deliverTo.addBottles(orderFiller.fill(pending));
-	}
-
 }

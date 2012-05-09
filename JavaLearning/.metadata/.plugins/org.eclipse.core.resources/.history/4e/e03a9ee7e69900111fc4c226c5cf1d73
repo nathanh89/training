@@ -26,19 +26,5 @@ public class OrdererTests {
 		assertEquals(10, orderer.checkOrder("Monster"));
 		assertEquals(15, orderer.checkOrder("Rockstar"));
 	}
-	
-	@Test
-	public void testPlaceOrder(){
-		//Given I have an order that is finalized
-		Orderer orderer = new Orderer();
-		orderer.createOrder("Monster", 10);
-		orderer.addToOrder("Rockstar", 15);
-		//When I want to place that order
-		Cooler cooler = new Cooler(100);
-		orderer.placeOrder("Energy Drinks Inc", cooler);
-		//Then that order should be filled
-		assertEquals(10, cooler.getBeverageCountByType("Monster"));
-		assertEquals(15, cooler.getBeverageCountByType("Rockstar"));
-	}
 
 }
