@@ -82,7 +82,7 @@ class Cooler implements PoweredDooredUnit {
         }
         int toOrder = reorderCheck(beverageName);
         if(toOrder > 0){
-        	automaticReorder(beverageName, toOrder, this);
+        	automaticReorder(beverageName, this);
         }
     }
     
@@ -188,11 +188,25 @@ class Cooler implements PoweredDooredUnit {
 		return toOrder;
 		}
 	
-	private void automaticReorder(String beverageName, int toOrder, Cooler toDeliver){
-		orderer.createOrder(beverageName, toOrder, this);
+	private boolean thereIsAnOrderPending(){
+		if(orderer.checkOrder() == null){
+			return false;
 		}
-		
+		else{
+			return true;
+		}
+	}
+	
+	private void automaticReorder(String beverageName, Cooler toDeliver){
+			if(thereIsAnOrderPending()){
+				orderer.addToOrder(beverageName, 1, this);
+			}
+			else{
+				orderer.createOrder(beverageName, 1, this);
+				}
+			}
 }
+		
 
     
 

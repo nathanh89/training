@@ -9,6 +9,9 @@ import java.util.*;
 public class Order implements Iterable<OrderContainer> {
     private Collection<OrderContainer> items;
     
+    public Order(){
+    }
+    
     public Order(String desiredBeverage, int desiredQuantity){
     	items = new ArrayList<OrderContainer>();
     	addContainer(desiredBeverage, desiredQuantity);

@@ -5,6 +5,7 @@ public class Orderer {
 	private Order pending;
 	
 	public void createOrder(){
+		pending = new Order();
 	}
 
 	public void createOrder(String productName, int productQuantity, Cooler deliverTo) {

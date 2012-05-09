@@ -8,3 +8,5 @@
 1336587049406	Rename method 'getStockValueByType'
 1336587133484	Rename method 'setBeveragePriceByType'
 1336587148041	Rename method 'getBeveragePriceByType'
+1336599566096	Rename method 'ordererPendingNullCheck'
+1336601825682	Rename method 'isThereAnOrderPending'
