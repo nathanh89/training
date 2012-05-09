@@ -7,8 +7,8 @@ class Cooler implements PoweredDooredUnit {
     private boolean powerOn = false;
     private boolean doorOpen = false;
     private int capacity;
-    List<Bottle> bottles = new ArrayList<Bottle>();
-    MinimumStock desiredMinimumStock = new MinimumStock();
+    private List<Bottle> bottles = new ArrayList<Bottle>();
+    private MinimumStock desiredMinimumStock = new MinimumStock();
     Orderer orderer = new Orderer();
     
     
@@ -86,77 +86,68 @@ class Cooler implements PoweredDooredUnit {
         return result;
     }
     
-    public int getBottleCount(){
+    public int getTotalBottleCount(){
         return bottles.size();
     }
     
-    private void reorderWhenBelowMinimumStock(Orderable result) {
-		String name = result.getName();
-    	int onHand = this.getBeverageCountByType(name);
-		int threshold = desiredMinimumStock.getThreshold(name);
-		if(onHand < threshold){
-			orderer.createOrder(name, threshold - onHand, this);
-		}
-	}
-    
-    public int getBeverageCountByType(String beverageName) {
+    public int getBottleCountByBeverage(String beverageName) {
         int beverageCount = 0;
         for(Orderable target : bottles){
             beverageCount += (target.getName().equalsIgnoreCase(beverageName)) ? 1 : 0;
         }
         return beverageCount;
     }
-
-    public void setCapacity(int desired) {
-    	vetoInvalidCapacity(desired);
-        capacity = desired;
-    }
     
     public int getCapacity(){
         return capacity;
     }
+        
+   public void setCapacity(int desired) {
+    	vetoInvalidCapacity(desired);
+        capacity = desired;
+    }
     
-    private void vetoInvalidCapacity(int desired){
+   private void vetoInvalidCapacity(int desired){
     	if(desired > capacity){
     		throw new RuntimeException("That's more than I can hold!");
     	}
     }
-    
-    public int getPercentFull(){
-        double percent;
-        int bottlesInCooler = bottles.size();
-        percent = (double) bottlesInCooler / (double) capacity;
-        percent *= 100;
-        return (int) percent;
-    }
-    
-    public void setBeveragePriceByType(String beverageName, double newPrice){
-        for(int i=0; i<bottles.size(); i++){
-            if(beverageName == bottles.get(i).getName()){
-                bottles.get(i).price = newPrice;
-            }
-        }
-    }
-    
-    public double getBeveragePriceByType(String beverageName){
-        for(int i=0; i<bottles.size(); i++){
-            if(beverageName == bottles.get(i).getName()){
-                double price = bottles.get(i).getBeverageValue();
-                return price;
-            }
-        }
-        return 0.00;
-    }
-    
-    public double getTotalStockValue() {
-        double totalStockValue = 0.00;
-        for(int i=0; i<bottles.size(); i++){
-            totalStockValue += bottles.get(i).getBeverageValue();
-        }
-        return totalStockValue;
-    }
-
-    double getStockValueByType(String beverageName) {
+      
+   public int getPercentFull(){
+       double percent;
+       int bottlesInCooler = bottles.size();
+       percent = (double) bottlesInCooler / (double) capacity;
+       percent *= 100;
+       return (int) percent;
+   }
+      
+	public void setBeveragePrice(String beverageName, double newPrice){
+	    for(int i=0; i<bottles.size(); i++){
+	        if(beverageName == bottles.get(i).getName()){
+	            bottles.get(i).price = newPrice;
+	        }
+	    }
+	}
+	
+	public double getBeveragePrice(String beverageName){
+	    for(int i=0; i<bottles.size(); i++){
+	        if(beverageName == bottles.get(i).getName()){
+	            double price = bottles.get(i).getBeverageValue();
+	            return price;
+	        }
+	    }
+	    return 0.00;
+	}
+	
+	public double getTotalStockValue() {
+	    double totalStockValue = 0.00;
+	    for(int i=0; i<bottles.size(); i++){
+	        totalStockValue += bottles.get(i).getBeverageValue();
+	    }
+	    return totalStockValue;
+	}
+	
+	double getStockValueByBeverage(String beverageName) {
         double stockValueByType = 0.00;
         for(int i=0; i<bottles.size(); i++){
             if(beverageName == bottles.get(i).getName()){
@@ -165,9 +156,14 @@ class Cooler implements PoweredDooredUnit {
         }
         return stockValueByType;
     }
-
 	
-	public void setDesiredMinimumStock(String beverageName, int beverageQuantity) {
+	public void checkNotMoreThanCapacity(int desired) throws RuntimeException {
+		if(desired + getTotalBottleCount() > capacity){
+            throw new RuntimeException("That's more bottles than the cooler can hold!");
+        }
+	}
+	
+    public void setDesiredMinimumStock(String beverageName, int beverageQuantity) {
 		desiredMinimumStock.update(beverageName, beverageQuantity);
 	}
 
@@ -175,10 +171,14 @@ class Cooler implements PoweredDooredUnit {
 		return desiredMinimumStock.getThreshold(beverageName);
 	}
 	
-	public void checkNotMoreThanCapacity(int desired) throws RuntimeException {
-		if(desired + getBottleCount() > capacity){
-            throw new RuntimeException("That's more bottles than the cooler can hold!");
-        }
+	    
+    private void reorderWhenBelowMinimumStock(Orderable result) {
+		String name = result.getName();
+    	int onHand = this.getBottleCountByBeverage(name);
+		int threshold = desiredMinimumStock.getThreshold(name);
+		if(onHand < threshold){
+			orderer.createOrder(name, threshold - onHand, this);
+		}
 	}
 
 }

@@ -476,3 +476,6 @@ org.eclipse.swt.SWTException: Widget is disposed
 
 !ENTRY org.eclipse.jdt.core 4 969 2012-05-09 10:31:39.829
 !MESSAGE testAddSingleBottle [in CoolerTests [in [Working copy] CoolerTests.java [in com.visionarysoftwaresolutions.refillable [in test [in AutomaticRefiller]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2012-05-09 11:09:58.128
+!MESSAGE testGetStockValueBy() [in CoolerTests [in [Working copy] CoolerTests.java [in com.visionarysoftwaresolutions.refillable [in test [in AutomaticRefiller]]]]] does not exist

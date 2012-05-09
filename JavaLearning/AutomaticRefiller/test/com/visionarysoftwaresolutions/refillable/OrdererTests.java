@@ -39,8 +39,8 @@ public class OrdererTests {
 		//When I want to place that order
 		orderer.placeOrder("Energy Drinks Inc", cooler);
 		//Then that order should be filled
-		assertEquals(10, cooler.getBeverageCountByType("Monster"));
-		assertEquals(15, cooler.getBeverageCountByType("Rockstar"));
+		assertEquals(10, cooler.getBottleCountByBeverage("Monster"));
+		assertEquals(15, cooler.getBottleCountByBeverage("Rockstar"));
 	}
 
 }
