@@ -22,12 +22,12 @@ public class BottleManufacturer {
 		this.name = name;
 	}
 	
-	public List<Bottle> fill(Order newOrder) {
-		List<Bottle> result = new ArrayList<Bottle>();
+	public List<BottledBeverage> fill(Order newOrder) {
+		List<BottledBeverage> result = new ArrayList<BottledBeverage>();
 		for(OrderContainer container : newOrder){
-			List<Bottle> items = container.make();
-			for(Consumable anItem : items){
-				result.add((Bottle)anItem);
+			List<BottledBeverage> items = container.make();
+			for(BottledBeverage anItem : items){
+				result.add((BottledBeverage)anItem);
 			}
 		}
 		return result;

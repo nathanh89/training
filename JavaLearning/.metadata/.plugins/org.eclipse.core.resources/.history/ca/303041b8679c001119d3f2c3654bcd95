@@ -26,7 +26,7 @@ public class BottleManufacturer {
 		List<Bottle> result = new ArrayList<Bottle>();
 		for(OrderContainer container : newOrder){
 			List<Bottle> items = container.make();
-			for(Consumable anItem : items){
+			for(Bottle anItem : items){
 				result.add((Bottle)anItem);
 			}
 		}

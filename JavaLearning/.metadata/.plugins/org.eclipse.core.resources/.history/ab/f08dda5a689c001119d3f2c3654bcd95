@@ -11,12 +11,12 @@ public class OrderContainer {
 		setNumber(desiredQuantity);
 		setItem(new Bottle(desiredBeverage));
 	}
-	public Consumable getItem() {
+	public Bottle getItem() {
 		return item;
 	}
 	
 	public String getName(){
-		return item.getBeverageName();
+		return item.getName();
 	}
 	
 	public void setItem(Bottle item) {

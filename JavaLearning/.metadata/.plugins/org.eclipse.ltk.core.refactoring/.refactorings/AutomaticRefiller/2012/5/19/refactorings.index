@@ -13,3 +13,10 @@
 1336602810046	Rename method 'reorderCheck'
 1336849780704	Delete element
 1336849850788	Rename method 'setBeveragePrice'
+1336850368764	Rename method 'getBeverageValue'
+1336850509512	Rename type 'Bottle'
+1336850652283	Rename type 'BottledBeverage'
+1336850781403	Extract superclass 'Consumable'
+1336850942801	Push down
+1336851007899	Rename field 'name'
+1336851334193	Rename method 'getName'

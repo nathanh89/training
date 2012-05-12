@@ -75,7 +75,7 @@ class Cooler implements PoweredDooredUnit {
     	int initial = this.getBottleCountByBeverage(beverageName);
         for(int i = 0; i<bottles.size(); i++){
         	if(initial == this.getBottleCountByBeverage(beverageName)){
-        		if(bottles.get(i).getBeverageName() == beverageName){
+        		if(bottles.get(i).getName() == beverageName){
         			bottles.remove(i);
         		}
         	}
@@ -92,7 +92,7 @@ class Cooler implements PoweredDooredUnit {
         	toRemove.add(new Bottle(beverageName));
         }
     	for(int i = 0; i<toRemove.size(); i++){
-    		removeBottle(toRemove.get(i).getBeverageName());
+    		removeBottle(toRemove.get(i).getName());
     	}
     }
     
@@ -103,7 +103,7 @@ class Cooler implements PoweredDooredUnit {
     public int getBottleCountByBeverage(String beverageName) {
         int beverageCount = 0;
         for(Bottle target : bottles){
-            beverageCount += (target.getBeverageName().equalsIgnoreCase(beverageName)) ? 1 : 0;
+            beverageCount += (target.getName().equalsIgnoreCase(beverageName)) ? 1 : 0;
         }
         return beverageCount;
     }
@@ -133,7 +133,7 @@ class Cooler implements PoweredDooredUnit {
       
 	public void setBeveragePrice(String beverageName, double newPrice){
 	    for(int i=0; i<bottles.size(); i++){
-	        if(beverageName == bottles.get(i).getBeverageName()){
+	        if(beverageName == bottles.get(i).getName()){
 	            bottles.get(i).price = newPrice;
 	        }
 	    }
@@ -141,7 +141,7 @@ class Cooler implements PoweredDooredUnit {
 	
 	public double getBeveragePrice(String beverageName){
 	    for(int i=0; i<bottles.size(); i++){
-	        if(beverageName == bottles.get(i).getBeverageName()){
+	        if(beverageName == bottles.get(i).getName()){
 	            double price = bottles.get(i).getPrice();
 	            return price;
 	        }
@@ -160,7 +160,7 @@ class Cooler implements PoweredDooredUnit {
 	double getStockValueByBeverage(String beverageName) {
         double stockValueByType = 0.00;
         for(int i=0; i<bottles.size(); i++){
-            if(beverageName == bottles.get(i).getBeverageName()){
+            if(beverageName == bottles.get(i).getName()){
                 stockValueByType += bottles.get(i).getPrice();
             }
         }

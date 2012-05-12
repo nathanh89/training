@@ -5,21 +5,21 @@ import java.util.List;
 
 public class OrderContainer {
 	private int number;
-	private Bottle item;
+	private BottledBeverage item;
 	
 	public OrderContainer(String desiredBeverage, int desiredQuantity) {
 		setNumber(desiredQuantity);
-		setItem(new Bottle(desiredBeverage));
+		setItem(new BottledBeverage(desiredBeverage));
 	}
-	public Consumable getItem() {
+	public BottledBeverage getItem() {
 		return item;
 	}
 	
 	public String getName(){
-		return item.getBeverageName();
+		return item.getName();
 	}
 	
-	public void setItem(Bottle item) {
+	public void setItem(BottledBeverage item) {
 		this.item = item;
 	}
 	public int getNumber() {
@@ -29,8 +29,8 @@ public class OrderContainer {
 		this.number = number;
 	}
 	
-	public List<Bottle> make(){
-		List<Bottle> result = new ArrayList<Bottle>();
+	public List<BottledBeverage> make(){
+		List<BottledBeverage> result = new ArrayList<BottledBeverage>();
 		for(int i=0; i< number; i++){
 			result.add(item);
 		}
