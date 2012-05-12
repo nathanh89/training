@@ -1,0 +1,23 @@
+package com.visionarysoftwaresolutions.refillable;
+
+public class StorageUnit extends PowerableUnit {
+
+	private boolean doorOpen = false;
+
+	public StorageUnit() {
+		super();
+	}
+
+	public boolean isDoorOpen() {
+	    return doorOpen;
+	}
+
+	public void operateDoor() {
+	    setDoorOpen(!doorOpen);
+	}
+
+	public void setDoorOpen(boolean b) {
+	    doorOpen = b;
+	}
+
+}

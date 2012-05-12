@@ -28,3 +28,9 @@
 1336852174243	Delete element
 1336852809596	Rename field 'powerState'
 1336852888937	Extract superclass 'PowerableUnit'
+1336853355343	Extract superclass 'StorageUnit'
+1336854478866	Delete element
+1336854730708	Delete element
+1336854859216	Extract interface 'PowerableUnitInterface'
+1336854950929	Extract interface 'StorageUnitInterface'
+1336858762193	Rename type 'PowerableStorageUnitInterface'

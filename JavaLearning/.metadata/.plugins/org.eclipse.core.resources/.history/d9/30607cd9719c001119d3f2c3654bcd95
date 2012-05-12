@@ -1,6 +1,6 @@
 package com.visionarysoftwaresolutions.refillable;
 
-public class PowerableUnit implements PowerableUnitInterface {
+public class PowerableUnit {
 
 	private boolean poweredState = false;
 
@@ -8,17 +8,14 @@ public class PowerableUnit implements PowerableUnitInterface {
 		super();
 	}
 
-	@Override
 	public boolean isPowerOn() {
 	    return poweredState;
 	}
 
-	@Override
 	public void setPowerOn(boolean powerOn) {
 		poweredState = powerOn;
 	}
 
-	@Override
 	public void togglePower() {
 	    setPowerOn(!poweredState);
 	}

@@ -3,7 +3,7 @@ package com.visionarysoftwaresolutions.refillable;
 import java.util.ArrayList;
 import java.util.List;
 
-class Cooler extends StorageUnit {
+class Cooler implements PowerableStorageUnitInterface {
     private int capacity;
     private List<Bottle> bottles = new ArrayList<Bottle>();
     public MinimumStock desiredMinimumStock = new MinimumStock();

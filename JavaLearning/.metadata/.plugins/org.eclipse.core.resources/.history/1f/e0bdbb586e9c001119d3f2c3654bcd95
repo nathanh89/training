@@ -3,7 +3,8 @@ package com.visionarysoftwaresolutions.refillable;
 import java.util.ArrayList;
 import java.util.List;
 
-class Cooler extends StorageUnit {
+class Cooler extends PowerableUnit {
+    private boolean doorOpen = false;
     private int capacity;
     private List<Bottle> bottles = new ArrayList<Bottle>();
     public MinimumStock desiredMinimumStock = new MinimumStock();
@@ -18,7 +19,19 @@ class Cooler extends StorageUnit {
 	public Cooler() {
 	}
 
-	public void addBottle(String beverageName){
+	public boolean isDoorOpen(){
+        return doorOpen;
+    }
+
+    public void operateDoor() {
+        setDoorOpen(!doorOpen);
+    }
+
+    public void setDoorOpen(boolean b) {
+        doorOpen = b;
+    }
+    
+    public void addBottle(String beverageName){
         Bottle newBottle = new Bottle(beverageName);
         bottles.add(newBottle);
     }
