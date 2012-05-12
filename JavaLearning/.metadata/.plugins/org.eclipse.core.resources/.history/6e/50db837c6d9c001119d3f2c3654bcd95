@@ -3,7 +3,8 @@ package com.visionarysoftwaresolutions.refillable;
 import java.util.ArrayList;
 import java.util.List;
 
-class Cooler extends PowerableUnit {
+class Cooler {
+    private boolean powerOn = false;
     private boolean doorOpen = false;
     private int capacity;
     private List<Bottle> bottles = new ArrayList<Bottle>();
@@ -19,7 +20,19 @@ class Cooler extends PowerableUnit {
 	public Cooler() {
 	}
 
-	public boolean isDoorOpen(){
+	public boolean isPowerOn() {
+        return powerOn;
+    }
+
+    public void setPowerOn(boolean powerOn) {
+        this.powerOn = powerOn;
+    }
+
+    public void togglePower() {
+        setPowerOn(!powerOn);
+    }
+    
+    public boolean isDoorOpen(){
         return doorOpen;
     }
 

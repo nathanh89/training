@@ -26,3 +26,5 @@
 1336852158037	Delete element
 1336852166070	Delete element
 1336852174243	Delete element
+1336852809596	Rename field 'powerState'
+1336852888937	Extract superclass 'PowerableUnit'
