@@ -3,11 +3,11 @@ package com.visionarysoftwaresolutions.refillable;
 import java.util.ArrayList;
 import java.util.List;
 
-class Cooler {
+class Cooler implements PoweredDooredUnit {
     private boolean powerOn = false;
     private boolean doorOpen = false;
     private int capacity;
-    private List<Bottle> bottles = new ArrayList<Bottle>();
+    private List<Consumable> bottles = new ArrayList<Consumable>();
     public MinimumStock desiredMinimumStock = new MinimumStock();
     Orderer orderer = new Orderer();
     
@@ -20,26 +20,32 @@ class Cooler {
 	public Cooler() {
 	}
 
-	public boolean isPowerOn() {
+	@Override
+    public boolean isPowerOn() {
         return powerOn;
     }
 
+    @Override
     public void setPowerOn(boolean powerOn) {
         this.powerOn = powerOn;
     }
 
+    @Override
     public void togglePower() {
         setPowerOn(!powerOn);
     }
     
+    @Override
     public boolean isDoorOpen(){
         return doorOpen;
     }
 
+    @Override
     public void operateDoor() {
         setDoorOpen(!doorOpen);
     }
 
+    @Override
     public void setDoorOpen(boolean b) {
         doorOpen = b;
     }
