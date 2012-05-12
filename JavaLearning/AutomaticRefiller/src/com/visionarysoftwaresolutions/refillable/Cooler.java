@@ -102,7 +102,7 @@ class Cooler implements PoweredDooredUnit {
     
     public int getBottleCountByBeverage(String beverageName) {
         int beverageCount = 0;
-        for(Orderable target : bottles){
+        for(Bottle target : bottles){
             beverageCount += (target.getName().equalsIgnoreCase(beverageName)) ? 1 : 0;
         }
         return beverageCount;

@@ -5,13 +5,13 @@ import java.util.List;
 
 public class OrderContainer {
 	private int number;
-	private Orderable item;
+	private Bottle item;
 	
 	public OrderContainer(String desiredBeverage, int desiredQuantity) {
 		setNumber(desiredQuantity);
 		setItem(new Bottle(desiredBeverage));
 	}
-	public Orderable getItem() {
+	public Bottle getItem() {
 		return item;
 	}
 	
@@ -19,7 +19,7 @@ public class OrderContainer {
 		return item.getName();
 	}
 	
-	public void setItem(Orderable item) {
+	public void setItem(Bottle item) {
 		this.item = item;
 	}
 	public int getNumber() {
@@ -29,8 +29,8 @@ public class OrderContainer {
 		this.number = number;
 	}
 	
-	public List<Orderable> make(){
-		List<Orderable> result = new ArrayList<Orderable>();
+	public List<Bottle> make(){
+		List<Bottle> result = new ArrayList<Bottle>();
 		for(int i=0; i< number; i++){
 			result.add(item);
 		}

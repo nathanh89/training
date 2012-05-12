@@ -6,7 +6,7 @@ import java.util.Objects;
  *
  * @author nathan
  */
-public class Bottle implements Orderable {
+public class Bottle {
     private final String name;
     public double price;
     
@@ -14,11 +14,10 @@ public class Bottle implements Orderable {
         this.name = beverageName;
     }
     
-    public void setBeveragePrice(double beveragePrice){
+    public void setPrice(double beveragePrice){
         this.price = beveragePrice;
     }
 
-    @Override
 	public String getName(){
         return name;
     }

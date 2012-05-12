@@ -11,3 +11,5 @@
 1336599566096	Rename method 'ordererPendingNullCheck'
 1336601825682	Rename method 'isThereAnOrderPending'
 1336602810046	Rename method 'reorderCheck'
+1336849780704	Delete element
+1336849850788	Rename method 'setBeveragePrice'
