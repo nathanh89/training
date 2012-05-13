@@ -1,0 +1,6 @@
+Page 5: A (if you have to do multiple similar overrides), B, F.
+
+Page 6: What do you think about this design?
+	Honestly, it still seems not that great. What's the point of 		putting the method stubs in an interface when you're going to 		have to type out the implementations in all the classes that 		implement that interface? He'd actually be writing more code, 		because now he has to duplicate implementation for quack() 		and fly() across all the real ducks in the sim program, and I 		suspect there are more real ducks that can do those behaviors 		than rubber and decoy ducks.
+
+Page 8: Well, I've had to change code in the cooler sim a crapton of 		times. Whenever I see new features that need to be added, or 		Nick decides he wants it to restock automatically. And I've 		refactored it a bunch of times, and will continue to do so, 		because though it currently has the functionality I want, I'm 		not satisfied with how the code looks yet.
