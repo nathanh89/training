@@ -1,5 +1,7 @@
 package com.visionarysoftwaresolutions.hfdp.ch1;
 
-public class FlyBehavior {
+public interface FlyBehavior {
+	
+	void fly();
 
 }

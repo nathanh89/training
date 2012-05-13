@@ -1,5 +1,7 @@
 package com.visionarysoftwaresolutions.hfdp.ch1;
 
-public class QuackBehavior {
+public interface QuackBehavior {
+	
+	void quack();
 
 }

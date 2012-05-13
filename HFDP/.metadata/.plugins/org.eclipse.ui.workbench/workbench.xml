@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="15" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
-<window height="744" width="1020" x="166" y="24">
+<window height="744" maximized="true" width="1020" x="166" y="24">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -30,16 +30,13 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Duck.java" partName="Duck.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/Duck.java" title="Duck.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/Duck.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Duck.java" partName="Duck.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/Duck.java" title="Duck.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/Duck.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/Duck.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="171" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="152" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MallardDuck.java" partName="MallardDuck.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/MallardDuck.java" title="MallardDuck.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/MallardDuck.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/MallardDuck.java"/>
@@ -47,27 +44,13 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RedheadDuck.java" partName="RedheadDuck.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/RedheadDuck.java" title="RedheadDuck.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/RedheadDuck.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/RedheadDuck.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="156" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RubberDuck.java" partName="RubberDuck.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/RubberDuck.java" title="RubberDuck.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/RubberDuck.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/RubberDuck.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="220" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlyBehavior.java" partName="FlyBehavior.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/FlyBehavior.java" title="FlyBehavior.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/FlyBehavior.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/FlyBehavior.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuackBehavior.java" partName="QuackBehavior.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/QuackBehavior.java" title="QuackBehavior.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/QuackBehavior.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/QuackBehavior.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="152" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.ui.MembersView" partName="Members">
 <viewState hidefields="false" hidelocaltypes="false" hidenonpublic="false" hidestatic="false" org.eclipse.jdt.ui.browsing.memberstoeditor="1">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.MembersView.SyntheticMembersFilter" isEnabled="true"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.MembersView.SyntheticMembersFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.MembersView.ImportDeclarationFilter" isEnabled="false"/>
 </xmlDefinedFilters>
 </customFilters>
@@ -75,27 +58,23 @@
 </view>
 <view id="org.eclipse.jdt.ui.TypesView" partName="Types">
 <viewState org.eclipse.jdt.ui.browsing.typestoeditor="1" workingSetName="Aggregate for window 1336919178114">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.TypesView.ClassFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.TypesView.ClassFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.TypesView.InterfaceFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.TypesView.EnumFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.TypesView.NonPublicTypeFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.TypesView.AnnotationFilter" isEnabled="false"/>
 </xmlDefinedFilters>
 </customFilters>
-<selectedElements>
-<selectedElement selectedElementPath="=Ch1/src&lt;com.visionarysoftwaresolutions.hfdp.ch1{QuackBehavior.java[QuackBehavior"/>
+<selectedElements>&#x0A;<selectedElement selectedElementPath="=Ch1/src&lt;com.visionarysoftwaresolutions.hfdp.ch1{QuackBehavior.java[QuackBehavior"/>
 </selectedElements>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (2 items)"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="105" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
+<columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="332" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -132,25 +111,16 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ui.internal.introview" partName="Welcome">
-<viewState>
-<presentation currentPage="root" restore="true"/>
-<standbyPart/>
-</viewState>
-</view>
 <view id="org.eclipse.jdt.ui.ProjectsView" partName="Projects">
 <viewState org.eclipse.jdt.ui.browsing.projectstoeditor="1" workingSetName="Aggregate for window 1336919178114">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.ProjectsView.LibraryFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.ProjectsView.LibraryFilter" isEnabled="false"/>
 <child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter2" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.ProjectsView.NonSharedProjectsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.pde.ui.BinaryProjectFilter2" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.ProjectsView.ContainedLibraryFilter" isEnabled="false"/>
 </xmlDefinedFilters>
 </customFilters>
-<selectedElements>
-<selectedElement selectedElementPath="=Ch1/src"/>
+<selectedElements>&#x0A;<selectedElement selectedElementPath="=Ch1/src"/>
 </selectedElements>
 </viewState>
 </view>
@@ -160,9 +130,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.PackagesView" partName="Packages">
 <viewState org.eclipse.jdt.ui.PackagesView.viewState="0" org.eclipse.jdt.ui.browsing.packagestoeditor="1" workingSetName="Aggregate for window 1336919178114">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.internal.ui.PackagesView.EmptyPackageFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.internal.ui.PackagesView.EmptyPackageFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.internal.ui.PackagesView.EmptyInnerPackageFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.internal.ui.PackagesView.NoPackageContainingFolders" isEnabled="true"/>
 </xmlDefinedFilters>
@@ -338,29 +306,19 @@
 <view id="org.eclipse.jdt.ui.MembersView"/>
 <view id="org.eclipse.ui.internal.introview"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@653c9e">
-<folder activePageID="org.eclipse.jdt.ui.ProjectsView" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.ProjectsView" label="Projects"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@653c9e">&#x0A;<folder activePageID="org.eclipse.jdt.ui.ProjectsView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.ProjectsView" label="Projects"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@11dfa6a" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="org.eclipse.ui.internal.ViewStack@653c9e">
-<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
-<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@11dfa6a" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="org.eclipse.ui.internal.ViewStack@653c9e">&#x0A;<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="left" ratio="0.72149837" ratioLeft="443" ratioRight="171" relationship="4" relative="org.eclipse.ui.internal.ViewStack@653c9e">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<info folder="true" part="left" ratio="0.72149837" ratioLeft="443" ratioRight="171" relationship="4" relative="org.eclipse.ui.internal.ViewStack@653c9e">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
@@ -369,9 +327,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.74949086" ratioLeft="368" ratioRight="123" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<info folder="true" part="bottom" ratio="0.74949086" ratioLeft="368" ratioRight="123" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
@@ -380,27 +336,18 @@
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@6ebfd7" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="org.eclipse.ui.internal.ViewStack@653c9e">
-<folder activePageID="org.eclipse.jdt.ui.PackagesView" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackagesView" label="Packages"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@6ebfd7" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="org.eclipse.ui.internal.ViewStack@653c9e">&#x0A;<folder activePageID="org.eclipse.jdt.ui.PackagesView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackagesView" label="Packages"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@f4d204" ratio="0.3298153" ratioLeft="250" ratioRight="508" relationship="2" relative="org.eclipse.ui.internal.ViewStack@6ebfd7">
-<folder activePageID="org.eclipse.jdt.ui.TypesView" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.TypesView" label="Types"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@f4d204" ratio="0.3298153" ratioLeft="250" ratioRight="508" relationship="2" relative="org.eclipse.ui.internal.ViewStack@6ebfd7">&#x0A;<folder activePageID="org.eclipse.jdt.ui.TypesView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.TypesView" label="Types"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1082c14" ratio="0.5" ratioLeft="254" ratioRight="254" relationship="2" relative="org.eclipse.ui.internal.ViewStack@f4d204">
-<folder activePageID="org.eclipse.jdt.ui.MembersView" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.MembersView" label="Members"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1082c14" ratio="0.5" ratioLeft="254" ratioRight="254" relationship="2" relative="org.eclipse.ui.internal.ViewStack@f4d204">&#x0A;<folder activePageID="org.eclipse.jdt.ui.MembersView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.MembersView" label="Members"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -417,6 +364,18 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/RubberDuck.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/FlyBehavior.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/QuackBehavior.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/RubberDuck.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/FlyBehavior.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/FlyWithWings.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/FlyNoWay.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/Quack.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/Squeak.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/MuteQuack.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/RedheadDuck.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/Duck.java"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" uri="file:/home/nathan/android-sdk-linux/sources/android-15/android/view/View.java"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" uri="file:/home/nathan/android-sdk-linux/sources/android-15/android/widget/TextView.java"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" uri="file:/home/nathan/android-sdk-linux/sources/android-15/android/widget/EditText.java"/>
 </editors>
 <item historyLabel="Duck.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
@@ -487,8 +446,83 @@
 <item historyLabel="FlyBehavior.java" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="QuackBehavior.java" index="5">
+<item historyLabel="QuackBehavior.java" index="5">
+<position/>
+</item>
+<item historyLabel="RubberDuck.java" index="6">
+<position info="not_deleted" x="246" y="0"/>
+</item>
+<item historyLabel="FlyBehavior.java" index="7">
+<position/>
+</item>
+<item historyLabel="QuackBehavior.java" index="5">
+<position/>
+</item>
+<item historyLabel="FlyBehavior.java" index="7">
+<position/>
+</item>
+<item historyLabel="RubberDuck.java" index="6">
+<position info="not_deleted" x="204" y="0"/>
+</item>
+<item historyLabel="FlyBehavior.java" index="7">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="QuackBehavior.java" index="5">
+<position info="not_deleted" x="103" y="0"/>
+</item>
+<item historyLabel="FlyBehavior.java" index="7">
+<position info="not_deleted" x="96" y="0"/>
+</item>
+<item historyLabel="QuackBehavior.java" index="5">
+<position info="not_deleted" x="99" y="0"/>
+</item>
+<item historyLabel="FlyWithWings.java" index="8">
+<position info="not_deleted" x="151" y="0"/>
+</item>
+<item historyLabel="FlyNoWay.java" index="9">
+<position info="not_deleted" x="167" y="0"/>
+</item>
+<item historyLabel="Quack.java" index="10">
+<position info="not_deleted" x="147" y="0"/>
+</item>
+<item historyLabel="Squeak.java" index="11">
+<position info="not_deleted" x="188" y="0"/>
+</item>
+<item historyLabel="MuteQuack.java" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="RedheadDuck.java" index="13">
+<position info="not_deleted" x="156" y="0"/>
+</item>
+<item historyLabel="Duck.java" index="14">
+<position info="not_deleted" x="243" y="0"/>
+</item>
+<item historyLabel="Duck.java" index="14">
+<position info="not_deleted" x="152" y="0"/>
+</item>
+<item historyLabel="View.java" index="15">
+<position info="not_deleted" x="32657" y="0"/>
+</item>
+<item historyLabel="TextView.java" index="16">
+<position info="not_deleted" x="231100" y="8"/>
+</item>
+<item historyLabel="View.java" index="15">
+<position info="not_deleted" x="32657" y="0"/>
+</item>
+<item historyLabel="EditText.java" index="17">
+<position info="not_deleted" x="620" y="0"/>
+</item>
+<item historyLabel="View.java" index="15">
+<position info="not_deleted" x="32657" y="0"/>
+</item>
+<item historyLabel="Duck.java" index="14">
+<position info="not_deleted" x="152" y="0"/>
+</item>
+<item historyLabel="FlyWithWings.java" index="8">
+<position info="not_deleted" x="151" y="0"/>
+</item>
+<item active="true" historyLabel="Duck.java" index="14">
+<position info="not_deleted" x="152" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -507,6 +541,30 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EditText.java" tooltip="/home/nathan/android-sdk-linux/sources/android-15/android/widget/EditText.java">
+<persistable uri="file:/home/nathan/android-sdk-linux/sources/android-15/android/widget/EditText.java"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TextView.java" tooltip="/home/nathan/android-sdk-linux/sources/android-15/android/widget/TextView.java">
+<persistable uri="file:/home/nathan/android-sdk-linux/sources/android-15/android/widget/TextView.java"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="View.java" tooltip="/home/nathan/android-sdk-linux/sources/android-15/android/view/View.java">
+<persistable uri="file:/home/nathan/android-sdk-linux/sources/android-15/android/view/View.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MuteQuack.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/MuteQuack.java">
+<persistable path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/MuteQuack.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Squeak.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/Squeak.java">
+<persistable path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/Squeak.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Quack.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/Quack.java">
+<persistable path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/Quack.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlyNoWay.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/FlyNoWay.java">
+<persistable path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/FlyNoWay.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlyWithWings.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/FlyWithWings.java">
+<persistable path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/FlyWithWings.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuackBehavior.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/QuackBehavior.java">
 <persistable path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/QuackBehavior.java"/>
 </file>
