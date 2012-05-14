@@ -22,3 +22,11 @@
 1336951184959	Extract method 'removeFirstBottle'
 1336951274729	Extract method 'reorderIfNecessary'
 1336952566355	Pull up 'setBeveragePrice(String, double)' to 'StorageUnit'
+1336955238963	Move compilation unit
+1336955245308	Move compilation unit
+1336955348902	Move compilation unit
+1336956623581	Pull up 'getTotalStockValue()' to 'StorageUnit'
+1336956668489	Pull up 'getStockValueByBeverage(String)' to 'StorageUnit'
+1336956761557	Pull up 'getBeveragePrice(String)' to 'StorageUnit'
+1336956819094	Pull up 'getBottleCountByBeverage(String)' to 'StorageUnit'
+1336957832265	Rename type 'Pricer'
