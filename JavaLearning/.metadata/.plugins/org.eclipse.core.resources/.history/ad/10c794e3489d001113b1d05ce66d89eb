@@ -1,0 +1,44 @@
+package com.visionarysoftwaresolutions.refillable;
+
+import com.visionarysoftwaresolutions.ordering.Storable;
+
+public class StorageUnit extends PowerableUnit implements Storable {
+
+	private boolean doorOpen = false;
+	private List<Orderable> stored;
+
+	public StorageUnit() {
+		super();
+	}
+
+	@Override
+	public boolean isDoorOpen() {
+	    return doorOpen;
+	}
+
+	@Override
+	public void operateDoor() {
+	    setDoorOpen(!doorOpen);
+	}
+
+	@Override
+	public void setDoorOpen(boolean b) {
+	    doorOpen = b;
+	}
+
+	public int getPercentFull() {
+		return 0;
+	}
+
+	public void setCapacity(int desired) {
+	}
+
+	public int getCapacity() {
+		return 0;
+	}
+
+	public void checkNotMoreThanCapacity(int desired)
+			throws RuntimeException {
+	}
+
+}

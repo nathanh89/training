@@ -2,21 +2,20 @@ package com.visionarysoftwaresolutions.refillable;
 
 import java.util.Objects;
 
+import com.visionarysoftwaresolutions.ordering.AbstractOrderable;
 
 /**
  *
  * @author nathan
  */
-public class Bottle extends Consumable {
+public class Bottle extends AbstractOrderable {
 	
-    final String containedBeverage;
-    
     public Bottle(String beverageName){
-        containedBeverage = beverageName;
+        setName(beverageName);
     }
     
     public String getBeverageName(){
-        return containedBeverage;
+        return getName();
     }
 
 	@Override
@@ -32,7 +31,7 @@ public class Bottle extends Consumable {
 	@Override
 	public int hashCode() {
 	    int hash = 3;
-	    hash = 59 * hash + Objects.hashCode(this.containedBeverage);
+	    hash = 59 * hash + Objects.hashCode(this.name);
 	    hash = 59 * hash + (int) (Double.doubleToLongBits(this.price) ^ (Double.doubleToLongBits(this.price) >>> 32));
 	    return hash;
 	}

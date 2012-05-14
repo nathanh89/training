@@ -1,0 +1,16 @@
+package com.visionarysoftwaresolutions.ordering;
+
+
+public abstract class AbstractOrderable {
+
+	public double price;
+
+	public void setPrice(double beveragePrice) {
+	    this.price = beveragePrice;
+	}
+
+	public double getPrice() {
+	    return price;
+	}
+
+}

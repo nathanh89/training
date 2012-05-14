@@ -1,0 +1,11 @@
+package com.visionarysoftwaresolutions.refillable;
+
+public interface Storable {
+
+	public boolean isDoorOpen();
+
+	public void operateDoor();
+
+	public void setDoorOpen(boolean b);
+
+}

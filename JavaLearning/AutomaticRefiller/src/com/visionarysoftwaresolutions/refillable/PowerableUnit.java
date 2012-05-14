@@ -1,6 +1,8 @@
 package com.visionarysoftwaresolutions.refillable;
 
-public class PowerableUnit implements PowerableUnitInterface {
+import com.visionarysoftwaresolutions.refillable.interfaces.Powerable;
+
+public class PowerableUnit implements Powerable {
 
 	private boolean poweredState = false;
 

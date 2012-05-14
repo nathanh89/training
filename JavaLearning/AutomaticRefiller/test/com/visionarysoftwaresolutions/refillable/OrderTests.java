@@ -1,6 +1,11 @@
 package com.visionarysoftwaresolutions.refillable;
 
 import org.junit.Test;
+
+import com.visionarysoftwaresolutions.ordering.Order;
+import com.visionarysoftwaresolutions.ordering.OrderContainer;
+import com.visionarysoftwaresolutions.ordering.Orderable;
+
 import static org.junit.Assert.*;
 
 /**
@@ -8,7 +13,9 @@ import static org.junit.Assert.*;
  * @author nathan
  */
 public class OrderTests {
-	Order order = new Order("Mountain Dew", 10 );
+	Orderable mtDew = new Bottle("Mountain Dew");
+	OrderContainer holder = new OrderContainer(mtDew, 10);
+	Order order = new Order(holder);
 	
     @Test
     public void testAddToOrderSingleBottleType(){
@@ -26,7 +33,8 @@ public class OrderTests {
         //Given my cooler is low in stock and needs to place a new order
         //And I am placing an order to a Manufacturer to replenish my cooler stock
         //When I specify the number of bottles requested in the order
-        order.addContainer("Sierra Mist", 15);
+        OrderContainer toAdd = new OrderContainer(new Bottle("Sierra Mist"), 15);
+    	order.addContainer(toAdd);
         //Then the bottles should be added the order
         int mdresult = order.getCountForName("Mountain Dew");
         int smresult = order.getCountForName("Sierra Mist");
@@ -40,7 +48,8 @@ public class OrderTests {
         //Given my cooler is low in stock and needs to place a new order
         //And I am placing an order to a Manufacturer to replenish my cooler stock
         //When I specify the number of bottles requested in the order
-        order.addContainer("Mountain Dew", 20);
+    	OrderContainer toAdd = new OrderContainer(new Bottle("Mountain Dew"), 20);
+    	order.addContainer(toAdd);
         //Then the bottles should be added the order
         assertEquals(30, order.getCountForName("Mountain Dew"));       
     }

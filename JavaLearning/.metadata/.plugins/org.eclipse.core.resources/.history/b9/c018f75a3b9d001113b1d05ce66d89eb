@@ -1,0 +1,12 @@
+package com.visionarysoftwaresolutions.refillable;
+
+
+public interface Storable extends Doored {
+
+	public abstract int getPercentFull();
+
+	public abstract void setCapacity(int desired);
+
+	public abstract int getCapacity();
+
+}

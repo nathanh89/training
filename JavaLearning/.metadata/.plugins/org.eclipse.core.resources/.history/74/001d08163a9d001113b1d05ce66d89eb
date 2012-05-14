@@ -1,0 +1,7 @@
+package com.visionarysoftwaresolutions.refillable;
+
+public interface PowerableStorageUnit extends StorageUnitInterface, Powerable{
+
+	Object getCapacity();
+
+}

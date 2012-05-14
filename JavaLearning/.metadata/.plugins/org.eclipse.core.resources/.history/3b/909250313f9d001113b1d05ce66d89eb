@@ -1,0 +1,37 @@
+package com.visionarysoftwaresolutions.ordering;
+
+import com.visionarysoftwaresolutions.refillable.BottleManufacturer;
+import com.visionarysoftwaresolutions.refillable.Cooler;
+import com.visionarysoftwaresolutions.refillable.interfaces.Doored;
+
+public class Orderer {
+	
+	private Order pending;
+	
+	public void createOrder(){
+		pending = new Order();
+	}
+
+	public void createOrder(String productName, int productQuantity, Storable deliverTo) {
+		deliverTo.checkNotMoreThanCapacity(productQuantity);
+		pending = new Order(productName, productQuantity);		
+	}
+	
+	public Order checkOrder(){
+		return pending;
+	}
+	
+	public int checkOrderByProductName(String productName){
+		return pending.getCountForName(productName);
+	}
+
+	public void addToOrder(String productName, int productQuantity, Doored deliverTo) {
+		pending.addContainer(productName, productQuantity);
+	}
+
+	public void placeOrder(String manufacturer, Storable deliverTo) {
+		BottleManufacturer orderFiller = new BottleManufacturer(manufacturer);
+		deliverTo.addBottles(orderFiller.fill(pending));
+	}
+
+}
