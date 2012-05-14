@@ -208,8 +208,8 @@ public class CoolerTests {
          cooler.orderer.createOrder(monster, 100);
          cooler.orderer.placeOrder(bottler);
          //Then the cooler should veto the order
-         assertEquals(10, cooler.getCountForProduct("Monster"));
-         assertEquals(15, cooler.getCountForProduct("Rockstar"));
+         assertEquals(30, cooler.getCountForProduct("Monster"));
+         assertEquals(40, cooler.getCountForProduct("Rockstar"));
      }
      
     @Test

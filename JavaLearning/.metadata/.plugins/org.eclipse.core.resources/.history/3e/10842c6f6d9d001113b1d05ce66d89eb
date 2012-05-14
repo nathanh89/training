@@ -28,18 +28,13 @@ public class Orderer {
 	}
 
 	public void addToOrder(Orderable ordered, int productQuantity) {
-		int newDesired = productQuantity+pending.getCountForName(ordered.getName());
-		deliverable.checkNotMoreThanCapacity(newDesired);
+		pending..checkNotMoreThanCapacity(productQuantity);
 		OrderContainer container = new OrderContainer(ordered, productQuantity);
 		pending.addContainer(container);
 	}
 
 	public List<OrderContainer> placeOrder(Manufacturer manny) {
-		int totalSize = 0;
-		for(OrderContainer container : pending){
-			totalSize += container.getNumber();
-		}
-		deliverable.checkNotMoreThanCapacity(totalSize);
 		return manny.fill(pending); 
 	}
+
 }

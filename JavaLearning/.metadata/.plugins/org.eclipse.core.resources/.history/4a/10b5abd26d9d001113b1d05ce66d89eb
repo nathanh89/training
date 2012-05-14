@@ -89,3 +89,7 @@ class Cooler extends StorageUnit  {
 		return powerSupply.isPowerOn();
 	}
 }
+		
+
+    
+

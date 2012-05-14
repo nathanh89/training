@@ -7,7 +7,7 @@ import com.visionarysoftwaresolutions.ordering.StorageUnit;
 class Cooler extends StorageUnit  {
 	PowerableUnit powerSupply = new PowerableUnit();
     public MinimumStock desiredMinimumStock = new MinimumStock();
-    Orderer orderer = new Orderer(this);
+    Orderer orderer = new Orderer();
     
     public Cooler(int capacity) {
     	super(capacity);
@@ -73,7 +73,7 @@ class Cooler extends StorageUnit  {
 				orderer.addToOrder(toOrder, 1);
 			}
 			else{
-				orderer.createOrder(toOrder, 1);
+				orderer.createOrder(toOrder, 1, this);
 			}
 	}
 	
@@ -89,3 +89,7 @@ class Cooler extends StorageUnit  {
 		return powerSupply.isPowerOn();
 	}
 }
+		
+
+    
+

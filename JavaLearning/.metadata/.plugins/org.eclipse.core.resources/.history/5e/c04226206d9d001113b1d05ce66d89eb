@@ -3,18 +3,15 @@ package com.visionarysoftwaresolutions.ordering;
 import java.util.List;
 
 public class Orderer {
-	private Order pending;
-	private Storable deliverable;
 	
-	public Orderer(Storable deliverTo){
-		deliverable = deliverTo;
-	}
+	private Order pending;
+	
 	public void createOrder(){
 		pending = new Order();
 	}
 
-	public void createOrder(Orderable product, int productQuantity) {
-		deliverable.checkNotMoreThanCapacity(productQuantity);
+	public void createOrder(Orderable product, int productQuantity, Storable deliverTo) {
+		deliverTo.checkNotMoreThanCapacity(productQuantity);
 		OrderContainer toHold = new OrderContainer(product, productQuantity);
 		pending = new Order(toHold);		
 	}
@@ -28,18 +25,12 @@ public class Orderer {
 	}
 
 	public void addToOrder(Orderable ordered, int productQuantity) {
-		int newDesired = productQuantity+pending.getCountForName(ordered.getName());
-		deliverable.checkNotMoreThanCapacity(newDesired);
 		OrderContainer container = new OrderContainer(ordered, productQuantity);
 		pending.addContainer(container);
 	}
 
 	public List<OrderContainer> placeOrder(Manufacturer manny) {
-		int totalSize = 0;
-		for(OrderContainer container : pending){
-			totalSize += container.getNumber();
-		}
-		deliverable.checkNotMoreThanCapacity(totalSize);
 		return manny.fill(pending); 
 	}
+
 }

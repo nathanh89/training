@@ -28,8 +28,7 @@ public class Orderer {
 	}
 
 	public void addToOrder(Orderable ordered, int productQuantity) {
-		int newDesired = productQuantity+pending.getCountForName(ordered.getName());
-		deliverable.checkNotMoreThanCapacity(newDesired);
+		deliverable.checkNotMoreThanCapacity(productQuantity);
 		OrderContainer container = new OrderContainer(ordered, productQuantity);
 		pending.addContainer(container);
 	}

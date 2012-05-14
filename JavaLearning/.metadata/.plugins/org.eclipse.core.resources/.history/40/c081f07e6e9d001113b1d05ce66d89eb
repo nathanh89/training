@@ -115,6 +115,16 @@ public class CoolerTests {
         assertEquals(cooler.getCapacity(), 80);
     }
     
+   /*@Test(expected=RuntimeException.class)
+    public void testInvalidCapacityVeto(){
+    	//Given a cooler with a physical capacity of 100
+    	//When I want to set the cooler's capacity to a custom level
+    	//And the capacity I try to set is higher that it's physical capacity
+    	cooler.setCapacity(120);
+    	//That setting should be rejected
+    	assertEquals(100, cooler.getCapacity());
+    	}*/
+    
     @Test
     public void testGetPercentFull(){
         // Given a cooler with a specified capacity 0f 100
@@ -169,7 +179,7 @@ public class CoolerTests {
     	//When: I order some more stock
     	Orderable monster = new Bottle("Monster");
 		Orderable rockstar = new Bottle("Rockstar");
-		cooler.orderer.createOrder(monster, 10);
+		cooler.orderer.createOrder(monster, 10, cooler);
     	//And: I add to the order before I send it
     	cooler.orderer.addToOrder(rockstar, 15);
     	//Then: The additions should be on the order
@@ -184,7 +194,7 @@ public class CoolerTests {
     	//When: I create an order for more stock
     	Orderable monster = new Bottle("Monster");
 		Orderable rockstar = new Bottle("Rockstar");
-    	cooler.orderer.createOrder(monster, 10);
+    	cooler.orderer.createOrder(monster, 10, cooler);
     	cooler.orderer.addToOrder(rockstar, 15);
     	//And: I send the order to a BottleManufacturer
     	Manufacturer bottler = new BottleManufacturer("EnergyDrinkCo");
@@ -205,11 +215,11 @@ public class CoolerTests {
          //And some stock
     	 Manufacturer bottler = new BottleManufacturer("EnergyDrinkCo");
          //When placing an order that will cause the cooler to be over capacity
-         cooler.orderer.createOrder(monster, 100);
+         cooler.orderer.createOrder(monster, 50, cooler);
          cooler.orderer.placeOrder(bottler);
          //Then the cooler should veto the order
-         assertEquals(10, cooler.getCountForProduct("Monster"));
-         assertEquals(15, cooler.getCountForProduct("Rockstar"));
+         assertEquals(30, cooler.getCountForProduct("Monster"));
+         assertEquals(40, cooler.getCountForProduct("Rockstar"));
      }
      
     @Test
