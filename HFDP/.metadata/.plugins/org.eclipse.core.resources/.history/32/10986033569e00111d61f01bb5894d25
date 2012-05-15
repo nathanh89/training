@@ -1,0 +1,18 @@
+package com.visionarysoftwaresolutions.hfdp.ch1;
+
+import com.visionarysoftwaresolutions.hfdp.ch1.FlyWithWings;
+import com.visionarysoftwaresolutions.hfdp.ch1.Quack;
+
+public class MallardDuck extends Duck{
+	
+	public MallardDuck(){
+		quackBehavior = new Quack();
+		flyBehavior = new FlyWithWings();
+	}
+
+	@Override
+	public void display(){
+		System.out.println("I'm a real Mallard Duck!");
+	}
+	
+}

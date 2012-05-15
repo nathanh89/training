@@ -1,0 +1,14 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tests;
+
+import com.visionarysoftwaresolutions.hfdp.ch1.ducks.Duck;
+import com.visionarysoftwaresolutions.hfdp.ch1.ducks.MallardDuck;
+
+public class MiniDuckSimulator {
+
+	public static void main(String[] args){
+		
+		Duck mallard = new MallardDuck();
+		mallard.performQuack();
+		mallard.performFly();
+	}
+}

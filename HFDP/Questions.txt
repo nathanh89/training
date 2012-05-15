@@ -1,12 +1,63 @@
-Page 5: A (if you have to do multiple similar overrides), B, F.
+P. 5: 	A (if you have to do multiple similar overrides), B, F. (PS! Upon checking the answers at the end of the chapter, I should have also chosen C as well. Fuckin' up :P)
 
-Page 6: What do you think about this design?
-	Honestly, it still seems not that great. What's the point of 		putting the method stubs in an interface when you're going to 		have to type out the implementations in all the classes that 		implement that interface? He'd actually be writing more code, 		because now he has to duplicate implementation for quack() 		and fly() across all the real ducks in the sim program, and I 		suspect there are more real ducks that can do those behaviors 		than rubber and decoy ducks.
+P. 6: 	What do you think about this design?
+Honestly, it still seems not that great. What's the point of putting the method stubs in an interface when you're going to have to type out the implementations in all the classes that implement that interface? He'd actually be writing more code, because now he has to duplicate implementation for quack() and fly() across all the real ducks in the sim program, and I suspect there are more real ducks that can do those behaviors than rubber and decoy ducks.
 
-Page 8: List some reasons you've had to change code in your apps.
-	Well, I've had to change code in the cooler sim a crapton of 		times. Whenever I see new features that need to be added, or 		Nick decides he wants it to restock automatically. And I've 		refactored it a bunch of times, and will continue to do so, 		because though it currently has the functionality I want, I'm 		not satisfied with how the code looks yet.
+P. 8: 	List some reasons you've had to change code in your apps.
+Well, I've had to change code in the cooler sim a crapton of times. Whenever I see new features that need to be added, or Nick decides he wants it to restock automatically. And I've refactored it a bunch of times, and will continue to do so, because though it currently has the functionality I want, I'm not satisfied with how the code looks yet.
 
-Page 14:What would you do if you needed to add rocket powered flying 		to the SimUDuck app?
-	Make another class, RocketFlying, and have it implement the 		interface FlyBehavior to represent the desired behavior, in 		this case, a duck that shits jet fuel with a built in 		anus-lighter.
-	Is there a class that might want to use the Quack behavior 		that isn't a duck?
-	Sure. If you want to introduce duck callers/duck hunters to go 		along with those lovely decoy ducks, you could have a 		DuckCaller class implement the quack behavior.
+P. 14a:	What would you do if you needed to add rocket powered flying to the SimUDuck app?
+Make another class, RocketFlying, and have it implement the interface FlyBehavior to represent the desired behavior, in 	this case, a duck that shits jet fuel with a built in anus-lighter.
+
+P. 14b:	Is there a class that might want to use the Quack behavior that isn't a duck?
+Sure. If you want to introduce duck callers/duck hunters to go along with those lovely decoy ducks, you could have a DuckCaller class implement the quack behavior.
+
+P. 23:	How would you implement a duck call that does not inherit from the Duck Class?
+Well, assuming we only want to have one duck call that mimics a regular quack, the best way to do that, with what I've 	picked up so far, would be to create a DuckCaller class, and give it a QuackBehavior object, in the form of a new Quack(). Then in the simulator you could have a new DuckCaller duckCall call the method performQuack (which would have to be defined as a part of the DuckCaller class). However, if we wanted to get hardcore abstract with it, say to set up a few different kind of duck calls (assuming we eventually differentiate between the calls of different species) we could have the abstract superclass be called DuckCaller that implements quack, and give it a QuackBehavior object for its subclasses to inherit. You could then put the performQuack method here. Then you could make any number of various duck callers that produce whatever sounds you want, so long as you had implementations for the various calls. So you might have a MallardQuack class, a RobotQuack class, and a HellspawnQuack class that all have different types of quacks for the various duck callers (MallardCaller, RobotDuckCaller, HellspawnDuckCaller) to use.
+QUESTION FOR NICK!
+It seems to me that doing it that way produces duplication in the system. The parameters for that question were of course that I could not have the duck caller inherit from the Duck class. Fine. But the way I detailed above would have both the Duck and DuckCaller superclasses defining performQuack methods that are identical, not to mention both of them having QuackBehavior objects called quackBehavior. To eliminate that duplication...well, here's the question: Could we have a chain of inheritance? What I mean is have a superclass Quacker that contains the QuackBehavior object, and defines performQuack. Then Duck could extend that (and of course all its child classes would then as well), and DuckCaller could also extend Quacker, giving it access to the same quack behaviors, without inheriting from Duck and without duplication. Of course, the obvious problem I see with this idea is say, what if you wanted to introduce finches into the simulator? A finch could fly, but not quack. So I'd have to duplicate the FlyBehavior object and performFly methods in the Finch superclass to get its child classes (sparrow, cardinal, etc) to have access to the flight behaviors. And having already extracted Quacker, I can't extrac Flyer and have Duck do multiple inheritance. Guess that answers my question (Extracting Quacker seems dumb, because I would have just as legitimate of a reason to want to extract Flyer, but Java doesn't have multiple inheritance because that's terrible anyhow)...or changes it. Is there a way to avoid the small but bothersome amount of duplication that would happen in the example of adding DuckCaller to the system?
+
+P. 25:	Sort out this mess of a program!
+abstract class Character has a WeaponBehavior
+public class Queen extends Character
+public class King extends Character
+public class Knight extends Character
+public class Troll extends Character
+public interface WeaponBehavior
+public class KnifeBehavior implements WeaponBehavior
+public class BowAndArrowBehavior implements WeaponBehavior
+public class AxeBehavior implements WeaponBehavior
+public class SwordBehavior implements WeaponBehavior
+setWeapon would go in the Character superclass
+For example:
+
+(In Character superclass)
+WeaponBehavior weapon;
+
+public void setWeapon(WeaponBehavior newWeapon){
+weapon = newWeapon;*
+}
+
+public void fight(){
+weapon.useWeapon();
+}
+
+(In FightSimulator)
+Character knight = new Knight();
+knight.setWeapon(new SwordBehavior());
+knight.fight();
+
+*QUESTION FOR NICK! In the book, the setWeapon method uses a "this". So:
+
+public void setWeapon(WeaponBehavior newWeapon){
+this.weapon = newWeapon;
+}
+
+I did not use that in my above example, and in fact when the book had me do the EXACT same thing with the Duck Simulation, the methods it tells me to put in for performFly and performQuack do not make use of the "this" at all, they are as I wrote my example; they set the behavior object to the desired behavior without using the this. So it's "this.behaviorObject = newBehavior" versus "behaviorObject = newBehavior" and the book has me do it both ways in two examples that function in the exact same way. The inconsistency bothers me, and I am curious to know what the hell is the difference, if any? Seems to me its a matter of choice, and I'm inclined to choose not to type the extra 5 characters if it doesn't make a difference. Of course, explicit is better than implicit, so does the "this" add some kind of extra level of explict-ness? I mean, I know the "this" is saying that it is referring to the "weapon" WeaponBehavior belonging to the class calling setWeapon, but it seems to work either way. Does not throwing it in open me up to potential problems down the road?
+
+P. 27a:	To be honest, I'm sure a lot of professions have specific jargon. However, being unfamiliar with a variety of professions, I find myself hard-pressed to come up with concrete examples.  I guess one could be say, surgeons. (Scrubs ftw!) If they say they're going to close at the end of a surgery, that's communicating that they're going to complete all the steps of sewing up/cleaning up/whatever the hell else they do at the end of a successful operation. One word implies many steps.
+
+P. 27b:	The fact that you're encapsulating algorithms for use by a client, and the algorithms are designed to be interchangebly used by the client because they are programmed to various common interfaces by groups of similar functionality.
+
+Non-Book Questions:
+1) Why does the main method have to pass in (String[] args)? The fuck is that? I'd look it up...but no internet.

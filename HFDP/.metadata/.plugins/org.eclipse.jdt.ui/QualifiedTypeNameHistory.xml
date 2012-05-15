@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.Duck"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.MallardDuck"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.flight.FlyNoWay"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.quacks.Quack"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.ducks.ModelDuck"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.flight.FlyRocketPowered"/>
+</qualifiedTypeNameHistroy>
