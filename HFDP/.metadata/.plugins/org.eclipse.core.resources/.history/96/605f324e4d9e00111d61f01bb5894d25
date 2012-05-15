@@ -1,0 +1,17 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.visionarysoftwaresolutions.hfdp.ch1.Duck;
+import com.visionarysoftwaresolutions.hfdp.ch1.MallardDuck;
+
+
+public class MiniDuckSimTest {
+
+	@Test
+	public void test() {
+		Duck mallard = new MallardDuck();
+		assertEquals("Quack", mallard.performQuack());
+	}
+
+}

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="BottleManufacturerTests (Failed Tests first)" project="AutomaticRefiller" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.visionarysoftwaresolutions.refillable.BottleManufacturerTests" time="0.036">
-    <testcase name="testFulfillOrder" classname="com.visionarysoftwaresolutions.refillable.BottleManufacturerTests" time="0.036"/>
-  </testsuite>
-</testrun>

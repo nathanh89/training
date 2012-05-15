@@ -1,0 +1,10 @@
+package com.visionarysoftwaresolutions.hfdp.ch1;
+
+public class MallardDuck extends Duck{
+	
+	@Override
+	public void display(){
+		//Show a Mallard Duck
+	}
+
+}

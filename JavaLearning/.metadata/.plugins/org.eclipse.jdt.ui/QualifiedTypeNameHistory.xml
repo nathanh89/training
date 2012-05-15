@@ -2,5 +2,13 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.ordering.AbstractOrderable"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.refillable.Bottle"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.ordering.Manufacturer"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.ordering.Storable"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.ordering.Orderable"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.ordering.OrderContainer"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
 </qualifiedTypeNameHistroy>

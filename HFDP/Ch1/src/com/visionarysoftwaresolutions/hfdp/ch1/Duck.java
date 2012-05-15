@@ -2,22 +2,25 @@ package com.visionarysoftwaresolutions.hfdp.ch1;
 
 public abstract class Duck {
 	
-	public FlyBehavior flybehavior;
-	public QuackBehavior quackbehavior;
+	FlyBehavior flyBehavior;
+	QuackBehavior quackBehavior;
 	
-	
-	public void quack(){
+	public Duck(){
 		
+	}
+	
+	public void performQuack(){
+		quackBehavior.quack();
+	}
+	
+	public void performFly(){
+		flyBehavior.fly();
 	}
 	
 	public void swim(){
-		
+		System.out.println("All ducks float, even decoys!");
 	}
 	
-	public void fly(){
-		
-	}
-	
-	abstract void display();
+	public abstract void display();
 
 }

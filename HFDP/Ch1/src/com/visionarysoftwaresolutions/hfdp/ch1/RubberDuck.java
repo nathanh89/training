@@ -6,15 +6,4 @@ public class RubberDuck extends Duck{
 	public void display(){
 		//Show a rubber duck
 	}
-	
-	@Override
-	public void quack(){
-		//Squeak instead
-	}
-	
-	@Override
-	public void fly(){
-		
-	}
-
 }

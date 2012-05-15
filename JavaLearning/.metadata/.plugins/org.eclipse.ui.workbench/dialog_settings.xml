@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="323" key="DIALOG_X_ORIGIN"/>
+	</section>
 	<section name="ShowViewDialog">
 		<item value="421" key="DIALOG_WIDTH"/>
 		<item value="thinktank.markdown.views.MarkdownPreview" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>

@@ -3,7 +3,7 @@ package com.visionarysoftwaresolutions.hfdp.ch1;
 public class MuteQuack implements QuackBehavior{
 	
 	public void quack(){
-		//This is an stfu method for non-quackers. Like shifty wooden decoys.
+		System.out.println("...Really? I can't quack. Oddly I do seem to do Englsih pretty well.");
 	}
 
 }
