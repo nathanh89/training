@@ -10,6 +10,5 @@ INDEX VERSION 1.126+/home/nathan/Documents/training/HFDP/.metadata/.plugins/org.
 902463534.index
 3723395545.index
 2265204306.index
-3459965890.index
 526829883.index
 3692941538.index

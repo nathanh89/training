@@ -1,0 +1,20 @@
+package com.visionarysoftwaresolutions.hfdp.ch2;
+
+public class ShittyBookWeatherStation {
+	
+	static WeatherData weatherData = new WeatherData();
+	
+	public static void main(String[] args){
+		
+		CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
+		weatherData.setMeasurements(80, 65, 30.4f);
+		weatherData.setMeasurements(82, 70, 29.2f);
+		weatherData.setMeasurements(78, 90, 29.2f);
+		
+		weatherData.removeObserver(currentDisplay);
+		weatherData.setMeasurements(90, 60, 32.5f);
+		weatherData.setMeasurements(95, 75, 29.2f);
+		weatherData.setMeasurements(100, 90, 18.5f);
+	}
+
+}

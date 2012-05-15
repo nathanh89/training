@@ -1,0 +1,38 @@
+package com.visionarysoftwaresolutions.hfdp.ch2;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class StationTester {
+	
+	static ArrayList<ObservingDisplay> displaysToUse;
+	
+
+	@Before
+	public void setup(){
+		StationTester.displaysToUse = new ArrayList<ObservingDisplay>();
+	}
+	
+	@Test
+	public void testAddingToDisplaysList() {
+		Display firstDisplay = new Display(new CurrentConditionsDisplay());
+		displaysToUse.add(firstDisplay.getCurrentDisplay());
+		assertEquals(1, displaysToUse.size());
+	}
+	
+	@Test
+	public void testDisplayListIterator(){
+		Display firstDisplay = new Display(new CurrentConditionsDisplay());
+		displaysToUse.add(firstDisplay.getCurrentDisplay());
+		WeatherData weatherData = new WeatherData();
+		for(int i = 0; i<displaysToUse.size(); i++){
+			weatherData.observers.add((Observer) displaysToUse.get(i));
+		}
+		assertEquals(1, weatherData.observers.size());
+	}
+
+}
