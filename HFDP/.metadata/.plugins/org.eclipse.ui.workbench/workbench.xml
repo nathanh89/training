@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
 <window height="744" maximized="true" width="1020" x="166" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -28,78 +28,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
-<part id="13"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Duck.java" partName="Duck.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/Duck.java" title="Duck.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/Duck.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/Duck.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="625" selectionTopPixel="157"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MallardDuck.java" partName="MallardDuck.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/MallardDuck.java" title="MallardDuck.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/MallardDuck.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/MallardDuck.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="320" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RedheadDuck.java" partName="RedheadDuck.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/RedheadDuck.java" title="RedheadDuck.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/RedheadDuck.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/RedheadDuck.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="158" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RubberDuck.java" partName="RubberDuck.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/RubberDuck.java" title="RubberDuck.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/RubberDuck.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/RubberDuck.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="157" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlyBehavior.java" partName="FlyBehavior.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyBehavior.java" title="FlyBehavior.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyBehavior.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyBehavior.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="97" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlyWithWings.java" partName="FlyWithWings.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyWithWings.java" title="FlyWithWings.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyWithWings.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyWithWings.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="182" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlyNoWay.java" partName="FlyNoWay.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyNoWay.java" title="FlyNoWay.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyNoWay.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyNoWay.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="197" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Quack.java" partName="Quack.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/Quack.java" title="Quack.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/Quack.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/Quack.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="153" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MuteQuack.java" partName="MuteQuack.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/MuteQuack.java" title="MuteQuack.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/MuteQuack.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/MuteQuack.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="189" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Squeak.java" partName="Squeak.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/Squeak.java" title="Squeak.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/Squeak.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/Squeak.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="212" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuackBehavior.java" partName="QuackBehavior.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/QuackBehavior.java" title="QuackBehavior.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/QuackBehavior.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/QuackBehavior.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="104" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MiniDuckSimulator.java" partName="MiniDuckSimulator.java" path="/home/nathan/Documents/training/HFDP/Ch1/test/com/visionarysoftwaresolutions/hfdp/ch1/tests/MiniDuckSimulator.java" title="MiniDuckSimulator.java" tooltip="Ch1/test/com/visionarysoftwaresolutions/hfdp/ch1/tests/MiniDuckSimulator.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/test/com/visionarysoftwaresolutions/hfdp/ch1/tests/MiniDuckSimulator.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="460" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ModelDuck.java" partName="ModelDuck.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/ModelDuck.java" title="ModelDuck.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/ModelDuck.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/ModelDuck.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="381" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlyRocketPowered.java" partName="FlyRocketPowered.java" path="/home/nathan/Documents/training/HFDP/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyRocketPowered.java" title="FlyRocketPowered.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyRocketPowered.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyRocketPowered.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="190" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeatherData.java" partName="WeatherData.java" path="/home/nathan/Documents/training/HFDP/Ch2/src/com/visionarysoftwaresolutions/hfdp/ch2/WeatherData.java" title="WeatherData.java" tooltip="Ch2/src/com/visionarysoftwaresolutions/hfdp/ch2/WeatherData.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2/src/com/visionarysoftwaresolutions/hfdp/ch2/WeatherData.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="311" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -129,9 +64,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="332" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -200,7 +132,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -299,7 +231,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.7487923" ratioLeft="775" ratioRight="260" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="right" ratio="0.87703013" ratioLeft="756" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
@@ -423,15 +355,9 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ModelDuck.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/Duck.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/MallardDuck.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/RedheadDuck.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/RubberDuck.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/ModelDuck.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyBehavior.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyWithWings.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyNoWay.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/Quack.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/MuteQuack.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/Squeak.java"/>
@@ -442,156 +368,170 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/QuackBehavior.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/test/com/visionarysoftwaresolutions/hfdp/ch1/tests/MiniDuckSimulator.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyRocketPowered.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/MallardDuck.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/RedheadDuck.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/RubberDuck.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyBehavior.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyWithWings.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyNoWay.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/Quack.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/MuteQuack.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/Squeak.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/quacks/QuackBehavior.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/test/com/visionarysoftwaresolutions/hfdp/ch1/tests/MiniDuckSimulator.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/ducks/ModelDuck.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyRocketPowered.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2/src/com/visionarysoftwaresolutions/hfdp/ch2/WeatherData.java"/>
 </editors>
-<item historyLabel="ModelDuck.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Duck.java" index="1">
-<position info="not_deleted" x="605" y="0"/>
-</item>
-<item historyLabel="Duck.java" index="1">
-<position info="not_deleted" x="611" y="0"/>
-</item>
-<item historyLabel="MallardDuck.java" index="2">
-<position info="not_deleted" x="300" y="0"/>
-</item>
-<item historyLabel="MallardDuck.java" index="2">
-<position info="not_deleted" x="306" y="0"/>
-</item>
-<item historyLabel="RedheadDuck.java" index="3">
-<position info="not_deleted" x="152" y="0"/>
-</item>
-<item historyLabel="RedheadDuck.java" index="3">
-<position info="not_deleted" x="158" y="0"/>
-</item>
-<item historyLabel="RubberDuck.java" index="4">
-<position info="not_deleted" x="151" y="0"/>
-</item>
-<item historyLabel="RubberDuck.java" index="4">
-<position info="not_deleted" x="157" y="0"/>
-</item>
-<item historyLabel="ModelDuck.java" index="5">
-<position info="not_deleted" x="384" y="0"/>
-</item>
-<item historyLabel="FlyBehavior.java" index="6">
-<position info="not_deleted" x="97" y="0"/>
-</item>
-<item historyLabel="FlyWithWings.java" index="7">
-<position/>
-</item>
-<item historyLabel="FlyWithWings.java" index="7">
-<position info="not_deleted" x="185" y="0"/>
-</item>
-<item historyLabel="FlyNoWay.java" index="8">
-<position info="not_deleted" x="190" y="0"/>
-</item>
-<item historyLabel="FlyNoWay.java" index="8">
-<position info="not_deleted" x="197" y="0"/>
-</item>
-<item historyLabel="Quack.java" index="9">
+<item historyLabel="Quack.java" index="3">
 <position info="not_deleted" x="146" y="0"/>
 </item>
-<item historyLabel="Quack.java" index="9">
+<item historyLabel="Quack.java" index="3">
 <position info="not_deleted" x="153" y="0"/>
 </item>
-<item historyLabel="MuteQuack.java" index="10">
+<item historyLabel="MuteQuack.java" index="4">
 <position info="not_deleted" x="182" y="0"/>
 </item>
-<item historyLabel="MuteQuack.java" index="10">
+<item historyLabel="MuteQuack.java" index="4">
 <position info="not_deleted" x="189" y="0"/>
 </item>
-<item historyLabel="Squeak.java" index="11">
+<item historyLabel="Squeak.java" index="5">
 <position info="not_deleted" x="205" y="0"/>
 </item>
-<item historyLabel="Squeak.java" index="11">
+<item historyLabel="Squeak.java" index="5">
 <position info="not_deleted" x="212" y="0"/>
 </item>
-<item historyLabel="QuackBehavior.java" index="12">
+<item historyLabel="QuackBehavior.java" index="6">
 <position info="not_deleted" x="104" y="0"/>
 </item>
-<item historyLabel="Quack.java" index="13">
+<item historyLabel="Quack.java" index="7">
 <position info="not_deleted" x="153" y="0"/>
 </item>
-<item historyLabel="MuteQuack.java" index="14">
+<item historyLabel="MuteQuack.java" index="8">
 <position info="not_deleted" x="189" y="0"/>
 </item>
-<item historyLabel="Squeak.java" index="15">
+<item historyLabel="Squeak.java" index="9">
 <position info="not_deleted" x="212" y="0"/>
 </item>
-<item historyLabel="QuackBehavior.java" index="16">
+<item historyLabel="QuackBehavior.java" index="10">
 <position info="not_deleted" x="104" y="0"/>
 </item>
-<item historyLabel="MiniDuckSimulator.java" index="17">
+<item historyLabel="MiniDuckSimulator.java" index="11">
 <position info="not_deleted" x="460" y="0"/>
 </item>
-<item historyLabel="MiniDuckSimulator.java" index="17">
+<item historyLabel="MiniDuckSimulator.java" index="11">
 <position info="not_deleted" x="466" y="0"/>
 </item>
-<item historyLabel="ModelDuck.java" index="5">
+<item historyLabel="ModelDuck.java" index="1">
 <position info="not_deleted" x="384" y="0"/>
 </item>
-<item historyLabel="ModelDuck.java" index="5">
+<item historyLabel="ModelDuck.java" index="1">
 <position info="not_deleted" x="292" y="0"/>
 </item>
-<item historyLabel="ModelDuck.java" index="5">
+<item historyLabel="ModelDuck.java" index="1">
 <position info="not_deleted" x="250" y="8"/>
 </item>
-<item historyLabel="ModelDuck.java" index="5">
+<item historyLabel="ModelDuck.java" index="1">
 <position info="not_deleted" x="284" y="5"/>
 </item>
-<item historyLabel="ModelDuck.java" index="5">
+<item historyLabel="ModelDuck.java" index="1">
 <position info="not_deleted" x="384" y="0"/>
 </item>
-<item historyLabel="ModelDuck.java" index="5">
+<item historyLabel="ModelDuck.java" index="1">
 <position info="not_deleted" x="379" y="0"/>
 </item>
-<item historyLabel="ModelDuck.java" index="5">
+<item historyLabel="ModelDuck.java" index="1">
 <position info="not_deleted" x="381" y="0"/>
 </item>
-<item historyLabel="FlyRocketPowered.java" index="18">
+<item historyLabel="FlyRocketPowered.java" index="12">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="FlyRocketPowered.java" index="18">
+<item historyLabel="FlyRocketPowered.java" index="12">
 <position info="not_deleted" x="191" y="0"/>
 </item>
-<item historyLabel="FlyWithWings.java" index="7">
+<item historyLabel="FlyWithWings.java" index="2">
 <position info="not_deleted" x="182" y="0"/>
 </item>
-<item historyLabel="FlyRocketPowered.java" index="18">
+<item historyLabel="FlyRocketPowered.java" index="12">
 <position info="not_deleted" x="190" y="0"/>
 </item>
-<item historyLabel="MiniDuckSimulator.java" index="17">
+<item historyLabel="MiniDuckSimulator.java" index="11">
 <position info="not_deleted" x="466" y="0"/>
 </item>
-<item historyLabel="MiniDuckSimulator.java" index="17">
+<item historyLabel="MiniDuckSimulator.java" index="11">
 <position info="not_deleted" x="460" y="0"/>
 </item>
-<item historyLabel="MiniDuckSimulator.java" index="17">
+<item historyLabel="MiniDuckSimulator.java" index="11">
 <position info="not_deleted" x="356" y="9"/>
 </item>
-<item historyLabel="MiniDuckSimulator.java" index="17">
+<item historyLabel="MiniDuckSimulator.java" index="11">
 <position info="not_deleted" x="438" y="0"/>
 </item>
-<item historyLabel="MiniDuckSimulator.java" index="17">
+<item historyLabel="MiniDuckSimulator.java" index="11">
 <position info="not_deleted" x="418" y="16"/>
 </item>
-<item historyLabel="MiniDuckSimulator.java" index="17">
+<item historyLabel="MiniDuckSimulator.java" index="11">
 <position info="not_deleted" x="460" y="0"/>
 </item>
-<item historyLabel="Duck.java" index="1">
+<item historyLabel="Duck.java" index="0">
 <position info="not_deleted" x="625" y="0"/>
 </item>
-<item historyLabel="MiniDuckSimulator.java" index="17">
+<item historyLabel="MiniDuckSimulator.java" index="11">
 <position info="not_deleted" x="460" y="0"/>
 </item>
-<item historyLabel="Duck.java" index="1">
+<item historyLabel="Duck.java" index="0">
 <position info="not_deleted" x="625" y="0"/>
 </item>
-<item historyLabel="MiniDuckSimulator.java" index="17">
+<item historyLabel="MiniDuckSimulator.java" index="11">
 <position info="not_deleted" x="460" y="0"/>
 </item>
-<item active="true" historyLabel="Duck.java" index="1">
+<item historyLabel="Duck.java" index="0">
 <position info="not_deleted" x="625" y="0"/>
+</item>
+<item historyLabel="MallardDuck.java" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="RedheadDuck.java" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="RubberDuck.java" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FlyBehavior.java" index="16">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FlyWithWings.java" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FlyNoWay.java" index="18">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Quack.java" index="19">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MuteQuack.java" index="20">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Squeak.java" index="21">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="QuackBehavior.java" index="22">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MiniDuckSimulator.java" index="23">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ModelDuck.java" index="24">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FlyRocketPowered.java" index="25">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="WeatherData.java" index="26">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="WeatherData.java" index="26">
+<position info="not_deleted" x="328" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -599,12 +539,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="right"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -612,11 +546,13 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeatherData.java" tooltip="Ch2/src/com/visionarysoftwaresolutions/hfdp/ch2/WeatherData.java">
+<persistable path="/Ch2/src/com/visionarysoftwaresolutions/hfdp/ch2/WeatherData.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlyRocketPowered.java" tooltip="Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyRocketPowered.java">
 <persistable path="/Ch1/src/com/visionarysoftwaresolutions/hfdp/ch1/flight/FlyRocketPowered.java"/>
 </file>

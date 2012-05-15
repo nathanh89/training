@@ -1,0 +1,8 @@
+CHAPTER 2
+----------------------------------------------------
+
+P. 42:	Based on this shitty implementation, how fucked up is this program thus far?
+I would choose A, B, C, E, and F. It is nearly as fucked up as it can be. (The display elements all use update() method, so that seems to be from a common interface)
+
+Non-Book Questions:
+1) Not really a question, I would just like to note that I object to Loose Coupling, personally. Keep it Tight, that's what I always say.

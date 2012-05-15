@@ -1,3 +1,6 @@
+CHAPTER 1
+----------------------------------------------------
+
 P. 5: 	A (if you have to do multiple similar overrides), B, F. (PS! Upon checking the answers at the end of the chapter, I should have also chosen C as well. Fuckin' up :P)
 
 P. 6: 	What do you think about this design?
@@ -55,9 +58,11 @@ this.weapon = newWeapon;
 
 I did not use that in my above example, and in fact when the book had me do the EXACT same thing with the Duck Simulation, the methods it tells me to put in for performFly and performQuack do not make use of the "this" at all, they are as I wrote my example; they set the behavior object to the desired behavior without using the this. So it's "this.behaviorObject = newBehavior" versus "behaviorObject = newBehavior" and the book has me do it both ways in two examples that function in the exact same way. The inconsistency bothers me, and I am curious to know what the hell is the difference, if any? Seems to me its a matter of choice, and I'm inclined to choose not to type the extra 5 characters if it doesn't make a difference. Of course, explicit is better than implicit, so does the "this" add some kind of extra level of explict-ness? I mean, I know the "this" is saying that it is referring to the "weapon" WeaponBehavior belonging to the class calling setWeapon, but it seems to work either way. Does not throwing it in open me up to potential problems down the road?
 
-P. 27a:	To be honest, I'm sure a lot of professions have specific jargon. However, being unfamiliar with a variety of professions, I find myself hard-pressed to come up with concrete examples.  I guess one could be say, surgeons. (Scrubs ftw!) If they say they're going to close at the end of a surgery, that's communicating that they're going to complete all the steps of sewing up/cleaning up/whatever the hell else they do at the end of a successful operation. One word implies many steps.
+P. 27a:	Can you think of examples of other uses of common lingo? How does it simplify communication?
+To be honest, I'm sure a lot of professions have specific jargon. However, being unfamiliar with a variety of professions, I find myself hard-pressed to come up with concrete examples.  I guess one could be say, surgeons. (Scrubs ftw!) If they say they're going to close at the end of a surgery, that's communicating that they're going to complete all the steps of sewing up/cleaning up/whatever the hell else they do at the end of a successful operation. One word implies many steps.
 
-P. 27b:	The fact that you're encapsulating algorithms for use by a client, and the algorithms are designed to be interchangebly used by the client because they are programmed to various common interfaces by groups of similar functionality.
+P. 27b:	What does telling someone that you're using the Strategy Pattern communicate?
+The fact that you're encapsulating algorithms for use by a client, and the algorithms are designed to be interchangebly used by the client because they are programmed to various common interfaces by groups of similar functionality.
 
 Non-Book Questions:
 1) Why does the main method have to pass in (String[] args)? The fuck is that? I'd look it up...but no internet.
