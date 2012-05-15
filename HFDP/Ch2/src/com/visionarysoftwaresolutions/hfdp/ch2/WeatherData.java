@@ -1,21 +1,67 @@
 package com.visionarysoftwaresolutions.hfdp.ch2;
 
-public class WeatherData {
+import java.util.ArrayList;
+
+public class WeatherData implements Subject{
 	
-	public void getTemperature(){
-		//Done by WeatherData Devs
+	public ArrayList<Observer> observers;
+	private float temperature;
+	private float humidity;
+	private float pressure;
+	
+	public WeatherData(ArrayList<ObservingDisplay> displaysToUse){
+		observers = new ArrayList<Observer>();
+		for(int i = 0; i<displaysToUse.size(); i++){
+			observers.add((Observer) displaysToUse.get(i));
+		}
 	}
 	
-	public void getHumidity(){
-		//Done by WeatherData Devs
+	public WeatherData() {
+		observers = new ArrayList<Observer>();
+	}
+
+	public float getTemperature(){
+		return temperature;
 	}
 	
-	public void getPressure(){
-		//Done by WeatherData Devs
+	public float getHumidity(){
+		return humidity;
+	}
+	
+	public float getPressure(){
+		return pressure;
 	}
 	
 	public void measurementsChanged(){
-		//My code goes here
+		notifyObservers();
+	}
+
+	@Override
+	public void registerObserver(Observer observer) {
+		observers.add(observer);
+	}
+
+	@Override
+	public void removeObserver(Observer observer) {
+		int i = observers.indexOf(observer);
+		if(i>=0){
+			observers.remove(i);
+		}
+	}
+
+	@Override
+	public void notifyObservers() {
+		for(int i=0; i<observers.size(); i++){
+			Observer localObserver = (Observer)observers.get(i);
+			localObserver.update(temperature, humidity, pressure);
+		}
+	}
+	
+	public void setMeasurements(float temperature, float humidity, float pressure){
+		this.temperature = temperature;
+		this.humidity = humidity;
+		this.pressure = pressure;
+		measurementsChanged();
 	}
 
 }

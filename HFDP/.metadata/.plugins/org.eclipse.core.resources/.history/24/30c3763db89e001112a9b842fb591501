@@ -1,0 +1,14 @@
+package com.visionarysoftwaresolutions.hfdp.ch2;
+
+public class Display implements ObservingDisplay{
+	ObservingDisplay currentDisplay;
+	
+	public Display(ObservingDisplay displayToUse){
+		currentDisplay = displayToUse;
+	}
+	
+	public ObservingDisplay getCurrentDisplay(){
+		return currentDisplay;
+	}
+		
+}

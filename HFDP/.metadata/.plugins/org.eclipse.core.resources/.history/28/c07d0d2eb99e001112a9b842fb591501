@@ -1,0 +1,12 @@
+package com.visionarysoftwaresolutions.hfdp.ch2;
+
+public class WeatherStation {
+	
+	public Display firstDisplay = new Display(new CurrenConditionsDisplay());
+
+	
+	public static void main(String args[]){
+		WeatherData weatherData = new WeatherData();
+	}
+
+}

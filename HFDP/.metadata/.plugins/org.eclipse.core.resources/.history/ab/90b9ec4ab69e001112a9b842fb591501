@@ -1,0 +1,10 @@
+package com.visionarysoftwaresolutions.hfdp.ch2;
+
+public class Display {
+	ObservingDisplay currentDisplay;
+	
+	public Display(ObservingDisplay displayToUse){
+		currentDisplay = displayToUse;
+	}
+
+}

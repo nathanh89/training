@@ -1,0 +1,24 @@
+package com.visionarysoftwaresolutions.hfdp.ch2;
+
+public class Display implements ObservingDisplay{
+	ObservingDisplay currentDisplay;
+	
+	public Display(ObservingDisplay displayToUse){
+		currentDisplay = displayToUse;
+	}
+	
+	public ObservingDisplay getCurrentDisplay(){
+		return currentDisplay;
+	}
+
+	@Override
+	public void update(float temp, float humidity, float pressure) {
+
+	}
+
+	@Override
+	public void display() {
+		
+	}
+		
+}

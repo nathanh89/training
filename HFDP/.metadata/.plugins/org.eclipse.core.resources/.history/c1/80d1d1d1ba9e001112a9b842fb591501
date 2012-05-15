@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+import com.visionarysoftwaresolutions.hfdp.ch2.Display;
+import com.visionarysoftwaresolutions.hfdp.ch2.ForecastDisplay;
+import com.visionarysoftwaresolutions.hfdp.ch2.ObservingDisplay;
+import com.visionarysoftwaresolutions.hfdp.ch2.WeatherData;
+
+
+public class TestClient {
+	
+	public Display firstDisplay = new Display(new ForecastDisplay());
+	public WeatherData dataProvider = new WeatherData();
+	
+	public void main(String[] args){
+		dataProvider.registerObserver(firstDisplay.getCurrentDisplay());
+	}
+}

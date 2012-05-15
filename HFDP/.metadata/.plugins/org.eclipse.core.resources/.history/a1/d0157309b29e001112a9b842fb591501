@@ -1,0 +1,25 @@
+package com.visionarysoftwaresolutions.hfdp.ch2;
+
+import java.util.ArrayList;
+
+public class WeatherData {
+	
+	public ArrayList<ObservingDisplay> displaysToShow;
+	
+	public void getTemperature(){
+		//Done by WeatherData Devs
+	}
+	
+	public void getHumidity(){
+		//Done by WeatherData Devs
+	}
+	
+	public void getPressure(){
+		//Done by WeatherData Devs
+	}
+	
+	public void measurementsChanged(){
+		//My code goes here
+	}
+
+}

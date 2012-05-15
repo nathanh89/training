@@ -1,0 +1,11 @@
+import com.visionarysoftwaresolutions.hfdp.ch2.Display;
+import com.visionarysoftwaresolutions.hfdp.ch2.ForecastDisplay;
+import com.visionarysoftwaresolutions.hfdp.ch2.ObservingDisplay;
+
+
+public class TestClient {
+	
+	Display firstDisplay = new Display(new ForecastDisplay());
+	WeatherData.registerObserver(firstDisplay);
+
+}

@@ -1,0 +1,19 @@
+package com.visionarysoftwaresolutions.hfdp.ch2;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
+import org.junit.Test;
+
+public class Tester {
+
+	@Test
+	public void testAddingToDisplaysList() {
+		Display firstDisplay = new Display(new CurrentConditionsDisplay());
+		ArrayList<ObservingDisplay> displaysToUse = new ArrayList<ObservingDisplay>();
+		displaysToUse.add(firstDisplay.getCurrentDisplay());
+		assertEquals(1, displaysToUse.size());
+	}
+
+}
