@@ -94,7 +94,11 @@ Aaand one final thought...again this shit is mostly for my benefit if you're the
 P. 75a:	Describe how the Observer design pattern makes use of the design principle "Identify the aspects of your application that vary and separte them from what stays the same.
 It encapsulates the Obsevers together under a common interface! Hooray!
 
-P. 75b:	Describe how the Obsever design patter makes use of the design principle "Program to an interface, not an implementation"
+P. 75b:	Describe how the Observer design pattern makes use of the design principle "Program to an interface, not an implementation"
+Well, initially we programmed the Subject to the Subject interface, and the Observers to the Observer interface. Then you all decided "FUCK THAT" and had me extend the subject from Observable. So why don't you tell me why you introduce that blatant contradiction, acknowlegde it openly, then ask this retarded question. Looks like it only makes use of that principle if you want to do it right to me. Although, to be fair, Observer in java.util is still an interface. Good for you.
+
+P. 75c:	Describe how the Observer design pattern makes use of the design principle "Favor Composition over Inheritance"
+Well for one, in our example, the Observer Classes are comosed of a weatherData object, rather than inheriting its properties to get the data. So the observers are composed of a subject object that allows them to interact with the subject and be registered and removed, get udpates, etc.
 
 Non-Book Questions:
 1) Not really a question, I would just like to note that I object to Loose Coupling, personally. Keep it Tight, that's what I always say.
