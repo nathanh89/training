@@ -1,0 +1,11 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.flight;
+
+import com.visionarysoftwaresolutions.hfdp.ch1.ducks.FlyBehavior;
+
+public class FlyWithWings implements FlyBehavior{
+	
+	public void fly(){
+		System.out.println("I'm flying, like a boss...bird!");
+	}
+
+}

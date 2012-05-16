@@ -4,3 +4,31 @@ CHAPTER 3
 P. 82:	Starbuzz has a maintenance nightmare on their hands from their shitty program design. What happens when the price of milk goes up? What do they do when they add a new caramel topping? What design principles have they violated with this crapola?
 Oh god. When the cows finally unionize, Starbuzz is gonna be up coffee creek without dairy. I apologize. I need to sleep. AHEM. They will have to change the cost() method implementation in every drink that has milk or could have milk, hell, after a while they may not be able to adjust the price of milk before it changes again. They'd be similarly shitfucked if they added a new caramel topping, they'd have to create new classes and new cost methods that include that caramel topping. EFF THAT. As far as violated design principles, I expect "Encapsulation" and "Program to an interface, not an implementation" to shortly be filing assault charges. Jesus, I really hope no one ever reads this.
 
+P. 83:	Write the cost methods for the follwing classes (psuedo-java allowed)
+public class Beverage{
+public double cost(){
+double beverageCost = 0.00;
+if(hasMilk){
+beverageCost += milkCost;
+}
+if(hasSoy){
+beverageCost += soyCost;
+}
+if(hasMocha){
+beverageCost += mochaCost;
+}
+if(hasWhip){
+beverageCost += whipCost;
+}
+return beverageCost;
+}
+
+public class DarkRoast extends Beverage{
+public DarkRoast(){
+description = "Most Excellent Dark Roast";
+public double cost(){
+double beverageCost = 2.50;
+beverageCost += super.cost();
+}
+
+P. 84:	They don't allow for multiple kinds of milk, say lowfat first of all. That will require editing Beverage. God forbid they ever want to have a sale or a promotion, they'd have to edit the code for that as well, changing costs in the superclass, and possible each subclass, depending on what's on sale/being promoted.

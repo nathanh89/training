@@ -1,0 +1,19 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.ducks;
+
+import com.visionarysoftwaresolutions.hfdp.ch1.ducks.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.flight.*;
+
+public class MiniDuckSimulator {
+
+	public static void main(String[] args){
+		
+		Duck mallard = new MallardDuck();
+		mallard.performQuack();
+		mallard.performFly();
+		
+		Duck model = new ModelDuck();
+		model.performFly();
+		model.setFlyBehavior(new FlyRocketPowered());
+		model.performFly();
+	}
+}
