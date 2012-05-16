@@ -1,6 +1,6 @@
 This is just a quick reference for the design principles and patterns expounded upon in Head First Design Patterns.
 
-*Ch1* - Intro to Design Patterns
+*Ch1* - [Intro to Design Patterns]
 
 -Identify the aspects of your application that vary and seperate them from what stays the same. (Encapsulate what varies)
 
@@ -10,8 +10,10 @@ This is just a quick reference for the design principles and patterns expounded 
 
 -THE STRATEGY PATTERN: defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
-*Ch2* - Keeping Your Objects in the Know
+*Ch2* - [Keeping Your Objects in the Know]
 
 -THE OBSERVER PATTER: defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically
 
 -Strive for loosely coupled designs between objects that interact
+
+*Ch3* - [The Decorator Pattern]
