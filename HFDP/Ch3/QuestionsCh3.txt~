@@ -1,6 +1,0 @@
-CHAPTER 3
-----------------------------------------------------
-
-P. 82:	Starbuzz has a maintenance nightmare on their hands from their shitty program design. What happens when the price of milk goes up? What do they do when they add a new caramel topping? What design principles have they violated with this crapola?
-Oh god. When the cows finally unionize, Starbuzz is gonna be up coffee creek without dairy. I apologize. I need to sleep. AHEM. They will have to change the cost() method implementation in every drink that has milk or could have milk, hell, after a while they may not be able to adjust the price of milk before it changes again. They'd be similarly shitfucked if they added a new caramel topping, they'd have to create new classes and new cost methods that include that caramel topping. EFF THAT. As far as violated design principles, I expect "Encapsulation" and "Program to an interface, not an implementation" to shortly be filing assault charges. Jesus, I really hope no one ever reads this.
-
