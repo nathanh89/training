@@ -25,7 +25,9 @@ public class MallardTests {
 	@Test
 	public void testInheritedSwim() {
 		mallard.swim();
-		assertEquals("All ducks float, even decoys!", outContent.toString());
+		String expected = "All ducks float, even decoys!";
+		String result = outContent.toString();
+		assertEquals(expected, result);
 	}
 
 }
