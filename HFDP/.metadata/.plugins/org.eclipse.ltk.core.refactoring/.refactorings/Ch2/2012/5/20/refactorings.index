@@ -8,3 +8,12 @@
 1337109473463	Rename type 'ShittyBookWeatherStation'
 1337111222891	Rename type 'CurrentConditionsDisplay'
 1337111235397	Rename type 'ForecastDisplay'
+1337124787072	Delete element
+1337125157903	Delete element
+1337126310920	Rename type 'WeatherStationSelectableDisplaysMultiple'
+1337126326458	Rename type 'WeatherStationSelectableDisplaysSingle'
+1337126340666	Rename type 'WeatherStationSelectableDisplaysMultipleWRONG'
+1337126518724	Delete element
+1337126953502	Rename package 'com.visionarysoftwaresolutions.hfdp.ch2'
+1337126981075	Rename package 'com.visionarysoftwaresolutions.hfdp.ch2'
+1337127848481	Delete element
