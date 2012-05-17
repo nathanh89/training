@@ -49,7 +49,7 @@ public class CyborgDuckTests {
 		//When: The flight behavior is changed
 		cyborgDuck.setFlyBehavior(new FlyNoWay());
 		//And: The Cyborg duck is asked to fly
-		//Then: It should reject your puny change attempt
+		//Then: It should demonstrate the new correct flight behavior
 		String expected = "I only fly one way. Try something else cute.";
 		assertTrue(DuckTester.flyBehavior(cyborgDuck, expected));
 		//And: In the case of the Cyborg duck, the flight behavior should go back to default
@@ -64,7 +64,7 @@ public class CyborgDuckTests {
 		//When: The quacking behavior is changed
 		cyborgDuck.setQuackBehavior(new Squeak());
 		//And: The Cyborg duck is asked to quack
-		//Then: It should reject your puny change attempt
+		//Then: It should demonstrate the new correct quacking behavior
 		String expected = "Fool. I'll ask again...HAVE YOU SEEN THIS BOY?";
 		assertTrue(DuckTester.quackBehavior(cyborgDuck, expected));
 		//And: In the case of the Cyborg duck, the quacking behavior should go back to default
