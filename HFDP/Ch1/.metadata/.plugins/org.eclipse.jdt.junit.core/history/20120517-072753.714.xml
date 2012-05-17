@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight" project="Ch1.TDDStyle" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyWithWingsTests" time="0.0">
+    <testcase name="testCorrectFlight" classname="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyWithWingsTests" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyNoWayTests" time="0.0">
+    <testcase name="testCorrectFlight" classname="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyNoWayTests" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyNiceTryTest" time="0.0">
+    <testcase name="testCorrectFlight" classname="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyNiceTryTest" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyRocketPoweredTests" time="0.0">
+    <testcase name="testCorrectFlight" classname="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyRocketPoweredTests" time="0.0"/>
+  </testsuite>
+</testrun>

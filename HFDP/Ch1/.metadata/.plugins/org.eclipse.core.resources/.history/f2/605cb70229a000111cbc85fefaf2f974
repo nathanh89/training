@@ -1,0 +1,19 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class GingerQuackTests {
+	
+	QuackBehavior quackbehavior = new GingerQuack();
+
+	@Test
+	public void testCorrectFlight() {
+		//Given: You have a quack behavior
+		//When: It is set to GingerQuack
+		//Then: The quack behavior should demonstrate the correct quacking
+		String expected = "I only fly one way. Try something else cute.";
+		assertEquals(expected, quackbehavior.quack());
+	}
+}

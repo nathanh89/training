@@ -1,11 +1,7 @@
 package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks;
 
-import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyBehavior;
-import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyNiceTry;
-import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyRocketPowered;
-import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.IntimidatingQuack;
-import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.MoreIntimidatingQuack;
-import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.QuackBehavior;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.*;
 
 public class CyborgDuck extends Duck{
 	

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="IntimidatingQuackTests" project="Ch1.TDDStyle" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.IntimidatingQuackTests" time="0.001">
+    <testcase name="testCorrectFlight" classname="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.IntimidatingQuackTests" time="0.001"/>
+  </testsuite>
+</testrun>
