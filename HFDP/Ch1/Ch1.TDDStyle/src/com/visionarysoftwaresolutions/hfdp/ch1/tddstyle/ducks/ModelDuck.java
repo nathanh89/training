@@ -10,6 +10,7 @@ public class ModelDuck extends Duck{
 		quackBehavior = new Quack();
 	}
 	
+	@Override
 	public String display(){
 		return "I'm a model duck. A soulless golem.";
 	}

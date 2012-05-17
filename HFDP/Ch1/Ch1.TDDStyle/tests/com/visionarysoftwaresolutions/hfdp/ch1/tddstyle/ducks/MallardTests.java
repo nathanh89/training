@@ -19,7 +19,7 @@ public class MallardTests {
 		//Given: A Mallard duck
 		//When: It swims using the inherited swim method
 		//Then: It should demonstrate the correct swim behavior
-		assertTrue(DuckTest.inheritedSwim(mallard));
+		assertTrue(DuckTester.inheritedSwim(mallard));
 	}
 	
 	@Test
@@ -29,7 +29,7 @@ public class MallardTests {
 		//When: The Mallard is asked to fly
 		//Then: It should demonstrate the correct flight behavior
 		String expected = "I'm flying, like a boss...bird!";
-		assertTrue(DuckTest.flyBehavior(mallard, expected));
+		assertTrue(DuckTester.flyBehavior(mallard, expected));
 	}
 	
 	@Test
@@ -39,7 +39,7 @@ public class MallardTests {
 		//When: The Mallard is asked to quack
 		//Then: It should demonstrate the correct quacking behavior
 		String expected = "Quack fo' rizzle, bitches!";
-		assertTrue(DuckTest.quackBehavior(mallard, expected));
+		assertTrue(DuckTester.quackBehavior(mallard, expected));
 	}
 	
 	@Test
@@ -51,7 +51,7 @@ public class MallardTests {
 		//And: The Mallard is asked to fly
 		//Then: It should demonstrate the new correct flight behavior
 		String expected = "Ass rocket ahoy! For Zephram!";
-		assertTrue(DuckTest.flyBehavior(mallard, expected));
+		assertTrue(DuckTester.flyBehavior(mallard, expected));
 	}
 	
 	@Test
@@ -63,15 +63,15 @@ public class MallardTests {
 		//And: The Mallard is asked to quack
 		//Then: It should demonstrate the new correct quacking behavior
 		String expected = "Squeak? And I'm a 'duck'? Odd.";
-		assertTrue(DuckTest.quackBehavior(mallard, expected));
+		assertTrue(DuckTester.quackBehavior(mallard, expected));
 	}
 	
 	@Test
 	public void testCustomDisplayImplementation(){
 		//Given: A Mallard duck
 		//When: I want to display it
-		//Then: It should display correctly using its implementation
+		//Then: It should display correctly using its own implementation
 		String expected = "Big whoop. A mallard.";
-		assertTrue(DuckTest.displayImplementation(mallard, expected));
+		assertTrue(DuckTester.displayImplementation(mallard, expected));
 	}
 }

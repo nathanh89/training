@@ -12,3 +12,7 @@
 1337220127348	Rename method 'testDefaultQuackBehavior'
 1337220581882	Rename method 'defaultFlyBehavior'
 1337220594617	Rename method 'defaultQuackBehavior'
+1337226691421	Rename type 'DuckTest'
+1337257071623	Rename field 'modelDuck'
+1337257728009	Rename field 'redheadDuck'
+1337258541120	Rename field 'mallard'

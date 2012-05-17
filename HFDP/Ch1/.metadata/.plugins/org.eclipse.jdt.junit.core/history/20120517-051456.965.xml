@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ModelDuckTests" project="Ch1.TDDStyle" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.ModelDuckTests" time="0.0">
+    <testcase name="testInheritedSwim" classname="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.ModelDuckTests" time="0.0"/>
+    <testcase name="testDefaultFlyBehavior" classname="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.ModelDuckTests" time="0.0"/>
+    <testcase name="testDefaultQuackBehavior" classname="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.ModelDuckTests" time="0.0"/>
+    <testcase name="testCustomFlyBehavior" classname="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.ModelDuckTests" time="0.0"/>
+    <testcase name="testCustomQuackBehavior" classname="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.ModelDuckTests" time="0.0"/>
+    <testcase name="testCustomDisplayImplementation" classname="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.ModelDuckTests" time="0.0"/>
+  </testsuite>
+</testrun>

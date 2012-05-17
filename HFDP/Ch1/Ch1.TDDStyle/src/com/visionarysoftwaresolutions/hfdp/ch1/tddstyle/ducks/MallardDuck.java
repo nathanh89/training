@@ -15,5 +15,4 @@ public class MallardDuck extends Duck{
 	public String display(){
 		return "Big whoop. A mallard.";
 	}
-	
 }

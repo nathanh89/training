@@ -1,0 +1,77 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks;
+
+import static org.junit.Assert.*;
+import org.junit.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.*;
+
+public class CyborgDuckTests {
+	
+	private Duck cyborgDuck;
+			
+	@Before
+	public void setup(){
+	    cyborgDuck = new CyborgDuck();
+	 }
+
+	@Test
+	public void testInheritedSwim() {
+		//Given: A Cyborg duck
+		//When: It swims using the inherited swim method
+		//Then: It should demonstrate the correct swim behavior
+		assertTrue(DuckTester.inheritedSwim(cyborgDuck));
+	}
+	
+	@Test
+	public void testDefaultFlyBehavior(){
+		//Given: A Cyborg duck
+		//And: It has default flight behavior set by the constructor
+		//When: The Cyborg duck is asked to fly
+		//Then: It should demonstrate the correct flight behavior
+		String expected = "Ass rocket ahoy! For Zephram!";
+		assertTrue(DuckTester.flyBehavior(cyborgDuck, expected));
+	}
+	
+	@Test
+	public void testDefaultQuackBehavior(){
+		//Given: A Cyborg duck
+		//And: It has default quacking behavior set by the constructor
+		//When: The Cyborg is asked to quack
+		//Then: It should demonstrate the correct quacking behavior
+		String expected = "Do you know John Connor? HAVE YOU SEEN THIS BOY?";
+		assertTrue(DuckTester.quackBehavior(cyborgDuck, expected));
+	}
+	
+	@Test
+	public void testCustomFlyBehavior(){
+		//Given: A Cyborg duck
+		//And: I want to change the flight behavior at runtime from its default
+		//When: The flight behavior is changed
+		cyborgDuck.setFlyBehavior(new FlyNoWay());
+		//And: The Cyborg duck is asked to fly
+		//Then: It should demonstrate the new correct flight behavior
+		String expected = "I only fly one way. Try something else cute.";
+		assertTrue(DuckTester.flyBehavior(cyborgDuck, expected));
+	}
+	
+	@Test
+	public void testCustomQuackBehavior(){
+		//Given: A Cyborg duck
+		//And: I want to change the quacking behavior at runtime from its default
+		//When: The quacking behavior is changed
+		cyborgDuck.setQuackBehavior(new Squeak());
+		//And: The Cyborg duck is asked to quack
+		//Then: It should demonstrate the new correct quacking behavior
+		String expected = "Fool. I'll ask again...HAVE YOU SEEN THIS BOY?";
+		assertTrue(DuckTester.quackBehavior(cyborgDuck, expected));
+	}
+	
+	@Test
+	public void testCustomDisplayImplementation(){
+		//Given: A Cyborg duck
+		//When: I want to display it
+		//Then: It should display correctly using its own implementation
+		String expected = "Unblinking blood-red eyes stare into your soul. You now understand fear.";
+		assertTrue(DuckTester.displayImplementation(cyborgDuck, expected));
+	}
+}

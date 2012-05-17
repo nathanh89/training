@@ -1,0 +1,9 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks;
+
+public class GingerQuack implements QuackBehavior{
+	
+	public String quack(){
+		return "Quack! (But with a dash of ginger...)";
+	}
+
+}
