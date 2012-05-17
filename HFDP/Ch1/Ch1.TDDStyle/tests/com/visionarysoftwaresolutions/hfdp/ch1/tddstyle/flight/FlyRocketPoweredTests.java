@@ -4,16 +4,16 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class FlyWithWingsTests {
+public class FlyRocketPoweredTests {
 	
-	FlyBehavior flybehavior = new FlyWithWings();
+	FlyBehavior flybehavior = new FlyRocketPowered();
 
 	@Test
 	public void testCorrectFlight() {
 		//Given: You have a flight behavior
-		//When: It is set to FlyWithWings
+		//When: It is set to FlyRocketPowered
 		//Then: The flight behavior should demonstrate the correct flight
-		String expected = "I'm flying, like a boss...bird!";
+		String expected = "Ass rocket ahoy! For Zephram!";
 		assertEquals(expected, flybehavior.fly());
 	}
 }

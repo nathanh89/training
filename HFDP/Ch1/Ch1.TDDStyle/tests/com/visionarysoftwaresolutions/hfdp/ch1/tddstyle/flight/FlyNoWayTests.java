@@ -5,10 +5,15 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class FlyNoWayTests {
+	
+	FlyBehavior flybehavior = new FlyNoWay();
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testCorrectFlight() {
+		//Given: You have a flight behavior
+		//When: It is set to FlyNoWay
+		//Then: The flight behavior should demonstrate the correct flight
+		String expected = "Do these wings look like they work? Jackass.";
+		assertEquals(expected, flybehavior.fly());
 	}
-
 }
