@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 import org.junit.*;
 import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.*;
 import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.*;
-import com.visionarysoftwaresolutions.hfpd.ch1.tddstyle.testhelpers.DuckTester;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.testhelpers.DuckTester;
 
 public class RedheadDuckTests {
 	
