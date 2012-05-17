@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddsytle/simulator/MiniDuckSimulator.java"/>
+<listEntry value="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/simulator/MiniDuckSimulator.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.visionarysoftwaresolutions.hfdp.ch1.tddsytle.simulator.MiniDuckSimulator"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.simulator.MiniDuckSimulator"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Ch1.TDDStyle"/>
 </launchConfiguration>
