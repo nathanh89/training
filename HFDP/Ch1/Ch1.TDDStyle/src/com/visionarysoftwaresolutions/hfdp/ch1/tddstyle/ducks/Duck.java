@@ -13,18 +13,18 @@ public abstract class Duck {
 		
 	}
 	
-	public void swim(){
-		System.out.println("All ducks float, even decoys!");
+	public String swim(){
+		return "All ducks float, even decoys!";
 	}
 	
 	public abstract void display();
 	
-	public void performQuack(){
-		quackBehavior.quack();
+	public String performQuack(){
+		return quackBehavior.quack();
 	}
 	
-	public void performFly(){
-		flyBehavior.fly();
+	public String performFly(){
+		return flyBehavior.fly();
 	}
 	
 	public void setFlyBehavior(FlyBehavior newFlyBehavior){

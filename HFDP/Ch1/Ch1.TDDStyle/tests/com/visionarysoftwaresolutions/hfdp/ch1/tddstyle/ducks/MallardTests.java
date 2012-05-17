@@ -8,24 +8,20 @@ import org.junit.*;
 
 public class MallardTests {
 	
-	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	private Duck mallard;
 	
 	@Before
 	public void setup(){
-	    System.setOut(new PrintStream(outContent));
 	    mallard = new MallardDuck();
 	}
-	
-	@After
-	public void clearOutContent(){
-		System.setOut(null);
-	}
-	
+
 	@Test
 	public void testInheritedSwim() {
-		mallard.swim();
-		assertEquals("All ducks float, even decoys!", outContent.toString());
+		//Given a mallard duck
+		//When it swims using the inherited swim method
+		String result = mallard.swim();
+		//Then it should demonstrate the desired swim behavior
+		assertEquals("All ducks float, even decoys!", result);
 	}
 
 }
