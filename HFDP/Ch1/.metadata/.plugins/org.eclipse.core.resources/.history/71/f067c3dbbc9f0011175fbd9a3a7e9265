@@ -73,9 +73,7 @@ public class MallardTests {
 	public void testMallardDisplayImplementation(){
 		//Given a Mallard duck
 		//When I want to display the duck
-		result = mallard.display();
-		//Then it should display correctly
-		assertEquals("Big whoop. A mallard.", result);
+		result = mallard.display()
 	}
 
 }

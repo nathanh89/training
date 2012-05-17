@@ -13,7 +13,7 @@ public class MallardDuck extends Duck{
 
 	@Override
 	public String display(){
-		return "Big whoop. A mallard.";
+		return "I'm a real Mallard Duck!";
 	}
 	
 }

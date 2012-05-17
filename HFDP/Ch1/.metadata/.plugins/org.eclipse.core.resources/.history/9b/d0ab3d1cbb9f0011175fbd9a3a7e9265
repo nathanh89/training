@@ -63,19 +63,6 @@ public class MallardTests {
 		//And for whatever reason the default quacking behavior is not desired
 		//When the quack behavior is changed
 		mallard.setQuackBehavior(new Squeak());
-		//And the Mallard is asked to quack
-		result = mallard.performQuack();
-		//Then it should demonstrate the new correct quack behavior
-		assertEquals("Squeak? And I'm a 'duck'? Odd.", result);
-	}
-	
-	@Test
-	public void testMallardDisplayImplementation(){
-		//Given a Mallard duck
-		//When I want to display the duck
-		result = mallard.display();
-		//Then it should display correctly
-		assertEquals("Big whoop. A mallard.", result);
 	}
 
 }

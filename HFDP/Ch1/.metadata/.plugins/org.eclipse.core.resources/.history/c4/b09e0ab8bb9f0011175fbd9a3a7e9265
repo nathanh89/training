@@ -68,14 +68,5 @@ public class MallardTests {
 		//Then it should demonstrate the new correct quack behavior
 		assertEquals("Squeak? And I'm a 'duck'? Odd.", result);
 	}
-	
-	@Test
-	public void testMallardDisplayImplementation(){
-		//Given a Mallard duck
-		//When I want to display the duck
-		result = mallard.display();
-		//Then it should display correctly
-		assertEquals("Big whoop. A mallard.", result);
-	}
 
 }

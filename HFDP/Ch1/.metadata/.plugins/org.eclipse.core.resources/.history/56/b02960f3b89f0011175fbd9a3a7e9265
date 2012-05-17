@@ -1,0 +1,37 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks;
+
+import static org.junit.Assert.*;
+
+import org.junit.*;
+
+public class MallardTests {
+	
+	private Duck mallard;
+	String result;
+	
+	@Before
+	public void setup(){
+	    mallard = new MallardDuck();
+	    result = null;
+	}
+
+	@Test
+	public void testInheritedSwim() {
+		//Given a Mallard duck
+		//When it swims using the inherited swim method
+		result = mallard.swim();
+		//Then it should demonstrate the correct swim behavior
+		assertEquals("All ducks float, even decoys!", result);
+	}
+	
+	@Test
+	public void testCorrectDefaultFlyBehavior(){
+		//Given a Mallard duck
+		//And that is has specific default flight behavior set by the constructor
+		//When the Mallard is asked to fly
+		result = mallard.performFly();
+		//Then it should demonstrate the correct flight behavior
+		assertEquals("I'm flying, like a boss...bird!", result);
+	}
+
+}

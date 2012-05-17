@@ -17,7 +17,7 @@ public abstract class Duck {
 		return "All ducks float, even decoys!";
 	}
 	
-	public abstract String display();
+	public abstract void display();
 	
 	public String performQuack(){
 		return quackBehavior.quack();

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MallardTests" project="Ch1.TDDStyle" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.MallardTests" time="0.0">
+    <testcase name="testInheritedSwim" classname="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.MallardTests" time="0.0"/>
+    <testcase name="testCorrectDefaultFlyBehavior" classname="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.MallardTests" time="0.0"/>
+    <testcase name="testCorrectDefaultQuackBehavior" classname="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.MallardTests" time="0.0"/>
+  </testsuite>
+</testrun>

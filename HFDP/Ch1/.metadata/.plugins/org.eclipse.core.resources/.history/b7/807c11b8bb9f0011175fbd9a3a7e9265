@@ -3,8 +3,8 @@ package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks;
 public class RedheadDuck extends Duck{
 	
 	@Override
-	public String display(){
-		return "I'm a ginger duck. Be afraid.";
+	public void display(){
+		System.out.println("I look like a soulless ginger duck!");
 	}
 
 }
