@@ -52,9 +52,6 @@ public class CyborgDuckTests {
 		//Then: It should demonstrate the new correct flight behavior
 		String expected = "I only fly one way. Try something else cute.";
 		assertTrue(DuckTester.flyBehavior(cyborgDuck, expected));
-		//And: In the case of the Cyborg duck, the flight behavior should go back to default
-		expected = "Ass rocket ahoy! For Zephram!";
-		assertTrue(DuckTester.flyBehavior(cyborgDuck, expected));
 	}
 	
 	@Test
@@ -66,9 +63,6 @@ public class CyborgDuckTests {
 		//And: The Cyborg duck is asked to quack
 		//Then: It should demonstrate the new correct quacking behavior
 		String expected = "Fool. I'll ask again...HAVE YOU SEEN THIS BOY?";
-		assertTrue(DuckTester.quackBehavior(cyborgDuck, expected));
-		//And: In the case of the Cyborg duck, the quacking behavior should go back to default
-		expected = "Do you know John Connor? HAVE YOU SEEN THIS BOY?";
 		assertTrue(DuckTester.quackBehavior(cyborgDuck, expected));
 	}
 	

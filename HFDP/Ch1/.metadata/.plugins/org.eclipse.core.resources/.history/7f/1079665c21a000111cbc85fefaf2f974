@@ -20,20 +20,6 @@ public class CyborgDuck extends Duck{
 	}
 	
 	@Override
-	public String performFly(){
-		String niceTry = flyBehavior.fly();
-		flyBehavior = new FlyRocketPowered();
-		return niceTry;
-	}
-	
-	@Override
-	public String performQuack(){
-		String niceTry = quackBehavior.quack();
-		quackBehavior = new IntimidatingQuack();
-		return niceTry;
-	}
-	
-	@Override
 	public void setFlyBehavior(FlyBehavior newFlyBehavior){
 		newFlyBehavior = new FlyNiceTry();
 		flyBehavior = newFlyBehavior;
