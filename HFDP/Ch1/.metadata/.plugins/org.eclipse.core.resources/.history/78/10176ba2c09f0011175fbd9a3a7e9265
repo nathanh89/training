@@ -1,0 +1,32 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks;
+
+public class DuckTestBody {
+	
+	public static String inheritedSwim(Duck duck){
+		String result = duck.swim();
+		return result;
+		
+	}
+	
+	public void testCorrectDefaultFlyBehavior(Duck duck, String expected){
+		
+		
+	}
+	
+	public void testCorrectDefaultQuackBehavior(){
+		
+	}
+	
+	public void testCustomRuntimeFlyBehavior(){
+		
+	}
+	
+	public void testCustomRuntimeQuackBehavior(){
+		
+	}
+	
+	public void testDisplayImplementation(){
+		
+	}
+
+}

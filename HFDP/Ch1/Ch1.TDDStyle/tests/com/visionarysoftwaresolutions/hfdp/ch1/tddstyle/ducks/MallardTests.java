@@ -8,74 +8,70 @@ import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.*;
 public class MallardTests {
 	
 	private Duck mallard;
-	String result;
-	
+			
 	@Before
 	public void setup(){
 	    mallard = new MallardDuck();
-	    result = null;
-	}
+	 }
 
 	@Test
 	public void testInheritedSwim() {
-		//Given a Mallard duck
-		//When it swims using the inherited swim method
-		result = mallard.swim();
-		//Then it should demonstrate the correct swim behavior
-		assertEquals("All ducks float, even decoys!", result);
+		//Given: A Mallard duck
+		//When: It swims using the inherited swim method
+		//Then: It should demonstrate the correct swim behavior
+		assertTrue(DuckTest.inheritedSwim(mallard));
 	}
 	
 	@Test
-	public void testCorrectDefaultFlyBehavior(){
-		//Given a Mallard duck
-		//And that is has specific default flight behavior set by the constructor
-		//When the Mallard is asked to fly
-		result = mallard.performFly();
-		//Then it should demonstrate the correct flight behavior
-		assertEquals("I'm flying, like a boss...bird!", result);
+	public void testDefaultFlyBehavior(){
+		//Given: A Mallard duck
+		//And: It has default flight behavior set by the constructor
+		//When: The Mallard is asked to fly
+		//Then: It should demonstrate the correct flight behavior
+		String expected = "I'm flying, like a boss...bird!";
+		assertTrue(DuckTest.flyBehavior(mallard, expected));
 	}
 	
 	@Test
-	public void testCorrectDefaultQuackBehavior(){
-		//Given a Mallard duck
-		//And that is has a specific default quack behavior set by the constructor
-		//When the Mallard is asked to quack
-		result = mallard.performQuack();
-		//Then it should demonstrate the correct quacking behavior
-		assertEquals("Quack fo' rizzle, bitches!", result);
+	public void testDefaultQuackBehavior(){
+		//Given: A Mallard duck
+		//And: It has default quacking behavior set by the constructor
+		//When: The Mallard is asked to quack
+		//Then: It should demonstrate the correct quacking behavior
+		String expected = "Quack fo' rizzle, bitches!";
+		assertTrue(DuckTest.quackBehavior(mallard, expected));
 	}
 	
 	@Test
-	public void testCustomRuntimeFlyBehavior(){
-		//Given a Mallard duck
-		//And for whatever reason, the default flight behavior is not desired
-		//When the flight behavior is changed
+	public void testCustomFlyBehavior(){
+		//Given: A Mallard duck
+		//And: I want to change the flight behavior at runtime from its default
+		//When: The flight behavior is changed
 		mallard.setFlyBehavior(new FlyRocketPowered());
-		//And the Mallard is asked to fly
-		result = mallard.performFly();
-		//Then it should demonstrate the new correct flight behavior
-		assertEquals("Ass rocket ahoy! For Zephram!", result);
+		//And: The Mallard is asked to fly
+		//Then: It should demonstrate the new correct flight behavior
+		String expected = "Ass rocket ahoy! For Zephram!";
+		assertTrue(DuckTest.flyBehavior(mallard, expected));
 	}
 	
 	@Test
-	public void testCustomRuntimeQuackBehavior(){
-		//Given a Mallard duck
-		//And for whatever reason the default quacking behavior is not desired
-		//When the quack behavior is changed
+	public void testCustomQuackBehavior(){
+		//Given: A Mallard duck
+		//And: I want to change the quacking behavior at runtime from its default
+		//When: The quacking behavior is changed
 		mallard.setQuackBehavior(new Squeak());
-		//And the Mallard is asked to quack
-		result = mallard.performQuack();
-		//Then it should demonstrate the new correct quack behavior
-		assertEquals("Squeak? And I'm a 'duck'? Odd.", result);
+		//And: The Mallard is asked to quack
+		//Then: It should demonstrate the new correct quacking behavior
+		String expected = "Squeak? And I'm a 'duck'? Odd.";
+		assertTrue(DuckTest.quackBehavior(mallard, expected));
 	}
 	
 	@Test
-	public void testMallardDisplayImplementation(){
-		//Given a Mallard duck
-		//When I want to display the duck
-		result = mallard.display();
-		//Then it should display correctly
-		assertEquals("Big whoop. A mallard.", result);
+	public void testCustomDisplayImplementation(){
+		//Given: A Mallard duck
+		//When: I want to display it
+		//Then: It should display correctly using its implementation
+		String expected = "Big whoop. A mallard.";
+		assertTrue(DuckTest.displayImplementation(mallard, expected));
 	}
-
 }

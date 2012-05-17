@@ -1,0 +1,36 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks;
+
+public class DuckTest {
+	
+	private static String expectedSwim = "All ducks float, even decoys!";
+	
+	public static boolean inheritedSwim(Duck duck){
+		String result = duck.swim();
+		return (result == expectedSwim);
+		
+	}
+	
+	public static boolean testDefaultFlyBehavior(Duck duck, String expected){
+		String result = duck.performFly();
+		return (result == expected);
+		
+	}
+	
+	public static boolean testDefaultQuackBehavior(Duck duck, String expected){
+		String result = duck.performQuack();
+		return (result == expected);
+	}
+	
+	public void testCustomRuntimeFlyBehavior(){
+		
+	}
+	
+	public void testCustomRuntimeQuackBehavior(){
+		
+	}
+	
+	public void testDisplayImplementation(){
+		
+	}
+
+}

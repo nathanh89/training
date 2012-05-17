@@ -1,0 +1,78 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks;
+
+import static org.junit.Assert.*;
+import org.junit.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.*;
+
+public class MallardTests {
+	
+	private Duck mallard;
+	private String defaultFlight = "I'm flying, like a boss...bird!";
+	private String defaultQuack = "Quack fo' rizzle, bitches!";
+	private String newFlight = "Ass rocket ahoy! For Zephram!";
+		
+	@Before
+	public void setup(){
+	    mallard = new MallardDuck();
+	   }
+
+	@Test
+	public void testInheritedSwim() {
+		//Given: A Mallard duck
+		//When: It swims using the inherited swim method
+		//Then: It should demonstrate the correct swim behavior
+		assertTrue(DuckTest.inheritedSwim(mallard));
+	}
+	
+	@Test
+	public void testDefaultFlyBehavior(){
+		//Given: A Mallard duck
+		//And: It has default flight behavior set by the constructor
+		//When: The Mallard is asked to fly
+		//Then: It should demonstrate the correct flight behavior
+		assertTrue(DuckTest.defaultFlyBehavior(mallard, defaultFlight));
+	}
+	
+	@Test
+	public void testDefaultQuackBehavior(){
+		//Given: A Mallard duck
+		//And: It has default quacking behavior set by the constructor
+		//When: The Mallard is asked to quack
+		//Then: It should demonstrate the correct quacking behavior
+		assertTrue(DuckTest.defaultQuackBehavior(mallard, defaultQuack));
+	}
+	
+//	@Test
+//	public void testCustomFlyBehavior(){
+//		//Given: A Mallard duck
+//		//And: I want to change the flight behavior at runtime from its default
+//		//When: The flight behavior is changed
+//		mallard.setFlyBehavior(new FlyRocketPowered());
+//		//And the Mallard is asked to fly
+//		//Then it should demonstrate the new correct flight behavior
+//		assertTrue("Ass rocket ahoy! For Zephram!", result);
+//	}
+//	
+//	@Test
+//	public void testCustomRuntimeQuackBehavior(){
+//		//Given a Mallard duck
+//		//And for whatever reason the default quacking behavior is not desired
+//		//When the quack behavior is changed
+//		mallard.setQuackBehavior(new Squeak());
+//		//And the Mallard is asked to quack
+//		result = mallard.performQuack();
+//		//Then it should demonstrate the new correct quack behavior
+//		assertEquals("Squeak? And I'm a 'duck'? Odd.", result);
+//	}
+//	
+//	@Test
+//	public void testMallardDisplayImplementation(){
+//		//Given a Mallard duck
+//		//When I want to display the duck
+//		result = mallard.display();
+//		//Then it should display correctly
+//		assertEquals("Big whoop. A mallard.", result);
+//	}
+
+}
