@@ -2,6 +2,8 @@ package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks;
 
 import static org.junit.Assert.*;
 import org.junit.*;
+
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.demo.DemoMuteQuack;
 import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.*;
 import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.*;
 import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.testhelpers.DuckTester;
@@ -60,7 +62,7 @@ public class RedheadDuckTests {
 		//Given: A Redhead duck
 		//And: I want to change the quacking behavior at runtime from its default
 		//When: The quacking behavior is changed
-		redheadDuck.setQuackBehavior(new MuteQuack());
+		redheadDuck.setQuackBehavior(new DemoMuteQuack());
 		//And: The Redhead duck is asked to quack
 		//Then: It should demonstrate the new correct quacking behavior
 		String expected = "...Really? I can't quack. Oddly I do seem to do Englsih pretty well.";

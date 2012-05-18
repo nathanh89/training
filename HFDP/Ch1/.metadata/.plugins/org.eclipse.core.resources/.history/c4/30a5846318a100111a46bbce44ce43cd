@@ -1,0 +1,57 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.demonstration;
+
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.*;
+
+public class SharedFunctions {
+	
+	
+	public void allGenericFunctions(Duck duck){
+		functionsHeader(duck);
+		displayFunction(duck);
+		swimFunction(duck);
+		quackFunction(duck);
+		flyFunction(duck);
+		newQuackFunction(duck);
+		quackFunction(duck);
+		newFlyFunction(duck);
+		flyFunction(duck);
+		System.out.println("");
+	}
+	
+	private String duckClassToString(Duck duck){
+		String currentDuck = duck.getClass().getSimpleName().toString();
+		return currentDuck;
+	}
+	
+	private void functionsHeader(Duck duck){
+		System.out.println("--" + duckClassToString(duck) + " Functions--");
+	}
+	
+	public static void displayFunction(Duck duck){
+		System.out.println("DISPLAY: " + duck.display());
+	}
+	
+	public static void swimFunction(Duck duck){
+		System.out.println("SWIM: " + duck.swim());
+	}
+	
+	public static void quackFunction(Duck duck){
+		System.out.println("DEFAULT QUACK: " + duck.performQuack());
+	}
+	
+	public static void flyFunction(Duck duck){
+		System.out.println("DEFAULT FLY: " + duck.performFly());
+	}
+	
+	public static void newQuackFunction(Duck duck){
+		duck.setQuackBehavior(new DemoMuteQuack());
+		System.out.println("CHANGE QUACK TO: " + duck.performQuack());
+	}
+	
+	public static void newFlyFunction(Duck duck){
+		duck.setFlyBehavior(new DemoFlyingSideways());
+		System.out.println("CHANGE FLY TO: " + duck.performFly());
+	}
+}

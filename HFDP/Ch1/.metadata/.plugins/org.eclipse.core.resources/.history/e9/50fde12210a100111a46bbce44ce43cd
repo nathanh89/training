@@ -1,0 +1,24 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.simulator;
+
+import java.util.ArrayList;
+
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.CyborgDuck;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.Duck;
+
+public class UniqueChecker{
+	
+	public ArrayList<Duck> uniqueDucks;
+	
+	public void uniqueListUpdater(){
+		uniqueDucks.add(new CyborgDuck());
+	}
+	
+	public void uniqueCheck(Duck duck){
+		boolean duckIsPresent = uniqueDucks.contains(duck.getClass());
+		if(duckIsPresent){
+	
+		}
+	}
+
+
+}

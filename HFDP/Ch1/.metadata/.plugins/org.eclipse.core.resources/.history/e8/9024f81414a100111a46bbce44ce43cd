@@ -1,0 +1,26 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.demonstration;
+
+import java.lang.reflect.*;
+import java.util.ArrayList;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.CyborgDuck;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.Duck;
+
+public class UniqueChecker{
+	
+	public ArrayList<Duck> uniqueDucks;
+	
+	public void uniqueListUpdater(){
+		uniqueDucks.add(new CyborgDuck());
+	}
+	
+	public void uniqueCheck(Duck duck) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException{
+		boolean duckIsPresent = uniqueDucks.contains(duck.getClass());
+		if(duckIsPresent){
+			String className = GenericDuckFunctions.duckClassToString(duck) + "Functions";
+			Method method = className.getMethod("demoFunctions", null);
+			method.invoke(duck);
+		}
+	}
+
+
+}

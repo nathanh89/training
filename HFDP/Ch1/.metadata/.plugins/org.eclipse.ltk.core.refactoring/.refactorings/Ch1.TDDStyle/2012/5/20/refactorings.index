@@ -22,3 +22,20 @@
 1337263180330	Move compilation unit
 1337265036840	Rename package 'com.visionarysoftwaresolutions.hfdp.ch1.tddsytle.simulator'
 1337265141969	Rename package 'com.visionarysoftwaresolutions.hfpd.ch1.tddstyle.testhelpers'
+1337360557229	Rename type 'FlyingSideways'
+1337360576426	Rename type 'FlyingSidewaysTests'
+1337360600565	Rename type 'MuteQuack'
+1337360621139	Rename type 'MuteQuackTests'
+1337360798589	Rename method 'displayFunction'
+1337360860492	Rename type 'MiniDuckSimulator'
+1337362459488	Rename type 'DuckFunctions'
+1337362647489	Rename package 'com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.simulator'
+1337363956298	Delete element
+1337364342114	Delete element
+1337364983748	Rename method 'displayHeader'
+1337365030785	Rename type 'GenericDuckFunctions'
+1337366177404	Rename type 'DucksDemonstration'
+1337366191900	Rename package 'com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.demonstration'
+1337366297045	Move compilation unit
+1337366318317	Move compilation unit
+1337367101315	Delete element

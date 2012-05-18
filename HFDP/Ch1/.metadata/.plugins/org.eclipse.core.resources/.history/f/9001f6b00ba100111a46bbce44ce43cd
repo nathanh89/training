@@ -1,0 +1,23 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.simulator;
+
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.*;
+
+public class DuckFunctions {
+	
+	public void displayFunctions(Duck duck){
+		String currentDuck = duck.getClass().toString();
+		System.out.println("--" + currentDuck + " FUNCTIONS--");
+		System.out.println("DISPLAY: " + duck.display());
+		System.out.println("SWIM: " + duck.swim());
+		System.out.println("QUACK: " + duck.performQuack());
+		System.out.println("FLY: " + duck.performFly());
+		duck.setQuackBehavior(new MuteQuack());
+		duck.setFlyBehavior(new FlyingSideways());
+		System.out.println("NEW QUACK: " + duck.performQuack());
+		System.out.println("NEW FLY: " + duck.performFly());
+		System.out.println("");
+	}
+
+}

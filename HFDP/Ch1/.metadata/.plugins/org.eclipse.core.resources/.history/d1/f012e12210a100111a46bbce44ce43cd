@@ -1,0 +1,35 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.simulator;
+
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.*;
+
+public class DucksDemonstration {
+
+	public static void main(String[] args){
+		
+		Duck mallard = new MallardDuck();
+		Duck cyborgDuck = new CyborgDuck();
+		Duck modelDuck = new ModelDuck();
+		Duck redheadDuck = new RedheadDuck();
+		Duck rubberDuck = new RubberDuck();
+		
+		System.out.println("--MALLARD DUCK FUNCTIONS--");
+		System.out.println("DISPLAY: " + mallard.display());
+		System.out.println("SWIM: " + mallard.swim());
+		System.out.println("QUACK: " + mallard.performQuack());
+		System.out.println("FLY: " + mallard.performFly());
+		mallard.setQuackBehavior(new DemoMuteQuack());
+		mallard.setFlyBehavior(new FlyNoWay());
+		System.out.println("NEW QUACK: " + mallard.performQuack());
+		System.out.println("NEW FLY: " + mallard.performFly());
+		System.out.println("");
+		
+		System.out.println("--CYBORG DUCK FUNCTIONS--");
+		System.out.println("DISPLAY: " + cyborgDuck.display());
+		System.out.println("QUACK: " + cyborgDuck.performQuack());
+		System.out.println("FLY: " + cyborgDuck.performFly());
+		System.out.println("");
+		
+	}
+}

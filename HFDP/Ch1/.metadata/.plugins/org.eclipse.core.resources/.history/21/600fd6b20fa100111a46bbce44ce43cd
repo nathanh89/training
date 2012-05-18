@@ -1,0 +1,72 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.simulator;
+
+import java.util.ArrayList;
+import java.lang.reflect.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.*;
+
+public class DuckFunctions {
+	
+	public ArrayList<Duck> uniqueDucks;
+	
+	public void allGenericFunctions(Duck duck){
+		functionsHeader(duck);
+		displayHeader(duck);
+		swimFunction(duck);
+		quackFunction(duck);
+		flyFunction(duck);
+		setNewBehaviors(duck);
+		newQuackFunction(duck);
+		newFlyFunction(duck);
+	}
+	
+	public void uniqueListUpdater(){
+		uniqueDucks.add(new CyborgDuck());
+	}
+	
+	public void uniqueCheck(Duck duck){
+		boolean duckIsPresent = uniqueDucks.contains(duck.getClass());
+		if(duckIsPresent){
+	
+		}
+	}
+	
+	public String duckClassToString(Duck duck){
+		String currentDuck = duck.getClass().toString();
+		return currentDuck;
+	}
+	
+	public void functionsHeader(Duck duck){
+		System.out.println("--" + duckClassToString(duck) + " FUNCTIONS--");
+	}
+	
+	public void displayHeader(Duck duck){
+		System.out.println("DISPLAY: " + duck.display());
+	}
+	
+	public void swimFunction(Duck duck){
+		System.out.println("SWIM: " + duck.swim());
+	}
+	
+	public void quackFunction(Duck duck){
+		System.out.println("QUACK: " + duck.performQuack());
+	}
+	
+	public void flyFunction(Duck duck){
+		System.out.println("FLY: " + duck.performFly());
+	}
+	
+	public void setNewBehaviors(Duck duck){
+		duck.setQuackBehavior(new DemoMuteQuack());
+		duck.setFlyBehavior(new DemoFlyingSideways());
+	}
+	
+	public void newQuackFunction(Duck duck){
+		System.out.println("NEW QUACK: " + duck.performQuack());
+	}
+	
+	public void newFlyFunction(Duck duck){
+		System.out.println("NEW FLY: " + duck.performFly());
+	}
+}

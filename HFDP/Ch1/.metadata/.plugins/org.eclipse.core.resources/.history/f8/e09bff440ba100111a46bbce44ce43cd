@@ -1,0 +1,9 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight;
+
+public class FlyingSideways implements FlyBehavior{
+
+	@Override
+	public String fly(){
+		return "Sideways flight? Where are your physics?!";
+	}
+}

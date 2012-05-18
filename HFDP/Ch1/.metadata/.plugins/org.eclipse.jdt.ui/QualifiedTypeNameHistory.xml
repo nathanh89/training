@@ -3,8 +3,6 @@
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.flight.FlyBehavior"/>
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyBehavior"/>
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.QuackBehavior"/>
-<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyWithWings"/>
-<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyNoWay"/>
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.Quack"/>
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.Duck"/>
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.ModelDuck"/>
@@ -13,6 +11,12 @@
 <fullyQualifiedTypeName name="java.io.PrintStream"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="org.junit.After"/>
-<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyRocketPowered"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyWithWings"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyNoWay"/>
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.Squeak"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyRocketPowered"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.IntimidatingQuack"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyNiceTry"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.GingerQuack"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.MoreIntimidatingQuack"/>
 </qualifiedTypeNameHistroy>

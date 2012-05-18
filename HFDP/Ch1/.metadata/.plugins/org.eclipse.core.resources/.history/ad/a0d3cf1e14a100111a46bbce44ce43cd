@@ -1,0 +1,25 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.demonstration;
+
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.*;
+
+public class DucksDemonstration {
+
+	public static void main(String[] args){
+		
+		GenericDuckFunctions demoFunctions = new GenericDuckFunctions();
+		Duck mallard = new MallardDuck();
+		Duck cyborgDuck = new CyborgDuck();
+		Duck modelDuck = new ModelDuck();
+		Duck redheadDuck = new RedheadDuck();
+		Duck rubberDuck = new RubberDuck();
+		
+		demoFunctions.allGenericFunctions(mallard);
+		demoFunctions.allGenericFunctions(cyborgDuck);
+		demoFunctions.allGenericFunctions(modelDuck);
+		demoFunctions.allGenericFunctions(redheadDuck);
+		demoFunctions.allGenericFunctions(rubberDuck);
+		
+	}
+}
