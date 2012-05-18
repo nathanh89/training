@@ -4,7 +4,6 @@
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyBehavior"/>
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.QuackBehavior"/>
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.Quack"/>
-<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.Duck"/>
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.ModelDuck"/>
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.MallardDuck"/>
 <fullyQualifiedTypeName name="java.io.ByteArrayOutputStream"/>
@@ -19,4 +18,8 @@
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.FlyNiceTry"/>
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.GingerQuack"/>
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.MoreIntimidatingQuack"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.Duck"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks.CyborgDuck"/>
 </qualifiedTypeNameHistroy>

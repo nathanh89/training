@@ -5,7 +5,6 @@ import org.junit.*;
 
 import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.demo.DemoMuteQuack;
 import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.*;
-import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks.*;
 import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.testhelpers.DuckTester;
 
 public class RedheadDuckTests {

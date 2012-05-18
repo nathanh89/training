@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="12" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
 <window height="744" maximized="true" width="1020" x="178" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -29,57 +29,13 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MuteQuackTests.java" partName="MuteQuackTests.java" path="/home/nathan/Documents/training/HFDP/Ch1/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MuteQuackTests.java" title="MuteQuackTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MuteQuackTests.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MuteQuackTests.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="193" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MuteQuack.java" partName="MuteQuack.java" path="/home/nathan/Documents/training/HFDP/Ch1/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MuteQuack.java" title="MuteQuack.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MuteQuack.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MuteQuack.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="70" selectionOffset="150" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CyborgDuckTests.java" partName="CyborgDuckTests.java" path="/home/nathan/Documents/training/HFDP/Ch1/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/CyborgDuckTests.java" title="CyborgDuckTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/CyborgDuckTests.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/CyborgDuckTests.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1429" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GingerQuackTests.java" partName="GingerQuackTests.java" path="/home/nathan/Documents/training/HFDP/Ch1/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/GingerQuackTests.java" title="GingerQuackTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/GingerQuackTests.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/GingerQuackTests.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="195" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IntimidatingQuackTests.java" partName="IntimidatingQuackTests.java" path="/home/nathan/Documents/training/HFDP/Ch1/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/IntimidatingQuackTests.java" title="IntimidatingQuackTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/IntimidatingQuackTests.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/IntimidatingQuackTests.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="201" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuackTests.java" partName="QuackTests.java" path="/home/nathan/Documents/training/HFDP/Ch1/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/QuackTests.java" title="QuackTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/QuackTests.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/QuackTests.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="477" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MoreIntimidatingQuackTests.java" partName="MoreIntimidatingQuackTests.java" path="/home/nathan/Documents/training/HFDP/Ch1/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MoreIntimidatingQuackTests.java" title="MoreIntimidatingQuackTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MoreIntimidatingQuackTests.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MoreIntimidatingQuackTests.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="168" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Quack.java" partName="Quack.java" path="/home/nathan/Documents/training/HFDP/Ch1/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/Quack.java" title="Quack.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/Quack.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/Quack.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="28" selectionOffset="157" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SqueakTests.java" partName="SqueakTests.java" path="/home/nathan/Documents/training/HFDP/Ch1/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/SqueakTests.java" title="SqueakTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/SqueakTests.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/SqueakTests.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="429" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Squeak.java" partName="Squeak.java" path="/home/nathan/Documents/training/HFDP/Ch1/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/Squeak.java" title="Squeak.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/Squeak.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/Squeak.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="32" selectionOffset="157" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CyborgDuckFunctions.java" partName="CyborgDuckFunctions.java" path="/home/nathan/Documents/training/HFDP/Ch1/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/CyborgDuckFunctions.java" title="CyborgDuckFunctions.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/CyborgDuckFunctions.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/CyborgDuckFunctions.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="819" selectionTopPixel="2"/>
 </editor>
 </editors>
 <views>
@@ -109,10 +65,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
-<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="105" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -259,7 +211,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.3751938" ratioLeft="484" ratioRight="806" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.88646966" ratioLeft="570" ratioRight="73" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.66096425" ratioLeft="425" ratioRight="218" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -398,177 +350,167 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/GingerQuackTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RedheadDuck.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demonstration/CyborgDuckFunctions.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demonstration/DucksDemonstration.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demonstration/SharedFunctions.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demonstration/DucksDemo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/CyborgDuckFunctions.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/SharedFunctions.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/DucksDemo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RubberDuckTests.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RedheadDuckTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/CyborgDuckTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/CyborgDuck.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/IntimidatingQuackTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/GingerQuack.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/IntimidatingQuack.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MoreIntimidatingQuackTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MoreIntimidatingQuack.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MuteQuackTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MuteQuack.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/CyborgDuckTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/GingerQuackTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/IntimidatingQuackTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MoreIntimidatingQuackTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/QuackTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MoreIntimidatingQuackTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/Quack.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/SqueakTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/Squeak.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/DucksSimulatorDemo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/SharedFunctions.java"/>
 </editors>
-<item historyLabel="RedheadDuck.java" index="1">
-<position info="not_deleted" x="217" y="0"/>
+<item historyLabel="SharedFunctions.java" index="2">
+<position info="not_deleted" x="514" y="0"/>
 </item>
-<item historyLabel="RedheadDuckTests.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="SharedFunctions.java" index="2">
+<position info="not_deleted" x="560" y="0"/>
 </item>
-<item historyLabel="CyborgDuckTests.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="CyborgDuckFunctions.java" index="0">
+<position info="not_deleted" x="517" y="0"/>
 </item>
-<item historyLabel="CyborgDuck.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="CyborgDuck.java" index="4">
-<position info="not_deleted" x="983" y="0"/>
-</item>
-<item historyLabel="CyborgDuck.java" index="4">
-<position info="not_deleted" x="1008" y="21"/>
-</item>
-<item historyLabel="CyborgDuck.java" index="4">
-<position info="not_deleted" x="301" y="0"/>
-</item>
-<item historyLabel="CyborgDuck.java" index="4">
-<position info="not_deleted" x="131" y="0"/>
-</item>
-<item historyLabel="CyborgDuckTests.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="GingerQuackTests.java" index="0">
-<position info="not_deleted" x="475" y="0"/>
-</item>
-<item historyLabel="IntimidatingQuackTests.java" index="5">
-<position info="not_deleted" x="531" y="0"/>
-</item>
-<item historyLabel="GingerQuackTests.java" index="0">
-<position info="not_deleted" x="0" y="508"/>
-</item>
-<item historyLabel="IntimidatingQuackTests.java" index="5">
-<position info="not_deleted" x="243" y="0"/>
-</item>
-<item historyLabel="GingerQuackTests.java" index="0">
-<position info="not_deleted" x="324" y="0"/>
-</item>
-<item historyLabel="IntimidatingQuackTests.java" index="5">
-<position info="not_deleted" x="243" y="0"/>
-</item>
-<item historyLabel="GingerQuackTests.java" index="0">
-<position info="not_deleted" x="324" y="0"/>
-</item>
-<item historyLabel="GingerQuack.java" index="6">
-<position info="not_deleted" x="163" y="39"/>
-</item>
-<item historyLabel="GingerQuackTests.java" index="0">
-<position info="not_deleted" x="452" y="0"/>
-</item>
-<item historyLabel="IntimidatingQuackTests.java" index="5">
+<item historyLabel="DucksDemonstration.java" index="1">
 <position info="not_deleted" x="277" y="0"/>
 </item>
-<item historyLabel="IntimidatingQuack.java" index="7">
-<position info="not_deleted" x="169" y="50"/>
+<item historyLabel="SharedFunctions.java" index="2">
+<position info="not_deleted" x="1569" y="0"/>
 </item>
-<item historyLabel="IntimidatingQuackTests.java" index="5">
-<position info="not_deleted" x="0" y="530"/>
+<item historyLabel="DucksDemonstration.java" index="1">
+<position info="not_deleted" x="277" y="0"/>
 </item>
-<item historyLabel="MoreIntimidatingQuackTests.java" index="8">
+<item historyLabel="DucksDemo.java" index="3">
+<position info="not_deleted" x="277" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="3">
+<position info="not_deleted" x="268" y="0"/>
+</item>
+<item historyLabel="CyborgDuckFunctions.java" index="4">
+<position info="not_deleted" x="517" y="0"/>
+</item>
+<item historyLabel="CyborgDuckFunctions.java" index="4">
+<position info="not_deleted" x="508" y="0"/>
+</item>
+<item historyLabel="SharedFunctions.java" index="5">
+<position info="not_deleted" x="1435" y="0"/>
+</item>
+<item historyLabel="SharedFunctions.java" index="5">
+<position info="not_deleted" x="1426" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="6">
 <position info="not_deleted" x="333" y="0"/>
 </item>
-<item historyLabel="MoreIntimidatingQuack.java" index="9">
-<position info="not_deleted" x="173" y="48"/>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="324" y="0"/>
 </item>
-<item historyLabel="MoreIntimidatingQuackTests.java" index="8">
-<position info="not_deleted" x="0" y="546"/>
+<item historyLabel="CyborgDuckFunctions.java" index="4">
+<position info="not_deleted" x="819" y="0"/>
 </item>
-<item historyLabel="MuteQuackTests.java" index="10">
-<position info="not_deleted" x="308" y="0"/>
+<item historyLabel="SharedFunctions.java" index="5">
+<position info="not_deleted" x="1426" y="0"/>
 </item>
-<item historyLabel="MuteQuack.java" index="11">
-<position info="not_deleted" x="150" y="70"/>
+<item historyLabel="SharedFunctions.java" index="5">
+<position info="not_deleted" x="129" y="0"/>
 </item>
-<item historyLabel="MuteQuackTests.java" index="10">
-<position info="not_deleted" x="476" y="0"/>
+<item historyLabel="SharedFunctions.java" index="5">
+<position info="not_deleted" x="128" y="0"/>
 </item>
-<item historyLabel="CyborgDuckTests.java" index="12">
-<position info="not_deleted" x="1429" y="0"/>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="321" y="0"/>
 </item>
-<item historyLabel="GingerQuackTests.java" index="13">
+<item historyLabel="CyborgDuckFunctions.java" index="4">
+<position info="not_deleted" x="819" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="753" y="0"/>
+</item>
+<item historyLabel="CyborgDuckFunctions.java" index="4">
+<position info="not_deleted" x="819" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="753" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="503" y="0"/>
+</item>
+<item historyLabel="SharedFunctions.java" index="5">
+<position info="not_deleted" x="128" y="0"/>
+</item>
+<item historyLabel="SharedFunctions.java" index="5">
+<position info="not_deleted" x="162" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="503" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="717" y="0"/>
+</item>
+<item historyLabel="SharedFunctions.java" index="5">
+<position info="not_deleted" x="209" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="717" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="991" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="714" y="0"/>
+</item>
+<item historyLabel="SharedFunctions.java" index="5">
+<position info="not_deleted" x="209" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="714" y="0"/>
+</item>
+<item historyLabel="CyborgDuckFunctions.java" index="4">
+<position info="not_deleted" x="819" y="0"/>
+</item>
+<item historyLabel="SharedFunctions.java" index="5">
+<position info="not_deleted" x="209" y="0"/>
+</item>
+<item historyLabel="RubberDuckTests.java" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="IntimidatingQuackTests.java" index="14">
+<item historyLabel="RubberDuckTests.java" index="7">
+<position info="not_deleted" x="262" y="0"/>
+</item>
+<item historyLabel="RedheadDuckTests.java" index="8">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="MoreIntimidatingQuackTests.java" index="15">
+<item historyLabel="RedheadDuckTests.java" index="8">
+<position info="not_deleted" x="262" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="803" y="0"/>
+</item>
+<item historyLabel="RubberDuckTests.java" index="7">
+<position info="not_deleted" x="262" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="803" y="0"/>
+</item>
+<item historyLabel="RedheadDuckTests.java" index="8">
+<position info="not_deleted" x="262" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="803" y="0"/>
+</item>
+<item historyLabel="CyborgDuckFunctions.java" index="4">
+<position info="not_deleted" x="819" y="0"/>
+</item>
+<item historyLabel="DucksDemo.java" index="6">
+<position info="not_deleted" x="803" y="0"/>
+</item>
+<item historyLabel="DucksSimulatorDemo.java" index="9">
+<position info="not_deleted" x="803" y="0"/>
+</item>
+<item historyLabel="DucksSimulatorDemo.java" index="9">
+<position info="not_deleted" x="812" y="0"/>
+</item>
+<item active="true" historyLabel="SharedFunctions.java" index="10">
 <position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MuteQuackTests.java" index="10">
-<position info="not_deleted" x="476" y="0"/>
-</item>
-<item historyLabel="QuackTests.java" index="16">
-<position info="not_deleted" x="477" y="0"/>
-</item>
-<item historyLabel="MuteQuackTests.java" index="10">
-<position info="not_deleted" x="0" y="531"/>
-</item>
-<item historyLabel="QuackTests.java" index="16">
-<position info="not_deleted" x="477" y="0"/>
-</item>
-<item historyLabel="MuteQuackTests.java" index="10">
-<position info="not_deleted" x="529" y="0"/>
-</item>
-<item historyLabel="GingerQuackTests.java" index="13">
-<position info="not_deleted" x="195" y="0"/>
-</item>
-<item historyLabel="IntimidatingQuackTests.java" index="14">
-<position info="not_deleted" x="201" y="0"/>
-</item>
-<item historyLabel="MoreIntimidatingQuackTests.java" index="17">
-<position info="not_deleted" x="205" y="0"/>
-</item>
-<item historyLabel="MuteQuackTests.java" index="10">
-<position info="not_deleted" x="193" y="0"/>
-</item>
-<item historyLabel="QuackTests.java" index="16">
-<position info="not_deleted" x="422" y="0"/>
-</item>
-<item historyLabel="Quack.java" index="18">
-<position info="not_deleted" x="157" y="28"/>
-</item>
-<item historyLabel="QuackTests.java" index="16">
-<position info="not_deleted" x="159" y="0"/>
-</item>
-<item historyLabel="MoreIntimidatingQuackTests.java" index="17">
-<position info="not_deleted" x="168" y="0"/>
-</item>
-<item historyLabel="QuackTests.java" index="16">
-<position info="not_deleted" x="0" y="477"/>
-</item>
-<item historyLabel="SqueakTests.java" index="19">
-<position info="not_deleted" x="484" y="0"/>
-</item>
-<item historyLabel="QuackTests.java" index="16">
-<position info="not_deleted" x="0" y="477"/>
-</item>
-<item historyLabel="SqueakTests.java" index="19">
-<position info="not_deleted" x="307" y="0"/>
-</item>
-<item historyLabel="Squeak.java" index="20">
-<position info="not_deleted" x="157" y="32"/>
-</item>
-<item active="true" historyLabel="SqueakTests.java" index="19">
-<position info="not_deleted" x="307" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -576,13 +518,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-<trimItem IMemento.internal.id="bottom"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -594,50 +529,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Squeak.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/Squeak.java">
-<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/Squeak.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RedheadDuckTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RedheadDuckTests.java">
+<persistable path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RedheadDuckTests.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SqueakTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/SqueakTests.java">
-<persistable path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/SqueakTests.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RubberDuckTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RubberDuckTests.java">
+<persistable path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RubberDuckTests.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Quack.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/Quack.java">
-<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/Quack.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CyborgDuckFunctions.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demonstration/CyborgDuckFunctions.java">
+<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demonstration/CyborgDuckFunctions.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MoreIntimidatingQuackTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MoreIntimidatingQuackTests.java">
-<persistable path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MoreIntimidatingQuackTests.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UniqueChecker.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demonstration/UniqueChecker.java">
+<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demonstration/UniqueChecker.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuackTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/QuackTests.java">
-<persistable path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/QuackTests.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DucksDemonstration.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demonstration/DucksDemonstration.java">
+<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demonstration/DucksDemonstration.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IntimidatingQuackTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/IntimidatingQuackTests.java">
-<persistable path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/IntimidatingQuackTests.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CyborgDuckFunctions.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/simulator/CyborgDuckFunctions.java">
+<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/simulator/CyborgDuckFunctions.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GingerQuackTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/GingerQuackTests.java">
-<persistable path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/GingerQuackTests.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UniqueChecker.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/simulator/UniqueChecker.java">
+<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/simulator/UniqueChecker.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CyborgDuckTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/CyborgDuckTests.java">
-<persistable path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/CyborgDuckTests.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlyNiceTryTest.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/flight/FlyNiceTryTest.java">
+<persistable path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/flight/FlyNiceTryTest.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MuteQuack.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MuteQuack.java">
-<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MuteQuack.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlyingSidewaysTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/flight/FlyingSidewaysTests.java">
+<persistable path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/flight/FlyingSidewaysTests.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MuteQuackTests.java" tooltip="Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MuteQuackTests.java">
-<persistable path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MuteQuackTests.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlyNiceTry.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/flight/FlyNiceTry.java">
+<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/flight/FlyNiceTry.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MoreIntimidatingQuack.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MoreIntimidatingQuack.java">
-<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/MoreIntimidatingQuack.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IntimidatingQuack.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/IntimidatingQuack.java">
-<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/IntimidatingQuack.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GingerQuack.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/GingerQuack.java">
-<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/quacks/GingerQuack.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlyBehavior.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/flight/FlyBehavior.java">
-<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/flight/FlyBehavior.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FlyingSideways.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/flight/FlyingSideways.java">
+<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/flight/FlyingSideways.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CyborgDuck.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/CyborgDuck.java">
 <persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/CyborgDuck.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MallardDuck.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/MallardDuck.java">
+<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/MallardDuck.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RubberDuck.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RubberDuck.java">
+<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RubberDuck.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RedheadDuck.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RedheadDuck.java">
+<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RedheadDuck.java"/>
 </file>
 </mruList>
 </workbench>
