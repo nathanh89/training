@@ -1,0 +1,12 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+public class SetUpSim {
+	
+	public static void main(String args[]){
+		
+		StationSetUp setUp = new StationSetUp();
+		
+		System.out.println(setUp.getInstalledDisplays());
+	}
+
+}

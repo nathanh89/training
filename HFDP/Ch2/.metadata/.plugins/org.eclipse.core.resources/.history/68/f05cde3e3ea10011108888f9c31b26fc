@@ -1,0 +1,34 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+import java.io.File;
+import java.util.ArrayList;
+
+import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.Display;
+
+public class StationSetUp {
+	
+	public ArrayList<String> displaysToShow = new ArrayList<String>();
+	
+	public StationSetUp(){
+	}
+
+	public void promptForDisplays() {
+		getInstalledDisplays();
+		printInstalledList();
+	}
+	
+	public int getInstalledDisplays(){
+		String registryPath = "/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/test/DisplayInstallRegistry"; 
+		File installFolder = new File(registryPath);
+		String[] installedList = installFolder.list();
+		for(int i=0; i<installedList.length; i++){
+			String display = installedList[i];
+			displaysToShow.add(display);
+			}
+		}
+			
+	private void printInstalledList(){
+		
+	}
+
+}

@@ -25,6 +25,14 @@ public class StationSetuUpTests {
 	public void testGetInstalledDisplays(){
 		//Given: I want to set up a Weather Station
 		//And: I have some Displays installed already
+		//When: I want to get a list of the installed displays
+		//Then: The installed displays should be on the list
+		setUp.getInstalledDisplays();
+		assertEquals(4,setUp.displaysToShow.size());
+		assertTrue(setUp.displaysToShow.contains("CurrentConditions"));
+		assertTrue(setUp.displaysToShow.contains("Forecast"));
+		assertTrue(setUp.displaysToShow.contains("Statistics"));
+		assertTrue(setUp.displaysToShow.contains("HeatIndex"));
 	}
 	
 	@Test

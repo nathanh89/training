@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="15" version="2.0">
+<workbench progressCount="12" version="2.0">
 <workbenchAdvisor/>
-<window height="744" width="1301" x="65" y="24">
+<window height="745" maximized="true" width="652" x="716" y="24">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -17,7 +17,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -26,17 +26,46 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CurrentConditions.java" partName="CurrentConditions.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditions.java" title="CurrentConditions.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditions.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditions.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="186"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeatherData.java" partName="WeatherData.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherData.java" title="WeatherData.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherData.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherData.java"/>
+<editorState selectionHorizontalPixel="15" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StationSetUp.java" partName="StationSetUp.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/StationSetUp.java" title="StationSetUp.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/StationSetUp.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/StationSetUp.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="816" selectionTopPixel="296"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StationSetuUpTests.java" partName="StationSetuUpTests.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/StationSetuUpTests.java" title="StationSetuUpTests.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/StationSetuUpTests.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/StationSetuUpTests.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="670" selectionTopPixel="2"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HeatIndexDisplay.java" partName="HeatIndexDisplay.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexDisplay.java" title="HeatIndexDisplay.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexDisplay.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexDisplay.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="97" selectionTopPixel="325"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StatisticsDisplay.java" partName="StatisticsDisplay.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsDisplay.java" title="StatisticsDisplay.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsDisplay.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsDisplay.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="272" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.ui.MembersView" partName="Members">
 <viewState hidefields="false" hidelocaltypes="false" hidenonpublic="false" hidestatic="false" org.eclipse.jdt.ui.browsing.memberstoeditor="1">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.MembersView.SyntheticMembersFilter" isEnabled="true"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.MembersView.SyntheticMembersFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.MembersView.ImportDeclarationFilter" isEnabled="false"/>
 </xmlDefinedFilters>
 </customFilters>
@@ -44,9 +73,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.TypesView" partName="Types">
 <viewState org.eclipse.jdt.ui.browsing.typestoeditor="1" workingSetName="Aggregate for window 1337368209313">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.TypesView.ClassFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.TypesView.ClassFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.TypesView.InterfaceFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.TypesView.EnumFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.TypesView.NonPublicTypeFilter" isEnabled="false"/>
@@ -59,6 +86,7 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="105" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
@@ -101,17 +129,9 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ui.internal.introview" partName="Welcome">
-<viewState>
-<presentation currentPage="root" restore="true"/>
-<standbyPart/>
-</viewState>
-</view>
 <view id="org.eclipse.jdt.ui.ProjectsView" partName="Projects">
 <viewState org.eclipse.jdt.ui.browsing.projectstoeditor="1" workingSetName="Aggregate for window 1337368209313">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.ProjectsView.LibraryFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.ProjectsView.LibraryFilter" isEnabled="false"/>
 <child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter2" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.ProjectsView.NonSharedProjectsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.pde.ui.BinaryProjectFilter2" isEnabled="false"/>
@@ -120,15 +140,10 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
-<viewState/>
-</view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.PackagesView" partName="Packages">
 <viewState org.eclipse.jdt.ui.PackagesView.viewState="0" org.eclipse.jdt.ui.browsing.packagestoeditor="1" workingSetName="Aggregate for window 1337368209313">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.internal.ui.PackagesView.EmptyPackageFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.internal.ui.PackagesView.EmptyPackageFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.internal.ui.PackagesView.EmptyInnerPackageFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.internal.ui.PackagesView.NoPackageContainingFolders" isEnabled="true"/>
 </xmlDefinedFilters>
@@ -137,7 +152,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -192,7 +207,6 @@
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -216,7 +230,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.435559" ratioLeft="561" ratioRight="727" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.18217054" ratioLeft="235" ratioRight="1055" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.7487844" ratioLeft="462" ratioRight="155" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -235,13 +249,11 @@
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.79457366" ratioLeft="410" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -306,29 +318,19 @@
 <view id="org.eclipse.jdt.ui.MembersView"/>
 <view id="org.eclipse.ui.internal.introview"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1ff6ed4">
-<folder activePageID="org.eclipse.jdt.ui.ProjectsView" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.ProjectsView" label="Projects"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@1ff6ed4">&#x0A;<folder activePageID="org.eclipse.jdt.ui.ProjectsView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.ProjectsView" label="Projects"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@105e629" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1ff6ed4">
-<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
-<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@105e629" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1ff6ed4">&#x0A;<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="left" ratio="0.24923548" ratioLeft="163" ratioRight="491" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1ff6ed4">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<info folder="true" part="left" ratio="0.24923548" ratioLeft="163" ratioRight="491" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1ff6ed4">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
@@ -337,9 +339,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.74949086" ratioLeft="368" ratioRight="123" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<info folder="true" part="bottom" ratio="0.74949086" ratioLeft="368" ratioRight="123" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
@@ -348,27 +348,18 @@
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@c52987" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1ff6ed4">
-<folder activePageID="org.eclipse.jdt.ui.PackagesView" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackagesView" label="Packages"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@c52987" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1ff6ed4">&#x0A;<folder activePageID="org.eclipse.jdt.ui.PackagesView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackagesView" label="Packages"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@296ac5" ratio="0.3298153" ratioLeft="250" ratioRight="508" relationship="2" relative="org.eclipse.ui.internal.ViewStack@c52987">
-<folder activePageID="org.eclipse.jdt.ui.TypesView" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.TypesView" label="Types"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@296ac5" ratio="0.3298153" ratioLeft="250" ratioRight="508" relationship="2" relative="org.eclipse.ui.internal.ViewStack@c52987">&#x0A;<folder activePageID="org.eclipse.jdt.ui.TypesView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.TypesView" label="Types"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@120c851" ratio="0.5" ratioLeft="254" ratioRight="254" relationship="2" relative="org.eclipse.ui.internal.ViewStack@296ac5">
-<folder activePageID="org.eclipse.jdt.ui.MembersView" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.MembersView" label="Members"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@120c851" ratio="0.5" ratioLeft="254" ratioRight="254" relationship="2" relative="org.eclipse.ui.internal.ViewStack@296ac5">&#x0A;<folder activePageID="org.eclipse.jdt.ui.MembersView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.MembersView" label="Members"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -377,7 +368,165 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/WeatherUnitSetUpTests.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/StationSetUp.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/StationSetuUpTests.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexDisplay.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsDisplay.java"/>
+</editors>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="549" y="0"/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="566" y="7"/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="681" y="0"/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="650" y="1"/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="659" y="5"/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="464" y="11"/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="1033" y="0"/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="1237" y="0"/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position info="not_deleted" x="284" y="0"/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="1144" y="0"/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="1144" y="0"/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="1143" y="0"/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position info="not_deleted" x="259" y="0"/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="1135" y="14"/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position info="not_deleted" x="287" y="0"/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="1135" y="14"/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position info="not_deleted" x="287" y="0"/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="1135" y="14"/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="923" y="17"/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position info="not_deleted" x="289" y="0"/>
+</item>
+<item historyLabel="WeatherUnitSetUpTests.java" index="0">
+<position info="not_deleted" x="923" y="17"/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position info="not_deleted" x="289" y="0"/>
+</item>
+<item historyLabel="StationSetuUpTests.java" index="2">
+<position info="not_deleted" x="831" y="17"/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position info="not_deleted" x="416" y="0"/>
+</item>
+<item historyLabel="StationSetuUpTests.java" index="2">
+<position info="not_deleted" x="673" y="0"/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position info="not_deleted" x="416" y="0"/>
+</item>
+<item historyLabel="StationSetuUpTests.java" index="2">
+<position info="not_deleted" x="673" y="0"/>
+</item>
+<item historyLabel="StationSetuUpTests.java" index="2">
+<position info="not_deleted" x="495" y="0"/>
+</item>
+<item historyLabel="StationSetuUpTests.java" index="2">
+<position info="not_deleted" x="527" y="0"/>
+</item>
+<item historyLabel="StationSetuUpTests.java" index="2">
+<position info="not_deleted" x="467" y="6"/>
+</item>
+<item historyLabel="StationSetuUpTests.java" index="2">
+<position info="not_deleted" x="670" y="0"/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position info="not_deleted" x="814" y="0"/>
+</item>
+<item historyLabel="HeatIndexDisplay.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="HeatIndexDisplay.java" index="3">
+<position info="not_deleted" x="231" y="0"/>
+</item>
+<item historyLabel="HeatIndexDisplay.java" index="3">
+<position info="not_deleted" x="431" y="11"/>
+</item>
+<item historyLabel="HeatIndexDisplay.java" index="3">
+<position info="not_deleted" x="345" y="0"/>
+</item>
+<item historyLabel="HeatIndexDisplay.java" index="3">
+<position info="not_deleted" x="8" y="57"/>
+</item>
+<item historyLabel="HeatIndexDisplay.java" index="3">
+<position info="not_deleted" x="97" y="0"/>
+</item>
+<item historyLabel="StatisticsDisplay.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="StatisticsDisplay.java" index="4">
+<position info="not_deleted" x="8" y="57"/>
+</item>
+<item historyLabel="StatisticsDisplay.java" index="4">
+<position info="not_deleted" x="272" y="0"/>
+</item>
+<item historyLabel="HeatIndexDisplay.java" index="3">
+<position info="not_deleted" x="97" y="0"/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position info="not_deleted" x="814" y="0"/>
+</item>
+<item historyLabel="StationSetUp.java" index="1">
+<position info="not_deleted" x="621" y="0"/>
+</item>
+<item active="true" historyLabel="StationSetUp.java" index="1">
+<position info="not_deleted" x="542" y="4"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -393,5 +542,18 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StatisticsDisplay.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsDisplay.java">
+<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsDisplay.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HeatIndexDisplay.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexDisplay.java">
+<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexDisplay.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeatherData.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherData.java">
+<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherData.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CurrentConditions.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditions.java">
+<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditions.java"/>
+</file>
+</mruList>
 </workbench>

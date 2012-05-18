@@ -1,14 +1,15 @@
 package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
 
+import java.io.File;
 import java.util.ArrayList;
 
 import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.Display;
 
 public class StationSetUp {
 	
-	ArrayList<Display> displaysToShow;
+	public ArrayList<String> displaysToShow = new ArrayList<String>();
 	
-	StationSetUp(){
+	public StationSetUp(){
 	}
 
 	public void promptForDisplays() {
@@ -16,12 +17,16 @@ public class StationSetUp {
 		printInstalledList();
 	}
 	
-	private void getInstalledDisplays(){
-		//This method, were it real, would look for installed Displays
-		//and pass them in as an ArrayList, then iterate through the
-		//list and 
-	}
-	
+	public void getInstalledDisplays(){
+		String registryPath = "/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/test/DisplayInstallRegistry"; 
+		File installFolder = new File(registryPath);
+		String[] installedList = installFolder.list();
+		for(int i=0; i<installedList.length; i++){
+			String display = installedList[i];
+			displaysToShow.add(display);
+			}
+		}
+			
 	private void printInstalledList(){
 		
 	}
