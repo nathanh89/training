@@ -1,0 +1,37 @@
+package com.visionarysoftwaresolutions.hfdpch1.tddstyle.ducks;
+
+import com.visionarysoftwaresolutions.hfdpch1.tddstyle.flight.FlyBehavior;
+import com.visionarysoftwaresolutions.hfdpch1.tddstyle.quacks.QuackBehavior;
+
+
+public abstract class Duck {
+	
+	FlyBehavior flyBehavior;
+	QuackBehavior quackBehavior;
+	
+	public Duck(){
+		
+	}
+	
+	public String swim(){
+		return "All ducks float, even decoys!";
+	}
+	
+	public abstract String display();
+	
+	public String performQuack(){
+		return quackBehavior.quack();
+	}
+	
+	public String performFly(){
+		return flyBehavior.fly();
+	}
+	
+	public void setFlyBehavior(FlyBehavior newFlyBehavior){
+		flyBehavior = newFlyBehavior;
+	}
+	
+	public void setQuackBehavior(QuackBehavior newQuackBehavior){
+		quackBehavior = newQuackBehavior;
+	}
+}

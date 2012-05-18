@@ -1,0 +1,79 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks;
+
+import static org.junit.Assert.*;
+import org.junit.*;
+
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight.*;
+import com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.testhelpers.DuckTester;
+import com.visionarysoftwaresolutions.hfdpch1.tddstyle.demo.DemoMuteQuack;
+
+public class RedheadDuckTests {
+	
+	private Duck redheadDuck;
+			
+	@Before
+	public void setup(){
+	    redheadDuck = new RedheadDuck();
+	 }
+
+	@Test
+	public void testInheritedSwim() {
+		//Given: A Redhead duck
+		//When: It swims using the inherited swim method
+		//Then: It should demonstrate the correct swim behavior
+		assertTrue(DuckTester.inheritedSwim(redheadDuck));
+	}
+	
+	@Test
+	public void testDefaultFlyBehavior(){
+		//Given: A Redhead duck
+		//And: It has default flight behavior set by the constructor
+		//When: The Redhead duck is asked to fly
+		//Then: It should demonstrate the correct flight behavior
+		String expected = "I'm flying, like a boss...bird!";
+		assertTrue(DuckTester.flyBehavior(redheadDuck, expected));
+	}
+	
+	@Test
+	public void testDefaultQuackBehavior(){
+		//Given: A Redhead duck
+		//And: It has default quacking behavior set by the constructor
+		//When: The Redhead duck is asked to quack
+		//Then: It should demonstrate the correct quacking behavior
+		String expected = "Quack! (But with a dash of ginger...)";
+		assertTrue(DuckTester.quackBehavior(redheadDuck, expected));
+	}
+	
+	@Test
+	public void testCustomFlyBehavior(){
+		//Given: A Redhead duck
+		//And: I want to change the flight behavior at runtime from its default
+		//When: The flight behavior is changed
+		redheadDuck.setFlyBehavior(new FlyRocketPowered());
+		//And: The Redhead duck is asked to fly
+		//Then: It should demonstrate the new correct flight behavior
+		String expected = "Ass rocket ahoy! For Zephram!";
+		assertTrue(DuckTester.flyBehavior(redheadDuck, expected));
+	}
+	
+	@Test
+	public void testCustomQuackBehavior(){
+		//Given: A Redhead duck
+		//And: I want to change the quacking behavior at runtime from its default
+		//When: The quacking behavior is changed
+		redheadDuck.setQuackBehavior(new DemoMuteQuack());
+		//And: The Redhead duck is asked to quack
+		//Then: It should demonstrate the new correct quacking behavior
+		String expected = "...Really? I can't quack. Oddly I do seem to do Englsih pretty well.";
+		assertTrue(DuckTester.quackBehavior(redheadDuck, expected));
+	}
+	
+	@Test
+	public void testCustomDisplayImplementation(){
+		//Given: A Redhead duck
+		//When: I want to display it
+		//Then: It should display correctly using its own implementation
+		String expected = "I'm a Ginger duck. Be afraid.";
+		assertTrue(DuckTester.displayImplementation(redheadDuck, expected));
+	}
+}

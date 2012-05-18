@@ -40,3 +40,11 @@
 1337366318317	Move compilation unit
 1337367101315	Delete element
 1337367976832	Rename type 'DucksDemo'
+1337370642580	Rename package 'com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.demo'
+1337370660031	Rename package 'com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks'
+1337370673831	Rename package 'com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks'
+1337370689485	Rename package 'com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight'
+1337370714147	Rename package 'com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.ducks'
+1337370726232	Rename package 'com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.testhelpers'
+1337370737626	Rename package 'com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.quacks'
+1337370761177	Rename package 'com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight'

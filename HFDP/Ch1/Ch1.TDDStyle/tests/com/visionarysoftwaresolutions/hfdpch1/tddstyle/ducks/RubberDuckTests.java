@@ -1,0 +1,81 @@
+package com.visionarysoftwaresolutions.hfdpch1.tddstyle.ducks;
+
+import static org.junit.Assert.*;
+import org.junit.*;
+
+import com.visionarysoftwaresolutions.hfdpch1.tddstyle.demo.DemoMuteQuack;
+import com.visionarysoftwaresolutions.hfdpch1.tddstyle.ducks.Duck;
+import com.visionarysoftwaresolutions.hfdpch1.tddstyle.ducks.RubberDuck;
+import com.visionarysoftwaresolutions.hfdpch1.tddstyle.flight.*;
+import com.visionarysoftwaresolutions.hfdpch1.tddstyle.testhelpers.DuckTester;
+
+public class RubberDuckTests {
+	
+	private Duck rubberDucky;
+			
+	@Before
+	public void setup(){
+	    rubberDucky = new RubberDuck();
+	 }
+
+	@Test
+	public void testInheritedSwim() {
+		//Given: A Rubber duck
+		//When: It swims using the inherited swim method
+		//Then: It should demonstrate the correct swim behavior
+		assertTrue(DuckTester.inheritedSwim(rubberDucky));
+	}
+	
+	@Test
+	public void testDefaultFlyBehavior(){
+		//Given: A Rubber duck
+		//And: It has default flight behavior set by the constructor
+		//When: The Rubber duck is asked to fly
+		//Then: It should demonstrate the correct flight behavior
+		String expected = "Do these wings look like they work? Jackass.";
+		assertTrue(DuckTester.flyBehavior(rubberDucky, expected));
+	}
+	
+	@Test
+	public void testDefaultQuackBehavior(){
+		//Given: A Rubber duck
+		//And: It has default quacking behavior set by the constructor
+		//When: The Rubber duck is asked to quack
+		//Then: It should demonstrate the correct quacking behavior
+		String expected = "Squeak? And I'm a 'duck'? Odd.";
+		assertTrue(DuckTester.quackBehavior(rubberDucky, expected));
+	}
+	
+	@Test
+	public void testCustomFlyBehavior(){
+		//Given: A Rubber duck
+		//And: I want to change the flight behavior at runtime from its default
+		//When: The flight behavior is changed
+		rubberDucky.setFlyBehavior(new FlyRocketPowered());
+		//And: The Rubber duck is asked to fly
+		//Then: It should demonstrate the new correct flight behavior
+		String expected = "Ass rocket ahoy! For Zephram!";
+		assertTrue(DuckTester.flyBehavior(rubberDucky, expected));
+	}
+	
+	@Test
+	public void testCustomQuackBehavior(){
+		//Given: A Rubber duck
+		//And: I want to change the quacking behavior at runtime from its default
+		//When: The quacking behavior is changed
+		rubberDucky.setQuackBehavior(new DemoMuteQuack());
+		//And: The Rubber duck is asked to quack
+		//Then: It should demonstrate the new correct quacking behavior
+		String expected = "...Really? I can't quack. Oddly I do seem to do Englsih pretty well.";
+		assertTrue(DuckTester.quackBehavior(rubberDucky, expected));
+	}
+	
+	@Test
+	public void testCustomDisplayImplementation(){
+		//Given: A Rubber duck
+		//When: I want to display it
+		//Then: It should display correctly using its own implementation
+		String expected = "Burt's always invading my bathtime with Ernie...";
+		assertTrue(DuckTester.displayImplementation(rubberDucky, expected));
+	}
+}

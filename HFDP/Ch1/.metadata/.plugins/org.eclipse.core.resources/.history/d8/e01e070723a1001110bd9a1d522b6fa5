@@ -1,0 +1,22 @@
+package com.visionarysoftwaresolutions.hfdp.ch1.tddstyle.flight;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.visionarysoftwaresolutions.hfdpch1.tddstyle.flight.FlyBehavior;
+import com.visionarysoftwaresolutions.hfdpch1.tddstyle.flight.FlyNiceTry;
+
+public class FlyNiceTryTest {
+	
+	FlyBehavior flybehavior = new FlyNiceTry();
+
+	@Test
+	public void testCorrectFlight() {
+		//Given: You have a flight behavior
+		//When: It is set to FlyNiceTry
+		//Then: The flight behavior should demonstrate the correct flight
+		String expected = "I only fly one way. Try something else cute.";
+		assertEquals(expected, flybehavior.fly());
+	}
+}

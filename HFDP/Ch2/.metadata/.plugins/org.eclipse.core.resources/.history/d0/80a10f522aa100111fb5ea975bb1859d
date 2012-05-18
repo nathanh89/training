@@ -1,0 +1,22 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+import static org.junit.Assert.*;
+
+import java.io.ByteArrayInputStream;
+
+import org.junit.Test;
+
+
+public class WeatherUnitSetUpTests {
+
+	ByteArrayInputStream simulatedInput = new ByteArrayInputStream();
+	@Test
+	public void testRegisterDisplaySelection() {
+		//Given: I want to set up a Weather Station
+		StationSetUp setUp = new StationSetUp();
+		//And: I am asked to add displays from a list
+		setUp.promptForDisplays();
+		//When: I select the displays I want to add
+		//Then: They are added to the display list to be passed into the WeatherStation
+	}
+
+}

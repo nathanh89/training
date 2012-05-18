@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="20" version="2.0">
+<workbench progressCount="16" version="2.0">
 <workbenchAdvisor/>
 <window height="744" maximized="true" width="1020" x="178" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -13,11 +13,11 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -26,17 +26,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CyborgDuckFunctions.java" partName="CyborgDuckFunctions.java" path="/home/nathan/Documents/training/HFDP/Ch1/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/CyborgDuckFunctions.java" title="CyborgDuckFunctions.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/CyborgDuckFunctions.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/CyborgDuckFunctions.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="819" selectionTopPixel="2"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
@@ -348,171 +341,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demonstration/CyborgDuckFunctions.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demonstration/DucksDemonstration.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demonstration/SharedFunctions.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demonstration/DucksDemo.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/CyborgDuckFunctions.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/SharedFunctions.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/DucksDemo.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RubberDuckTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/tests/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RedheadDuckTests.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/DucksSimulatorDemo.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/demo/SharedFunctions.java"/>
-</editors>
-<item historyLabel="SharedFunctions.java" index="2">
-<position info="not_deleted" x="514" y="0"/>
-</item>
-<item historyLabel="SharedFunctions.java" index="2">
-<position info="not_deleted" x="560" y="0"/>
-</item>
-<item historyLabel="CyborgDuckFunctions.java" index="0">
-<position info="not_deleted" x="517" y="0"/>
-</item>
-<item historyLabel="DucksDemonstration.java" index="1">
-<position info="not_deleted" x="277" y="0"/>
-</item>
-<item historyLabel="SharedFunctions.java" index="2">
-<position info="not_deleted" x="1569" y="0"/>
-</item>
-<item historyLabel="DucksDemonstration.java" index="1">
-<position info="not_deleted" x="277" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="3">
-<position info="not_deleted" x="277" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="3">
-<position info="not_deleted" x="268" y="0"/>
-</item>
-<item historyLabel="CyborgDuckFunctions.java" index="4">
-<position info="not_deleted" x="517" y="0"/>
-</item>
-<item historyLabel="CyborgDuckFunctions.java" index="4">
-<position info="not_deleted" x="508" y="0"/>
-</item>
-<item historyLabel="SharedFunctions.java" index="5">
-<position info="not_deleted" x="1435" y="0"/>
-</item>
-<item historyLabel="SharedFunctions.java" index="5">
-<position info="not_deleted" x="1426" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="333" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="324" y="0"/>
-</item>
-<item historyLabel="CyborgDuckFunctions.java" index="4">
-<position info="not_deleted" x="819" y="0"/>
-</item>
-<item historyLabel="SharedFunctions.java" index="5">
-<position info="not_deleted" x="1426" y="0"/>
-</item>
-<item historyLabel="SharedFunctions.java" index="5">
-<position info="not_deleted" x="129" y="0"/>
-</item>
-<item historyLabel="SharedFunctions.java" index="5">
-<position info="not_deleted" x="128" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="321" y="0"/>
-</item>
-<item historyLabel="CyborgDuckFunctions.java" index="4">
-<position info="not_deleted" x="819" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="753" y="0"/>
-</item>
-<item historyLabel="CyborgDuckFunctions.java" index="4">
-<position info="not_deleted" x="819" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="753" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="503" y="0"/>
-</item>
-<item historyLabel="SharedFunctions.java" index="5">
-<position info="not_deleted" x="128" y="0"/>
-</item>
-<item historyLabel="SharedFunctions.java" index="5">
-<position info="not_deleted" x="162" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="503" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="717" y="0"/>
-</item>
-<item historyLabel="SharedFunctions.java" index="5">
-<position info="not_deleted" x="209" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="717" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="991" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="714" y="0"/>
-</item>
-<item historyLabel="SharedFunctions.java" index="5">
-<position info="not_deleted" x="209" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="714" y="0"/>
-</item>
-<item historyLabel="CyborgDuckFunctions.java" index="4">
-<position info="not_deleted" x="819" y="0"/>
-</item>
-<item historyLabel="SharedFunctions.java" index="5">
-<position info="not_deleted" x="209" y="0"/>
-</item>
-<item historyLabel="RubberDuckTests.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="RubberDuckTests.java" index="7">
-<position info="not_deleted" x="262" y="0"/>
-</item>
-<item historyLabel="RedheadDuckTests.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="RedheadDuckTests.java" index="8">
-<position info="not_deleted" x="262" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="803" y="0"/>
-</item>
-<item historyLabel="RubberDuckTests.java" index="7">
-<position info="not_deleted" x="262" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="803" y="0"/>
-</item>
-<item historyLabel="RedheadDuckTests.java" index="8">
-<position info="not_deleted" x="262" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="803" y="0"/>
-</item>
-<item historyLabel="CyborgDuckFunctions.java" index="4">
-<position info="not_deleted" x="819" y="0"/>
-</item>
-<item historyLabel="DucksDemo.java" index="6">
-<position info="not_deleted" x="803" y="0"/>
-</item>
-<item historyLabel="DucksSimulatorDemo.java" index="9">
-<position info="not_deleted" x="803" y="0"/>
-</item>
-<item historyLabel="DucksSimulatorDemo.java" index="9">
-<position info="not_deleted" x="812" y="0"/>
-</item>
-<item active="true" historyLabel="SharedFunctions.java" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -570,9 +399,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RubberDuck.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RubberDuck.java">
 <persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RubberDuck.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RedheadDuck.java" tooltip="Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RedheadDuck.java">
-<persistable path="/Ch1.TDDStyle/src/com/visionarysoftwaresolutions/hfdp/ch1/tddstyle/ducks/RedheadDuck.java"/>
 </file>
 </mruList>
 </workbench>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.Forecast"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.CurrentConditions"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.Display"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdpch2.tddstyle.subject.WeatherData"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.ObservingDisplay"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,13 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+import java.util.ArrayList;
+
+import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.Display;
+
+public class StationSetUp {
+	
+	StationSetUp(){
+		ArrayList<Display> displaysToShow;
+	}
+
+}
