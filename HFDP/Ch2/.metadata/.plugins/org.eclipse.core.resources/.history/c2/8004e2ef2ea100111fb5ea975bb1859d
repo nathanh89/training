@@ -12,18 +12,7 @@ public class StationSetUp {
 	}
 
 	public void promptForDisplays() {
-		getInstalledDisplays();
-		printInstalledList();
-	}
-	
-	private void getInstalledDisplays(){
-		//This method, were it real, would look for installed Displays
-		//and pass them in as an ArrayList, then iterate through the
-		//list and 
-	}
-	
-	private void printInstalledList(){
-		
+		// TODO Auto-generated method stub
 	}
 
 }

@@ -21,9 +21,5 @@ public class StationSetUp {
 		//and pass them in as an ArrayList, then iterate through the
 		//list and 
 	}
-	
-	private void printInstalledList(){
-		
-	}
 
 }
