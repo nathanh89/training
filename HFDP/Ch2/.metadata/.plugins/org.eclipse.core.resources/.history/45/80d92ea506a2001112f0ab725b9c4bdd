@@ -1,6 +1,5 @@
 package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class InputListener {
@@ -9,22 +8,13 @@ public class InputListener {
 	private String desiredInput;
 	private int validInputCount = 0;
 	private int validatedInput;
-	public ArrayList<Integer> testedInputs = new ArrayList<Integer>();
 	
-	public ArrayList<Integer> listenForInput(){
+	public void listenForInput(){
 		while(validInputCount < 4){
-			int input;
 			Scanner listener = new Scanner(System.in);
 			desiredInput = listener.next();
-			if(desiredInput.equals("d"))
-				validInputCount = 4;
-			else{ 
-				input = testInput(desiredInput);
-				if(input > 0)
-					testedInputs.add(input);
-			}
 		}
-		return testedInputs;
+		testInput(desiredInput);
 	}
 	
 	public String getDesiredInput(){
@@ -35,7 +25,7 @@ public class InputListener {
 		return validatedInput;
 	}
 	
-	private int testInput(String toTest){
+	public int testInput(String toTest){
 		validator = new InputValidator();
 		validatedInput = validator.validateInput(desiredInput);
 		if(validatedInput > 0)

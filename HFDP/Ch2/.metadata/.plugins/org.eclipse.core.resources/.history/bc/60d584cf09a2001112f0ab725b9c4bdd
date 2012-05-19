@@ -2,8 +2,6 @@ package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
 
 import static org.junit.Assert.*;
 
-import java.util.ArrayList;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -65,22 +63,6 @@ public class InputListenerTests {
 		listener.listenForInput();
 		//When: I input 4 valid selections
 		//Then: It should stop listening for inputs
-	}
-	
-	@Test
-	public void testReturningOnlyValidInputs(){
-		//Given: I have an InputListener and that has an InputValidator
-		//And: It is listening for input
-		ArrayList<Integer> result = new ArrayList();
-		result = listener.listenForInput();
-		//When: I input 4 valid selections only (Input 1,2,3 and 4 to pass and other characters)
-		//Then: It should return an ArrayList containing those inputs
-		ArrayList<Integer> expected = new ArrayList();
-		expected.add(1);
-		expected.add(2);
-		expected.add(3);
-		expected.add(4);
-		assertTrue(expected.equals(result));
 	}
 	
 	@Test

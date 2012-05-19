@@ -13,16 +13,12 @@ public class InputListener {
 	
 	public ArrayList<Integer> listenForInput(){
 		while(validInputCount < 4){
-			int input;
 			Scanner listener = new Scanner(System.in);
 			desiredInput = listener.next();
 			if(desiredInput.equals("d"))
 				validInputCount = 4;
-			else{ 
-				input = testInput(desiredInput);
-				if(input > 0)
-					testedInputs.add(input);
-			}
+			else
+				testedInputs.add(testInput(desiredInput));
 		}
 		return testedInputs;
 	}
