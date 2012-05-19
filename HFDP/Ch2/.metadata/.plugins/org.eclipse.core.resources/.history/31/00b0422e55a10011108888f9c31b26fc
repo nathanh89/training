@@ -1,0 +1,46 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.Display;
+
+public class InputListener {
+		
+	public void listenForInput(StationSetUp setUp){
+		Scanner listener = new Scanner(System.in);
+		String selectedDisplay = listener.nextLine();
+		registerSelection(selectedDisplay, setUp);
+		}
+	
+	public boolean validInputCheck(String input, StationSetUp setUp){
+		int parsedInput;
+		try{
+			Integer.parseInt(input);
+		}catch (NumberFormatException exception) {
+		System.out.println("Not a valid input! Only the #'s you see, please.");
+		setUp.listener.listenForInput(setUp);
+		}
+		parsedInput = Integer.parseInt(input);
+		if(parsedInput > 0 && parsedInput < 5){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+		
+	public void registerSelection(String selectedDisplay, StationSetUp setUp){
+		if(validInputCheck(selectedDisplay, setUp)){
+			Display display;
+			display = InputReference.createDisplayByInput(Integer.parseInt(selectedDisplay));
+			setUp.displaysToAdd.add(display);
+		}
+		else{
+			System.out.println("That's not one of the numbers!");
+			setUp.listener.listenForInput(setUp);
+		}
+	}
+}

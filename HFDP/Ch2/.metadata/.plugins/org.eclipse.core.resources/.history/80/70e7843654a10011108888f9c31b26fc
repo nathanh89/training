@@ -1,0 +1,25 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+    import java.util.Scanner;  
+      
+    public class inputtest  
+    {  
+    public static void main(String[]args)  
+    {  
+     //Create a scanner object  
+     //Scanner is a predefined class in java that will be use to scan text  
+     //System.in is mean, we will receive input from standard input stream  
+     Scanner readUserInput=new Scanner(System.in);  
+      
+     //Print into command prompt(What is your name ?)  
+     System.out.println("What is your name ?");  
+      
+     //WAIT FOR USER INPUT  
+     //After user put it's name, he or she must press 'Enter'  
+     //After user press 'Enter', all the input contents will read into 'myName'  
+     String myName=readUserInput.nextLine();  
+      
+     //Print what it store in myName  
+     System.out.println(myName);  
+    }  
+    }  

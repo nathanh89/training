@@ -1,0 +1,24 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.*;
+
+public class InputReference {
+	
+	public Display createDisplayByInput(int index, StationSetUp setUp){
+		if(index == 1){
+			Display currentConditions = new Display(new CurrentConditions());
+			return currentConditions;
+		}
+		if(index == 2){
+			Display forecast = new Display(new Forecast());
+			return forecast;
+		}
+		if(index == 3){
+			Display heatIndex = new Display(new HeatIndex());
+			return heatIndex;
+		}
+		if(index == 4){
+			Display statistics = new Display(new Statistics();
+			return statistics;
+		}
+}

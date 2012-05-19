@@ -8,3 +8,6 @@
 1337382735505	Delete element
 1337382869788	Rename method 'getInstalledDisplays'
 1337386705098	Rename field 'displaysToShow'
+1337389056063	Rename type 'HeatIndexDisplay'
+1337389176520	Rename type 'StatisticsDisplay'
+1337391886187	Delete element

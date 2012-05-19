@@ -1,25 +1,72 @@
 package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
+
+import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.Display;
 
 public class InputListener {
-		
-	public void listenForInput(){
-		BufferedReader listener = new BufferedReader(new InputStreamReader(System.in));
-		try {
-			String selectedDisplay = listener.readLine();
-			registerSelection(selectedDisplay);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+	
+	private int displaysAdded = 0;
+	
+	public void listenForInput(StationSetUp setUp){
+		if(displaysAdded < 4){
+			System.out.println("\n");
+			Scanner listener = new Scanner(System.in);
+			String selectedDisplay = listener.next();
+			registerSelection(selectedDisplay, setUp);
+		}
+		else if(displaysAdded == 4){
+		System.out.println("Thanks! Setting up the WeatherStation!");
+		}
+	}
+	
+	public boolean validInputCheck(String input, StationSetUp setUp){
+		int parsedInput;
+		try{
+			Integer.parseInt(input);
+		}catch (NumberFormatException exception) {
+		System.out.println("Not a valid input! Only the #'s you see, please.");
+		setUp.listener.listenForInput(setUp);
+		}
+		parsedInput = Integer.parseInt(input);
+		if(parsedInput > 0 && parsedInput < 5){
+			return true;
+		}
+		else{
+			return false;
 		}
 	}
 		
-	public void registerSelection(String selectedDisplay){
-		int displayNumber = Integer.parseInt(selectedDisplay);
-		
+	public void registerSelection(String selectedDisplay, StationSetUp setUp){
+		if(validInputCheck(selectedDisplay, setUp)){
+			Display display;
+			display = InputReference.createDisplayByInput(Integer.parseInt(selectedDisplay));
+			if(notAlreadyAdded(display, setUp)){
+				setUp.displaysToAdd.add(display);
+				String classSelected = display.getCurrentDisplay().getClass().getSimpleName();
+				System.out.println(classSelected + " display added.");
+				displaysAdded++;
+			}
+		}
+		else{
+			System.out.println("That's not one of the numbers!");
+			setUp.listener.listenForInput(setUp);
+		}
+		setUp.listener.listenForInput(setUp);
 	}
-
+	
+	private boolean notAlreadyAdded(Display display, StationSetUp setUp){
+		for(Display displayInList : setUp.displaysToAdd){
+			String desiredDisplay = display.getCurrentDisplay().getClass().getSimpleName();
+			String currentDisplay = displayInList.getCurrentDisplay().getClass().getSimpleName();
+			if(desiredDisplay.equals(currentDisplay)){
+				System.out.println("You've already picked that display!");
+				return false;
+			}
+		}
+		return true;
+	}
 }
+		
+		
+
