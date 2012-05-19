@@ -32,21 +32,17 @@ public class StationSetUp {
 		Collections.sort(displaysToShow);
 		int displayIndex = 0;
 		for(String display : displaysToShow){
-			formatCheck(displayIndex, display);
+			formatCheck(displayIndex);
 			displayIndex++;
 		}
-		System.out.println("Please input your selection (#), up to 4 displays:");
 	}
 	
-	public void formatCheck(int displayIndex, String display){
+	public void formatCheck(int displayIndex){
 		if(displayIndex == 0){
-			System.out.println("[INSTALLED DISPLAYS]\n");
-			System.out.println(1 + ") " + display + "\n");
+			System.out.println("[INSTALLED DISPLAYS]\n";
+			System.out.println(1 + ") " + displaysToShow.get(displayIndex));
 		}
-		if (displayIndex > 0){
-			int displayedListNumber = displayIndex +1;
-			System.out.println(displayedListNumber + ") " + display + "\n");
-		}
+			
 	}
 }
 

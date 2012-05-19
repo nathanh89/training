@@ -34,11 +34,6 @@ public class StationSetuUpTests {
 		assertTrue(setUp.displaysToShow.contains("Statistics"));
 		assertTrue(setUp.displaysToShow.contains("HeatIndex"));
 	}
-
-	@Test
-	public void testInstalledDisplaysPrompt(){
-		//Not totally sure how to test this, since it spits out a mutli-line output to the console
-		}
 	
 	@Test
 	public void testRegisterDisplaySelection() {
@@ -52,7 +47,7 @@ public class StationSetuUpTests {
 		assertTrue(setUp.displaysToShow.contains(new CurrentConditions()));
 		assertTrue(setUp.displaysToShow.contains(new Forecast()));
 	}
-	
+
 	private void simulateInput(String input){
 		InputStream simulatedInput = System.in;
 		try{

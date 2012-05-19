@@ -35,7 +35,6 @@ public class StationSetUp {
 			formatCheck(displayIndex, display);
 			displayIndex++;
 		}
-		System.out.println("Please input your selection (#), up to 4 displays:");
 	}
 	
 	public void formatCheck(int displayIndex, String display){
@@ -45,8 +44,9 @@ public class StationSetUp {
 		}
 		if (displayIndex > 0){
 			int displayedListNumber = displayIndex +1;
-			System.out.println(displayedListNumber + ") " + display + "\n");
+			System.out.
 		}
+			
 	}
 }
 

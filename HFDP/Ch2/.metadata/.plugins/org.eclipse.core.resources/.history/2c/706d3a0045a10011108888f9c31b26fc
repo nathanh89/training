@@ -1,0 +1,10 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+public class simtest {
+	
+	public StationSetUp setUp = new StationSetUp();
+	
+	setUp.scanForDisplays();
+	
+
+}

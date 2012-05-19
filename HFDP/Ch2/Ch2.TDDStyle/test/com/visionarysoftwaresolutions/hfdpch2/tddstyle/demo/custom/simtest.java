@@ -1,0 +1,15 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+public class simtest {
+	
+	public static StationSetUp setUp = new StationSetUp();
+	
+	public static void main(String args[]){
+	
+		setUp.scanForDisplays();
+		setUp.printInstalledList();
+	
+
+}
+	
+}
