@@ -1,0 +1,36 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+public class InputValidator {
+	
+	public boolean validateInput(StationSetUp setUp, String toCheck){
+		int intInput;
+		intInput = isInteger(toCheck);
+		if(isInRange(intInput)){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	
+	public int isInteger(String toCheck){
+		int input;
+		try{
+			Integer.parseInt(toCheck);
+		}catch (NumberFormatException exception) {
+		System.out.println("Not a valid input! Only the #'s you see, please.");
+		}
+		input = Integer.parseInt(toCheck);
+		return input;
+	}
+	
+	public boolean isInRange(int input){
+		if(input > 0 && input < 5){
+			return true;
+		}
+		else{
+			System.out.println("That's not one of the numbers!");
+			return false;
+		}
+	}
+}

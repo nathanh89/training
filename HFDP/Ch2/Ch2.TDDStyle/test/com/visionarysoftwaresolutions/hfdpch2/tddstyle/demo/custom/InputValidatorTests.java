@@ -15,9 +15,9 @@ public class InputValidatorTests {
 	}
 
 	@Test
-	public void testIntegerConversion() {
+	public void testStringIntegerConversion() {
 		//Given: An input validator
-		//And: I only want it to convert integer Strings into int variables
+		//And: I want it to convert integer Strings into int variables
 		//When: I input an integer
 		int result = validator.isInteger("1");
 		//Then the input should be accepted and turned into an int
@@ -29,7 +29,8 @@ public class InputValidatorTests {
 		//Given: An input validator
 		//And: I do not want to accept an input unless it is an integer
 		//When: I input something besides an integer
-		validator.isInteger("afdfad  s  f  sfd");		
+		validator.isInteger("a");		
+		//Then: An exception should be thrown
 	}
 	
 	@Test
@@ -50,29 +51,23 @@ public class InputValidatorTests {
 		assertFalse(validator.isInRange(6));
 	}
 	
-	@Test
-	public void testDisplaysCanStillBeAdded(){
-		//Given: An input validator that I only want to accept up to 4 inputs
-		//And: I want to know if I can accept another input
-		//When: I have not received 4 inputs yet
-		//Then: It should pass the check
-		assertTrue(validator.canAcceptInput(3));
-	}
-	
-	@Test
-	public void testNoMoreDisplaysCanAdd(){
-		//Given: An input validator that I only want to accept up to 4 inputs
-		//And: I want to know if I can accept another input
-		//When: I have received 4 inputs already
-		//Then: It should not pass the check
-		assertFalse(validator.canAcceptInput(4));
-	}
-	
 	@Test 
-	public void testInputFromStationSetUp(){
+	public void testValidInputFromStationSetUp(){
 		//Given: An input validator
-		//And: I pass it a StationSetUp object
+		//And: I pass it a StationSetUp object that can accept another input
 		StationSetUp setUp = new StationSetUp();
-		//When:
+		//When: It is passed a valid integer String input as well
+		//Then: The input should be validated
+		assertEquals(2, validator.validateInput(setUp, "2"));
+	}
+	
+	@Test
+	public void testInvalidInputFromStationSetUp(){
+		//Given: An input validator
+		//And: I pass it a StationSetUp object that can accept another input
+		StationSetUp setUp = new StationSetUp();
+		//When: It is passed an invalid integer String input as well
+		//Then: The input should not be validated
+		assertEquals(0, validator.validateInput(setUp, "8"));
 	}
 }

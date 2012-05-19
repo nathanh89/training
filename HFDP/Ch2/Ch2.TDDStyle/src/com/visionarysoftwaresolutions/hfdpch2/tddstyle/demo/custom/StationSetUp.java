@@ -16,9 +16,11 @@ public class StationSetUp {
 	public void promptForDisplays() {
 		displayGetter.scanForDisplays(this);
 		displayGetter.printInstalledList(this);
-//		listener.listenForInput(this);
+		while(displaysToAdd.size() < 4){
+			listener.listenForInput(this);
 		}
 	}
+}
 	
 
 

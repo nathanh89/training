@@ -1,0 +1,92 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.Display;
+
+public class InputValidatorTests {
+	
+	InputValidator validator;
+	
+	@Before
+	public void setup(){
+		validator = new InputValidator();
+	}
+
+	@Test
+	public void testIntegerConversion() {
+		//Given: An input validator
+		//And: I only want it to convert integer Strings into int variables
+		//When: I input an integer
+		int result = validator.isInteger("1");
+		//Then the input should be accepted and turned into an int
+		assertEquals(1, result);
+	}
+	
+	@Test (expected=NumberFormatException.class)
+	public void testNonIntegerRejection(){
+		//Given: An input validator
+		//And: I do not want to accept an input unless it is an integer
+		//When: I input something besides an integer
+		validator.isInteger("afdfad  s  f  sfd");		
+	}
+	
+	@Test
+	public void testWithinRange(){
+		//Given: A validated integer input
+		//And: I want to check it is within an accepted range
+		//When: It is within the accepted range
+		//Then: It should pass the range check
+		assertTrue(validator.isInRange(1));
+	}
+	
+	@Test
+	public void testOutOfRangeRejection(){
+		//Given: A validated integer input
+		//And: I want to check it is within an accepted range
+		//When: It is not within the accepted range
+		//Then: It should not pass the range check
+		assertFalse(validator.isInRange(6));
+	}
+	
+	@Test
+	public void testDisplaysCanStillBeAdded(){
+		//Given: An input validator that I only want to accept up to 4 inputs
+		//And: I want to know if I can accept another input
+		//When: I have not received 4 inputs yet
+		//Then: It should pass the check
+		assertTrue(validator.canAcceptInput(3));
+	}
+	
+	@Test
+	public void testNoMoreDisplaysCanAdd(){
+		//Given: An input validator that I only want to accept up to 4 inputs
+		//And: I want to know if I can accept another input
+		//When: I have received 4 inputs already
+		//Then: It should not pass the check
+		assertFalse(validator.canAcceptInput(4));
+	}
+	
+	@Test 
+	public void testInputFromStationSetUp(){
+		//Given: An input validator
+		//And: I pass it a StationSetUp object that can accept another input
+		StationSetUp setUp = new StationSetUp();
+		for(int i=0; i<3; i++)
+			setUp.displaysToAdd.add(new Display());
+		//When: It is passed a valid integer String input as well
+		//Then: The input should be validated
+		assertTrue(validator.validateInput(setUp, "1"));
+	}
+	
+//	@Test
+//	public void testFailedInputFromStationSetUp(){
+//	StationSetUp setUp = new StationSetUp();
+//	for(int i=0; i<4; i++)
+//		setUp.displaysToAdd.add(new Display());
+//	assertFalse(validator.validateInput(setUp, "1"));
+//	}
+//}

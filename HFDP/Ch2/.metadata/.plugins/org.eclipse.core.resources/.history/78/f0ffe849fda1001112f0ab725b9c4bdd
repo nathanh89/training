@@ -1,0 +1,43 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+import static org.junit.Assert.*;
+
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+import java.util.Scanner;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class InputListenerTests {
+	
+	public InputListener listener;
+	
+	@Before
+	public void setup(){
+		listener = new InputListener();
+	}
+
+	@Test
+	public void testListenForInput() {
+		//Given: I have an InputListener
+		//And: I want it to save the next input as a string
+		simulateInput("5");
+		listener.listenForInput();
+		//When: I input something
+		//Then: That input should be saved in the listener
+		assertTrue("5".equals(listener.getDesiredInput()));
+	}
+	
+	private void simulateInput(String input){
+		InputStream simulatedInput = System.in;
+		try{
+		System.setIn(new ByteArrayInputStream(input.getBytes()));
+		Scanner scanner = new Scanner(System.in);
+		System.out.println(scanner.nextLine());
+		} finally {
+		System.setIn(simulatedInput);
+		}
+	}
+
+}

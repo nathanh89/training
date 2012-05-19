@@ -1,0 +1,19 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+import java.util.Scanner;
+
+public class InputSimulator {
+
+	public static void simulateInput(String input){
+		InputStream simulatedInput = System.in;
+		try{
+		System.setIn(new ByteArrayInputStream(input.getBytes()));
+		Scanner scanner = new Scanner(System.in);
+		System.out.println(scanner.nextLine());
+		} finally {
+		System.setIn(simulatedInput);
+		}
+	}
+}

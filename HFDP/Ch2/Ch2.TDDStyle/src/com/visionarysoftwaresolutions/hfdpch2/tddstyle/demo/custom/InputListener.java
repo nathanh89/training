@@ -2,32 +2,24 @@ package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
 
 import java.util.Scanner;
 
-import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.Display;
-
 public class InputListener {
 	
-	public InputValidator validator;
+	public InputValidator validator = new InputValidator();
+	private String desiredInput;
+	public int displaysAdded = 0;
 	
-	public void listenForInput(StationSetUp setUp){
-		Scanner listener = new Scanner(System.in);
-		String desiredDisplay = listener.next();
-		validator.validateInput(setUp, desiredDisplay);
+	public void listenForInput(){
+		while(desiredInput == null){
+			Scanner listener = new Scanner(System.in);
+			desiredInput = listener.next();
+		}
 	}
 	
-//	public void listenForInput(StationSetUp setUp){
-//		if(displaysAdded < 4){
-//			System.out.println("\n");
-//			Scanner listener = new Scanner(System.in);
-//			String selectedDisplay = listener.next();
-//			registerSelection(selectedDisplay, setUp);
-//		}
-//		else if(displaysAdded == 4){
-//		System.out.println("Thanks! Setting up the WeatherStation!");
-//		}
-//	}
-//	
+	public String getDesiredInput(){
+		return desiredInput;
+	}
+//
 //	public void registerSelection(String selectedDisplay, StationSetUp setUp){
-//		if(validInputCheck(selectedDisplay, setUp)){
 //			Display display;
 //			display = InputReference.createDisplayByInput(Integer.parseInt(selectedDisplay));
 //			if(notAlreadyAdded(display, setUp)){
@@ -36,11 +28,6 @@ public class InputListener {
 //				System.out.println(classSelected + " display added.");
 //				displaysAdded++;
 //			}
-//		}
-//		else{
-//			System.out.println("That's not one of the numbers!");
-//			setUp.listener.listenForInput(setUp);
-//		}
 //		setUp.listener.listenForInput(setUp);
 //	}
 //	
@@ -56,6 +43,3 @@ public class InputListener {
 //		return true;
 //	}
 }
-		
-		
-

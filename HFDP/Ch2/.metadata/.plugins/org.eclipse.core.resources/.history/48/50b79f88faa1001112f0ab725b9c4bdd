@@ -1,0 +1,14 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class InputListenerTests {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

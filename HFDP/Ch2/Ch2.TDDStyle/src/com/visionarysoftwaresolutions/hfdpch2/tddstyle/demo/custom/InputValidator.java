@@ -2,11 +2,14 @@ package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
 
 public class InputValidator {
 	
-	public void validateInput(StationSetUp setUp, String toCheck){
+	public int validateInput(StationSetUp setUp, String toCheck){
 		int intInput;
-		if(canAcceptInput(setUp.displaysToAdd.size())){
-			intInput = isInteger(toCheck);
-			isInRange(intInput);
+		intInput = isInteger(toCheck);
+		if(isInRange(intInput)){
+			return intInput;
+		}
+		else{
+			return 0;
 		}
 	}
 	
@@ -14,8 +17,8 @@ public class InputValidator {
 		int input;
 		try{
 			Integer.parseInt(toCheck);
-		}catch (NumberFormatException exception) {
-		System.out.println("Not a valid input! Only the #'s you see, please.");
+		}catch(NumberFormatException exception){
+			failedReturn();
 		}
 		input = Integer.parseInt(toCheck);
 		return input;
@@ -26,19 +29,12 @@ public class InputValidator {
 			return true;
 		}
 		else{
-			System.out.println("That's not one of the numbers!");
+			System.out.println("That's not a valid selection.");
 			return false;
 		}
 	}
 	
-	public boolean canAcceptInput(int toCheck){
-		if(toCheck < 4){
-			return true;
-		}
-		else if(toCheck == 4){
-			System.out.println("Thanks! Setting up the WeatherStation!");
-		}
-		return false;
+	public int failedReturn(){
+		return 0;
 	}
 }
-
