@@ -22,8 +22,8 @@ public class DisplayGetter {
 			formatCheck(displayIndex, display);
 			displayIndex++;
 		}
-		System.out.println("Please input your selection (# and ENTER), up to 4 displays:");
-		System.out.println("Hit the 'd' key when you're done selecting diplays");
+		System.out.println("Please input your selection (# and ENTER), up to 4 displays");
+		System.out.println("Hit the 'd' key when you're done selecting diplays:");
 	}
 	
 	private void formatCheck(int displayIndex, String display){

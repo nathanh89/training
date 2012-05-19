@@ -1,0 +1,25 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+public class InputValidator {
+	
+	String toCheck;
+	
+	public void validateInput(String toCheck){
+		int intInput;
+		intInput = isInteger(toCheck);
+		
+	}
+	
+	public int isInteger(String toCheck){
+		int input;
+		try{
+			Integer.parseInt(toCheck);
+		}catch (NumberFormatException exception) {
+		System.out.println("Not a valid input! Only the #'s you see, please.");
+		}
+		input = Integer.parseInt(toCheck);
+		return input;
+	}
+		
+
+}

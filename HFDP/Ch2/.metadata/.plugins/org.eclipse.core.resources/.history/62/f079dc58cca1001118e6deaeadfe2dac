@@ -1,0 +1,40 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+import java.io.File;
+import java.util.Collections;
+
+public class DisplayGetter {
+	
+	public void scanForDisplays(StationSetUp setUp){
+		String registryPath = "/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/test/DisplayInstallRegistry"; 
+		File installFolder = new File(registryPath);
+		String[] installedList = installFolder.list();
+		for(int i=0; i<installedList.length; i++){
+			String display = installedList[i];
+			setUp.installedDisplays.add(display);
+			}
+		}
+			
+	public void printInstalledList(StationSetUp setUp){
+		Collections.sort(setUp.installedDisplays);
+		int displayIndex = 0;
+		for(String display : setUp.installedDisplays){
+			formatCheck(displayIndex, display);
+			displayIndex++;
+		}
+		System.out.println("Please input your selection (# and ENTER), up to 4 displays:");
+		System.out.println("Hit the 'd' key when you're done selecting diplays");
+	}
+	
+	private void formatCheck(int displayIndex, String display){
+		if(displayIndex == 0){
+			System.out.println("[INSTALLED DISPLAYS]\n");
+			System.out.println(1 + ") " + display + "\n");
+		}
+		if (displayIndex > 0){
+			int displayedListNumber = displayIndex +1;
+			System.out.println(displayedListNumber + ") " + display + "\n");
+		}
+	}
+
+}
