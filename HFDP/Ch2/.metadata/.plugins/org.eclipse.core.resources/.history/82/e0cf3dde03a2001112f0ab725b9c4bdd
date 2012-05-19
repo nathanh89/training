@@ -21,7 +21,7 @@ public class InputValidatorTests {
 		//When: I input an integer
 		int result = validator.isInteger("2");
 		//Then the input should be accepted and turned into an int
-		assertEquals(2, result);
+		assertEquals(1, result);
 	}
 	
 	@Test

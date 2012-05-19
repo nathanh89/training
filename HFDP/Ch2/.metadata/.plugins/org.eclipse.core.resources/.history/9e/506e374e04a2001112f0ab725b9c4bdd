@@ -18,6 +18,7 @@ public class InputValidator {
 		try{
 			Integer.parseInt(toCheck);
 		}catch(NumberFormatException exception){
+			System.out.println("That's not a valid selection");
 			return 0;
 		}
 		input = Integer.parseInt(toCheck);

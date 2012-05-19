@@ -16,12 +16,11 @@ public class InputValidator {
 	public int isInteger(String toCheck){
 		int input;
 		try{
-			Integer.parseInt(toCheck);
+			input = Integer.parseInt(toCheck);
+			return input;
 		}catch(NumberFormatException exception){
 			return 0;
 		}
-		input = Integer.parseInt(toCheck);
-		return input;
 	}
 	
 	public boolean isInRange(int input){

@@ -2,7 +2,7 @@ package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
 
 public class InputValidator {
 	
-	public int validateInput(String toCheck){
+	public int validateInput(StationSetUp setUp, String toCheck){
 		int intInput;
 		intInput = isInteger(toCheck);
 		if(isInRange(intInput)){
@@ -18,7 +18,7 @@ public class InputValidator {
 		try{
 			Integer.parseInt(toCheck);
 		}catch(NumberFormatException exception){
-			return 0;
+			failedReturn();
 		}
 		input = Integer.parseInt(toCheck);
 		return input;
@@ -32,5 +32,9 @@ public class InputValidator {
 			System.out.println("That's not a valid selection.");
 			return false;
 		}
+	}
+	
+	public int failedReturn(){
+		return 0;
 	}
 }

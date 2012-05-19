@@ -4,30 +4,19 @@ import java.util.Scanner;
 
 public class InputListener {
 	
-	public InputValidator validator;
+	public InputValidator validator = new InputValidator();
 	private String desiredInput;
 	public int displaysAdded = 0;
-	private int validatedInput;
 	
 	public void listenForInput(){
 		while(desiredInput == null){
 			Scanner listener = new Scanner(System.in);
 			desiredInput = listener.next();
 		}
-		registerInput(desiredInput);
 	}
 	
 	public String getDesiredInput(){
 		return desiredInput;
-	}
-	
-	public int getValidatedInput(){
-		return validatedInput;
-	}
-	
-	public void registerInput(String toRegister){
-		validator = new InputValidator();
-		validatedInput = validator.validateInput(desiredInput);
 	}
 //
 //	public void registerSelection(String selectedDisplay, StationSetUp setUp){

@@ -19,9 +19,9 @@ public class InputValidatorTests {
 		//Given: An input validator
 		//And: I want it to convert integer Strings into int variables
 		//When: I input an integer
-		int result = validator.isInteger("2");
+		int result = validator.isInteger("1");
 		//Then the input should be accepted and turned into an int
-		assertEquals(2, result);
+		assertEquals(1, result);
 	}
 	
 	@Test
@@ -29,7 +29,7 @@ public class InputValidatorTests {
 		//Given: An input validator
 		//And: I do not want to accept an input unless it is an integer
 		//When: I input something besides an integer
-		//Then: The exception should be caught, and a 0 returned rather than a valid input
+		//Then: An exception should be thrown
 		assertEquals(0, validator.isInteger("a"));
 	}
 	

@@ -7,7 +7,6 @@ public class InputListener {
 	public InputValidator validator;
 	private String desiredInput;
 	public int displaysAdded = 0;
-	private int validatedInput;
 	
 	public void listenForInput(){
 		while(desiredInput == null){
@@ -21,13 +20,9 @@ public class InputListener {
 		return desiredInput;
 	}
 	
-	public int getValidatedInput(){
-		return validatedInput;
-	}
-	
 	public void registerInput(String toRegister){
 		validator = new InputValidator();
-		validatedInput = validator.validateInput(desiredInput);
+		validator.validateInput(desiredInput)
 	}
 //
 //	public void registerSelection(String selectedDisplay, StationSetUp setUp){
