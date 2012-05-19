@@ -26,13 +26,13 @@ public class StationSetuUpTests {
 		//Given: I want to set up a Weather Station
 		//And: I have some Displays installed already
 		//When: I want scan for installed Displays
-		setUp.displayGetter.scanForDisplays(setUp);
+		setUp.scanForDisplays();
 		//Then: The installed displays should be added the a list
-		assertEquals(4,setUp.installedDisplays.size());
-		assertTrue(setUp.installedDisplays.contains("CurrentConditions"));
-		assertTrue(setUp.installedDisplays.contains("Forecast"));
-		assertTrue(setUp.installedDisplays.contains("Statistics"));
-		assertTrue(setUp.installedDisplays.contains("HeatIndex"));
+		assertEquals(4,setUp.displaysToShow.size());
+		assertTrue(setUp.displaysToShow.contains("CurrentConditions"));
+		assertTrue(setUp.displaysToShow.contains("Forecast"));
+		assertTrue(setUp.displaysToShow.contains("Statistics"));
+		assertTrue(setUp.displaysToShow.contains("HeatIndex"));
 	}
 
 	@Test
@@ -49,8 +49,8 @@ public class StationSetuUpTests {
 		simulateInput("1");
 		simulateInput("2");
 		//Then: They are added to the display list to be passed into the WeatherStation
-		assertTrue(setUp.installedDisplays.contains(new CurrentConditions()));
-		assertTrue(setUp.installedDisplays.contains(new Forecast()));
+		assertTrue(setUp.displaysToShow.contains(new CurrentConditions()));
+		assertTrue(setUp.displaysToShow.contains(new Forecast()));
 	}
 	
 	private void simulateInput(String input){

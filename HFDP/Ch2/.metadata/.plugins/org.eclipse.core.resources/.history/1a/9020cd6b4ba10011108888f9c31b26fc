@@ -26,7 +26,7 @@ public class StationSetuUpTests {
 		//Given: I want to set up a Weather Station
 		//And: I have some Displays installed already
 		//When: I want scan for installed Displays
-		setUp.displayGetter.scanForDisplays(setUp);
+		setUp.scanForDisplays();
 		//Then: The installed displays should be added the a list
 		assertEquals(4,setUp.installedDisplays.size());
 		assertTrue(setUp.installedDisplays.contains("CurrentConditions"));

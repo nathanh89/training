@@ -16,10 +16,5 @@ public class InputListener {
 			e.printStackTrace();
 		}
 	}
-		
-	public void registerSelection(String selectedDisplay){
-		int displayNumber = Integer.parseInt(selectedDisplay);
-		
-	}
 
 }

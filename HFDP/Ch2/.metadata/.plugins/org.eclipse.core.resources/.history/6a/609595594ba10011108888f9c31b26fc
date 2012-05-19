@@ -6,8 +6,8 @@ public class simtest {
 	
 	public static void main(String args[]){
 	
-		setUp.displayGetter.scanForDisplays(setUp);
-		setUp.displayGetter.printInstalledList(setUp);
+		setUp.scanForDisplays();
+		setUp.printInstalledList();
 	
 
 }

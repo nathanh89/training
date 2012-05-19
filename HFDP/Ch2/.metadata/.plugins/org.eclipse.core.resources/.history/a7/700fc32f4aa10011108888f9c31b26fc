@@ -1,0 +1,74 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+
+import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.Display;
+
+public class StationSetUp {
+	
+	public ArrayList<String> installedDisplays = new ArrayList<String>();
+	public InputListener listener = new InputListener();
+	
+	public StationSetUp(){
+	}
+
+	public void promptForDisplays() {
+		scanForDisplays();
+		printInstalledList();
+		listenForInput();
+	}
+	
+	public void scanForDisplays(){
+		String registryPath = "/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/test/DisplayInstallRegistry"; 
+		File installFolder = new File(registryPath);
+		String[] installedList = installFolder.list();
+		for(int i=0; i<installedList.length; i++){
+			String display = installedList[i];
+			installedDisplays.add(display);
+			}
+		}
+			
+	public void printInstalledList(){
+		Collections.sort(installedDisplays);
+		int displayIndex = 0;
+		for(String display : installedDisplays){
+			formatCheck(displayIndex, display);
+			displayIndex++;
+		}
+		System.out.println("Please input your selection (# and ENTER), up to 4 displays:");
+		System.out.println("Hit the 'd' key when you're done selecting diplays");
+	}
+	
+	public void formatCheck(int displayIndex, String display){
+		if(displayIndex == 0){
+			System.out.println("[INSTALLED DISPLAYS]\n");
+			System.out.println(1 + ") " + display + "\n");
+		}
+		if (displayIndex > 0){
+			int displayedListNumber = displayIndex +1;
+			System.out.println(displayedListNumber + ") " + display + "\n");
+		}
+	}
+	
+	public void listenForInput(){
+		BufferedReader listener = new BufferedReader(new InputStreamReader(System.in));
+		try {
+			String selectedDisplay = listener.readLine();
+			registerSelection(selectedDisplay);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void registerSelection(String selectedDisplay){
+		
+	}
+}
+
+
