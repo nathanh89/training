@@ -29,13 +29,63 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeatherStationSelectableDisplays.java" partName="WeatherStationSelectableDisplays.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/WeatherStationSelectableDisplays.java" title="WeatherStationSelectableDisplays.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/WeatherStationSelectableDisplays.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeatherStationSelectableDisplays.java" partName="WeatherStationSelectableDisplays.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/WeatherStationSelectableDisplays.java" title="WeatherStationSelectableDisplays.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/WeatherStationSelectableDisplays.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/WeatherStationSelectableDisplays.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="357" selectionTopPixel="85"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="357" selectionTopPixel="6"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CurrentConditionsTests.java" partName="CurrentConditionsTests.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditionsTests.java" title="CurrentConditionsTests.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditionsTests.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditionsTests.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="1508" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ForecastTests.java" partName="ForecastTests.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/ForecastTests.java" title="ForecastTests.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/ForecastTests.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/ForecastTests.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="1402" selectionOffset="0" selectionTopPixel="445"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HeatIndexTests.java" partName="HeatIndexTests.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexTests.java" title="HeatIndexTests.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexTests.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexTests.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="259" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StatisticsTests.java" partName="StatisticsTests.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsTests.java" title="StatisticsTests.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsTests.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsTests.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1270" selectionTopPixel="470"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeatherDataTests.java" partName="WeatherDataTests.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherDataTests.java" title="WeatherDataTests.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherDataTests.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherDataTests.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="287" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CurrentConditionsDisplay.java" partName="CurrentConditionsDisplay.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditionsDisplay.java" title="CurrentConditionsDisplay.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditionsDisplay.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditionsDisplay.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="654" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeatherData.java" partName="WeatherData.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherData.java" title="WeatherData.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherData.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherData.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="465" selectionTopPixel="232"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ForecastDisplay.java" partName="ForecastDisplay.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/ForecastDisplay.java" title="ForecastDisplay.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/ForecastDisplay.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/ForecastDisplay.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="515" selectionTopPixel="89"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HeatIndexDisplay.java" partName="HeatIndexDisplay.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexDisplay.java" title="HeatIndexDisplay.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexDisplay.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexDisplay.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="134"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StatisticsDisplay.java" partName="StatisticsDisplay.java" path="/home/nathan/Documents/training/HFDP/Ch2/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsDisplay.java" title="StatisticsDisplay.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsDisplay.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsDisplay.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="612" selectionTopPixel="66"/>
 </editor>
 </editors>
 <views>
@@ -86,9 +136,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (1 item)"/>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (2 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="105" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -226,8 +275,8 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.3612403" ratioLeft="466" ratioRight="824" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.54121304" ratioLeft="348" ratioRight="295" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.43875968" ratioLeft="566" ratioRight="724" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.7262831" ratioLeft="467" ratioRight="176" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -446,166 +495,167 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/StationSetUp.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/InputReference.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/book/BookWeatherStationMultiple.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/InputListener.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/DisplayGetter.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/WeatherStationSelectableDisplays.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditionsTests.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditionsDisplay.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherData.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/InputValidator.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/StationSetUpTests.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Ch2.TDDStyle/\/opt\/eclipse\/plugins\/org.junit_4.8.2.v4_8_2_v20110321-1705\/junit.jar&lt;org.junit(Assert.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/ForecastTests.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/ForecastDisplay.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexTests.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexDisplay.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsDisplay.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsTests.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherDataTests.java"/>
 </editors>
-<item historyLabel="DisplayGetter.java" index="4">
-<position info="not_deleted" x="667" y="0"/>
+<item historyLabel="CurrentConditionsTests.java" index="1">
+<position info="not_deleted" x="1141" y="0"/>
 </item>
-<item historyLabel="InputListener.java" index="3">
-<position info="not_deleted" x="1239" y="0"/>
+<item historyLabel="CurrentConditionsTests.java" index="1">
+<position info="not_deleted" x="955" y="0"/>
 </item>
-<item historyLabel="InputReference.java" index="1">
-<position info="not_deleted" x="669" y="0"/>
+<item historyLabel="CurrentConditionsDisplay.java" index="2">
+<position info="not_deleted" x="654" y="0"/>
 </item>
-<item historyLabel="InputValidator.java" index="7">
-<position info="not_deleted" x="193" y="0"/>
-</item>
-<item historyLabel="StationSetUp.java" index="0">
-<position info="not_deleted" x="656" y="0"/>
-</item>
-<item historyLabel="BookWeatherStationMultiple.java" index="2">
+<item historyLabel="WeatherData.java" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BookWeatherStationMultiple.java" index="2">
-<position info="not_deleted" x="530" y="0"/>
+<item historyLabel="WeatherStationSelectableDisplays.java" index="0">
+<position info="not_deleted" x="357" y="0"/>
 </item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position info="not_deleted" x="298" y="0"/>
+<item historyLabel="WeatherData.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="WeatherData.java" index="6">
-<position info="not_deleted" x="221" y="0"/>
+<item historyLabel="CurrentConditionsTests.java" index="1">
+<position info="not_deleted" x="955" y="0"/>
 </item>
-<item historyLabel="WeatherData.java" index="6">
+<item historyLabel="CurrentConditionsTests.java" index="1">
+<position info="not_deleted" x="990" y="0"/>
+</item>
+<item historyLabel="CurrentConditionsTests.java" index="1">
+<position info="not_deleted" x="1141" y="0"/>
+</item>
+<item historyLabel="CurrentConditionsDisplay.java" index="2">
+<position info="not_deleted" x="654" y="0"/>
+</item>
+<item historyLabel="CurrentConditionsTests.java" index="1">
+<position info="not_deleted" x="1503" y="0"/>
+</item>
+<item historyLabel="CurrentConditionsDisplay.java" index="2">
+<position info="not_deleted" x="654" y="0"/>
+</item>
+<item historyLabel="WeatherData.java" index="3">
+<position info="not_deleted" x="465" y="0"/>
+</item>
+<item historyLabel="CurrentConditionsDisplay.java" index="2">
+<position info="not_deleted" x="654" y="0"/>
+</item>
+<item historyLabel="WeatherData.java" index="3">
+<position info="not_deleted" x="465" y="0"/>
+</item>
+<item historyLabel="CurrentConditionsTests.java" index="1">
+<position info="not_deleted" x="1503" y="0"/>
+</item>
+<item historyLabel="CurrentConditionsTests.java" index="1">
 <position/>
 </item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position info="not_deleted" x="298" y="0"/>
+<item historyLabel="CurrentConditionsTests.java" index="1">
+<position info="not_deleted" x="1503" y="0"/>
 </item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position info="not_deleted" x="580" y="0"/>
+<item historyLabel="WeatherData.java" index="3">
+<position info="not_deleted" x="465" y="0"/>
 </item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position/>
+<item historyLabel="CurrentConditionsTests.java" index="1">
+<position info="not_deleted" x="1503" y="0"/>
 </item>
-<item historyLabel="InputReference.java" index="1">
-<position info="not_deleted" x="329" y="0"/>
+<item historyLabel="CurrentConditionsTests.java" index="1">
+<position info="not_deleted" x="1317" y="0"/>
 </item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position/>
+<item historyLabel="CurrentConditionsTests.java" index="1">
+<position info="not_deleted" x="1321" y="0"/>
 </item>
-<item historyLabel="InputReference.java" index="1">
-<position info="not_deleted" x="329" y="0"/>
+<item historyLabel="CurrentConditionsTests.java" index="1">
+<position info="not_deleted" x="1030" y="0"/>
 </item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position/>
+<item historyLabel="CurrentConditionsDisplay.java" index="2">
+<position info="not_deleted" x="654" y="0"/>
 </item>
-<item historyLabel="WeatherData.java" index="6">
-<position/>
+<item historyLabel="CurrentConditionsTests.java" index="1">
+<position info="not_deleted" x="0" y="1508"/>
 </item>
-<item historyLabel="InputReference.java" index="1">
-<position info="not_deleted" x="329" y="0"/>
+<item historyLabel="ForecastTests.java" index="4">
+<position info="not_deleted" x="1402" y="0"/>
 </item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position/>
+<item historyLabel="ForecastTests.java" index="4">
+<position info="not_deleted" x="284" y="0"/>
 </item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position/>
+<item historyLabel="ForecastTests.java" index="4">
+<position info="not_deleted" x="1165" y="0"/>
 </item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position/>
+<item historyLabel="ForecastDisplay.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position/>
-</item>
-<item historyLabel="WeatherData.java" index="6">
-<position/>
-</item>
-<item historyLabel="InputReference.java" index="1">
-<position info="not_deleted" x="329" y="0"/>
-</item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position/>
-</item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position/>
-</item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position/>
-</item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position info="not_deleted" x="721" y="0"/>
-</item>
-<item historyLabel="InputReference.java" index="1">
-<position info="not_deleted" x="329" y="0"/>
-</item>
-<item historyLabel="WeatherData.java" index="6">
-<position info="not_deleted" x="637" y="0"/>
-</item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position/>
-</item>
-<item historyLabel="WeatherData.java" index="6">
+<item historyLabel="ForecastDisplay.java" index="5">
 <position info="not_deleted" x="515" y="0"/>
 </item>
-<item historyLabel="WeatherData.java" index="6">
-<position info="not_deleted" x="143" y="0"/>
+<item historyLabel="ForecastTests.java" index="4">
+<position info="not_deleted" x="1165" y="0"/>
 </item>
-<item historyLabel="WeatherData.java" index="6">
-<position info="not_deleted" x="122" y="0"/>
+<item historyLabel="ForecastTests.java" index="4">
+<position info="not_deleted" x="0" y="1402"/>
 </item>
-<item historyLabel="WeatherData.java" index="6">
-<position info="not_deleted" x="719" y="0"/>
+<item historyLabel="HeatIndexTests.java" index="6">
+<position info="not_deleted" x="1376" y="0"/>
 </item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position info="not_deleted" x="950" y="0"/>
+<item historyLabel="HeatIndexTests.java" index="6">
+<position/>
 </item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position info="not_deleted" x="807" y="0"/>
+<item historyLabel="HeatIndexDisplay.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position info="not_deleted" x="70" y="0"/>
+<item historyLabel="HeatIndexTests.java" index="6">
+<position info="not_deleted" x="259" y="0"/>
 </item>
-<item historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position info="not_deleted" x="500" y="0"/>
+<item historyLabel="ForecastTests.java" index="4">
+<position info="not_deleted" x="0" y="1402"/>
 </item>
-<item historyLabel="StationSetUpTests.java" index="8">
-<position info="not_deleted" x="1172" y="0"/>
+<item historyLabel="StatisticsDisplay.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="StationSetUp.java" index="0">
-<position info="not_deleted" x="656" y="0"/>
+<item historyLabel="StatisticsTests.java" index="9">
+<position info="not_deleted" x="1464" y="0"/>
 </item>
-<item historyLabel="StationSetUpTests.java" index="8">
-<position info="not_deleted" x="1172" y="0"/>
+<item historyLabel="StatisticsTests.java" index="9">
+<position info="not_deleted" x="1185" y="0"/>
 </item>
-<item historyLabel="StationSetUp.java" index="0">
-<position info="not_deleted" x="656" y="0"/>
+<item historyLabel="StatisticsDisplay.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="StationSetUpTests.java" index="8">
-<position info="not_deleted" x="1044" y="28"/>
+<item historyLabel="StatisticsDisplay.java" index="8">
+<position info="not_deleted" x="612" y="0"/>
 </item>
-<item historyLabel="Assert.class" index="9">
-<position info="not_deleted" x="2424" y="60"/>
+<item historyLabel="StatisticsTests.java" index="9">
+<position info="not_deleted" x="918" y="0"/>
 </item>
-<item historyLabel="Assert.class" index="9">
-<position info="not_deleted" x="1178" y="18"/>
+<item historyLabel="StatisticsDisplay.java" index="8">
+<position info="not_deleted" x="612" y="0"/>
 </item>
-<item historyLabel="Assert.class" index="9">
-<position info="not_deleted" x="1436" y="31"/>
+<item historyLabel="StatisticsTests.java" index="9">
+<position info="not_deleted" x="918" y="0"/>
 </item>
-<item historyLabel="StationSetUpTests.java" index="8">
-<position info="not_deleted" x="1044" y="28"/>
+<item historyLabel="StatisticsTests.java" index="9">
+<position info="not_deleted" x="1270" y="0"/>
 </item>
-<item active="true" historyLabel="WeatherStationSelectableDisplays.java" index="5">
-<position info="not_deleted" x="500" y="0"/>
+<item historyLabel="WeatherData.java" index="3">
+<position info="not_deleted" x="465" y="0"/>
+</item>
+<item historyLabel="WeatherDataTests.java" index="10">
+<position info="not_deleted" x="487" y="0"/>
+</item>
+<item historyLabel="WeatherDataTests.java" index="10">
+<position info="not_deleted" x="66" y="0"/>
+</item>
+<item active="true" historyLabel="WeatherDataTests.java" index="10">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -613,10 +663,8 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 <trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
@@ -630,6 +678,39 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StatisticsDisplay.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsDisplay.java">
+<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsDisplay.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HeatIndexDisplay.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexDisplay.java">
+<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexDisplay.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ForecastDisplay.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/ForecastDisplay.java">
+<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/ForecastDisplay.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeatherData.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherData.java">
+<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherData.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CurrentConditionsDisplay.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditionsDisplay.java">
+<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditionsDisplay.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeatherDataTests.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherDataTests.java">
+<persistable path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/subject/WeatherDataTests.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StatisticsTests.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsTests.java">
+<persistable path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/StatisticsTests.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HeatIndexTests.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexTests.java">
+<persistable path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexTests.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HeatIndexTests.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexTests.java">
+<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/HeatIndexTests.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ForecastTests.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/ForecastTests.java">
+<persistable path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/ForecastTests.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CurrentConditionsTests.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditionsTests.java">
+<persistable path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditionsTests.java"/>
+</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Assert.class" tooltip="org.junit.Assert">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Ch2.TDDStyle/\/opt\/eclipse\/plugins\/org.junit_4.8.2.v4_8_2_v20110321-1705\/junit.jar&lt;org.junit(Assert.class"/>
 </file>
@@ -641,39 +722,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CurrentConditions.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditions.java">
 <persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/CurrentConditions.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BookWeatherStationMultiple.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/book/BookWeatherStationMultiple.java">
-<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/book/BookWeatherStationMultiple.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Forecast.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/Forecast.java">
-<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/observers/Forecast.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeatherStationSelectableDisplaysMultiple.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/WeatherStationSelectableDisplaysMultiple.java">
-<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/WeatherStationSelectableDisplaysMultiple.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AddDisplay.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/AddDisplay.java">
-<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/AddDisplay.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InputSimulator.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/InputSimulator.java">
-<persistable path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/InputSimulator.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="simtest.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/simtest.java">
-<persistable path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/simtest.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InputListenerTests.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/InputListenerTests.java">
-<persistable path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/InputListenerTests.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InputValidatorTests.java" tooltip="Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/InputValidatorTests.java">
-<persistable path="/Ch2.TDDStyle/test/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/InputValidatorTests.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InputValidator.java" tooltip="Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/InputValidator.java">
-<persistable path="/Ch2.TDDStyle/src/com/visionarysoftwaresolutions/hfdpch2/tddstyle/demo/custom/InputValidator.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Integer.class" tooltip="java.lang.Integer">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Ch2.TDDStyle/\/usr\/lib\/jvm\/jdk1.7.0_04\/jre\/lib\/rt.jar&lt;java.lang(Integer.class"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="NumberFormatException.class" tooltip="java.lang.NumberFormatException">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Ch2.TDDStyle/\/usr\/lib\/jvm\/jdk1.7.0_04\/jre\/lib\/rt.jar&lt;java.lang(NumberFormatException.class"/>
 </file>
 </mruList>
 </workbench>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="CurrentConditionsTests" project="Ch2.TDDStyle" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.CurrentConditionsTests" time="0.003">
-    <testcase name="testSetUpAsObserver" classname="com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.CurrentConditionsTests" time="0.001"/>
-    <testcase name="testDisplay" classname="com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.CurrentConditionsTests" time="0.001"/>
-    <testcase name="testManualUpdate" classname="com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.CurrentConditionsTests" time="0.001"/>
-  </testsuite>
-</testrun>

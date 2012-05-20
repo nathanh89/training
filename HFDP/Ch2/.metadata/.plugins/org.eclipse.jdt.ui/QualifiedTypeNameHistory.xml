@@ -3,11 +3,9 @@
 <fullyQualifiedTypeName name="java.io.ByteArrayInputStream"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.Forecast"/>
-<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdpch2.tddstyle.subject.WeatherData"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
@@ -17,4 +15,6 @@
 <fullyQualifiedTypeName name="java.util.Observable"/>
 <fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.CurrentConditions"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="com.visionarysoftwaresolutions.hfdpch2.tddstyle.subject.WeatherData"/>
 </qualifiedTypeNameHistroy>
