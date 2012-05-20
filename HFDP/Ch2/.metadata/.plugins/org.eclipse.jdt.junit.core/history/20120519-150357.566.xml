@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="InputListenerTests" project="Ch2.TDDStyle" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom.InputListenerTests" time="7.217">
-    <testcase name="testListenForInput" classname="com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom.InputListenerTests" time="4.414"/>
-    <testcase name="testStopListening" classname="com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom.InputListenerTests" time="2.803"/>
-  </testsuite>
-</testrun>

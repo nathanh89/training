@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="StationSetUpTests" project="Ch2.TDDStyle" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom.StationSetUpTests" time="11.38">
-    <testcase name="testGetInstalledDisplays" classname="com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom.StationSetUpTests" time="0.008"/>
-    <testcase name="testInstalledDisplaysPrompt" classname="com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom.StationSetUpTests" time="0.0"/>
-    <testcase name="testRegisterDisplaySelection" classname="com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom.StationSetUpTests" time="11.372"/>
-  </testsuite>
-</testrun>

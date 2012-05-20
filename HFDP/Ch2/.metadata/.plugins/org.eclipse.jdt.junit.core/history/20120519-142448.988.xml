@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="InputValidatorTests" project="Ch2.TDDStyle" tests="5" started="5" failures="0" errors="0" ignored="0">
-  <testsuite name="com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom.InputValidatorTests" time="0.003">
-    <testcase name="testIntegerConversion" classname="com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom.InputValidatorTests" time="0.001"/>
-    <testcase name="testNonIntegerRejection" classname="com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom.InputValidatorTests" time="0.0"/>
-    <testcase name="testWithinRange" classname="com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom.InputValidatorTests" time="0.0"/>
-    <testcase name="testOutOfRangeRejection" classname="com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom.InputValidatorTests" time="0.0"/>
-    <testcase name="testInputFromStationSetUp" classname="com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom.InputValidatorTests" time="0.002"/>
-  </testsuite>
-</testrun>
