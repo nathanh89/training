@@ -1,6 +1,6 @@
 package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.book;
 
-import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.CurrentConditions;
+import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.CurrentConditionsDisplay;
 import com.visionarysoftwaresolutions.hfdpch2.tddstyle.subject.WeatherData;
 
 public class BookWeatherStationSingle {
@@ -12,7 +12,7 @@ public class BookWeatherStationSingle {
 		//And the books implementation of the Observer method is not as flexible as mine
 		//You can't select what displays to show at runtime, it just displays what is programmed in
 		
-		CurrentConditions currentDisplay = new CurrentConditions(weatherData);
+		CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
 		weatherData.setMeasurements(80, 65, 30.4f);
 		weatherData.setMeasurements(82, 70, 29.2f);
 		weatherData.setMeasurements(78, 90, 29.2f);

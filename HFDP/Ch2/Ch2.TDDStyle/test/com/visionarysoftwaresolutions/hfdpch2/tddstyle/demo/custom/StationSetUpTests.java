@@ -40,13 +40,6 @@ public class StationSetUpTests {
 		//When: I select the displays I want to add
 		//(Input 1, 2, and d into the console to pass)
 		//Then: They are added to the display list to be passed into the WeatherStation
-		setUp.addDisplays();
-		assertEquals(2,setUp.displaysToAdd.size());
-		String testDisplayClass1 = setUp.displaysToAdd.get(0).getClass().getSimpleName();
-		String expected = "CurrentConditions";
-		assertTrue(expected.equals(testDisplayClass1));
-		String testDisplayClass2 = setUp.displaysToAdd.get(1).getClass().getSimpleName();
-		expected = "Forecast";
-		assertTrue(expected.equals(testDisplayClass2));
+		assertEquals(2,setUp.getDesiredDisplays().size());
 	}
 }

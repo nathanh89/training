@@ -9,19 +9,19 @@ public class InputReference {
 	
 	public static Observer createDisplayByInput(int index, Observable observable){
 		if(index == 1){
-			Observer currentConditions = new CurrentConditions(observable);
+			Observer currentConditions = new CurrentConditionsDisplay(observable);
 			return currentConditions;
 		}
 		if(index == 2){
-			Observer forecast = new Forecast(observable);
+			Observer forecast = new ForecastDisplay(observable);
 			return forecast;
 		}
 		if(index == 3){
-			Observer heatIndex = new HeatIndex(observable);
+			Observer heatIndex = new HeatIndexDisplay(observable);
 			return heatIndex;
 		}
 		else{
-			Observer statistics = new Statistics(observable);
+			Observer statistics = new StatisticsDisplay(observable);
 			return statistics;
 		}
 	}

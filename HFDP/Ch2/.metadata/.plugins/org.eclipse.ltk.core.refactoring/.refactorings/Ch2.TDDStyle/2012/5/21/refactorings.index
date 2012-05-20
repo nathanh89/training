@@ -5,3 +5,8 @@
 1337475009099	Rename type 'WeatherStationSelectableDisplaysMultiple'
 1337476030035	Rename method 'addDisplay'
 1337477629153	Delete element
+1337490428790	Delete element
+1337490582809	Rename type 'CurrentConditions'
+1337490599330	Rename type 'Forecast'
+1337490614109	Rename type 'HeatIndex'
+1337490624191	Rename type 'Statistics'
