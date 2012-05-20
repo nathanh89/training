@@ -1,12 +1,12 @@
 package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
 
 import java.util.ArrayList;
-import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.ObservingDisplay;
+import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.Display;
 
 public class StationSetUp {
 	
 	public ArrayList<String> installedDisplays = new ArrayList<String>();
-	public ArrayList<ObservingDisplay> displaysToAdd = new ArrayList<ObservingDisplay>();
+	public ArrayList<Display> displaysToAdd = new ArrayList<Display>();
 	public ArrayList<Integer> displaysInput = new ArrayList<Integer>();
 	public InputListener listener = new InputListener();
 	public DisplayGetter displayGetter = new DisplayGetter();
@@ -22,7 +22,7 @@ public class StationSetUp {
 
 	public void addDisplays(){
 		for(Integer currentInput: displaysInput){
-			ObservingDisplay display;
+			Display display;
 			display = InputReference.createDisplayByInput(currentInput);
 			displaysToAdd.add(display);
 		}

@@ -4,21 +4,21 @@ import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.*;
 
 public class InputReference {
 	
-	public static ObservingDisplay createDisplayByInput(int index){
+	public static Display createDisplayByInput(int index){
 		if(index == 1){
-			ObservingDisplay currentConditions = new CurrentConditions();
+			Display currentConditions = new Display(new CurrentConditions());
 			return currentConditions;
 		}
 		if(index == 2){
-			ObservingDisplay forecast = new Forecast();
+			Display forecast = new Display(new Forecast());
 			return forecast;
 		}
 		if(index == 3){
-			ObservingDisplay heatIndex = new HeatIndex();
+			Display heatIndex = new Display(new HeatIndex());
 			return heatIndex;
 		}
 		else{
-			ObservingDisplay statistics = new Statistics();
+			Display statistics = new Display(new Statistics());
 			return statistics;
 		}
 	}

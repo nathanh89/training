@@ -1,6 +1,7 @@
 package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
 
 import java.util.ArrayList;
+import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.Display;
 import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.ObservingDisplay;
 
 public class StationSetUp {

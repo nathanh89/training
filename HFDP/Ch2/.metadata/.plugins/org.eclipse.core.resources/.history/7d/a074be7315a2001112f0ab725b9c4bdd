@@ -1,6 +1,8 @@
 package com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers;
 
 import java.util.Observable;
+import java.util.Observer;
+
 import com.visionarysoftwaresolutions.hfdpch2.tddstyle.subject.WeatherData;
 
 public class Statistics implements ObservingDisplay {
