@@ -20,6 +20,11 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 	
 	public StatisticsDisplay(){
 	}
+	
+	public void setAverage(float tempsSum, int numberOfTemps){
+		this.tempSum = tempsSum;
+		this.numReadings = numberOfTemps;
+	}
 
 	@Override
 	public void update(Observable observable, Object arg) {

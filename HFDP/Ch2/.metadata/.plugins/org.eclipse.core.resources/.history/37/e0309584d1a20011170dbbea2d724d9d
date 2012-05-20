@@ -1,0 +1,45 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import com.visionarysoftwaresolutions.hfdpch2.tddstyle.subject.WeatherData;
+
+public class CurrentConditionsTests {
+
+	CurrentConditionsDisplay conditions;
+	WeatherData weatherData;
+	
+	@Before
+	public void setup(){
+		weatherData = new WeatherData();
+	}
+	
+	@Test
+	public void testSetUpAsObserver() {
+		//Given: I have a CurrentConditionsDisplay
+		//And: When I instantiate it, I want to set it as an observer
+		//When: I do so for a specific Observable
+		conditions = new CurrentConditionsDisplay(weatherData);
+		//Then: It should be observing the Observable
+		assertEquals(1, weatherData.countObservers());
+	}
+	
+	@Test
+	public void testDisplay(){
+		//Given: I have a CurrentConditionsDisplay
+		conditions = new CurrentConditionsDisplay();
+		//And: I want it to display its data
+		conditions.setHumidity(75);
+		conditions.setTemperature(99);
+		//When: I ask it to display
+		//Then: It should display the data
+		conditions.display();
+		//Check console for output, manual pass verification here
+	}
+
+	@Test
+	public void
+}

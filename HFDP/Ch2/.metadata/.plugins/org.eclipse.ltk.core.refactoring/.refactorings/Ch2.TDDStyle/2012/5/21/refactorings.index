@@ -11,3 +11,6 @@
 1337490614109	Rename type 'HeatIndex'
 1337490624191	Rename type 'Statistics'
 1337553410088	Delete element
+1337555779191	Rename field 'conditions'
+1337556590633	Rename field 'forecast'
+1337557034591	Rename field 'forecast'

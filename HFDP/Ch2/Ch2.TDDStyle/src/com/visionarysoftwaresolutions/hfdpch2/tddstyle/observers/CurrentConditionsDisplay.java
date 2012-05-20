@@ -18,6 +18,14 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement{
 	
 	public CurrentConditionsDisplay(){
 	}
+	
+	public void setTemperature(float temperature){
+		this.temperature = temperature;
+	}
+	
+	public void setHumidity(float humidity){
+		this.humidity = humidity;
+	}
 
 	@Override
 	public void update(Observable observable, Object arg) {
