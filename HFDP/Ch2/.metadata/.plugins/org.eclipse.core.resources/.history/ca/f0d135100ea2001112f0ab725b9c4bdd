@@ -1,9 +1,7 @@
 package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class InputListener {
 	
@@ -16,13 +14,9 @@ public class InputListener {
 	public ArrayList<Integer> listenForInput(){
 		while(validInputCount < 4){
 			int input;
-			BufferedReader listener = new BufferedReader(new InputStreamReader(System.in));
-			try {
-				desiredInput = listener.readLine();
-			} catch (IOException e) {
-				System.out.println("You fucked up.");
-			}
-			if(desiredInput.equals("d"))
+			Scanner listener = new Scanner(System.in);
+			desiredInput = listener.next();
+			if(desiredInput.equals("d")){
 				validInputCount = 4;
 			else{ 
 				input = testInput(desiredInput);
