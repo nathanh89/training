@@ -1,18 +1,24 @@
 package com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers;
 
 import java.util.Observable;
+import java.util.Observer;
+
 import com.visionarysoftwaresolutions.hfdpch2.tddstyle.subject.WeatherData;
 
-public class HeatIndex implements ObservingDisplay {
+public class HeatIndex implements Observer, DisplayElement {
+	
+	Observable observable;
 	float heatIndex = 0.0f;
 
 	public HeatIndex(Observable observable) {
+		this.observable = observable;
 		observable.addObserver(this);
 	}
 	
 	public HeatIndex(){
 	}
 
+	@Override
 	public void update(Observable observable, Object arg) {
 		if (observable instanceof WeatherData) {
 			WeatherData weatherData = (WeatherData)observable;
@@ -39,6 +45,7 @@ public class HeatIndex implements ObservingDisplay {
 		}
 	}
 
+	@Override
 	public void display() {
 		System.out.println("Heat index is " + heatIndex);
 	}

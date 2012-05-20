@@ -48,28 +48,4 @@ public class InputListener {
 			validInputCount++;
 		return validatedInput;
 	}
-//
-//	public void registerSelection(String selectedDisplay, StationSetUp setUp){
-//			Display display;
-//			display = InputReference.createDisplayByInput(Integer.parseInt(selectedDisplay));
-//			if(notAlreadyAdded(display, setUp)){
-//				setUp.displaysToAdd.add(display);
-//				String classSelected = display.getCurrentDisplay().getClass().getSimpleName();
-//				System.out.println(classSelected + " display added.");
-//				displaysAdded++;
-//			}
-//		setUp.listener.listenForInput(setUp);
-//	}
-//	
-//	private boolean notAlreadyAdded(Display display, StationSetUp setUp){
-//		for(Display displayInList : setUp.displaysToAdd){
-//			String desiredDisplay = display.getCurrentDisplay().getClass().getSimpleName();
-//			String currentDisplay = displayInList.getCurrentDisplay().getClass().getSimpleName();
-//			if(desiredDisplay.equals(currentDisplay)){
-//				System.out.println("You've already picked that display!");
-//				return false;
-//			}
-//		}
-//		return true;
-//	}
 }

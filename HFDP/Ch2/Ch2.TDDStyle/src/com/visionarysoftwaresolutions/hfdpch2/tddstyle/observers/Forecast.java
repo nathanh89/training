@@ -1,14 +1,15 @@
 package com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers;
 
 import java.util.Observable;
+import java.util.Observer;
 
 import com.visionarysoftwaresolutions.hfdpch2.tddstyle.subject.WeatherData;
 
-public class Forecast implements ObservingDisplay{
+public class Forecast implements Observer, DisplayElement{
 
+	Observable observable;
 	private float currentPressure = 29.92f;  
 	private float lastPressure;
-	Observable observable;
 
 	public Forecast(Observable observable) {
 		this.observable = observable;
@@ -16,9 +17,9 @@ public class Forecast implements ObservingDisplay{
 	}
 	
 	public Forecast(){
-		
 	}
-
+	
+	@Override
 	public void update(Observable observable, Object arg) {
 		if(observable instanceof WeatherData){
 			WeatherData weatherData = (WeatherData)observable;
@@ -28,6 +29,7 @@ public class Forecast implements ObservingDisplay{
 		}
 	}
 
+	@Override
 	public void display() {
 		System.out.print("Forecast: ");
 		if (currentPressure > lastPressure) {

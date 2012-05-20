@@ -1,0 +1,36 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+import java.util.ArrayList;
+import java.util.Observer;
+
+import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.ObservingDisplay;
+
+public class StationSetUp {
+	
+	public ArrayList<String> installedDisplays = new ArrayList<String>();
+	public ArrayList<Observer> displaysToAdd = new ArrayList<Observer>();
+	public ArrayList<Integer> displaysInput = new ArrayList<Integer>();
+	public InputListener listener = new InputListener();
+	public DisplayGetter displayGetter = new DisplayGetter();
+	
+	public StationSetUp(){
+	}
+
+	public void promptForDisplays() {
+		displayGetter.scanForDisplays(this);
+		displayGetter.printInstalledList(this);
+		displaysInput = listener.listenForInput();
+		}
+
+	public void addDisplays(){
+		for(Integer currentInput: displaysInput){
+			Observer display;
+			display = InputReference.createDisplayByInput(currentInput);
+			displaysToAdd.add(display);
+		}
+	}
+}
+
+	
+
+

@@ -1,24 +1,27 @@
 package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
 
+import java.util.Observable;
+import java.util.Observer;
+
 import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.*;
 
 public class InputReference {
 	
-	public static ObservingDisplay createDisplayByInput(int index){
+	public static Observer createDisplayByInput(int index, Observable observable){
 		if(index == 1){
-			ObservingDisplay currentConditions = new CurrentConditions();
+			Observer currentConditions = new CurrentConditions(observable);
 			return currentConditions;
 		}
 		if(index == 2){
-			ObservingDisplay forecast = new Forecast();
+			Observer forecast = new Forecast(observable);
 			return forecast;
 		}
 		if(index == 3){
-			ObservingDisplay heatIndex = new HeatIndex();
+			Observer heatIndex = new HeatIndex(observable);
 			return heatIndex;
 		}
 		else{
-			ObservingDisplay statistics = new Statistics();
+			Observer statistics = new Statistics(observable);
 			return statistics;
 		}
 	}

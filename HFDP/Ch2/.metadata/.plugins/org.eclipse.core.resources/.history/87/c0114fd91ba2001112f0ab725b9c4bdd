@@ -1,0 +1,10 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers;
+
+import java.util.Observable;
+import java.util.Observer;
+
+public interface ObservingDisplay extends Observer, DisplayElement{
+
+	public Observable observable = new Observable();
+
+}

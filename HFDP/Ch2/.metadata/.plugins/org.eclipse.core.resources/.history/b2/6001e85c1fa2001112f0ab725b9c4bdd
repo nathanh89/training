@@ -1,0 +1,27 @@
+package com.visionarysoftwaresolutions.hfdpch2.tddstyle.demo.custom;
+
+import java.util.Observer;
+
+import com.visionarysoftwaresolutions.hfdpch2.tddstyle.observers.*;
+
+public class InputReference {
+	
+	public static Observer createDisplayByInput(int index){
+		if(index == 1){
+			Observer currentConditions = new CurrentConditions();
+			return currentConditions;
+		}
+		if(index == 2){
+			Observer forecast = new Forecast();
+			return forecast;
+		}
+		if(index == 3){
+			Observer heatIndex = new HeatIndex();
+			return heatIndex;
+		}
+		else{
+			Observer statistics = new Statistics();
+			return statistics;
+		}
+	}
+}
