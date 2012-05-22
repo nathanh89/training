@@ -1,4 +1,30 @@
 CHAPTER 4
 ----------------------------------------------------
 
-P. 111:	
+P. 111:	How might you take all the parts of your application that instantiate concrete objects and separate them from the rest of the application?
+Well, based on some previous experience with this, I would say delegate it out to a class or method that's sole job is to create Objects, say like a Factory class? 
+
+P. 116:	What factory implementations might we be able to swap in and out of PizzaStore?
+I really wasn't sure what this question was asking...my initial reaction was "Why would we need to swap that out? Wouldn't we just modify the factory if we wanted to change behavior?" So I cheated, and looked at the books suggested answer. And I have to say, I just don't give enough of a fuck about pizza for that to have occured to me. Styles? Who cares! Tomato sauce, cheese, crust and a shit-ton of grease is all it takes to make a pizza. Anything else is trying too damn hard. That said, I can see how different factories for different styles of PizzaStores might be useful. God forbid someone orders a New York style pepperoni and they get a Chicago style pepperoni. I mean, fuck Chicago, right New York?  But it would make sense somewhat to use different factories in that case, as for both orders the type would be "pepperoni."
+
+P. 124:	Write the Chicago and California style PizzaStore implementations here!
+In the interest of speeding this process up and avoiding duplication, no. Check out the source code, they are implemented there.
+
+P. 133a: Draw what you'd need to make a California Pizza Store franchise.
+Nah, but I'll do this:
+CaliforniaPizzaStore extends PizzaStore
+
+and your products that the CaliforniaPizzaStore would create, all extending Pizza of course:
+CaliforniaStyleCheesePizza
+CaliforniaStylePepperoniPizza
+CaliforniaStyleClamPizza
+CaliforniaStyleVeggiePizza
+
+P. 133b: Write the five most bizarre things you can think of to put on a pizza: (This seems important...)
+Powdered moon rock,
+a whole venison tenderloin,
+Cheese Whiz,
+Indian Fry Bread from a Supermarket parking lot carnival near enough to Carlsbad to benefit from its magical aura,
+Tunalmonapia slices(The Turducken of the sea: A whole tuna fillet stuffed with a whole salmon fillet, stuffed with a whole tilapia fillet).
+
+

@@ -12,7 +12,7 @@ This is just a quick reference for the design principles and patterns expounded 
 
 *Ch2* - [Keeping Your Objects in the Know]
 
--THE OBSERVER PATTER: defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically
+-THE OBSERVER PATTERN: defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically
 
 -Strive for loosely coupled designs between objects that interact
 
@@ -21,3 +21,7 @@ This is just a quick reference for the design principles and patterns expounded 
 -Classes should be open for extension, but closed for modification. (The Open-Closed principle)
 
 -THE DECORATOR PATTERN - attaches additional responsibilities to an object dynamically. Decorators provide a flexible atlernative to subclassing for extending functionality.
+
+*Ch4* - [Baking with OO Goodness]
+
+-THE FACTORY METHOD PATTERN: defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to sublclasses.
