@@ -1,0 +1,14 @@
+package com.visionarysoftwaresolutions.hfdpch6.bookstyle.remotecontrol;
+
+import com.visionarysoftwaresolutions.hfdpch6.bookstyle.simpleremote.Command;
+
+public class CeilingFanOnCommand implements Command {
+	CeilingFan ceilingFan;
+
+	public CeilingFanOnCommand(CeilingFan ceilingFan) {
+		this.ceilingFan = ceilingFan;
+	}
+	public void execute() {
+		ceilingFan.high();
+	}
+}

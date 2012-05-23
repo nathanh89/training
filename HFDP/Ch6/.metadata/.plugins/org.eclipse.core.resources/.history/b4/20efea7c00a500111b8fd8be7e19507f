@@ -1,0 +1,16 @@
+package com.visionarysoftwaresolutions.hfdpch6.bookstyle.remotecontrol;
+
+import com.visionarysoftwaresolutions.hfdpch6.bookstyle.simpleremote.Command;
+import com.visionarysoftwaresolutions.hfdpch6.bookstyle.simpleremote.Light;
+
+public class LivingroomLightOffCommand implements Command {
+	Light light;
+
+	public LivingroomLightOffCommand(Light light) {
+		this.light = light;
+	}
+
+	public void execute() {
+		light.off();
+	}
+}

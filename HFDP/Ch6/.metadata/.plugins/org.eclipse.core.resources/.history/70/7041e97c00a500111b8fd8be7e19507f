@@ -1,0 +1,17 @@
+package com.visionarysoftwaresolutions.hfdpch6.bookstyle.remotecontrol;
+
+import com.visionarysoftwaresolutions.hfdpch6.bookstyle.simpleremote.Command;
+
+public class HottubOnCommand implements Command {
+	Hottub hottub;
+
+	public HottubOnCommand(Hottub hottub) {
+		this.hottub = hottub;
+	}
+
+	public void execute() {
+		hottub.on();
+		hottub.heat();
+		hottub.bubblesOn();
+	}
+}

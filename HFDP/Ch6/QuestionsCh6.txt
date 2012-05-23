@@ -11,3 +11,6 @@ Short Order Cook = Receiver
 
 P. 205:	What would the implementation look like for GarageDoorOpenCommand?
 Well, its in the code, but basically you'll set up the constructor to take in a GarageDoor, then define the execute() method to activate the desired command, in this case, up() from the GarageDoor class.
+
+P. 207: How does the design of the Command Pattern support the decoupling of the invoker of a request and the receiver of the request?
+Well, the command is created independently of its execution. Any invoker can create the command, but that command doesn't have to be and often isn't executed right away. That is up the the receiver, and since neither are really dependent on what the other is doing (The invoker and the receiver) then they are decoupled.
