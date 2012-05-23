@@ -55,3 +55,20 @@ P. 254:	Match each desing pattern to its intent.
 Decorator - Doesn't alter the interface, but adds responsibility.
 Adapter - Converts one interface to another
 Facade - Makes an interface simpler
+
+P. 262:	Think about the facades you've encountered in the Java API. Where would you like to have new ones?
+Well, the only one that comes to mind so far is the Scanner. Unless I'm mistaken, it is a simplified interface for the mess of Java I/O classes. If you don't need advanced functionality, Scanner scanner = new Scanner(System.in) and a nice scanner.nextLine() and you've got a way to capture input. Where as without scanner, you have to do BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in)) which is way longer and uglier looking. Scanner sounds like it fits this pattern description: it's a simplified interface providing access to higher level functionality with Java I/O. As to what else I'd like to see that applied to, I'm hard pressed to say. I don't think I've got enough Java know-how to start pointing its flaws en masse at this point.
+
+P. 265:	How many classes does the following code couple to?
+public float getTemp(){
+	return station.getThermometer().getTemperature();
+
+First look, it seems to be two, at least. It looks to be interacting with a WeatherStation, and that's pulling data from a Thermometer class. I may be wrong, but ya...at least two. I think it's kind of hard to tell concretely from that code snippet anyway what all it's dependent on.
+
+P. 268:	Do either of these code snippets violate the principle of least knowledge?
+The first one certainly does, because you are calling a method of an object you got from a call done previously.
+The second one isn't technically violating it...I think. Instead of calling the getTemperature() method directly on the object retrieved with getTemp(), it instead uses what amounts to an in-object alias method for the Thermometer method getTemperature(). However, it never directly calls the getTemperature() method on the Thermometer object from getTemp(), so again I think it is technically in clear for not violating the Law of Demeter.
+
+P. 268:	Can you think of a common use of java that violates the Law of Demeter?
+Well, recently I wrote a program where I kept needing to get the class names of objects I was instatiating. So I would have to do something like return getDisplay().getClass().getSimpleName() (that's not exactly it, but "you" get the idea, right?) And that's a trifecta of method calling on returned objects from prior calls! Worked though...but it certainly isn't pretty to look at. However in that particular case, I don't know that it would have been that beneficial to work in aliases to correct it. I guess that's why HFDP prefers to call it the "Princple" of Least Knowledge rather than the Law of Demeter. Sometimes it's not worth it to stringently apply it.
+

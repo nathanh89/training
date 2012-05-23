@@ -45,3 +45,13 @@ This is just a quick reference for the design principles and patterns expounded 
 
 -THE ADAPTER PATTERN: converts the interface of a class into antother interface the clients expect. Adapter lets classes work together that couldn't otherwise becasuse of incompatible interfaces.
 
+-THE FACADE PATTERN: provides a unified interface to a set of interfaces in a subsystem. Facade dfines a higher-level interface that makes the subsystem easier to use.
+
+-Talk only to your immediate friends (Principle of Least Knowledge) or (Law of Demeter)
+	-Essentially, this says to reduce the interactions between objects to just a few close "friends," so for any object be careful of how many classes it interacts with and how it comes to interact with those classes.
+More specific guidelines: (take any object, and from any method within that object, this principle tells us we should only invoke methods that belong to...)
+	-The object itself
+	-Objects passed in as a parameter to the method
+	-Any object the method creates or instantiates
+	-Any components of the object
+	
