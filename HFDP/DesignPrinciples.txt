@@ -43,4 +43,5 @@ This is just a quick reference for the design principles and patterns expounded 
 
 *CH7* - [Being Adaptive]
 
+-THE ADAPTER PATTERN: converts the interface of a class into antother interface the clients expect. Adapter lets classes work together that couldn't otherwise becasuse of incompatible interfaces.
 

@@ -1,2 +1,57 @@
 CHAPTER 7
 ----------------------------------------------------
+
+P. 242:	How would you write a class that converts a Duck into a Turkey?
+public class DuckAdapter implements Turkey{
+	Turkey turkey;
+	public TurkeyAdapter(Duck duck){
+		this.turkey = turkey;
+	}
+	public void gobble(){
+		duck.quack();
+	}
+	public void fly(){
+		duck.fly(); 
+	}
+}
+
+Honestly, I had no idea how to go about chopping down the duck fly method, since there wasn't an actual distance defined by this fake program. Looks like the books solution is to generate a random integer and have it fly on one randomly generated integer of 5. I think. Weird, but I guess it works in principle to shorten the flight.
+
+P. 244:	 How does the different implementations of adapting affect the flexibility of the systems that use them (Class vs. Object adapters)
+Class adapters would have to be changed any time there is change to either the Target class or the Adaptee class. Encapsulating the adapter makes it more resilient to change, and less work has to be done when other classes are modified.
+
+P. 245:	Drag these magnets around! Show how a Class Adapter and an Object Adapter might work with the Duck-Turkey paradigm.
+Class Adapter
+Client (makes request to expected Class, Target)
+Target puts that request forward to a subclass, Adapter, which is an extension of both the Target and Adaptee classes. I'm not sure how exactly the Target knows to push to an Adapter in this case, but apparently it does. It couldn't be that the method is abstract...I don't think, because the Target needs to have the desired method implementation in cases when an adapter is not needed...but maybe I'm overthinking again.
+Adapter gets the result of the request from the class it is adapting, the Adaptee class. It then relays that back to the client through the Target class.
+
+Object Adapter
+Client makes request to target Interface.
+Target interface looks for implementation in Adapter class. 
+The Adapter class has the implementation, and that calls the data required by the original request from the Adaptee class.
+The Adapter relays Adaptee information back to the client.
+
+P. 251a: Write an adapter that adapts an Iterator to an Enumeration
+public class IteratingEnumeration implements Enumeration{
+	Iterator iterate;
+	public IteratingEnumeration(Iterator iterate){
+		this.iterate = iterate;		
+	}
+	@Override
+	public boolean hasMoreElements(){
+		return iterate.hasNext();
+	}
+	@Override
+	public Object nextElement(){
+		return iterate.next();
+	}
+}
+
+P. 251b: Some AC adapters do more than just change the interface, sometimes they add extra features (i.e. surge protection). If you were going to implement extra features to an interface adapter, what design pattern would you use?
+Well, I wouldn't want to have the features contained within the adapter, I want them in another class. I'd say the closest pattern to what I would want to do here is the Decorator Pattern. I could wrap the adapter in any number of classes to extend and otherwise add to its functionality.
+
+P. 254:	Match each desing pattern to its intent.
+Decorator - Doesn't alter the interface, but adds responsibility.
+Adapter - Converts one interface to another
+Facade - Makes an interface simpler
