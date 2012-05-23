@@ -1,0 +1,5 @@
+package com.visionarysoftwaresolutions.hfdpch4.tddstyle.pizza;
+
+public interface Clams {
+	public String toString();
+}

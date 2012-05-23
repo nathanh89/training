@@ -1,0 +1,19 @@
+package com.visionarysoftwaresolutions.hfdpch4.tddstyle.pizzas;
+
+import com.visionarysoftwaresolutions.hfdpch4.tddstyle.nypizza.PizzaIngredientFactory;
+
+public class ClamPizza extends Pizza {
+	PizzaIngredientFactory ingredientFactory;
+ 
+	public ClamPizza(PizzaIngredientFactory ingredientFactory) {
+		this.ingredientFactory = ingredientFactory;
+	}
+ 
+	void prepare() {
+		System.out.println("Preparing " + name);
+		dough = ingredientFactory.createDough();
+		sauce = ingredientFactory.createSauce();
+		cheese = ingredientFactory.createCheese();
+		clam = ingredientFactory.createClam();
+	}
+}

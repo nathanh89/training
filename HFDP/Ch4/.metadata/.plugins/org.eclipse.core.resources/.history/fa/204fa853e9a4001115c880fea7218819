@@ -1,0 +1,10 @@
+package com.visionarysoftwaresolutions.hfdpch4.tddstyle.pizzas;
+
+import com.visionarysoftwaresolutions.hfdpch4.tddstyle.ingredients.Pepperoni;
+
+public class SlicedPepperoni implements Pepperoni {
+
+	public String toString() {
+		return "Sliced Pepperoni";
+	}
+}

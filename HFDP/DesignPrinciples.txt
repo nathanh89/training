@@ -25,3 +25,12 @@ This is just a quick reference for the design principles and patterns expounded 
 *Ch4* - [Baking with OO Goodness]
 
 -THE FACTORY METHOD PATTERN: defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to sublclasses.
+
+-Depend upon abstractions Do not depend upon concrete classes. (Dependency Inversion Principle)
+	-No variable should hold a reference to a concrete class (Use a factory to get around)
+	-No class should derive from a concrete class
+	-No method should override an implemented method of any of its base classes
+
+-THE ABSTRACT FACTORY PATTERN: provides an interface for creating families of related or dependent objects whithout specifying their concrete classes.
+
+*Ch5* - [One of a Kind Objects]

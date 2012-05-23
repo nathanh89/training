@@ -1,0 +1,5 @@
+package com.visionarysoftwaresolutions.hfdpch4.tddstyle.nypizza;
+
+public interface Veggies {
+	public String toString();
+}

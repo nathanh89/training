@@ -1,0 +1,8 @@
+package com.visionarysoftwaresolutions.hfdpch4.tddstyle.nypizza;
+
+public class RedPepper implements Veggies {
+
+	public String toString() {
+		return "Red Pepper";
+	}
+}

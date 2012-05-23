@@ -1,0 +1,9 @@
+package com.visionarysoftwaresolutions.hfdpch4.tddstyle.pizza;
+
+import com.visionarysoftwaresolutions.hfdpch4.tddstyle.pizza.Dough;
+
+public class ThickCrustDough implements Dough {
+	public String toString() {
+		return "ThickCrust style extra thick crust dough";
+	}
+}

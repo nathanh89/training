@@ -1,0 +1,8 @@
+package com.visionarysoftwaresolutions.hfdpch4.tddstyle.pizza;
+
+public class Onion implements Veggies {
+
+	public String toString() {
+		return "Onion";
+	}
+}

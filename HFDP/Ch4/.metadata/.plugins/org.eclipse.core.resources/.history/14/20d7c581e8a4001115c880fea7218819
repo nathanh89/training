@@ -1,0 +1,10 @@
+package com.visionarysoftwaresolutions.hfdpch4.chicagopizza;
+
+import com.visionarysoftwaresolutions.hfdpch4.tddstyle.pizza.Veggies;
+
+public class Spinach implements Veggies {
+
+	public String toString() {
+		return "Spinach";
+	}
+}

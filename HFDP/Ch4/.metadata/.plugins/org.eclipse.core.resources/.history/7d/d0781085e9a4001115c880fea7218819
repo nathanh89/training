@@ -1,0 +1,19 @@
+package com.visionarysoftwaresolutions.hfdpch4.tddstyle.nypizza;
+
+import com.visionarysoftwaresolutions.hfdpch4.tddstyle.ingredients.Cheese;
+import com.visionarysoftwaresolutions.hfdpch4.tddstyle.ingredients.Clams;
+import com.visionarysoftwaresolutions.hfdpch4.tddstyle.ingredients.Dough;
+import com.visionarysoftwaresolutions.hfdpch4.tddstyle.ingredients.Pepperoni;
+import com.visionarysoftwaresolutions.hfdpch4.tddstyle.ingredients.Sauce;
+import com.visionarysoftwaresolutions.hfdpch4.tddstyle.ingredients.Veggies;
+
+public interface PizzaIngredientFactory {
+ 
+	public Dough createDough();
+	public Sauce createSauce();
+	public Cheese createCheese();
+	public Veggies[] createVeggies();
+	public Pepperoni createPepperoni();
+	public Clams createClam();
+ 
+}

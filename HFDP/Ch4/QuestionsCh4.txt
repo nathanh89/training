@@ -27,4 +27,11 @@ Cheese Whiz,
 Indian Fry Bread from a Supermarket parking lot carnival near enough to Carlsbad to benefit from its magical aura,
 Tunalmonapia slices(The Turducken of the sea: A whole tuna fillet stuffed with a whole salmon fillet, stuffed with a whole tilapia fillet).
 
+P. 137:	How many classes of pizzas is DependentPizzaStore dependent upon? How many if it does California Pizzas too?
+Looks to be 8 initially, 4 each in each of the two styles. Which, if my basic algebra skills are still intact, would put the number of pizzas that class is dependent upon up to 12 were we to cater to those crazy Californians.
 
+P. 148:	Write the ChicagoPizzaIngredientFactory
+I did! It's in the code. Check it out.
+
+P. 152: Compare the new version of createPizza() to the one from earlier.
+Well, that implementation of Factory required concrete classes to create different styles of pizza, and was more dependent because of that. This way, we've got the types decoupled from the creation, the method doesn't need to know what style (New York, Chicago) it is making, it only needs to know what kind (Cheese, pepperoni) and the stores who make the pizzas get the ingredients from a specific factory that determines the style. This is beneficial because if regional tastes change, they can just change the ingredients without having to rework the pizza classes.
