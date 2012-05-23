@@ -20,7 +20,7 @@ This is just a quick reference for the design principles and patterns expounded 
 
 -Classes should be open for extension, but closed for modification. (The Open-Closed principle)
 
--THE DECORATOR PATTERN - attaches additional responsibilities to an object dynamically. Decorators provide a flexible atlernative to subclassing for extending functionality.
+-THE DECORATOR PATTERN: attaches additional responsibilities to an object dynamically. Decorators provide a flexible atlernative to subclassing for extending functionality.
 
 *Ch4* - [Baking with OO Goodness]
 
@@ -34,3 +34,7 @@ This is just a quick reference for the design principles and patterns expounded 
 -THE ABSTRACT FACTORY PATTERN: provides an interface for creating families of related or dependent objects whithout specifying their concrete classes.
 
 *Ch5* - [One of a Kind Objects]
+
+-THE SINGLETON PATTERN: ensures a class has only one instance, and provides a global point of access to it.
+
+*Ch6* - [Encapsulating Invocation]

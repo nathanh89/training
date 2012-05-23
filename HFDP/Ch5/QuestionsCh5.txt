@@ -1,4 +1,23 @@
 CHAPTER 5
 ----------------------------------------------------
 
-P.	:
+P. 176:	Can you help Choc-O-Holic improve their ChocolateBoiler class by turning it into a Singleton?
+private static ChocoloateBoiler uniqueInstance;
+private
+public static getInstance(){
+	if (uniqueInstance == null)
+		uniqueInstance = new ChocolateBoiler();
+	return uniqueInstance;
+}
+
+P. 179:	How might two threads overlap and create more than one instance of ChocolateBoiler?
+Well, I can't draw it here, but basically, if two calls go to ChocolateBoiler.getInstance() at more or less the same time, you could end up with both the call passing the conditions if(uniqueInstance == null) and thus accidentally creating two ChocoloateBoiler objects.
+
+P. 183a: Describe the applicability of synchronizing the getInstance() method to fixing the ChocolateBoiler code.
+Synchronizing only allows one thread to access the method at a time, ensuring that two threads can't access it at the same time, and accidentally create two instances of ChocolateBoiler. However, if at some point in the program you've got a lot of threads trying to access getInstance(), that can really slow the program down.
+
+P. 183b: Describe the applicability of using eager instantiation to fix the ChocolateBoiler code.
+Using eager instatiation, we'd create an instance of ChocolateBoiler when the class is loaded, again ensuring we can't accidentally create two instances of the class. However, this is a bad idea if the ChocolateBoiler object is resource intensive; should that be the case, we'd only want to create it when we need it.
+
+P. 183c: Describe the applicability of using double-checked locking in fixing the ChocolateBoiler code.
+This seems to be the ideal solution, at least in this case, with as many unknowns as there are. Throw in a volatile keyword in the method declaration to ensure the code knows how to properly handle mutliple threads within the method block, and then only do a synchronization if the initial null check for the uniqueInstance comes back true (ensuring that synchronization is only performed when a new instance needs to be created) Good stuff.
