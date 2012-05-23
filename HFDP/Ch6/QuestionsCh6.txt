@@ -1,4 +1,13 @@
 CHAPTER 6
 ----------------------------------------------------
 
+P. 202:	Match the diner objects and methods with the corresponding names from the Command Pattern.
+Customer = Client
+Order = Command
+takeOrder() = setCommand()
+Waitress = Invoker
+orderUp() = execute()
+Short Order Cook = Receiver
 
+P. 205:	What would the implementation look like for GarageDoorOpenCommand?
+Well, its in the code, but basically you'll set up the constructor to take in a GarageDoor, then define the execute() method to activate the desired command, in this case, up() from the GarageDoor class.

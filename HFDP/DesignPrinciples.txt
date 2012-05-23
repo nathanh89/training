@@ -38,3 +38,5 @@ This is just a quick reference for the design principles and patterns expounded 
 -THE SINGLETON PATTERN: ensures a class has only one instance, and provides a global point of access to it.
 
 *Ch6* - [Encapsulating Invocation]
+
+-THE COMMAND PATTERN: encapuslates a request as an object, thereby letting you paramerterize other objects with different requests, queue or log requests, and support undoable operations.
