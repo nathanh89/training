@@ -1,14 +1,2 @@
 INDEX VERSION 1.126+/home/nathan/Documents/training/HFDP/Ch7/.metadata/.plugins/org.eclipse.jdt.core
-902463534.index
-1229216187.index
-2265204306.index
-503129653.index
-1924262380.index
-526829883.index
-3723395545.index
-4250099835.index
-661269234.index
-4125500360.index
-2887434545.index
-3692941538.index
-2011953641.index
+3746925404.index

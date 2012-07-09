@@ -55,3 +55,4 @@ More specific guidelines: (take any object, and from any method within that obje
 	-Any object the method creates or instantiates
 	-Any components of the object
 	
+*CH8*
