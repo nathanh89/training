@@ -9,15 +9,17 @@ public class InputListener {
 	public InputValidator validator;
 	private String desiredInput;
 	
-	public boolean listenForInput(){
+	public String listenForInput(){
 			BufferedReader listener = new BufferedReader(new InputStreamReader(System.in));
 			try {
 				desiredInput = listener.readLine();
 			} catch (IOException e) {
 				System.out.println("You fucked up. Un-Bosslike.");
 			}
-			boolean isInputValid = testInput(desiredInput);
-			return isInputValid;
+			boolean inputIsValid = testInput(desiredInput);
+			if (inputIsValid)
+				return desiredInput.toLowerCase();
+			else return "Invalid entry. Try again! New Budget? (y/n)";
 	}
 		
 	private boolean testInput(String toTest){
