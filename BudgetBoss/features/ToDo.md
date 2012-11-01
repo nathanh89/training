@@ -38,17 +38,7 @@ To-Do List : BudgetBoss
 		       <li> When: A a new Budget is created</li>
 		       <li> Then: It will have user-defined start and end dates</li>
 		  </td>
-	 	  <td>Not Yet Implemented</td>
-		</tr>
-		<tr>
-		  <td>Budgets have start and end dates</td>
-		  <td>
-		    <ul>
-		       <li> Given: An instance of BudgetBoss</li>
-		       <li> When: A a new Budget is created</li>
-		       <li> Then: It will have user-defined start and end dates</li>
-		  </td>
-	 	  <td>Not Yet Implemented</td>
+	 	  <td>Implemented for now</td>
 		</tr>
 		<tr>
 		  <td>Budgets dates are retrievable and changeable</td>
@@ -59,7 +49,29 @@ To-Do List : BudgetBoss
 		       <li> When: The user wants to check or change the start or end date</li>
 		       <li> Then: The user can view or alter the dates on the Budget</li>
 		  </td>
-	 	  <td>Not Yet Implemented</td>
+	 	  <td>Implemented for now</td>
+		</tr>
+		<tr>
+		  <td>Budgets dates are retrievable and changeable</td>
+		  <td>
+		    <ul>
+		       <li> Given: An instance of BudgetBoss</li>
+		       <li> And: A a new Budget is created</li>
+		       <li> When: The user wants to check or change the start or end date</li>
+		       <li> Then: The user can view or alter the dates on the Budget</li>
+		  </td>
+	 	  <td>Implemented for now</td>
+		</tr>
+		<tr>
+		  <td>BudgetBoss writes Budget objects to disk on exit</td>
+		  <td>
+		    <ul>
+		       <li> Given: An instance of BudgetBoss</li>
+		       <li> And: A a new Budget is created</li>
+		       <li> When: The user wants to quit the program</li>
+		       <li> Then: The user can view or alter the dates on the Budget</li>
+		  </td>
+	 	  <td>Implemented for now</td>
 		</tr>
 		</tbody>
 	<tfoot>

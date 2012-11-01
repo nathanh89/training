@@ -9,7 +9,6 @@ import com.BudgetBoss.main.*;
 public class BudgetBossTests {
 	
 	BudgetBoss testCase;
-	Budget testBudget;
 	
 	@Before
 	public void setup(){
@@ -20,8 +19,8 @@ public class BudgetBossTests {
 	public void budgetGenerationTest() {
 		//Given: An instance of BudgetBoss
 		//When: A new Budget is requested
-		testCase.requestBudget("testBudget");
 		//Then: BudgetBoss can create a Budget
+		testCase.setCurrentBudget("testBudget");
 		assertEquals(testCase.currentBudgetID(), "testBudget");
 	}
 	
@@ -29,23 +28,23 @@ public class BudgetBossTests {
 	public void budgetHasStartEndDate(){
 		//Given: An instance of BudgetBoss
 	    //When: A a new Budget is created
-		testCase.requestBudget("testBudget");
+		testCase.setCurrentBudget("testBudget");
 	    //Then: It will have start and end dates
-		assertEquals(testCase.currentBudget.getStartDate(), "01/01/2012");
-		assertEquals(testCase.currentBudget.getEndDate(), "12/31/2012");
+		assertEquals(testCase.getCurrentBudget().getStartDate(), "01/01/2012");
+		assertEquals(testCase.getCurrentBudget().getEndDate(), "12/31/2012");
 	}
 	
 	@Test
 	public void setStartEndDate(){
 		//Given: An instance of BudgetBoss
 		//When: A new Budget it created
-		testCase.requestBudget("testBudget");
+		testCase.setCurrentBudget("testBudget");
 		//And: Different dates other than the default are desired
-		testCase.currentBudget.setStartDate("11/01/2012");
-		testCase.currentBudget.setEndDate("11/15/2012");
+		testCase.getCurrentBudget().setStartDate("11/01/2012");
+		testCase.getCurrentBudget().setEndDate("11/15/2012");
 		//Then: The new dates will be set correctly
-		assertEquals(testCase.currentBudget.getStartDate(), "11/01/2012");
-		assertEquals(testCase.currentBudget.getEndDate(), "11/15/2012");
+		assertEquals(testCase.getCurrentBudget().getStartDate(), "11/01/2012");
+		assertEquals(testCase.getCurrentBudget().getEndDate(), "11/15/2012");
 
 	}
 }
