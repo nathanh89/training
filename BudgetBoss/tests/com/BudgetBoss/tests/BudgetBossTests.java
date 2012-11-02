@@ -47,4 +47,12 @@ public class BudgetBossTests {
 		assertEquals(testCase.getCurrentBudget().getEndDate(), "11/15/2012");
 
 	}
+	
+	@Test
+	public void currentBudgetNullCheck(){
+		//Given an instance of BudgetBoss
+		//When no Budget is created or opened
+		//Then the variable currentBudget will pass a null check
+		assertNull(testCase.getCurrentBudget());
+	}
 }

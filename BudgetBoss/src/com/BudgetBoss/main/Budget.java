@@ -1,6 +1,10 @@
 package com.BudgetBoss.main;
 
-public class Budget {
+import java.io.Serializable;
+
+public class Budget implements Serializable{
+	
+	private static final long serialVersionUID = -8611741910364436624L;
 	
 	String name;
 	String startDate;

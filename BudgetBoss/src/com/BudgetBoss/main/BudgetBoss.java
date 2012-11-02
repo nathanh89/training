@@ -4,7 +4,6 @@ public class BudgetBoss {
 	
 	public static Budget currentBudget;
 	static InputListener listener;
-	static String budgetName;
 	static Prompter prompter = new Prompter();
 	
 	public void setCurrentBudget(String name){
@@ -27,5 +26,7 @@ public class BudgetBoss {
 		listener = InputListener.setUpListener();
 		userInput = listener.listenForInput();
 		prompter.initialPrompt(userInput);
+		Salvation savior = new Salvation();
+		savior.saveOnExit(currentBudget.getName(), currentBudget);
 	}
 }
