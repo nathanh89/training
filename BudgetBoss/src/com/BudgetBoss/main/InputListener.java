@@ -9,6 +9,10 @@ public class InputListener {
 	public InputValidator validator;
 	private String desiredInput;
 	
+	static InputListener setUpListener(){
+		return new InputListener();
+		}
+	
 	public String listenForInput(){
 			BufferedReader listener = new BufferedReader(new InputStreamReader(System.in));
 			try {
