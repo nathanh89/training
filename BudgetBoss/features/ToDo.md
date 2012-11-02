@@ -60,14 +60,14 @@ To-Do List : BudgetBoss
 		       <li>When: The user wants to quit the program</li>
 		       <li>Then: The user can view or alter the dates on the Budget</li>
 		  </td>
-	 	  <td>Not yet implemented</td>
+	 	  <td>Implemented for now</td>
 		</tr>
 		<tr>
 		  <td>BudgetBoss checks for existing Budgets on startup</td>
 		  <td>
 		    <ul>
 		       <li>Given: A new instance of BudgetBoss</li>
-		       <li>When: The program initializs</li>
+		       <li>When: The program initializes</li>
 		       <li>Then: It will check for existing budgets</li>
 		       <li>And: If any are found, it will ask the user to use an existing or create a new Budget</li>
 		  </td>
