@@ -1,8 +1,18 @@
 package com.BudgetBoss.main;
 
 public class InputValidator {
-	
-	public boolean validateInput(String toCheck){
+		
+	public String isEntryValid(String toTest){
+		boolean inputIsValid;
+		inputIsValid = validateInput(toTest);		
+		if (inputIsValid)
+			return toTest.toLowerCase();
+		else{
+			return "Invalid entry. Try again! New Budget? (y/n)";
+		}
+	}
+		
+	private boolean validateInput(String toCheck){
 		if(toCheck.equals("y") || toCheck.equals("Y"))
 			return true;
 		else if(toCheck.equals("n") || toCheck.equals("N"))

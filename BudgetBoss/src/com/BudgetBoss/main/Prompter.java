@@ -9,7 +9,6 @@ public class Prompter {
 	static String budgetName;
 	
 	public Budget initialPrompt(String userInput){
-		Budget currentBudget;
 			if (userInput.equals("y")){
 			System.out.println("Let's make a budget! What should we call it?");
 			BufferedReader budgetNameInput = new BufferedReader(new InputStreamReader(System.in));
@@ -19,7 +18,7 @@ public class Prompter {
 				System.out.println("You messed up. Un-Bosslike.");
 			}
 			System.out.println("Creating new Budget " + budgetName + "...");
-			currentBudget = new Budget(budgetName);
+			Budget currentBudget = new Budget(budgetName);
 			return currentBudget;
 			}
 		else if(userInput.equals("n")){
@@ -28,7 +27,7 @@ public class Prompter {
 		}
 		else{
 			System.out.println(userInput);
-			InputListener listener = InputListener.setUpListener();
+			InputListener listener = new InputListener();
 			userInput = listener.listenForInput();
 			initialPrompt(userInput);		
 			return null;
