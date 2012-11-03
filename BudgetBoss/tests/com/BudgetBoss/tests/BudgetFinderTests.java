@@ -1,7 +1,5 @@
 package com.BudgetBoss.tests;
 
-import static org.junit.Assert.*;
-
 import java.io.File;
 
 import org.junit.Test;
@@ -18,6 +16,7 @@ public class BudgetFinderTests {
 		File[] foundBudgets;
 		BudgetFinder finder = new BudgetFinder();
 		foundBudgets = finder.findBudgets("/home/visionary/Programming/training/BudgetBoss/SavedBudgets/");
+		//And: Prints them to the console
 		finder.printFoundBudgets(foundBudgets);
 	}
 }
