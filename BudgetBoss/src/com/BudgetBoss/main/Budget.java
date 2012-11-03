@@ -16,24 +16,24 @@ public class Budget implements Serializable{
 		endDate = "12/31/2012";
 	}
 	
+	public String getName(){
+		return name;
+	}
+	
 	public void setName(String name){
 		this.name = name;
 	}
 	
-	public String getName(){
-		return name;
-	}
-
 	public String getStartDate() {
 		return startDate;
+	}
+	
+	public void setStartDate(String startDate) {
+		this.startDate = startDate;		
 	}
 
 	public String getEndDate() {
 		return endDate;
-	}
-
-	public void setStartDate(String startDate) {
-		this.startDate = startDate;		
 	}
 
 	public void setEndDate(String endDate) {
