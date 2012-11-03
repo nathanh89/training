@@ -1,7 +1,0 @@
-package com.visionarysoftwaresolutions.refillable;
-
-import com.visionarysoftwaresolutions.refillable.Storable;
-
-public interface PowerableStorageUnit extends Storable, Powerable {
-
-}

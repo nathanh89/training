@@ -39,5 +39,9 @@ public class Budget implements Serializable{
 	public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
+	
+	public String toString(Budget budgetString){
+		return budgetString.getName();
+	}
 
 }

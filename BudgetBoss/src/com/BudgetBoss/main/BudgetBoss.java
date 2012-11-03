@@ -26,7 +26,7 @@ public class BudgetBoss {
 			invalidEntries ++;
 		}
 		
-		currentBudget = prompter.initialPrompt(validatedInput);
+		currentBudget = prompter.createBudgetPrompt(validatedInput);
 		
 		Salvation savior = new Salvation();
 		try{	

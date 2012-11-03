@@ -1,5 +1,0 @@
-package com.visionarysoftwaresolutions.ordering;
-
-public interface Orderable {
-
-}

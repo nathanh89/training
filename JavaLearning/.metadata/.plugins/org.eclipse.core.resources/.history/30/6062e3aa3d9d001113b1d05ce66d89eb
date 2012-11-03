@@ -1,8 +1,0 @@
-package com.visionarysoftwaresolutions.ordering;
-
-public interface Orderable {
-	public abstract String setName();
-	public abstract String getName();
-	public abstract void setPrice(double price);
-	public abstract double getPrice();
-}
