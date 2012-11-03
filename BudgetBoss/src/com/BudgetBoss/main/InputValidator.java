@@ -2,9 +2,9 @@ package com.BudgetBoss.main;
 
 public class InputValidator {
 		
-	public String isEntryValid(String toTest){
+	public String isEntryYOrN(String toTest){
 		boolean inputIsValid;
-		inputIsValid = validateInput(toTest);		
+		inputIsValid = yOrNCheck(toTest);		
 		if (inputIsValid)
 			return toTest.toLowerCase();
 		else{
@@ -12,7 +12,7 @@ public class InputValidator {
 		}
 	}
 		
-	private boolean validateInput(String toCheck){
+	private boolean yOrNCheck(String toCheck){
 		if(toCheck.equals("y") || toCheck.equals("Y"))
 			return true;
 		else if(toCheck.equals("n") || toCheck.equals("N"))

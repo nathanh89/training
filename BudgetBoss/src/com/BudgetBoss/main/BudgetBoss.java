@@ -22,7 +22,7 @@ public class BudgetBoss {
 			if(invalidEntries > 0)
 				System.out.println(validatedInput);
 			String userInput = listener.listenForInput();
-			validatedInput = validator.isEntryValid(userInput);
+			validatedInput = validator.isEntryYOrN(userInput);
 			invalidEntries ++;
 		}
 		
