@@ -8,7 +8,7 @@ public class InputValidator {
 		if (inputIsValid)
 			return toTest.toLowerCase();
 		else{
-			return "Invalid entry. Try again! New Budget? (y/n)";
+			return "Invalid entry. Try again! (y/n)";
 		}
 	}
 		

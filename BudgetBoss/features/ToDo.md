@@ -71,7 +71,7 @@ To-Do List : BudgetBoss
 		       <li>Then: It will check for existing budgets</li>
 		       <li>And: If any are found, it will ask the user to use an existing or create a new Budget</li>
 		  </td>
-	 	  <td>Not yet implemented</td>
+	 	  <td>Implemented for now</td>
 		</tr>
 		</tbody>
 	<tfoot>
